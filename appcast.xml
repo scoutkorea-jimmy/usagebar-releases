@@ -6,6 +6,33 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>UsageBar</title>
         <item>
+            <title>0.4.0</title>
+            <pubDate>Thu, 10 Sep 2026 00:45:23 +0900</pubDate>
+            <sparkle:version>40</sparkle:version>
+            <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Jimmy Assist 0.4.0 — AI Fuel Gauge
+
+UsageBar has a new face: Jimmy Assist, your AI fuel gauge. Existing accounts, preferences and signed online updates are preserved.
+
+- Claude Fable's actual model-specific weekly quota, progress bar and reset time now appear. Current and legacy usage responses are supported without duplicating limits.
+- Codex reset coupon count and earliest expiry are shown. Redemption requires an explicit confirmation. Uncertain requests keep the same saved request ID across restarts to prevent duplicate consumption.
+- Settings are now a distinct Control Room with General, Notifications, Connections and Updates tabs.
+- Pause/resume automatic refresh, network-aware polling, sleep/wake handling, bounded helper processes, WebKit timeouts and connection diagnostics.
+- Diagnostic copying excludes account addresses and login credentials. No automatic coupon redemption or credit purchase.
+
+Validation: 115 core checks and 33 isolated RPC checks, plus live quota/UI verification. Real coupons were not consumed during testing. Claude coupon redemption remains in Claude's official interface because a supported redemption API has not been established.
+]]></description>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.4.0/UsageBar-0.4.0.zip" length="2970302" type="application/octet-stream" sparkle:edSignature="wTR1ycnuzOp4lRUyVWdoF+OGE8UGMoSfIZj/40cJXNXna3CJ+8lOemqkKdXk8tuHB1h6bZvlMEHDj4fIQTIwCg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.4.0/UsageBar40-30.delta" sparkle:deltaFrom="30" length="165530" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="3TqgE958QpsFyYDSQ9gV3BOD38dqCKmV0d8NLRXhtuq0AauCVwLZqp9y6eANfLHP4Mdtt8UW1Xz/svMGa0ThAQ=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.4.0/UsageBar40-22.delta" sparkle:deltaFrom="22" length="189522" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NOyNC8PCP6Pea9TYaNS8v75DiEja1js9noXLgBc8DbayYABRjSWgjK+3N0F8+ZO9SYoY/rA1H+lpkM39q/AYAQ=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.4.0/UsageBar40-21.delta" sparkle:deltaFrom="21" length="192230" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="0IwTYFrMCehmXhQ1JQeTatcb5XBcJZPp+i8PdIn7juidRF5v6YTZ6munsmt6Hj3LOgAkXicJVdrGlDj1DvtmAQ=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.4.0/UsageBar40-20.delta" sparkle:deltaFrom="20" length="192522" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DajUFlqlxzNaLDWPZfuoitqso0ul1h0sha3ATNoq7F7e1/3gjpLKpi2kVyv+7zYqacX4MAaLsoaxpMiGul1VDg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.0</title>
             <pubDate>Thu, 10 Sep 2026 00:32:06 +0900</pubDate>
             <sparkle:version>30</sparkle:version>
@@ -25,7 +52,7 @@ ChatGPT 구독의 Codex 사용량 모니터링을 추가했습니다.
 
 ChatGPT 데스크톱 앱 또는 Codex CLI가 필요합니다. 표시되는 수치는 ChatGPT 구독의 Codex 한도이며 일반 채팅 메시지 카운터가 아닙니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.3.0/UsageBar-0.3.0.zip" length="2883580" type="application/octet-stream" sparkle:edSignature="wPHZE9OOEtfGixyVAU1rDFzZIJcoRivnoOgwAPxrey0mlhvnhPuYeHwC4mtPdfGeX1kMdvj5ca82orNZhHihBQ=="/>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.4.0/UsageBar-0.3.0.zip" length="2883580" type="application/octet-stream" sparkle:edSignature="wPHZE9OOEtfGixyVAU1rDFzZIJcoRivnoOgwAPxrey0mlhvnhPuYeHwC4mtPdfGeX1kMdvj5ca82orNZhHihBQ=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.3.0/UsageBar30-22.delta" sparkle:deltaFrom="22" length="92274" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ioydijPxN6Xky5uXx5U4UpQ4K5D6PybEKjOB7IknTcg9bjWwAD/ECyamSVTdYWJVvGp2q4I1/AckqzU0AWv4Cw=="/>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.3.0/UsageBar30-21.delta" sparkle:deltaFrom="21" length="96038" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UqbQ7AiKjVSH8iIayf6rf6XJotje9sLf1E/gRg/nqLWtCG4mIq2jMAmp4WCQX8Qr2CIxmElhIQ9/Ms0Yljk/DQ=="/>
@@ -49,35 +76,15 @@ ChatGPT 데스크톱 앱 또는 Codex CLI가 필요합니다. 표시되는 수�
 - 실제 한도 초기화 후 새 주기가 시작되면 기준별 알림이 다시 가능해집니다.
 - 알림을 꺼둔 동안의 기준 통과는 나중에 재생하지 않습니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.3.0/UsageBar-0.2.2.zip" length="2843627" type="application/octet-stream" sparkle:edSignature="gxpShV+wbeK94teCiOI28AxdepbO4MMfBcWpuk11fIFF7TjgJ6UB6wn3eTFeqi7FAvI5jwwNMUxeZ8E8dqjWDQ=="/>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.4.0/UsageBar-0.2.2.zip" length="2843627" type="application/octet-stream" sparkle:edSignature="gxpShV+wbeK94teCiOI28AxdepbO4MMfBcWpuk11fIFF7TjgJ6UB6wn3eTFeqi7FAvI5jwwNMUxeZ8E8dqjWDQ=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.2.2/UsageBar22-21.delta" sparkle:deltaFrom="21" length="29926" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lW8hPhOo4VlVl99GjXRTdyR6/X2yToSYKNeR0uBtHLFoq0LPVtkaPA2MqzFYzfciM1RTpMMNyCqjwuMGszaYDg=="/>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.2.2/UsageBar22-20.delta" sparkle:deltaFrom="20" length="33386" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="8UJ3B3WJuz4ylBPo/rhD77ecOmebVqeo0TmxivVtYKSqF3S2enccIfR+0KXFFGBzwIXYGmYvScQM1wRxqHfVBw=="/>
             </sparkle:deltas>
         </item>
-        <item>
-            <title>0.2.1</title>
-            <pubDate>Thu, 10 Sep 2026 00:13:17 +0900</pubDate>
-            <sparkle:version>21</sparkle:version>
-            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[UsageBar 0.2.1
-
-- 메뉴 하단에 바로 사용할 수 있는 ‘업데이트’ 버튼을 추가했습니다.
-- 응용 프로그램 폴더로 이동한 뒤 로그인 시 실행 경로가 이전 빌드 위치를 가리키는 문제를 수정했습니다.
-- 기존 로그인 세션과 사용량 표시 설정을 유지합니다.
-
-이 업데이트는 앱 안에서 다운로드·검증·설치할 수 있습니다. ChatGPT 일반 대화 사용량은 여전히 지원하지 않습니다.
-]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.3.0/UsageBar-0.2.1.zip" length="2841783" type="application/octet-stream" sparkle:edSignature="rNtPEfS2UOou5ad0fHVZRqFjxQ3pI0lt8xusBN2FyiRUhiPl77ptQ2Om0pXiFKXyFlqTG8JRjesF+721MkJyDw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.2.1/UsageBar21-20.delta" sparkle:deltaFrom="20" length="17382" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DF+YT+588F9HRb8nNOUs+WXGmigwEc6lnRBRMdZu/AT7bz4avwRcJrLfm4nqXaeTXLvV9zXEOMXYXs2LD0dhCg=="/>
-            </sparkle:deltas>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: Rb4G47GxNVoZ4xKtkGJwkThzxsA9qnTkA5fWGezDexqXpXKWTV4EWC8qfZPlC3TSn8lvoB1wKJN3me/abjgoDA==
-length: 7409
+edSignature: b6ydO3NvT2gBQsf69oD+weJ3FYel6CprSBAc6BKTsuIBgciRaZXb8m3keMNrEyHpHW9NwEpB9wxCoZCKHQ67Bw==
+length: 9361
 -->
