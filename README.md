@@ -20,3 +20,6 @@ Updates use HTTPS and Ed25519 signatures for both the feed and payloads. The app
 Version 0.4.0 adds a distinct Control Room, pause/resume, network-aware polling, helper timeouts and redacted connection diagnostics. Codex reset coupons display their available count and earliest expiry; redemption requires explicit confirmation and preserves an idempotency key across uncertain requests and restarts. There is no automatic redemption or purchase. Claude promotions are accessed through its official usage screen.
 
 The internal bundle identifier and UsageBar.app install path remain unchanged for update and account compatibility.
+
+
+Version 0.5.0 redesigns the overview and Control Room around information hierarchy, progressive disclosure, consistency and accessibility. It adds a shared light/dark palette, large text, descriptive labels and keyboard shortcuts while retaining existing usage, notification and coupon behavior.
