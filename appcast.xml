@@ -6,6 +6,28 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>UsageBar</title>
         <item>
+            <title>0.15.1</title>
+            <pubDate>Sun, 20 Sep 2026 19:27:32 +0900</pubDate>
+            <sparkle:version>151</sparkle:version>
+            <sparkle:shortVersionString>0.15.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## Gemini API Key 연결
+
+- 연결 설정에 Gemini API Key 입력 화면을 추가했습니다.
+- 키는 macOS 키체인에만 저장하고, Google AI Studio 모델 목록으로 연결을 검증합니다.
+- Gemini API 프로젝트 사용량·비용은 Google AI Studio 및 Cloud Monitoring에서 제공하는 값만 표시하도록 구분했습니다.
+]]></description>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.1/UsageBar-0.15.1.zip" length="3466979" type="application/octet-stream" sparkle:edSignature="R6iSYp6Pc3pwLkpeaea9/hgOtaOYUi97+vhrBKA/RibrahE7yAp4ayb4IEQJvu+o/PwUw5RBqdeucTB7RSGFCg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.1/UsageBar151-150.delta" sparkle:deltaFrom="150" length="135170" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rsZDrCQsazwh97EBqD0UKaw9oyypEAlTI0DTOeDWtYMFH3mU29WTqA107iOq2hPl398FOZVkwcjJigXVn7uWAQ=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.1/UsageBar151-142.delta" sparkle:deltaFrom="142" length="160226" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="z6P/hFz5Gwm0fSKMS1nvz7cTpgpamYHnIeIa0e+vIT8XWlLUXtHKA47nW70lRucnUWFxNe+/Hv+fK51/HBLSCw=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.1/UsageBar151-141.delta" sparkle:deltaFrom="141" length="1338" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="cOpV34JiL+x80M8/gnwb4HycaC7eEtRF1sYHI3N2XwA8ieVBR2EyR0DzBgwtB20FwICF4ltyxSxFkak9P6/iDQ=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.1/UsageBar151-140.delta" sparkle:deltaFrom="140" length="180670" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="JcjWXyzD2TvxPyETgjF9LpzgJNCqwi7h1J4pslp1UymhocjZzw0t41ZzH5tD6gcYTe9MfKYOK2ihFoN71WVkAQ=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.1/UsageBar151-130.delta" sparkle:deltaFrom="130" length="270930" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KYJ7HXcELPAUaM1ofujfPngRMA1oTo5AP9u9HitXzl7TkLs+SeuncxYYqNQKz4sCoqX+PSkXT7hKEiUgfXEUBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.15.0</title>
             <pubDate>Sun, 20 Sep 2026 19:19:48 +0900</pubDate>
             <sparkle:version>150</sparkle:version>
@@ -19,7 +41,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
 - 로그인되지 않은 경우 토큰을 저장하거나 노출하지 않고 공식 로그인 안내만 제공합니다.
 - Gemini 웹/앱과 AI Studio/API는 별도 서비스 한도이므로 공식 화면 링크로 구분합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.0/UsageBar-0.15.0.zip" length="3453412" type="application/octet-stream" sparkle:edSignature="dUErf/Y0by6kXgF0yNs4q8ryWXBMCF55SAqtJf9a6PYnZxFuSuSfg/mcUEd3dtUC3GguPoWSjnxFXwXS+LaiCQ=="/>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.1/UsageBar-0.15.0.zip" length="3453412" type="application/octet-stream" sparkle:edSignature="dUErf/Y0by6kXgF0yNs4q8ryWXBMCF55SAqtJf9a6PYnZxFuSuSfg/mcUEd3dtUC3GguPoWSjnxFXwXS+LaiCQ=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.0/UsageBar150-142.delta" sparkle:deltaFrom="142" length="136958" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Mh3CkjBq0TwIHw7ru8c0cgWTE4QUmaB2rw5NuMgPXvfoKuG41CTL6zeOqmNG+iNMpJAUOX8T+PEWTCe4AvgDDw=="/>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.0/UsageBar150-141.delta" sparkle:deltaFrom="141" length="50410" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="XxxReOcU7q4AOTxOqyPyrg8OFvk+xABkdf/ojdn/I44mgR5qeu5NLv/0CKVzI1pbUKzQC6b7THw4dVNlXibXDQ=="/>
@@ -42,7 +64,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
 - 서버가 일반 사용 허용 여부와 Reserve 한도를 제공하지 않으면 기존 값과 상태를 보존하고 추정하지 않습니다.
 - Gemini CLI·Code Assist, Gemini 웹·앱, Gemini API는 각각 다른 한도 체계를 사용하므로 공통 퍼센트로 합산하지 않습니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.0/UsageBar-0.14.2.zip" length="3443677" type="application/octet-stream" sparkle:edSignature="pi3pX7UJNa+k7dVMj4X9z8asVEGfo5kivbIPSoc24LcnvfuK7eyoh0Lc42RNjWY7QS9TSeOr0VNHZnKprPiwCg=="/>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.1/UsageBar-0.14.2.zip" length="3443677" type="application/octet-stream" sparkle:edSignature="pi3pX7UJNa+k7dVMj4X9z8asVEGfo5kivbIPSoc24LcnvfuK7eyoh0Lc42RNjWY7QS9TSeOr0VNHZnKprPiwCg=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.14.2/UsageBar142-141.delta" sparkle:deltaFrom="141" length="1326" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="TlCEtandPzw7up8QTIE6SlK3EGro6aHLwgfJ4Cqq8N6bHMyf9RAuPHUQMUabyrH/93KkBreBCwmLfDdwzLWdDA=="/>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.14.2/UsageBar142-140.delta" sparkle:deltaFrom="140" length="117714" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2XAgdURB8knJa07GwSCxD4bkFOXOPKcW63M05i8xdk1NNN1BvxuSU8k7yvQeZgn8vexDVrnBA8yL2KPZ02vHCw=="/>
@@ -51,32 +73,9 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.14.2/UsageBar142-110.delta" sparkle:deltaFrom="110" length="328978" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="5iYPwhfB6J6yREGlt3/vooNgLAX3Y4sIR6miv3TbcoOb6BYTb6y0JIGbCYLRxVh3ODpHWikyoLSblsTy3/TmAw=="/>
             </sparkle:deltas>
         </item>
-        <item>
-            <title>0.14.1</title>
-            <pubDate>Mon, 14 Sep 2026 22:09:29 +0900</pubDate>
-            <sparkle:version>141</sparkle:version>
-            <sparkle:shortVersionString>0.14.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Jimmy Assist 0.14.1
-
-- 메뉴 막대의 Codex·Claude 사용량 뒤에 초기화까지 남은 시간을 괄호로 표시합니다. 예: G 73% (2일 3시간), C 65% (1시간 20분).
-- 메뉴에 선택한 한도의 실제 초기화 시각을 사용하며, 남은 양/사용한 양 표시 모두에 적용합니다. 네트워크 항목 간 간격과 기존 글자 크기는 유지합니다.
-- 초기화 시각이 없으면 ‘미제공’, 기한이 지나면 ‘확인 중’, 오래된 자료는 ‘이전’으로 구분합니다. 시간이 지났다고 사용량 초기화 성공으로 표시하지 않습니다.
-- 기존 화면 갱신 타이머를 사용하므로 서버 요청이나 별도 타이머가 추가되지 않습니다.
-]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.15.0/UsageBar-0.14.1.zip" length="3453008" type="application/octet-stream" sparkle:edSignature="hLRnGwgM4yO8u3zYs8YkBLlV4eX+a45J3RgVQ/myZVd4Tr48SOGNvfJlGcBb+H0V+lZjJqvrm3OuvFSfqRDyBw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.14.1/UsageBar141-140.delta" sparkle:deltaFrom="140" length="85682" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ntRro5EMe7XgBv03yxIR/NTPRB4XgHgvz2sslr03zLX9QmUHRFAbzmccepT45aROIaMC34Jff2MaSmmEHiNMBg=="/>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.14.1/UsageBar141-130.delta" sparkle:deltaFrom="130" length="221370" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="aCrxEqH48B64aV5cSquDQfMy6eNDJi/uC9ulYu03CdetTwvQJekkbhh6JevqyhQw5B2FDrV0SFjUDl7UxaN7AQ=="/>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.14.1/UsageBar141-120.delta" sparkle:deltaFrom="120" length="260598" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dXtXwuJ8ongG0zQT4iZCbKJcRGXtSwwwBZ2kbI+7DutZJBtq9RNgdZLxKysXOXRRPaPepu/yxWj2alh0m6thCg=="/>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.14.1/UsageBar141-110.delta" sparkle:deltaFrom="110" length="318858" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ssGd8KnqfVTKoIhoit9SdHemYSjsZ3WdF3QJGU5cuaQpHOvYoPLusmF/W8E4xMvV1aMhYs0N3SktykZCm/xpCw=="/>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.14.1/UsageBar141-100.delta" sparkle:deltaFrom="100" length="354790" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="enUnvBWGIYX5m7pcKidHJBS4gImRdoXUsBOzyS1xzgyZM2tEtX5mAVxRCX5RKgFvcRhUqhfQRzQ/XD6ZQmUsAg=="/>
-            </sparkle:deltas>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 2uAP/7QGzWEQJOuaOVs75GXLFJCHAKONV978pPa1Jn1sETktrmbsE0+Qf2G2SApuJGXVr38ZZlFW6z9p+keHAw==
-length: 11151
+edSignature: FQExos3m6r2wo4HStLdcmhP5GDfJNiaKmHD0wKuZrpVm4akQbkbAj8MUPBJjZLGLeXvDDiczkGNKgXG8odDBAg==
+length: 10768
 -->
