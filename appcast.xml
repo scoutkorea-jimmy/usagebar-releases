@@ -6,6 +6,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>UsageBar</title>
         <item>
+            <title>0.18.9</title>
+            <pubDate>Wed, 23 Sep 2026 19:53:22 +0900</pubDate>
+            <sparkle:version>189</sparkle:version>
+            <sparkle:shortVersionString>0.18.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[메뉴바 고정 폭의 과도한 좌우 여백을 줄였습니다. 현재 표시 내용에 맞춰 폭을 한 번 계산한 뒤 고정하며, 설정에 현재 내용에 메뉴바 폭 맞추기 버튼을 추가했습니다. 데이터 갱신만으로는 폭이 변하지 않습니다.
+]]></description>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.9/UsageBar-0.18.9.zip" length="3568539" type="application/octet-stream" sparkle:edSignature="aI9T3RJuL2TNdXdu+sGUKpMIDgkqUG7gImRA15kzNh0VEh6kAuPTHRBWCVlb07Jh0nEtLx752lpC3f8kFKubAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.9/UsageBar189-188.delta" sparkle:deltaFrom="188" length="111770" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KXiFD3AGocsSuC8GDnQJ1tCvckQQ+JMEheHV5k2HLfezZCU7VhAZ5PWa5kvs8dF1ZpXl3+tOheoteqfb0I3PAQ=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.9/UsageBar189-187.delta" sparkle:deltaFrom="187" length="115046" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DZ3mVidwM8B821juqMV1BwcqAJkX0fESRtww/I91ilNm1fzarT6jEHaVcEX2g7K5bJXisKoBK/oZ4ZkixRddDw=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.9/UsageBar189-186.delta" sparkle:deltaFrom="186" length="141962" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="cokwJiTllPHKN96dbBret9TH33qaRHm5wTKyP77rxkPInlmbtTqyEiqUj2cSEmcxZePnZnwP2vFghH+BUyW8Cg=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.9/UsageBar189-185.delta" sparkle:deltaFrom="185" length="143834" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="3nfHsiXARksjhLaFpnmDisecuDwEs3uX27u5z8SyGWJqHg8cMvGtW3xq+u7egMe5BjfVUM1hFjlWD/G6dyOUDA=="/>
+                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.9/UsageBar189-184.delta" sparkle:deltaFrom="184" length="146090" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="OEReoQ7iBJnHl7FXmv23eOC8ZHQUM0h+Sg9itAmW+as8+giv0nX+Nu5BabHtn76PuRiu3DKFJD2l2ttKCfuAAg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.18.8</title>
             <pubDate>Wed, 23 Sep 2026 19:45:11 +0900</pubDate>
             <sparkle:version>188</sparkle:version>
@@ -14,7 +32,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[네트워크·디스크 속도를 소수점 한 자리로 표시합니다. 메뉴바 너비를 표시 설정 기준으로 고정해 숫자·연결 상태·초기화 시간이 바뀌어도 주변 아이콘이 움직이지 않도록 개선했습니다. 글자 크기나 표시 항목 변경 시에만 영역을 다시 계산합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.8/UsageBar-0.18.8.zip" length="3566271" type="application/octet-stream" sparkle:edSignature="/t+jAUWyfIeu3WFShTs4w6FQOBMuyCOg94QSi/XGgKwQ1iXOuokPAqtzmJVxyYwfq3C9BJzG+3q411hQprH1BA=="/>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.9/UsageBar-0.18.8.zip" length="3566271" type="application/octet-stream" sparkle:edSignature="/t+jAUWyfIeu3WFShTs4w6FQOBMuyCOg94QSi/XGgKwQ1iXOuokPAqtzmJVxyYwfq3C9BJzG+3q411hQprH1BA=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.8/UsageBar188-187.delta" sparkle:deltaFrom="187" length="72038" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NLQVorkT9YlO7NXYrvP1soV5WMAph1S5UDjezPWW6xye6AwwdZScbljDc8+dXTZbetfP7RJyEUGGoYgWpY7FAw=="/>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.8/UsageBar188-186.delta" sparkle:deltaFrom="186" length="119210" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="uoInW6hYugtsbAr0uA6X4tuHy3eEnuryh2gf+GDx2lSYOTsuMKfKCNt625r8d3sspgL6SDI4MLAzDmp+Jp+rDg=="/>
@@ -32,7 +50,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[AI 사용량 자동 갱신에 1·2·5·10·15초 선택지를 추가했습니다. 기존 30초·1분·5분·10분도 유지합니다. 조회 완료 후 선택한 간격으로 갱신하며 중복 요청 방지와 서비스별 오류 재시도 대기를 유지합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.8/UsageBar-0.18.7.zip" length="3565716" type="application/octet-stream" sparkle:edSignature="c7BHq37KZ8hGCQAW9l3tBJVx58dfm8vaW4SJuO2/aJjODoMKam/sKmv+17q6OLCCxt8+MCrWhLgMcO0Jg7IQDw=="/>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.9/UsageBar-0.18.7.zip" length="3565716" type="application/octet-stream" sparkle:edSignature="c7BHq37KZ8hGCQAW9l3tBJVx58dfm8vaW4SJuO2/aJjODoMKam/sKmv+17q6OLCCxt8+MCrWhLgMcO0Jg7IQDw=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.7/UsageBar187-186.delta" sparkle:deltaFrom="186" length="115810" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="tJIFpjHZUcnUXej4gSx3QLtg4NDVJbcSglnPOgXZd1tfq+IoeuUwPmMeivxye46KKsLD+u83bO3HSYL9Qo8AAw=="/>
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.7/UsageBar187-185.delta" sparkle:deltaFrom="185" length="115694" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kcBOqFrNUYX3/b4QmKoQiMuzlptUZ493luDhsJA8Tchto5L5+xeRUhqG56Fs4rGy2UdwFzAoMXj9KHLLEiUkDA=="/>
@@ -41,27 +59,9 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
                 <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.7/UsageBar187-182.delta" sparkle:deltaFrom="182" length="225614" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="udpiWfOru3sGciRxOUexLffieateJ95USFnhKHGjK3MR9eb+dSUWkOnT8yzKPfhxcGO9XV6MfjyzQowuP2yGBQ=="/>
             </sparkle:deltas>
         </item>
-        <item>
-            <title>0.18.6</title>
-            <pubDate>Wed, 23 Sep 2026 12:04:57 +0900</pubDate>
-            <sparkle:version>186</sparkle:version>
-            <sparkle:shortVersionString>0.18.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[메뉴바에서 NET(네트워크)와 DISK(디스크) 그룹을 구분선으로 분리합니다. 네트워크는 ↓다운로드/↑업로드 Mbps, 디스크는 R읽기/W쓰기 MB/s로 구분합니다. 간결한 표기를 끄면 네트워크·디스크 한글 이름으로 표시됩니다.
-]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.8/UsageBar-0.18.6.zip" length="3567048" type="application/octet-stream" sparkle:edSignature="eoq3X4KipXFke5DsSUPX45cmSKeikSY79mFK+cQwGdpl746l4qznuLs1jObhCQfLW8mLFi65h3myRP43NrldAg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.6/UsageBar186-185.delta" sparkle:deltaFrom="185" length="73154" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hqfGNAsB8YktwMrIOIXqahspW5FIq5gYZG/N/IuhmbTAKDN0IgjEB7GkT3Rfnfg+WZ+BWijnc2PGvUwLPpMyDA=="/>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.6/UsageBar186-184.delta" sparkle:deltaFrom="184" length="95618" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="JC7Z7UpvK1EmK+Cj34U21+ri5h+EYS1DkglyBNMESF9sN15Z3dSsP4mOe8NgAFk1blwYBeH7x/X9I8OEne0HDA=="/>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.6/UsageBar186-183.delta" sparkle:deltaFrom="183" length="190862" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MbynfMdnkbDPQS5zShnzfpe1GhTpmfBBW1yttNSKTmQJGs4c31yQKCjFiUJ69f9KL0v50IoB8qhTgtYlGCrDCg=="/>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.6/UsageBar186-182.delta" sparkle:deltaFrom="182" length="223778" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Yc4ZIwCyx8AWesIBbriXoAMJLX+CHgV7CWR7G6LW1xZG0ISZQHPKD5i9pDt2y/o0fBrfa+lHksFzqI5PgZjcBA=="/>
-                <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v0.18.6/UsageBar186-181.delta" sparkle:deltaFrom="181" length="225830" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="943248" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="3izPtH5dqWa5fW3evHmOm5bWBoja4Zvw5bf7ZZ7/+dYm1QoGEWHK9qVMAYUJF9BVSDVBE0nWdE9w0gmygtYjCA=="/>
-            </sparkle:deltas>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: xQZZVNDQzIKrhhYpri4yv5MzSC54O/xQXRnKskXgI0kHoO52T6JTIanzaYLfewHJqzbD65av4ee39XdG8mm/DA==
-length: 10185
+edSignature: AXXT6d439vSPXkAyBFJP1szTW8yJ+ILdZ0gZ87qbSyNlSrjshR4wQXDP/NkvZhPHmYvNJhiMqJeKid+X/z+eAQ==
+length: 10181
 -->
