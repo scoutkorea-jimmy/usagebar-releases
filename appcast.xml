@@ -4,13 +4,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.001.000</title>
-            <pubDate>Tue, 29 Sep 2026 23:47:38 +0900</pubDate>
-            <sparkle:version>216</sparkle:version>
-            <sparkle:shortVersionString>1.001.000</sparkle:shortVersionString>
+            <title>1.001.001</title>
+            <pubDate>Tue, 29 Sep 2026 23:51:47 +0900</pubDate>
+            <sparkle:version>217</sparkle:version>
+            <sparkle:shortVersionString>1.001.001</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.001.000 · 공식 서비스 상태 알림
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.001.001 · 공식 서비스 상태 알림
 
 - Claude와 OpenAI 공식 상태를 1분마다 확인합니다.
 - 현황 상단의 서비스 상태 줄에서 현재 장애와 최근 공식 발표를 볼 수 있습니다.
@@ -22,12 +22,14 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
 
 Official Claude and OpenAI service status is checked every minute. Open the status row on Overview for incidents and recent updates, and configure provider alerts in Settings → Notifications. Repeated updates are deduplicated across restarts. Failed checks retain the last known status and retry with backoff. Polling pauses during sleep, offline periods and app pause.
 
-버전 V1.001.000 / 업데이트 빌드 216. 최신 버전으로 바로 업데이트합니다. 앱 실행 및 macOS 알림 허용이 필요합니다.
+버전 V1.001.001 / 업데이트 빌드 217. 최신 버전으로 바로 업데이트합니다. 앱 실행 및 macOS 알림 허용이 필요합니다.
+
+메뉴바 오류 문구 뒤에 정상 사용량·초기화 시간용 빈칸을 남기지 않도록 수정했습니다. 정상 수치 갱신 시의 고정 폭은 유지합니다. 메뉴바 도움말도 이전 퍼센트 대신 오류 상태를 표시합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.001.000/Quotly-V1.001.000.zip" length="3793294" type="application/octet-stream" sparkle:edSignature="aGZL3psAiaP873qZe+L3g5XwKkeWKboelJY9sK1jZo5bKisHjqzrhskmcEBm7XqVUHYL/RPqDjaS85yQCh2ZDA=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.001.001/Quotly-V1.001.001.zip" length="3793482" type="application/octet-stream" sparkle:edSignature="OW+f/xQq1PVO+QoGPgaOPrUeDBZvMrMKQ6N6oBZtf+hq7tBry5+jenY/VepmE2Eimg4Ztrdkr7to9k48jXHlDQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: w4suhoDlSitPem8cTm3PlNjaOlMH1tMYUI3izGpCSeSUOAOUtbDYFBlI+JKA6jCHjFC+ADENWSgBDIiqJjlsAg==
-length: 2687
+edSignature: vfRlmpsBigojwi/6//Vo3qRs94t30hWvHGZcPBpMXURZXR2OhuXQHIXo9iL6qdfPZdI+Xtc0pD9rv/Wl4HMADw==
+length: 2947
 -->
