@@ -2,13 +2,14 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.001.002 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.002.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 주요 기능
 
 - **AI 사용량:** ChatGPT 구독의 Codex 한도와 Claude 한도를 사용률 또는 잔여량으로 표시합니다. 초기화까지 남은 시간, 갱신 시각, 서버에서 제공하는 크레딧·추가 한도를 확인할 수 있습니다.
+- **이용 플랜:** 현황·상세·계정에서 서버가 제공하는 플랜명을 표시합니다. 결제 금액·다음 결제일은 제공하지 않으며 확인되지 않은 플랜은 추정하지 않습니다.
 - **사용량 알림:** 설정한 잔여량 기준을 한도 주기에서 처음 넘을 때 알립니다. 초기화 완료 알림과 방해금지 시간을 지원합니다.
 - **공식 서비스 상태:** [Claude Status](https://status.claude.com/)와 [OpenAI Status](https://status.openai.com/)를 1분마다 확인합니다. 새 장애, 진행 상황 변경, 복구를 알려주고 같은 업데이트를 반복해서 알리지 않습니다.
 - **기록·분석:** 연속 기록은 계단형 선 그래프로, 단독 관측과 최신 값은 점으로 표시합니다. 조회 공백·초기화·재실행 구간은 연결하지 않습니다. 충분한 관측이 있을 때 소진 예상과 주간 요약을 제공합니다.
@@ -33,7 +34,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.001.002.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.002.000.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 계정**에서 본인의 계정을 연결합니다.
 
@@ -41,12 +42,19 @@ Claude는 본인 로그인 세션을 사용합니다. ChatGPT 항목은 **Codex 
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.001.002**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.002.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+
+## 개발 후원 · 불편 접수
+
+설정의 앱 관리 화면 상단에서 [PayPal로 개발 후원](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)을 할 수 있습니다. 후원은 선택이며 모든 기능을 그대로 사용할 수 있습니다.
+
+오류나 개선 의견은 **scoutkorea@kakao.com**으로 보내주세요. 앱의 **불편 접수 메일 쓰기** 버튼은 메일 작성 창만 열며 자동 전송하거나 진단 정보를 첨부하지 않습니다.
 
 ## English
 
 **Quotly puts AI usage and Mac activity in your menu bar.** Requires Apple Silicon and macOS 13 or later. Korean and English interfaces are available.
 
+- View recognized server-reported plan names in Overview, details and account settings. Payment amounts and renewal dates are not provided.
 - View used or remaining **Codex subscription limits** and Claude usage, reset countdowns, server-reported credits and additional limits.
 - Receive first-crossing quota alerts, reset alerts, and official **Claude / OpenAI incident updates** checked every minute.
 - Open the status row on Overview for active incidents and recent official updates. Configure each provider under **Settings → Notifications → Official service status**. Enable the app's main notifications switch and macOS notification permission for banners.
@@ -57,9 +65,11 @@ Claude는 본인 로그인 세션을 사용합니다. ChatGPT 항목은 **Codex 
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.001.002.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. A supported local Codex installation and sign-in are required for Codex usage. Public service-status checks need no account.
+Download **Quotly-V1.002.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. A supported local Codex installation and sign-in are required for Codex usage. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
+
+Feedback: **scoutkorea@kakao.com**. App management settings include a prominent PayPal support button and an email-composer button. Support is optional; feedback is never sent automatically.
 
 ## 배포 저장소 / Distribution repository
 
