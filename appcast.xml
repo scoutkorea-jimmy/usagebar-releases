@@ -4,32 +4,30 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.001.001</title>
-            <pubDate>Tue, 29 Sep 2026 23:51:47 +0900</pubDate>
-            <sparkle:version>217</sparkle:version>
-            <sparkle:shortVersionString>1.001.001</sparkle:shortVersionString>
+            <title>1.001.002</title>
+            <pubDate>Wed, 30 Sep 2026 13:27:58 +0900</pubDate>
+            <sparkle:version>218</sparkle:version>
+            <sparkle:shortVersionString>1.001.002</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.001.001 · 공식 서비스 상태 알림
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.001.002
 
-- Claude와 OpenAI 공식 상태를 1분마다 확인합니다.
-- 현황 상단의 서비스 상태 줄에서 현재 장애와 최근 공식 발표를 볼 수 있습니다.
-- 설정 → 알림에서 Claude / OpenAI 장애·복구 알림을 각각 선택할 수 있습니다.
-- 신규 장애, 진행 상황 변경, 복구 시 알리며 동일 업데이트는 재실행 후에도 중복 알림하지 않습니다.
-- 잠자기·오프라인·일시정지에서는 조회를 멈추고, 확인 실패 시 이전 상태와 확인 지연을 표시합니다.
-- Claude 조회 오류·공식 장애 중에는 메뉴바 사용량을 C 장애 또는 C 조회 오류로 표시하고, 복구 후 새 값을 받은 뒤 다시 표시합니다. 고정 폭은 유지합니다.
-- 한국어·영어 안내 및 설정 백업을 지원합니다. 공식 발표 본문은 원문으로 표시합니다.
+- 사용량 추이를 연속 구간의 계단형 선으로 명확하게 표시합니다. 모든 관측점에 겹쳐 그리던 점은 제거하고 단독 관측과 최신 값만 점으로 표시합니다.
+- 같은 계정·한도의 기록을 갱신할 때 그래프를 비우지 않아 깜박임을 줄였습니다. 계정이나 한도를 바꾸면 이전 기록은 즉시 숨깁니다.
+- 조회 공백·초기화·재실행으로 나뉜 구간은 계속 분리합니다. 관측하지 않은 사용량을 임의로 연결하거나 보정하지 않습니다.
+- ChatGPT와 Claude 웹 사용량을 동일 기준으로 대조했습니다. 새로고침 후 일치했으며 사용률 계산에 임의 보정은 넣지 않았습니다.
 
-Official Claude and OpenAI service status is checked every minute. Open the status row on Overview for incidents and recent updates, and configure provider alerts in Settings → Notifications. Repeated updates are deduplicated across restarts. Failed checks retain the last known status and retry with backoff. Polling pauses during sleep, offline periods and app pause.
+English
+- Usage history now emphasizes continuous stepped lines, with dots only for isolated observations and the latest value.
+- Refreshing the same history selection keeps the graph visible; switching accounts or quotas clears the previous selection immediately.
+- Real observation gaps, resets and restarts remain separate. No usage values are estimated or artificially adjusted.
 
-버전 V1.001.001 / 업데이트 빌드 217. 최신 버전으로 바로 업데이트합니다. 앱 실행 및 macOS 알림 허용이 필요합니다.
-
-메뉴바 오류 문구 뒤에 정상 사용량·초기화 시간용 빈칸을 남기지 않도록 수정했습니다. 정상 수치 갱신 시의 고정 폭은 유지합니다. 메뉴바 도움말도 이전 퍼센트 대신 오류 상태를 표시합니다.
+기존 버전에서 이번 최신 버전으로 바로 업데이트할 수 있습니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.001.001/Quotly-V1.001.001.zip" length="3793482" type="application/octet-stream" sparkle:edSignature="OW+f/xQq1PVO+QoGPgaOPrUeDBZvMrMKQ6N6oBZtf+hq7tBry5+jenY/VepmE2Eimg4Ztrdkr7to9k48jXHlDQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.001.002/Quotly-V1.001.002.zip" length="3796599" type="application/octet-stream" sparkle:edSignature="w0GroXx7MUMP0qMJqs3hP4YMUdTo/nFH5PZCmW4yHzzOQHVB4VN63Fi0VofEJg2u2n9tTqID6QE01HVw83vRDw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: vfRlmpsBigojwi/6//Vo3qRs94t30hWvHGZcPBpMXURZXR2OhuXQHIXo9iL6qdfPZdI+Xtc0pD9rv/Wl4HMADw==
-length: 2947
+edSignature: d8rwsKBOuleAw2vFicitNXAMl7EETSIYm8zUFmpJzGyKSYkCw0cyg0l3gmRYpC0aVVMEdAjEYfAC6nM4I+CSAg==
+length: 2452
 -->
