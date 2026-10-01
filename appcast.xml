@@ -4,28 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.004.000</title>
-            <pubDate>Thu, 01 Oct 2026 10:58:02 +0900</pubDate>
-            <sparkle:version>221</sparkle:version>
-            <sparkle:shortVersionString>1.004.000</sparkle:shortVersionString>
+            <title>1.004.001</title>
+            <pubDate>Thu, 01 Oct 2026 11:03:54 +0900</pubDate>
+            <sparkle:version>222</sparkle:version>
+            <sparkle:shortVersionString>1.004.001</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.000
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.001
 
-- 앱 화면과 메뉴바 글꼴을 엘리스 디지털 배움체로 변경했습니다. 제목·강조에는 Bold, 본문에는 Regular를 사용합니다.
-- 한글·영문 UI, 설정·알림·기록·그래프 축과 메뉴바 배지에 같은 글꼴을 적용했습니다. macOS가 제공하는 시스템 대화상자와 로그인 웹페이지는 해당 시스템·서비스 글꼴을 사용합니다.
-- 메뉴바 항목의 고정폭과 구분선 배치는 유지합니다.
-- 원본 폰트와 라이선스를 앱에 포함하므로 별도 폰트 설치가 필요하지 않습니다.
+- 여러 볼륨 이름이 연결된 드라이브는 마지막 이름만 표시하여 선택 화면의 줄바꿈을 줄였습니다. 예: Slave_Backup / Slave_Backup_4TB / 무제 2 → 무제 2.
+- 드라이브 선택, 순서 편집, 메뉴바 드라이브 설정에 동일하게 적용됩니다.
 
-English
-- App-owned screens and menu-bar text now use Elice Digital Baeum Regular and Bold.
-- Consistent typography covers Korean/English settings, history, chart axes and menu badges. System dialogs and service login webpages retain their native fonts.
-- Existing fixed-width menu-bar layout is preserved. Original font files and license are bundled; no system font installation is required.
+Multiple-volume drive labels now show only the final name. Drive selection and ordering are preserved.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.000/Quotly-V1.004.000.zip" length="4580132" type="application/octet-stream" sparkle:edSignature="6sPIcmmLU/7R9y7ltSHARuGwF37dxrqPqSwjs+qGsCToeTSLVJtHBdAxk4IDVuBYSBIUiW2880AhakAVuUAOBw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.001/Quotly-V1.004.001.zip" length="4580171" type="application/octet-stream" sparkle:edSignature="1aPhdwu6e6aF7wBmjwRRKW176h4LwME2Jfl5qlW65F97sKTCDe+fpiXpZ302jFkrg7Le12QtB7rGBYtQB594BA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 5kxgGEV4WIS51hH2mm5PFadgc+K9L0cz0krctt+Koc8i/dRh991SWauRFV54i2d5Jt1stEgKTweGLEnAYz81Cg==
-length: 2231
+edSignature: tYqv/ZxdNQA1B1zBApN6WwMurq+vr157KoJvOvE1TeBBuI5TrnXnv0y5zgC+Rb1fx+jAYznndZWJBXoFqeYdBA==
+length: 1650
 -->
