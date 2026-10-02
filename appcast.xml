@@ -4,25 +4,28 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.004.003</title>
-            <pubDate>Fri, 02 Oct 2026 11:14:29 +0900</pubDate>
-            <sparkle:version>224</sparkle:version>
-            <sparkle:shortVersionString>1.004.003</sparkle:shortVersionString>
+            <title>1.004.004</title>
+            <pubDate>Fri, 02 Oct 2026 11:24:37 +0900</pubDate>
+            <sparkle:version>225</sparkle:version>
+            <sparkle:shortVersionString>1.004.004</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.003
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.004
 
-- Claude 로그인 창 재호출 시 진행 중인 로그인 페이지를 유지하고 최소화된 창을 복원합니다.
-- 로그인 창에 로딩 상태, 오류 안내 및 다시 시도 버튼을 추가했습니다.
-- 자동 갱신이 진행 중인 로그인 페이지를 다시 불러오거나 중단하지 않도록 수정했습니다.
-- 실제 화면에 없던 연결 확인 버튼 안내를 새로고침 안내로 바로잡았습니다.
+- 계정 연결을 상세 화면 최상단에 배치하고 연결 전에는 초기화 쿠폰을 숨깁니다.
+- 현황 화면의 ChatGPT 로그인 버튼에서 바로 로그인을 시작합니다.
+- 설치 버튼을 Codex 설치하기로 변경했습니다.
+- 브라우저 자동 실행이 실패해도 로그인 세션을 유지하며 브라우저 다시 열기와 로그인 링크 복사를 제공합니다.
+- 로그인 준비와 인증 대기 시간을 분리하고 단계별 실패 안내를 추가했습니다.
+- Finder에서 실행한 앱이 npm으로 설치한 Codex의 실행 환경을 찾도록 보완했습니다.
+- 인증 완료 후 다른 서비스 갱신과 관계없이 Codex 사용량을 확인합니다.
 
-Claude sign-in now preserves existing authentication pages, restores minimized windows, shows loading and failure guidance with Retry, and prevents background refresh from interrupting sign-in.
+Sign-in now appears first, coupons stay hidden before account connection, and the setup button reads Install Codex. Added live sign-in link recovery, bounded preparation, stage-specific errors and immediate post-login usage refresh.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.003/Quotly-V1.004.003.zip" length="4587313" type="application/octet-stream" sparkle:edSignature="8+byCeUULbeIfq00dxHMozcmDcerWOFVv2Bta7ltljsnD31ees8ivjv5sZqXC+ZwDE88GWAXmPQCAVMz5NOZBQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.004/Quotly-V1.004.004.zip" length="4596865" type="application/octet-stream" sparkle:edSignature="u+ROAQ7ERBKvGVl5nUaJwsez2qJGagnpLTbwkMzlWqUKkEJqw0D7qN0Cs1HAWksE18zFvH4aDESxd/rWCEyvAg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: xIbk4WCIWL38AjYtDzUfuTLTirSAvw9F92oD/pn1LWsGh0YZMvh/htFa88WJlr4SoYrNfCTTNT6y5LTiPsgNCQ==
-length: 1891
+edSignature: eVsCqxTlm1ZRl5yezlbgmBF9NDVCRZOlIgq/FiZRXSarKWulHvzn0m3CFqkqlZTns9B/foTgbyDYm2wIa+cvBA==
+length: 2205
 -->
