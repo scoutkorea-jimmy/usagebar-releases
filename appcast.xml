@@ -4,25 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.004.006</title>
-            <pubDate>Fri, 02 Oct 2026 11:40:33 +0900</pubDate>
-            <sparkle:version>227</sparkle:version>
-            <sparkle:shortVersionString>1.004.006</sparkle:shortVersionString>
+            <title>1.004.007</title>
+            <pubDate>Fri, 02 Oct 2026 11:47:38 +0900</pubDate>
+            <sparkle:version>228</sparkle:version>
+            <sparkle:shortVersionString>1.004.007</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.006
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.007
 
-- ChatGPT 로그인 안내를 독립된 창으로 분리했습니다. 브라우저로 이동해도, 인증이 즉시 실패해도 안내 창은 유지됩니다.
-- 자동 사용량 갱신이 로그인 실패 안내를 덮어쓰지 않도록 했습니다.
-- Safari에서 열기 및 로그인 상태가 포함된 진단 정보 복사를 추가했습니다.
-- 창을 다시 열거나 로그인 버튼을 반복해서 눌러도 진행 중인 인증을 중복 실행하지 않습니다.
+- Codex 실행 파일을 찾지 못했는데 로그인 버튼이 계속 표시되던 문제를 수정했습니다.
+- 연결 전에 설치 상태를 확인하며, 미설치·미인식 상태에서는 Codex 설치하기와 설치 확인을 제공합니다.
+- 응용 프로그램 폴더 설치 안내를 추가했습니다.
+- V1.004.006의 독립 로그인 창, 실패 안내 유지, Safari 대체 열기 및 로그인 진단 개선이 포함됩니다.
 
-ChatGPT sign-in now uses a persistent window, retaining status through browser focus changes and immediate authentication failure. Added Safari fallback and sign-in diagnostics.
+Codex installation is now checked before sign-in. Missing installations show Install Codex and Check installation instead of starting an immediately failing login. Includes the persistent sign-in window and Safari fallback.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.006/Quotly-V1.004.006.zip" length="4606061" type="application/octet-stream" sparkle:edSignature="ZfQKHgZ/7zL9jVtEgwxI8WzkElGKOlLgFV7bN7NZS9bP1jhYSyhorzbVRtmoLWg1dhMXC3G6Gi8hYGJ8idrgAw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.007/Quotly-V1.004.007.zip" length="4612554" type="application/octet-stream" sparkle:edSignature="nP9D+z5KoBcD3v5iM/jX8D/EndlkcjYpFP5Q5kmryUKqVZu80kGwM87EU2+06tkkBHm7kQZ1jQ+j5/QBTf9wBw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: wcbiq29SCq9crUXn33Gws5s6kAAptNbEGPC/4z8kZGDBtMastFPfE5Z3EXYyD8HvKgm6m0iUMSPbzLKUzdQWBQ==
-length: 1911
+edSignature: +qw9xJLrWBPxTXNXUHvuiVexDfS5bSXNncBbAmlB6SoYdj7zSev8A2RxvFuaBW6tg7w1e1ryx8pYfoK0GewgBA==
+length: 1926
 -->
