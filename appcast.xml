@@ -4,13 +4,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.006.000</title>
-            <pubDate>Fri, 02 Oct 2026 13:04:12 +0900</pubDate>
-            <sparkle:version>234</sparkle:version>
-            <sparkle:shortVersionString>1.006.000</sparkle:shortVersionString>
+            <title>1.007.000</title>
+            <pubDate>Fri, 02 Oct 2026 13:18:48 +0900</pubDate>
+            <sparkle:version>235</sparkle:version>
+            <sparkle:shortVersionString>1.007.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.006.000
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.007.000
 
 - 하단 더 보기 → 작은 모니터링 창, 또는 설정 → 앱에서 별도 창을 열 수 있습니다.
 - 메뉴바와 같은 사용량·네트워크·디스크 데이터를 표시합니다. 추가 조회나 별도 모니터링 작업을 시작하지 않습니다.
@@ -19,18 +19,27 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
 
 ## English
 - Open Mini monitor from More or Settings → App.
-- Share the same live AI, network and disk data and visibility preferences as the menu bar, with no extra polling.
+- Share the same live AI, network and disk data and data sources as the menu bar, with no extra polling.
 - Toggle Always on top with the pin button; remember window position and size.
 - The window stays on the regular desktop and does not overlay other apps in full screen.
 
-작은 창은 AI 사용량 막대와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
+작은 창은 AI 사용량 원형 차트와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
 
-The mini window shows AI usage bars and the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
+The mini window shows AI usage rings and the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
+
+- AI 원형 차트를 한 줄에 배치하고, 설정 → 작은 창에서 각 서비스의 표시 한도를 별도로 선택할 수 있습니다. 메뉴바 선택을 따르는 옵션도 제공합니다.
+- 밝은 원형 바탕, 앱 강조색을 따르는 얇은 링, 중앙 퍼센트와 서비스명으로 정리했습니다.
+
+- 설정 → 앱 → 앱 색상에서 시스템·라이트·다크 모드와 10가지 색상 견본·시스템 강조색·사용자 지정 색상을 선택할 수 있습니다. 메인 화면과 작은 창에 함께 적용됩니다.
+- Choose system/light/dark appearance and ten color swatches, the system accent or a custom color in Settings → App. Both windows share the selection.
+
+- 설정 → 작은 창에서 ChatGPT Codex·Claude·네트워크·디스크 표시를 각각 켜거나 끕니다. 메뉴바 표시와 독립적입니다.
+- Settings → Mini window controls AI, network and disk visibility independently of the menu bar, plus each service’s ring quota.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.006.000/Quotly-V1.006.000.zip" length="4663678" type="application/octet-stream" sparkle:edSignature="EvXMTWkOhudQ0ntK2iFSBzkpuqzFNdLlcGdUvK6GLtiqe7lIDpOwdXKf+1sEcYkEO2U4s2iGCjTKdcqtVy2PCQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.007.000/Quotly-V1.007.000.zip" length="4715136" type="application/octet-stream" sparkle:edSignature="p0vaio3RhmUaK8FpUl4InSKqgZlLy8a+VUebOkExTzXLh5M+SsZDLRY1eyRvsMtOg0WWFirVzGLvaNej8JEBCQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: P1jLUMV/ft4WdULsdtINZ0s06+weq1pEaX/G5d7mKNZtWaOyt6gBKuLcLS2/wJnzwUUGyasoXCSX1ADA2q5jBQ==
-length: 2527
+edSignature: pwazU+ELO8qXbuxH+F/zGi9EMiAUDEapc4JmeXNterjZsdM/ue3AdseHXXUlN3pJKJxkpETWr22r2H+CNVpxCQ==
+length: 3527
 -->
