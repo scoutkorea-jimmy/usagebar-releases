@@ -2,7 +2,7 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.007.003 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.007.004 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
@@ -36,19 +36,27 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.007.003.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.007.004.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
 
 **Claude:** CLI나 Claude 앱을 설치할 필요가 없습니다. Quotly의 **Claude 로그인** 창에서 본인 계정으로 로그인한 뒤 앱에서 새로고침하세요.
 
-**ChatGPT · Codex:** 최신 ChatGPT 데스크톱 앱에 포함된 Codex와 기존 Codex 앱·CLI를 자동으로 찾습니다. 연결 화면에 찾은 도구가 표시됩니다. 로그인 완료 후에는 사용량과 연결됨 상태를 표시하고 연결 관리는 접어둡니다. 로그아웃은 연결 관리를 펼쳐 실행할 수 있습니다. 브라우저·터미널 로그인 결과가 반영되지 않으면 ‘로그인 결과 다시 확인’을 누르세요. 실행 파일이 없으면 **ChatGPT 데스크톱 설치하기 → 응용 프로그램 폴더로 이동 → 설치 확인 → ChatGPT 로그인** 순서로 연결하세요. Codex가 포함된 앱이 있으면 CLI를 따로 설치할 필요가 없습니다. 이전 대화 전용 ChatGPT 앱이나 웹 로그인만으로는 연결되지 않습니다.
+**ChatGPT · Codex:** 최신 ChatGPT 데스크톱 앱에 포함된 Codex와 OpenAI 서명이 확인되는 기존 Codex 실행 파일을 자동으로 찾습니다. 서명이 없거나 변조된 CLI·실행 파일은 실행하지 않습니다. 연결 화면에 찾은 도구가 표시됩니다. 로그인 완료 후에는 사용량과 연결됨 상태를 표시하고 연결 관리는 접어둡니다. 로그아웃은 연결 관리를 펼쳐 실행할 수 있습니다. 브라우저·터미널 로그인 결과가 반영되지 않으면 ‘로그인 결과 다시 확인’을 누르세요. 실행 파일이 없으면 **ChatGPT 데스크톱 설치하기 → 응용 프로그램 폴더로 이동 → 설치 확인 → ChatGPT 로그인** 순서로 연결하세요. Codex가 포함된 앱이 있으면 CLI를 따로 설치할 필요가 없습니다. 이전 대화 전용 ChatGPT 앱이나 웹 로그인만으로는 연결되지 않습니다.
 
 ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시지 잔여 횟수는 지원하지 않습니다. Codex 연결에는 지원되는 로컬 Codex 설치와 로그인 환경이 필요합니다. 공식 상태 조회에는 계정 로그인이 필요하지 않습니다.
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.007.003**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.007.004**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+
+## 로그인 보안
+
+- Claude 로그인 창은 Claude·Google·Apple의 지정된 HTTPS 로그인 주소만 허용합니다. 실제 접속 중인 호스트를 창 제목에 표시하며, 알 수 없는 기업 SSO 주소는 현재 지원하지 않습니다.
+- ChatGPT Codex는 OpenAI 서명이 확인되는 실행 파일만 사용합니다. Quotly에서 실행하는 사용량 조회는 공식 ChatGPT 주소로 고정하며, 사용자의 Codex 설정 파일은 변경하지 않습니다.
+- 사용 기록·상태 기록은 사용자 전용 접근 권한으로 저장합니다. 진단 보고에는 비밀번호·인증 토큰·이메일·대화·원본 오류 응답을 넣지 않습니다.
+- Quotly가 비밀번호를 직접 수집하거나 저장하지는 않지만, Claude 로그인 세션은 이 Mac의 WebKit 저장소에 유지되고 Codex 인증은 공식 Codex가 관리합니다. 감염된 Mac 또는 같은 사용자 권한의 악성 프로그램에 대한 완전한 보호를 보장하지 않습니다.
+- 현재 Apple Developer ID 서명·공증은 없습니다. 업데이트 피드·배포 패키지의 Ed25519 서명 검증은 유지합니다.
 
 ## 글꼴
 
@@ -75,9 +83,11 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.007.003.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly detects Codex bundled with the current ChatGPT desktop app, legacy Codex apps, or a standalone CLI. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.007.004.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
+
+Claude sign-in windows accept only designated HTTPS Claude, Google and Apple hosts and show the current host in the native title. Unknown enterprise SSO providers are currently blocked. Codex helpers require a valid OpenAI signature; usage requests pin the official ChatGPT base URL without changing your Codex config. History and status files use owner-only permissions. Quotly does not collect passwords directly; Claude sessions persist in this Mac's WebKit store and Codex manages its own credentials. This does not guarantee protection against malware running as your OS user or a compromised Mac.
 
 Feedback: **scoutkorea@kakao.com**. App management settings include a prominent PayPal support button and an email-composer button. Support is optional; feedback is never sent automatically.
 
