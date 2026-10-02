@@ -4,28 +4,33 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.005.000</title>
-            <pubDate>Fri, 02 Oct 2026 12:53:08 +0900</pubDate>
-            <sparkle:version>233</sparkle:version>
-            <sparkle:shortVersionString>1.005.000</sparkle:shortVersionString>
+            <title>1.006.000</title>
+            <pubDate>Fri, 02 Oct 2026 13:04:12 +0900</pubDate>
+            <sparkle:version>234</sparkle:version>
+            <sparkle:shortVersionString>1.006.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.005.000
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.006.000
 
-- 설정 → 앱과 하단 더 보기에서 ‘오류 보고’를 열 수 있습니다.
-- 앱·macOS 버전, 갱신 상태, 최근 상태 기록을 미리 확인한 뒤 이메일을 작성하거나 복사할 수 있습니다.
-- 메일은 scoutkorea@kakao.com 앞으로 작성하며 실제 전송은 사용자가 직접 합니다. 메일 작성 기능을 사용할 수 없으면 보고서를 복사합니다.
-- 계정, 로그인 토큰, 대화, 파일 경로와 원본 오류 응답은 제외합니다. 기존 진단 복사·파일 저장도 같은 보고서 형식을 사용합니다.
+- 하단 더 보기 → 작은 모니터링 창, 또는 설정 → 앱에서 별도 창을 열 수 있습니다.
+- 메뉴바와 같은 사용량·네트워크·디스크 데이터를 표시합니다. 추가 조회나 별도 모니터링 작업을 시작하지 않습니다.
+- 핀 버튼으로 항상 위 표시를 켜고 끌 수 있습니다. 창 위치와 크기를 기억하고 닫은 뒤 다시 열 수 있습니다.
+- 일반 데스크톱에서 사용하며 다른 앱의 전체 화면에는 겹쳐 표시하지 않습니다. 정식 WidgetKit 위젯은 포함하지 않습니다.
 
 ## English
-- Add Report an issue under Settings → App and the More menu.
-- Preview diagnostics before composing an email to scoutkorea@kakao.com or copying the report. Sending remains manual.
-- Reuse the same privacy-filtered diagnostics for copy, export and issue reports. No accounts, tokens, conversations, paths or raw error responses are included.
+- Open Mini monitor from More or Settings → App.
+- Share the same live AI, network and disk data and visibility preferences as the menu bar, with no extra polling.
+- Toggle Always on top with the pin button; remember window position and size.
+- The window stays on the regular desktop and does not overlay other apps in full screen.
+
+작은 창은 AI 사용량 막대와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
+
+The mini window shows AI usage bars and the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.005.000/Quotly-V1.005.000.zip" length="4643437" type="application/octet-stream" sparkle:edSignature="bIIbW96GHKyGSwaF6oJ5PM8ZOhUMzIHyJXnoAALvovLYgjzgI8x1bbvxcL2T20FZpE0TnwD8u9Vij7SU/J8bBA=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.006.000/Quotly-V1.006.000.zip" length="4663678" type="application/octet-stream" sparkle:edSignature="EvXMTWkOhudQ0ntK2iFSBzkpuqzFNdLlcGdUvK6GLtiqe7lIDpOwdXKf+1sEcYkEO2U4s2iGCjTKdcqtVy2PCQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 7prwCGa34I4BiIgAamtP9h4sAt5gpg3y7uFj0jv8h3VZRBs55PveOyo2oy1cuYkmMZa2pCfSCgXk08ZodMkJDg==
-length: 2193
+edSignature: P1jLUMV/ft4WdULsdtINZ0s06+weq1pEaX/G5d7mKNZtWaOyt6gBKuLcLS2/wJnzwUUGyasoXCSX1ADA2q5jBQ==
+length: 2527
 -->
