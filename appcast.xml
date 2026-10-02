@@ -1,48 +1,37 @@
-<?xml version="1.0" standalone="yes"?>
-<!-- sparkle-sign-warning:
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
--->
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.007.000</title>
-            <pubDate>Fri, 02 Oct 2026 13:18:48 +0900</pubDate>
-            <sparkle:version>235</sparkle:version>
-            <sparkle:shortVersionString>1.007.000</sparkle:shortVersionString>
+            <title>1.007.001</title>
+            <pubDate>Fri, 02 Oct 2026 13:42:01 +0900</pubDate>
+            <sparkle:version>236</sparkle:version>
+            <sparkle:shortVersionString>1.007.001</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.007.000
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.007.001
 
-- 하단 더 보기 → 작은 모니터링 창, 또는 설정 → 작은 창에서 별도 창을 열 수 있습니다.
-- 메뉴바와 같은 사용량·네트워크·디스크 데이터를 표시합니다. 추가 조회나 별도 모니터링 작업을 시작하지 않습니다.
-- 핀 버튼으로 항상 위 표시를 켜고 끌 수 있습니다. 창 위치와 크기를 기억하고 닫은 뒤 다시 열 수 있습니다.
-- 일반 데스크톱에서 사용하며 다른 앱의 전체 화면에는 겹쳐 표시하지 않습니다. 정식 WidgetKit 위젯은 포함하지 않습니다.
+- 작은 창에서 만료된 한도 아래 다른 한도의 수치가 표시될 수 있던 문제를 수정했습니다. 연결·오류·새 한도 확인 상태를 명확히 표시합니다.
+- 네트워크·디스크 그래프에 마지막 측정 시각과 정상·지연·연결 끊김 상태를 표시합니다.
+- 예정된 점검을 현재 장애로 잘못 처리하지 않으며, 오래된 장애 정보가 최신 정상 사용량을 가리지 않도록 했습니다.
+- 색상·언어·작은 창 설정을 백업·복원·되돌리기에 포함했습니다. 기존 백업과 호환됩니다.
+- 사용자 지정 색상은 원래 선택값을 보존하면서 글씨·차트의 대비를 보정합니다.
+- 쿠폰 응답을 놓친 경우 서버가 정확한 쿠폰의 사용 완료를 확인해 주면 읽기 전용으로 대기 요청을 정리합니다. 새 사용과 재요청의 95% 조건은 유지됩니다.
 
 ## English
-- Open Mini monitor from More or Settings → Mini window.
-- Share the same live AI, network and disk data as the menu bar, with no extra polling.
-- Toggle Always on top with the pin button; remember window position and size.
-- The window stays on the regular desktop and does not overlay other apps in full screen.
 
-작은 창은 AI 사용량 원형 차트와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
-
-The mini window shows AI usage rings and the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
-
-- AI 원형 차트를 한 줄에 배치하고, 설정 → 작은 창에서 각 서비스의 표시 한도를 별도로 선택할 수 있습니다. 메뉴바 선택을 따르는 옵션도 제공합니다.
-- 밝은 원형 바탕, 앱 강조색을 따르는 얇은 링, 중앙 퍼센트와 서비스명으로 정리했습니다.
-
-- 설정 → 앱 → 앱 색상에서 시스템·라이트·다크 모드와 10가지 색상 견본·시스템 강조색·사용자 지정 색상을 선택할 수 있습니다. 메인 화면과 작은 창에 함께 적용됩니다.
-- Choose system/light/dark appearance and ten color swatches, the system accent or a custom color in Settings → App. Both windows share the selection.
-
-- 설정 → 작은 창에서 ChatGPT Codex·Claude·네트워크·디스크 표시를 각각 켜거나 끕니다. 메뉴바 표시와 독립적입니다.
-- Settings → Mini window controls AI, network and disk visibility independently of the menu bar, plus each service’s ring quota.
+- Prevent expired mini-window quotas from showing another quota’s values. Show clear connection/error/pending states.
+- Add last-success and delayed/disconnected status to network and disk charts.
+- Keep scheduled maintenance distinct from active incidents; stale incident data no longer hides a newer successful quota response.
+- Include language, appearance and mini-window preferences in compatible backup/restore/undo.
+- Preserve custom swatches while adjusting rendered ink for readability.
+- Reconcile an uncertain coupon request only when a fresh response confirms that exact credit was redeemed. No extra spending request is sent, and the 95% usage gate remains.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.007.000/Quotly-V1.007.000.zip" length="4715136" type="application/octet-stream" sparkle:edSignature="p0vaio3RhmUaK8FpUl4InSKqgZlLy8a+VUebOkExTzXLh5M+SsZDLRY1eyRvsMtOg0WWFirVzGLvaNej8JEBCQ=="/>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.007.001/Quotly-V1.007.001.zip" length="4723927" type="application/octet-stream" sparkle:edSignature="GCpQlS8oaCHFSo7DOvQmCHAsnaCRifFHkpax+2NxiFax+SE5ArhwhrjcXoNaeKZG3aVjv+Bzq1Y1+8JQyi4PAg=="></enclosure>
         </item>
     </channel>
-</rss>
-<!-- sparkle-signatures:
-edSignature: a4xCGyF8RVdFwCxOF2gJGwwZ4yzcOQpLpOkcTS4FyEAsU3Uc5oJdxYKOhr+EcvEIAyJ0NNGojGnjsnApAaNoBg==
-length: 3517
+</rss><!-- sparkle-signatures:
+edSignature: 4u8/kU9zWJ2mqTXHfeOSmLzKUPCrTHHTed5+k05n0UbN1pS7k635xZNCz6GYrAq4yxLhj6IeX2U8QNAdiUunCA==
+length: 2854
 -->
