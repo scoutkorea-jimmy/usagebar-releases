@@ -4,26 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.007.004</title>
-            <pubDate>Sat, 03 Oct 2026 03:43:38 +0900</pubDate>
-            <sparkle:version>239</sparkle:version>
-            <sparkle:shortVersionString>1.007.004</sparkle:shortVersionString>
+            <title>1.007.005</title>
+            <pubDate>Sat, 03 Oct 2026 03:50:06 +0900</pubDate>
+            <sparkle:version>240</sparkle:version>
+            <sparkle:shortVersionString>1.007.005</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.007.004
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.007.005
 
-- 초기화 쿠폰이 없으면 “쿠폰 없음”으로 표시합니다. 쿠폰이 없는 상태에서 사용 버튼과 95% 조건 안내가 보이지 않습니다.
-- 사용한 쿠폰 개수 표시는 제거했습니다. 진행 중인 요청 확인과 계정별 쿠폰 상태 기록은 유지합니다.
-- Claude 로그인 창의 공식 로그인 주소·리디렉션·팝업 검증을 강화했습니다.
-- Codex 실행 파일의 OpenAI 서명과 권한을 확인하고, 인증 요청 목적지를 공식 서비스로 고정했습니다.
-- 앱 기록 파일의 접근 권한과 심볼릭 링크 방어를 강화했습니다.
-
-이 업데이트는 전체 앱 패키지를 제공하므로 이전 버전에서도 최신 버전으로 바로 업데이트할 수 있습니다. ARM64 Mac, macOS 13 이상. 서명되지 않은 CLI 래퍼와 허용 목록 밖의 기업 SSO는 지원되지 않을 수 있습니다.
+- 초기화 쿠폰 버튼이 항상 표시됩니다. 쿠폰이 없으면 “사용 가능한 쿠폰이 없습니다”로 비활성화됩니다.
+- 쿠폰이 있으면 “잔여 쿠폰 #개 있습니다 · 사용하시겠습니까?”로 실제 확인된 잔여 수량을 표시합니다.
+- 긴 버튼 문구는 줄바꿈으로 표시하며 한국어·영어를 지원합니다.
+- 사용 시 기존 95% 조건, 서버 재확인, 직접 승인 및 진행 중인 요청 재확인 절차를 유지합니다. 사용한 쿠폰 개수는 표시하지 않습니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.007.004/Quotly-V1.007.004.zip" length="4735045" type="application/octet-stream" sparkle:edSignature="WcoAqDrNLhsLkP98eHVQQbPg4S1qnrkqUaew0j9RN0Bu3Co1dLvOPssCz6ePRMHyfewiNK0zVv/3sYEJCa26Dw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.007.005/Quotly-V1.007.005.zip" length="4735805" type="application/octet-stream" sparkle:edSignature="4W4LQQz6TWspzbxxkWqltqH/lbHRNNCPLHG91GWYdw44JphRwCVPdKqAtCyJpph+lfJB5W0TL17QKkJSgKOvAQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 5hNmTQNK1qbunvyeB3X7m45koD3pDRJMP96YYCV7EMnEt+FlmjoyXPPfNfpeLhyvb6SleeZGB6CBffH55eXUBg==
-length: 2158
+edSignature: s5fBzpL5cZFQSgowy+CSjQV+7vElWbdbYEye6sd1mL7u9np5WPaOzYL68FKR/Gq+kMAqv+B29xI/adzqoPMADg==
+length: 1809
 -->
