@@ -4,28 +4,28 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.004.011</title>
-            <pubDate>Fri, 02 Oct 2026 12:38:25 +0900</pubDate>
-            <sparkle:version>232</sparkle:version>
-            <sparkle:shortVersionString>1.004.011</sparkle:shortVersionString>
+            <title>1.005.000</title>
+            <pubDate>Fri, 02 Oct 2026 12:53:08 +0900</pubDate>
+            <sparkle:version>233</sparkle:version>
+            <sparkle:shortVersionString>1.005.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.011
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.005.000
 
-- 하단 탐색을 현황·모니터링 두 탭으로 정리했습니다.
-- 상단 ‘표시 항목’을 톱니바퀴 설정 버튼으로 바꿨습니다. 메뉴바 표시 항목을 포함한 모든 설정은 여기에서 관리합니다.
-
-- 하단 ‘접기’ 버튼으로 모니터링을 유지하면서 메뉴바 창만 닫을 수 있습니다.
+- 설정 → 앱과 하단 더 보기에서 ‘오류 보고’를 열 수 있습니다.
+- 앱·macOS 버전, 갱신 상태, 최근 상태 기록을 미리 확인한 뒤 이메일을 작성하거나 복사할 수 있습니다.
+- 메일은 scoutkorea@kakao.com 앞으로 작성하며 실제 전송은 사용자가 직접 합니다. 메일 작성 기능을 사용할 수 없으면 보고서를 복사합니다.
+- 계정, 로그인 토큰, 대화, 파일 경로와 원본 오류 응답은 제외합니다. 기존 진단 복사·파일 저장도 같은 보고서 형식을 사용합니다.
 
 ## English
-- Simplify bottom navigation to Overview and Monitoring.
-- Replace the top Display items shortcut with a Settings gear, which contains all preferences including menu bar items.
-- Add an explicit Collapse button; monitoring continues in the background.
+- Add Report an issue under Settings → App and the More menu.
+- Preview diagnostics before composing an email to scoutkorea@kakao.com or copying the report. Sending remains manual.
+- Reuse the same privacy-filtered diagnostics for copy, export and issue reports. No accounts, tokens, conversations, paths or raw error responses are included.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.011/Quotly-V1.004.011.zip" length="4641963" type="application/octet-stream" sparkle:edSignature="K0OnKF8PZ4Ho2KAzBa71E7UD635J11mCJrJteXLl6MvK4FK3lgVXW1t6ih/OGns01E3pk1KzDHuHuUpkDXAwBQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.005.000/Quotly-V1.005.000.zip" length="4643437" type="application/octet-stream" sparkle:edSignature="bIIbW96GHKyGSwaF6oJ5PM8ZOhUMzIHyJXnoAALvovLYgjzgI8x1bbvxcL2T20FZpE0TnwD8u9Vij7SU/J8bBA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: N/MZVlCz4ZRHtBoZIKSpzdN9iI+JNlE6yg0PPVMnlOOSW10x+K888NMfMNaEmN4tTB23h9TWQDGKUvp+pd7kBQ==
-length: 1865
+edSignature: 7prwCGa34I4BiIgAamtP9h4sAt5gpg3y7uFj0jv8h3VZRBs55PveOyo2oy1cuYkmMZa2pCfSCgXk08ZodMkJDg==
+length: 2193
 -->
