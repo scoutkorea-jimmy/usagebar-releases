@@ -2,7 +2,7 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.007.005 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.007.006 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
@@ -15,7 +15,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 - **사용량 알림:** 설정한 잔여량 기준을 한도 주기에서 처음 넘을 때 알립니다. 초기화 완료 알림과 방해금지 시간을 지원합니다.
 - **공식 서비스 상태:** [Claude Status](https://status.claude.com/)와 [OpenAI Status](https://status.openai.com/)를 1분마다 확인합니다. 새 장애, 진행 상황 변경, 복구를 알려주고 같은 업데이트를 반복해서 알리지 않습니다.
 - **기록·분석:** 연속 기록은 계단형 선 그래프로, 단독 관측과 최신 값은 점으로 표시합니다. 조회 공백·초기화·재실행 구간은 연결하지 않습니다. 충분한 관측이 있을 때 소진 예상과 주간 요약을 제공합니다.
-- **초기화 소식·쿠폰:** 공개 초기화 소식과 내 계정에서 확인되는 Codex 쿠폰 현황·이력을 보여줍니다. 쿠폰은 조건을 충족하고 사용자가 확인한 경우에만 사용합니다.
+- **초기화 소식·쿠폰:** 공개 초기화 소식과 내 계정에서 확인되는 Codex 쿠폰 현황·이력을 보여줍니다. 쿠폰은 사용자가 직접 승인한 경우에만 요청합니다. 95% 미만에서도 사용할 수 있으며, 남은 한도와 쿠폰 소모에 관한 추가 확인이 필요합니다.
 - **Mac 모니터링:** 네트워크 업로드·다운로드(Mbps), 선택한 드라이브의 읽기·쓰기(MB/s), 최근 10분 그래프를 확인합니다.
 - **메뉴바 맞춤 설정:** 필요한 항목, 글자 크기, 간격, 드라이브를 선택할 수 있습니다.
 - **앱 내 업데이트:** 서명된 업데이트 피드와 패키지를 확인하는 Sparkle 자동 업데이트를 지원합니다.
@@ -36,7 +36,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.007.005.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.007.006.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
 
@@ -48,7 +48,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.007.005**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.007.006**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 로그인 보안
 
@@ -83,7 +83,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.007.005.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.007.006.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
