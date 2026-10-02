@@ -4,25 +4,32 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.004.008</title>
-            <pubDate>Fri, 02 Oct 2026 11:55:29 +0900</pubDate>
-            <sparkle:version>229</sparkle:version>
-            <sparkle:shortVersionString>1.004.008</sparkle:shortVersionString>
+            <title>1.004.009</title>
+            <pubDate>Fri, 02 Oct 2026 12:09:34 +0900</pubDate>
+            <sparkle:version>230</sparkle:version>
+            <sparkle:shortVersionString>1.004.009</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.008
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.009
 
-- 별도 CLI가 없는 환경에서 두 서비스 연결 흐름을 점검했습니다.
-- GPT 연결 시 Codex 앱을 예전 ChatGPT 앱 내부 실행 파일보다 우선 인식합니다.
-- Codex 앱이 있으면 CLI를 따로 설치할 필요가 없고, Claude는 CLI나 별도 앱이 필요 없다는 안내를 추가했습니다.
-- README의 계정 연결 경로와 서비스별 설치 절차를 수정했습니다.
+- GPT 사용량 조회 실패·미연결·로그인·오프라인 상태를 메뉴바에 명확하게 표시합니다. 이전 숫자를 현재 값처럼 보여주지 않습니다.
+- 네트워크 측정 주기를 변경해도 디스크 측정과 그래프를 재시작하지 않습니다.
+- macOS 알림 권한 응답이 늦게 도착해도 사용자가 마지막으로 선택한 알림 설정을 유지합니다.
+- 로그인 링크 복사 결과를 표시하고, Safari를 찾지 못하면 기본 브라우저로 연결합니다.
+- Claude 인증 창이 비정상 종료되면 다시 시도할 수 있도록 안내합니다.
 
-Audited first-time connection without standalone CLIs. Prefer the dedicated Codex app over legacy ChatGPT helpers, clarify each service’s installation requirements, and update setup documentation.
+기존 로그인·사용량·쿠폰 안전장치·알림 중복 방지·기록/분석·백업·디스크/네트워크·서비스 상태 검사와 실제 읽기 경로를 재점검했습니다.
+
+## English
+- Show explicit GPT connection, login, offline, waiting and query-error states in the menu bar instead of stale percentages.
+- Keep disk monitoring uninterrupted when changing the network sampling interval.
+- Preserve the user's latest notification choice while macOS permission requests are pending.
+- Confirm login-link copying, fall back to the default browser if Safari is unavailable, and explain how to retry a crashed Claude authentication window.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.008/Quotly-V1.004.008.zip" length="4612923" type="application/octet-stream" sparkle:edSignature="GJ9Q0yatMbZYdfk62bY6mEohmy5nY0PsoNSSaUWRt0EURlI5beg0FwzNITaFObrJHKM6t4xc0x5Wv2JZBsIjCQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.009/Quotly-V1.004.009.zip" length="4613726" type="application/octet-stream" sparkle:edSignature="YCYWWoivHEh0Rr4218SNpK+S3PpLSYNsQomkHxUZTdX1H2Z6a49+AG6xSD5bs52W9P9d+Gi+GW0CaZ1BTn3cDg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8LSKoOcHYEXWyujlPhYDxzU+ID9FESd7YmH+jAJchyBVSh3SWfEouCQzpBwr4fjlHDNqlhX64HLovp5v7Bv4Dw==
-length: 1869
+edSignature: j27aSoT0JmzbN55/9H/q+nqGZQRo9PJy2jXIe+NAGuwPKqkCxkZxCeOHX1vqXguZZiarO+SR+CSr871xKZk3AQ==
+length: 2536
 -->
