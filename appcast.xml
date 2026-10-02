@@ -1,6 +1,8 @@
-<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+<?xml version="1.0" standalone="yes"?>
+<!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
---><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+-->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Quotly</title>
         <item>
@@ -12,14 +14,14 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[# Quotly V1.007.000
 
-- 하단 더 보기 → 작은 모니터링 창, 또는 설정 → 앱에서 별도 창을 열 수 있습니다.
+- 하단 더 보기 → 작은 모니터링 창, 또는 설정 → 작은 창에서 별도 창을 열 수 있습니다.
 - 메뉴바와 같은 사용량·네트워크·디스크 데이터를 표시합니다. 추가 조회나 별도 모니터링 작업을 시작하지 않습니다.
 - 핀 버튼으로 항상 위 표시를 켜고 끌 수 있습니다. 창 위치와 크기를 기억하고 닫은 뒤 다시 열 수 있습니다.
 - 일반 데스크톱에서 사용하며 다른 앱의 전체 화면에는 겹쳐 표시하지 않습니다. 정식 WidgetKit 위젯은 포함하지 않습니다.
 
 ## English
-- Open Mini monitor from More or Settings → App.
-- Share the same live AI, network and disk data and data sources as the menu bar, with no extra polling.
+- Open Mini monitor from More or Settings → Mini window.
+- Share the same live AI, network and disk data as the menu bar, with no extra polling.
 - Toggle Always on top with the pin button; remember window position and size.
 - The window stays on the regular desktop and does not overlay other apps in full screen.
 
@@ -36,10 +38,11 @@ The mini window shows AI usage rings and the last ten minutes of network/disk ch
 - 설정 → 작은 창에서 ChatGPT Codex·Claude·네트워크·디스크 표시를 각각 켜거나 끕니다. 메뉴바 표시와 독립적입니다.
 - Settings → Mini window controls AI, network and disk visibility independently of the menu bar, plus each service’s ring quota.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.007.000/Quotly-V1.007.000.zip" length="4715136" type="application/octet-stream" sparkle:edSignature="p0vaio3RhmUaK8FpUl4InSKqgZlLy8a+VUebOkExTzXLh5M+SsZDLRY1eyRvsMtOg0WWFirVzGLvaNej8JEBCQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.007.000/Quotly-V1.007.000.zip" length="4715136" type="application/octet-stream" sparkle:edSignature="p0vaio3RhmUaK8FpUl4InSKqgZlLy8a+VUebOkExTzXLh5M+SsZDLRY1eyRvsMtOg0WWFirVzGLvaNej8JEBCQ=="/>
         </item>
     </channel>
-</rss><!-- sparkle-signatures:
-edSignature: pwazU+ELO8qXbuxH+F/zGi9EMiAUDEapc4JmeXNterjZsdM/ue3AdseHXXUlN3pJKJxkpETWr22r2H+CNVpxCQ==
-length: 3527
+</rss>
+<!-- sparkle-signatures:
+edSignature: a4xCGyF8RVdFwCxOF2gJGwwZ4yzcOQpLpOkcTS4FyEAsU3Uc5oJdxYKOhr+EcvEIAyJ0NNGojGnjsnApAaNoBg==
+length: 3517
 -->
