@@ -4,32 +4,34 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.004.009</title>
-            <pubDate>Fri, 02 Oct 2026 12:09:34 +0900</pubDate>
-            <sparkle:version>230</sparkle:version>
-            <sparkle:shortVersionString>1.004.009</sparkle:shortVersionString>
+            <title>1.004.010</title>
+            <pubDate>Fri, 02 Oct 2026 12:32:14 +0900</pubDate>
+            <sparkle:version>231</sparkle:version>
+            <sparkle:shortVersionString>1.004.010</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.009
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.010
 
-- GPT 사용량 조회 실패·미연결·로그인·오프라인 상태를 메뉴바에 명확하게 표시합니다. 이전 숫자를 현재 값처럼 보여주지 않습니다.
-- 네트워크 측정 주기를 변경해도 디스크 측정과 그래프를 재시작하지 않습니다.
-- macOS 알림 권한 응답이 늦게 도착해도 사용자가 마지막으로 선택한 알림 설정을 유지합니다.
-- 로그인 링크 복사 결과를 표시하고, Safari를 찾지 못하면 기본 브라우저로 연결합니다.
-- Claude 인증 창이 비정상 종료되면 다시 시도할 수 있도록 안내합니다.
+- 최신 ChatGPT 데스크톱 앱에 포함된 Codex 실행 파일의 새 위치를 인식합니다.
+- macOS에 등록된 앱 위치, 기존 Codex 앱, 별도 Codex CLI와 PATH의 실행 파일을 확인합니다.
+- 연결 화면에 실제 감지한 연결 도구를 표시하고, 설치 링크와 안내를 현재 공식 설치 페이지에 맞췄습니다.
+- Codex가 포함된 앱이 이미 있다면 별도 CLI 설치 없이 연결할 수 있습니다. 이전 대화 전용 ChatGPT 앱은 실행 파일 포함 여부에 따라 업데이트가 필요할 수 있습니다.
 
-기존 로그인·사용량·쿠폰 안전장치·알림 중복 방지·기록/분석·백업·디스크/네트워크·서비스 상태 검사와 실제 읽기 경로를 재점검했습니다.
+- 로그인 성공 후 ‘ChatGPT Codex 연결됨’과 실제 잔여량을 표시하고 연결 관리를 기본으로 접습니다. 다시 로그인하라는 버튼 대신 로그아웃을 제공합니다.
+- 로그인한 동일 연결에서 사용량을 확인하고, 브라우저·터미널 인증 후에는 ‘로그인 결과 다시 확인’으로 반영할 수 있습니다.
+- 로그인 완료 이벤트가 먼저 도착하는 경우를 처리하며, 로그아웃은 공유 Codex 인증에 영향을 줄 수 있음을 확인 후 실행합니다.
 
 ## English
-- Show explicit GPT connection, login, offline, waiting and query-error states in the menu bar instead of stale percentages.
-- Keep disk monitoring uninterrupted when changing the network sampling interval.
-- Preserve the user's latest notification choice while macOS permission requests are pending.
-- Confirm login-link copying, fall back to the default browser if Safari is unavailable, and explain how to retry a crashed Claude authentication window.
+- Detect the current nested Codex executable bundled with ChatGPT desktop, alongside legacy Codex apps and standalone CLI installations.
+- Discover the app through macOS registration and show the detected connection helper.
+- Correct installation instructions and links to match the current official desktop app.
+- Show verified usage after sign-in, collapse connection settings by default, and offer sign-out instead of another sign-in button.
+- Read quotas in the authenticated session and add an explicit saved-sign-in recovery check. Sign-out requires confirmation because Codex tools may share authentication.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.009/Quotly-V1.004.009.zip" length="4613726" type="application/octet-stream" sparkle:edSignature="YCYWWoivHEh0Rr4218SNpK+S3PpLSYNsQomkHxUZTdX1H2Z6a49+AG6xSD5bs52W9P9d+Gi+GW0CaZ1BTn3cDg=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.010/Quotly-V1.004.010.zip" length="4639208" type="application/octet-stream" sparkle:edSignature="im/B31Lx8h7HNzX/Mo4vmfZH/OfoHKfxcogmKKXoevcu6gkXxMbNHulc3e9j/nGgaKv+tU+Bc3A9DEhQBTrLBA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: j27aSoT0JmzbN55/9H/q+nqGZQRo9PJy2jXIe+NAGuwPKqkCxkZxCeOHX1vqXguZZiarO+SR+CSr871xKZk3AQ==
-length: 2536
+edSignature: rCBM2uN/xz0PH9EWB3uRS6YPgE/I4TnFKJaXDJD18R5a6lAxXjiQJ4GCvmvEa2dtMRiygDRrxoQNwJ+WsMldBQ==
+length: 3005
 -->
