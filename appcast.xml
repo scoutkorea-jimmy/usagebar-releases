@@ -4,25 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.004.002</title>
-            <pubDate>Fri, 02 Oct 2026 11:07:34 +0900</pubDate>
-            <sparkle:version>223</sparkle:version>
-            <sparkle:shortVersionString>1.004.002</sparkle:shortVersionString>
+            <title>1.004.003</title>
+            <pubDate>Fri, 02 Oct 2026 11:14:29 +0900</pubDate>
+            <sparkle:version>224</sparkle:version>
+            <sparkle:shortVersionString>1.004.003</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.002
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.004.003
 
-- 자동 갱신 중에도 ChatGPT 로그인을 시작할 수 있도록 수정했습니다.
-- 로그인 중 이전 조회 결과가 로그인 안내를 덮어쓰지 않도록 수정했습니다.
-- 사용자 Applications 폴더의 Codex 앱도 인식합니다.
-- Codex 설치 안내와 브라우저 실행 실패 안내를 추가했습니다.
+- Claude 로그인 창 재호출 시 진행 중인 로그인 페이지를 유지하고 최소화된 창을 복원합니다.
+- 로그인 창에 로딩 상태, 오류 안내 및 다시 시도 버튼을 추가했습니다.
+- 자동 갱신이 진행 중인 로그인 페이지를 다시 불러오거나 중단하지 않도록 수정했습니다.
+- 실제 화면에 없던 연결 확인 버튼 안내를 새로고침 안내로 바로잡았습니다.
 
-ChatGPT sign-in remains available during refresh. Added Codex setup guidance, user Applications discovery, and browser launch failure handling.
+Claude sign-in now preserves existing authentication pages, restores minimized windows, shows loading and failure guidance with Retry, and prevents background refresh from interrupting sign-in.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.002/Quotly-V1.004.002.zip" length="4582538" type="application/octet-stream" sparkle:edSignature="CHbBTOA8BOMDSfyih5HGwNl4xfYPNkc53s4Z60cBfM+wmCBkuoLBMBNOFJq0aqPC2pK+xMKdRhlZD3w2tVPECQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.004.003/Quotly-V1.004.003.zip" length="4587313" type="application/octet-stream" sparkle:edSignature="8+byCeUULbeIfq00dxHMozcmDcerWOFVv2Bta7ltljsnD31ees8ivjv5sZqXC+ZwDE88GWAXmPQCAVMz5NOZBQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 7Mx2uyc5wnFEffbatIAy6MwRbqEWK8fA4+OBFW/cotpWFsX2y7zSp2Zx1oFzcW35dbfTDlsLn+P2eNu1V5G0CA==
-length: 1737
+edSignature: xIbk4WCIWL38AjYtDzUfuTLTirSAvw9F92oD/pn1LWsGh0YZMvh/htFa88WJlr4SoYrNfCTTNT6y5LTiPsgNCQ==
+length: 1891
 -->
