@@ -4,20 +4,34 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.008.004</title>
-            <pubDate>Sat, 03 Oct 2026 20:48:57 +0900</pubDate>
-            <sparkle:version>246</sparkle:version>
-            <sparkle:shortVersionString>1.008.004</sparkle:shortVersionString>
+            <title>1.010.000</title>
+            <pubDate>Sun, 04 Oct 2026 04:47:34 +0900</pubDate>
+            <sparkle:version>249</sparkle:version>
+            <sparkle:shortVersionString>1.010.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[네트워크와 디스크 사이의 구분선을 사용량·잔여량 배지 앞으로 옮겼습니다. 구분선은 두 영역의 실제 콘텐츠 사이 중앙에 놓이며, 배지와 DISK 사이에는 구분선이 나타나지 않습니다. 용량 표시를 끈 경우의 기존 구분도 유지합니다.
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.010.000
 
-Fixed the disk divider to precede the Used/Free badge, centered between the network and disk groups.
+- 현황에서 AI 주요 한도를 간결하게 표시하고, 네트워크·디스크·잔여 용량·메모리 압박을 함께 확인할 수 있습니다.
+- 작업 화면을 저장하고 빠르게 전환할 수 있습니다. 표시 항목·순서·상세 모드·메뉴바 구성을 저장하며, 로그인 계정과 갱신 주기·알림 설정은 변경하지 않습니다.
+- 설정 → 알림에 예약 사용량 요약을 추가했습니다. 요일·시각·서비스·세션/주간 한도를 선택하고, 놓친 예약 생략 또는 최신 한 건 요약을 설정할 수 있습니다. 알림 권한이 없거나 방해금지 시간이어도 앱 안에 요약은 저장됩니다. 앱 실행 중에 동작합니다.
+- 설정 구역과 큰 글자 표시, 차트 범례를 정리하고 불편 접수 카드의 좌우 폭을 맞췄습니다.
+- 현재 구현된 개인용 기능에는 체험 기간·결제 제한이 없습니다. 작업 시간·선택 로그 분석·새 자료 이전은 아직 포함되지 않습니다.
+
+기존 버전에서 중간 버전 설치 없이 바로 업데이트할 수 있습니다.
+
+검증: 전체 회귀 검사 1,284개 및 카드 렌더링 검사 3개 통과. 현재 macOS 실제 전체 창 검증과 외부 코드 리뷰는 완료되지 않았습니다. Apple Silicon/macOS 13 이상용이며, Developer ID 서명·공증은 적용되지 않았습니다.
+
+### English
+
+Saved workspaces, scheduled usage summaries, memory pressure, a simpler overview, and consistent settings/card layouts. Scheduled summaries run while the app is open and retain observation times and unavailable/stale states. Existing personal features have no trial or payment restriction. Work-time tracking, selected log analysis and new portable-data transfer are not included yet.
+
+1,284 regression checks and 3 card-render checks passed. Full installed-window verification and independent code review remain incomplete. Apple Silicon/macOS 13+; Developer ID signing/notarization is not applied.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.008.004/Quotly-V1.008.004.zip" length="4754018" type="application/octet-stream" sparkle:edSignature="+6oCilEWxT/IIAdCOJOln4KnXexxO6KT7fvLuTJwgOci0RkZh0ETlUz3Pc0//XNc4bOR8oDBnmMSP8515F6PCQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.010.000/Quotly-V1.010.000.zip" length="4909445" type="application/octet-stream" sparkle:edSignature="/VVGT2e/Wz3L/bcnmPg+vGSkwD9awI2giuNLoMbqku+bPf4F3HumHP+H8C0+x5PhQYxQIQF7aKtLDIIhHFveCw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: hm3ufJ2CU4z4W9Cl8Y4J6CUqSMYQCDR9M5ijan2T+aQ045/IBZz6Dv3R9v8glTxe+cekJ5+3CHSCXc87jvVdDg==
-length: 1641
+edSignature: oFgtzYf2O+SgWAdwSFmDBhEA8J0cMDXRdY6MK9Ab6Xisg972eC40cFCqrC3ccn4BC5DMlZftONa8DekccegcAw==
+length: 3258
 -->
