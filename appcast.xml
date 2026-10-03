@@ -4,24 +4,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.008.001</title>
-            <pubDate>Sat, 03 Oct 2026 20:25:58 +0900</pubDate>
-            <sparkle:version>243</sparkle:version>
-            <sparkle:shortVersionString>1.008.001</sparkle:shortVersionString>
+            <title>1.008.002</title>
+            <pubDate>Sat, 03 Oct 2026 20:37:51 +0900</pubDate>
+            <sparkle:version>244</sparkle:version>
+            <sparkle:shortVersionString>1.008.002</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.008.001
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.008.002
 
-- 메뉴바의 디스크 용량 숫자·전체 용량(분모)·퍼센트를 각각 켜고 끌 수 있습니다.
-- 숫자는 사용 용량/잔여 용량, 퍼센트는 사용 비율/잔여 비율을 별도로 고를 수 있습니다.
-- 숫자와 퍼센트의 기준이 다르면 USED/FREE 표시로 비율의 의미를 구분합니다.
-- 숫자를 끄면 퍼센트만 표시하고 분모 옵션은 비활성화합니다. 숫자와 퍼센트를 모두 끄면 용량 항목을 숨깁니다.
-- 기존 선택 드라이브, 비동기 1분 갱신, 표시 폭 안정화와 설정·프리셋 호환을 유지합니다.
+- 메뉴바 디스크 용량 앞에 GPT와 같은 스타일의 사용량/잔여량 배지를 표시합니다. 영어는 Used/Free로 표시합니다.
+- 배지와 용량 숫자 사이 간격은 AI 배지와 동일하게 맞췄습니다.
+- 용량 설정의 기본 화면을 기준 선택과 숫자+비율/숫자만/비율만 선택으로 정리했습니다.
+- 숫자·분모·퍼센트 개별 옵션과 독립 기준은 기본적으로 접힌 ‘세부 표시 조정’ 안에 유지합니다.
+- 퍼센트만 표시할 때는 배지도 해당 비율의 기준을 따르며, 접근성 읽기와 툴팁에도 용량 정보를 추가했습니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.008.001/Quotly-V1.008.001.zip" length="4750352" type="application/octet-stream" sparkle:edSignature="JiUzk7dTRTrgO1U9nDgcs7PrukCYz6+gj/c0qeZb1L4pJrgrtPdrOrDb0C6yOPpKYmmbn0MqCao22MzYEgXBBA=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.008.002/Quotly-V1.008.002.zip" length="4753472" type="application/octet-stream" sparkle:edSignature="WWPVQ9ujBA4qHv6BdkoTEGnJ1JYgIkBJaP8700T/g3xC02CeOjnmwR+cDRkNtoCWDPrgwe5/CZiSfIqDSV48AA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: cGL67Im6zTbR3LlEmm4LGTxrCymFjzr02qixLF5kz+Khq6V7yIsnvS10ruF4M4P997Tuc0fagTgptY/zP768CQ==
-length: 1860
+edSignature: yzjKhtytc+lj78ZTbI4WpbI/XWJ2Y3OwMPMYYEluzgA+1SzuWTY5JkvjamOwFZXZyXgxGydqrSTAxfGy2iEtCg==
+length: 1893
 -->
