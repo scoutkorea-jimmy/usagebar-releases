@@ -4,24 +4,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.007.006</title>
-            <pubDate>Sat, 03 Oct 2026 03:59:41 +0900</pubDate>
-            <sparkle:version>241</sparkle:version>
-            <sparkle:shortVersionString>1.007.006</sparkle:shortVersionString>
+            <title>1.008.000</title>
+            <pubDate>Sat, 03 Oct 2026 20:17:48 +0900</pubDate>
+            <sparkle:version>242</sparkle:version>
+            <sparkle:shortVersionString>1.008.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.007.006
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.008.000
 
-- 초기화 쿠폰을 95% 미만에서도 직접 사용 요청할 수 있습니다.
-- 95% 미만 사용은 일반 확인 후 “한도가 남아 있으며 쿠폰 사용은 취소·복구할 수 없다”는 추가 경고에 동의해야 진행됩니다.
-- 서버에서 다시 조회한 사용률이 95% 미만으로 바뀌면, 추가 동의가 없는 요청은 사용하지 않고 안내합니다.
-- 계정 확인, 최신 한도 확인, 쿠폰 수량 확인, 취소 기본값과 동일 요청 번호를 이용한 중복 사용 방어는 유지합니다.
-- 자동 쿠폰 사용 제안은 기존처럼 실제 사용량이 100%에 도달할 때만 표시합니다.
+- 메뉴바에 선택한 드라이브의 용량 / 전체 용량과 비율을 표시합니다.
+- 사용 용량(사용 %) 또는 잔여 용량(잔여 %)을 설정에서 선택할 수 있으며, 기본은 사용 용량입니다.
+- 설정 → 메뉴바 → 디스크 표시에서 읽기·쓰기·용량을 각각 선택하고 메뉴바 드라이브를 지정할 수 있습니다.
+- 용량은 선택한 볼륨 기준이며, 기존 수집기로 1분마다 백그라운드 갱신합니다. 연결 해제·조회 지연·확인 불가 시 숫자 대신 —로 표시합니다.
+- 전체 용량을 기준으로 숫자 표시 폭을 잡고, 한국어·영어와 기존 설정·프리셋 호환을 유지합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.007.006/Quotly-V1.007.006.zip" length="4738284" type="application/octet-stream" sparkle:edSignature="JdyDNO3DF9r5J9k3JUxg93aIbZFIJ1vXOB5CfoPG5+ANVxzgM2NaZyEwzHR5SuuaYeKYHSUtRJ/thU29qIg0Dg=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.008.000/Quotly-V1.008.000.zip" length="4744869" type="application/octet-stream" sparkle:edSignature="BWmYJ/W461XLZK/NVBZeWC51X6GSpPEpApZDj2R9JBPvaf0XGWEjY/mlxnr6torLCMEoXShqZsZVlMQaLLS8CA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: a31Mlhd+/ARt11AJXI0SdR1oiVhjLTTx4hKFiDF+acKJ+ynF4S9OvO1FwEOZalzpRc79WDcvF2pG+ddKX/dmBw==
-length: 1913
+edSignature: pHZoXFQD0hAVi3m+9p49GqEwnAMQsWWu5fcBSkMcpsYn977CIR/gFnwZ0Qfk5LfS/b2jTY/9GC3GM8OVpctrAg==
+length: 1954
 -->
