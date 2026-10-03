@@ -2,7 +2,7 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.008.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.008.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
@@ -17,7 +17,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 - **기록·분석:** 연속 기록은 계단형 선 그래프로, 단독 관측과 최신 값은 점으로 표시합니다. 조회 공백·초기화·재실행 구간은 연결하지 않습니다. 충분한 관측이 있을 때 소진 예상과 주간 요약을 제공합니다.
 - **초기화 소식·쿠폰:** 공개 초기화 소식과 내 계정에서 확인되는 Codex 쿠폰 현황·이력을 보여줍니다. 쿠폰은 사용자가 직접 승인한 경우에만 요청합니다. 95% 미만에서도 사용할 수 있으며, 남은 한도와 쿠폰 소모에 관한 추가 확인이 필요합니다.
 - **Mac 모니터링:** 네트워크 업로드·다운로드(Mbps), 선택한 드라이브의 읽기·쓰기(MB/s), 최근 10분 그래프를 확인합니다.
-- **디스크 용량:** 메뉴바에서 선택한 드라이브의 사용 용량 또는 잔여 용량 / 전체 용량과 해당 비율을 표시합니다. 볼륨 기준으로 1분마다 갱신하며, 설정 → 메뉴바에서 표시 여부와 기준을 바꿉니다.
+- **디스크 용량:** 메뉴바에서 선택한 드라이브의 사용 용량 또는 잔여 용량 / 전체 용량과 해당 비율을 표시합니다. 볼륨 기준으로 1분마다 갱신하며, 설정 → 메뉴바에서 용량 숫자·전체 용량(분모)·퍼센트를 각각 선택합니다. 숫자와 퍼센트는 사용/잔여 기준을 따로 지정할 수 있습니다.
 - **메뉴바 맞춤 설정:** 필요한 항목, 글자 크기, 간격, 드라이브를 선택할 수 있습니다.
 - **앱 내 업데이트:** 서명된 업데이트 피드와 패키지를 확인하는 Sparkle 자동 업데이트를 지원합니다.
 
@@ -37,7 +37,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.008.000.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.008.001.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
 
@@ -49,7 +49,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.008.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.008.001**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 로그인 보안
 
@@ -84,7 +84,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.008.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.008.001.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
@@ -123,4 +123,4 @@ Choose system, light or dark appearance and an accent color in Settings → App.
 작은 창은 설정 → 작은 창에서 표시 항목과 원형 차트의 한도를 고릅니다. 강조색은 10가지 견본 또는 사용자 지정 색상을 지원합니다.
 Mini window contents and ring quotas have their own settings. Ten accent swatches and a custom color picker are available.
 
-Disk capacity: show used or free space / total volume capacity and the matching percentage for the menu bar drive. Configure it in Settings → Menu bar. Refreshes every minute in the background.
+Disk capacity: show used or free space / total volume capacity and the matching percentage for the menu bar drive. Configure numbers, total capacity, percentage and separate used/free modes in Settings → Menu bar. Refreshes every minute in the background.
