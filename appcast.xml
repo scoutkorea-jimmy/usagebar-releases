@@ -4,20 +4,20 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.008.003</title>
-            <pubDate>Sat, 03 Oct 2026 20:45:47 +0900</pubDate>
-            <sparkle:version>245</sparkle:version>
-            <sparkle:shortVersionString>1.008.003</sparkle:shortVersionString>
+            <title>1.008.004</title>
+            <pubDate>Sat, 03 Oct 2026 20:48:57 +0900</pubDate>
+            <sparkle:version>246</sparkle:version>
+            <sparkle:shortVersionString>1.008.004</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[디스크 영역의 사용량·잔여량 배지를 DISK 왼쪽으로 옮겨, 배지 → DISK → 읽기·쓰기 속도 → 용량 순서로 표시합니다.
+            <description sparkle:format="markdown"><![CDATA[네트워크와 디스크 사이의 구분선을 사용량·잔여량 배지 앞으로 옮겼습니다. 구분선은 두 영역의 실제 콘텐츠 사이 중앙에 놓이며, 배지와 DISK 사이에는 구분선이 나타나지 않습니다. 용량 표시를 끈 경우의 기존 구분도 유지합니다.
 
-Moved the Used/Free badge before DISK for a clear disk-section reading order.
+Fixed the disk divider to precede the Used/Free badge, centered between the network and disk groups.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.008.003/Quotly-V1.008.003.zip" length="4753557" type="application/octet-stream" sparkle:edSignature="UlVif64UAJoUzhP4MGMzJdRliGeH0FqcuyRpD9MeFNGsZq6LlNTXahR1hcaeJ3rhKXLVClSUi0yFZFtuAuDdDA=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.008.004/Quotly-V1.008.004.zip" length="4754018" type="application/octet-stream" sparkle:edSignature="+6oCilEWxT/IIAdCOJOln4KnXexxO6KT7fvLuTJwgOci0RkZh0ETlUz3Pc0//XNc4bOR8oDBnmMSP8515F6PCQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: liXwksbayKAJygyMl/+fBvDhe0WLsQz+gCbFue+HlODS+ulqNcYdH2ZLAcykNp+rgNtG4BSzlspamuri4n2LBA==
-length: 1466
+edSignature: hm3ufJ2CU4z4W9Cl8Y4J6CUqSMYQCDR9M5ijan2T+aQ045/IBZz6Dv3R9v8glTxe+cekJ5+3CHSCXc87jvVdDg==
+length: 1641
 -->
