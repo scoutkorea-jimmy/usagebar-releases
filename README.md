@@ -2,15 +2,16 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.010.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.011.003 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
-상단 **톱니바퀴 설정 버튼**에서 메뉴바 표시 항목·갱신·알림·계정을 관리합니다. 하단 탐색은 **현황·모니터링** 두 화면으로 구성됩니다.
+상단 **톱니바퀴 설정 버튼**에서 메뉴바 표시 항목·갱신·알림·계정을 관리합니다. 하단 탐색은 **현황·모니터링·작업 시간** 세 화면으로 구성됩니다. 작업 시간은 ⌘3으로도 열 수 있습니다.
 
 ## 주요 기능
 
-- **작업 화면:** 간단 확인·AI 작업·영상 작업 구성을 선택하거나 현재 화면을 저장합니다. 항목 표시·순서·상세도를 편집하고 메뉴바 구성을 함께 저장할 수 있습니다. 로그인 계정·갱신 주기·알림은 바뀌지 않습니다.
+- **작업 시간:** 하단 작업 시간 또는 ⌘3에서 프로젝트·작업을 시작하고 일시정지·재개·종료합니다. 일별 합계와 전체 CSV 내보내기를 지원합니다. 앱이 깨어 있는 동안 관측한 시간만 기록하고 잠자기·재시작 후에는 직접 재개합니다. 강제 종료·느린 저장에서는 마지막 미저장 시간이 일부 유실될 수 있습니다.
+- **화면 구성:** 간단 확인·AI 작업·영상 작업 구성을 선택하거나 현재 화면을 저장합니다. 항목 표시·순서·상세도를 편집하고 메뉴바 구성을 함께 저장할 수 있습니다. 로그인 계정·갱신 주기·알림은 바뀌지 않습니다.
 - **예약 사용량 요약:** 설정 → 알림에서 요일·시각·서비스·세션/주간 한도를 선택합니다. 놓친 예약은 생략하거나 최신 한 건만 요약합니다. 앱 실행 중에 동작하고, 알림 권한이 없거나 방해금지 시간이어도 앱 안에 요약을 저장합니다. 관측 시각·이전 값·오류 상태를 함께 보여줍니다.
 - **메모리 압박:** macOS가 보고한 정상·주의·높음 상태를 10초마다 확인합니다. 값을 얻지 못했거나 오래된 결과는 확인 불가로 표시합니다.
 
@@ -42,23 +43,23 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.010.000.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.011.003.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
 
 **Claude:** CLI나 Claude 앱을 설치할 필요가 없습니다. Quotly의 **Claude 로그인** 창에서 본인 계정으로 로그인한 뒤 앱에서 새로고침하세요.
 
-**ChatGPT · Codex:** 최신 ChatGPT 데스크톱 앱에 포함된 Codex와 OpenAI 서명이 확인되는 기존 Codex 실행 파일을 자동으로 찾습니다. 서명이 없거나 변조된 CLI·실행 파일은 실행하지 않습니다. 연결 화면에 찾은 도구가 표시됩니다. 로그인 완료 후에는 사용량과 연결됨 상태를 표시하고 연결 관리는 접어둡니다. 로그아웃은 연결 관리를 펼쳐 실행할 수 있습니다. 브라우저·터미널 로그인 결과가 반영되지 않으면 ‘로그인 결과 다시 확인’을 누르세요. 실행 파일이 없으면 **ChatGPT 데스크톱 설치하기 → 응용 프로그램 폴더로 이동 → 설치 확인 → ChatGPT 로그인** 순서로 연결하세요. Codex가 포함된 앱이 있으면 CLI를 따로 설치할 필요가 없습니다. 이전 대화 전용 ChatGPT 앱이나 웹 로그인만으로는 연결되지 않습니다.
+**ChatGPT · Codex:** 최신 ChatGPT 데스크톱 앱에 포함된 Codex와 OpenAI 서명이 확인되는 기존 Codex 실행 파일을 자동으로 찾습니다. 서명이 없거나 변조된 CLI·실행 파일은 실행하지 않습니다. 연결 화면에 찾은 도구가 표시됩니다. 로그인 완료 후에는 사용량과 연결됨 상태를 표시하고 연결 관리는 접어둡니다. 로그아웃은 연결 관리를 펼쳐 실행할 수 있습니다. 브라우저·터미널 로그인 결과가 반영되지 않으면 ‘로그인 결과 다시 확인’을 누르세요. 실행 파일이 없으면 **ChatGPT 데스크톱 설치하기 → 응용 프로그램 폴더로 이동 → 설치 확인 → ChatGPT Codex 로그인** 순서로 연결하세요. Codex가 포함된 앱이 있으면 CLI를 따로 설치할 필요가 없습니다. 이전 대화 전용 ChatGPT 앱이나 웹 로그인만으로는 연결되지 않습니다.
 
 ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시지 잔여 횟수는 지원하지 않습니다. Codex 연결에는 지원되는 로컬 Codex 설치와 로그인 환경이 필요합니다. 공식 상태 조회에는 계정 로그인이 필요하지 않습니다.
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.010.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.011.003**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 이번 버전의 확인 범위
 
-전체 회귀 검사 1,284개와 카드 렌더링 검사 3개를 통과했습니다. 실제 설치 앱의 전체 창 검증과 독립 코드 리뷰는 완료되지 않았습니다. 현재 구현된 개인용 기능은 기간·결제 제한 없이 사용할 수 있습니다. 작업 시간 기록·선택 로그 분석·새 자료 이전은 아직 제공하지 않습니다.
+전체 회귀 검사 1,364개를 통과하고 현재 코드에 대한 독립 리뷰를 완료했습니다. 모니터 설정 변경 12,000회, 창 반복 동작, 로그인 보조 프로세스 고장·취소 등을 격리 환경에서 검사했습니다. 실제 설치 앱의 전체 창 직접 조작과 다른 Mac의 실계정 로그인 검증은 완료하지 못했습니다. 현재 개인용 기능에는 기간·결제 제한이 없습니다. 선택 로그 분석·새 자료 이전은 아직 제공하지 않습니다.
 
 ## 로그인 보안
 
@@ -82,6 +83,8 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 **Quotly puts AI usage and Mac activity in your menu bar.** Requires Apple Silicon and macOS 13 or later. Korean and English interfaces are available.
 
+- Track work time from the bottom tab or Cmd3: start, pause, resume, finish, daily totals and complete CSV export. Only observed time is counted; sleep/restart pauses and requires manual resume. Crash or slow storage may lose the latest checkpoint.
+- Save and switch screen layouts without changing account, refresh or notification settings.
 - View recognized server-reported plan names in Overview, details and account settings. Claude shows an explicit next payment date, falling back to a confirmed monthly/annual cycle. Missing billing details are omitted; the current ChatGPT integration supplies none.
 - View used or remaining **Codex subscription limits** and Claude usage, reset countdowns, server-reported credits and additional limits.
 - Receive first-crossing quota alerts, reset alerts, and official **Claude / OpenAI incident updates** checked every minute.
@@ -93,11 +96,13 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.010.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.011.003.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
 Claude sign-in windows accept only designated HTTPS Claude, Google and Apple hosts and show the current host in the native title. Unknown enterprise SSO providers are currently blocked. Codex helpers require a valid OpenAI signature; usage requests pin the official ChatGPT base URL without changing your Codex config. History and status files use owner-only permissions. Quotly does not collect passwords directly; Claude sessions persist in this Mac's WebKit store and Codex manages its own credentials. This does not guarantee protection against malware running as your OS user or a compromised Mac.
+
+Validation: 1,364 regression checks passed and a current-code independent review was completed. Isolated stress tests covered 12,000 monitor configurations, repeated window lifecycles and helper failures/cancellations. Full installed-window interaction and real-account login on another Mac remain unverified.
 
 Feedback: **scoutkorea@kakao.com**. App management settings include a prominent PayPal support button and an email-composer button. Support is optional; feedback is never sent automatically.
 
