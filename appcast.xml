@@ -4,30 +4,30 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.014.001</title>
-            <pubDate>Sun, 04 Oct 2026 19:42:32 +0900</pubDate>
-            <sparkle:version>263</sparkle:version>
-            <sparkle:shortVersionString>1.014.001</sparkle:shortVersionString>
+            <title>1.014.002</title>
+            <pubDate>Sun, 04 Oct 2026 19:52:49 +0900</pubDate>
+            <sparkle:version>264</sparkle:version>
+            <sparkle:shortVersionString>1.014.002</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.014.001
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.014.002
 
-- 메뉴바 CPU와 RAM 사이에도 구분선을 표시합니다. AI·CPU·RAM·네트워크·디스크의 모든 그룹 구분선은 같은 좌우 간격을 사용합니다.
-- 최대 숫자 폭을 미리 확보하던 방식 대신 실제 표시 문자열 폭을 사용해 항목마다 남는 여백이 달라지던 문제를 수정했습니다. 숫자가 바뀌면 메뉴바 전체 폭도 내용에 맞춰 조정됩니다.
-- DISK와 용량 숫자는 G/C와 퍼센트 사이처럼 한 칸으로 연결합니다.
+- 업데이트 확인 버튼을 계속 비활성화하던 흐름을 수정했습니다. 진행 중 누른 요청은 버리지 않고 작업 완료 후 실행하며, 표준 업데이트 창과 진행 상태를 바로 표시합니다.
+- 상태 조회는 실제 조회를 시작할 수 있을 때만 실행합니다. 실행되지 않은 조회를 ‘확인 중’으로 남겨 두지 않습니다. 설치 후 재실행 시에도 서명된 최신 피드를 확인해 최신이면 ‘최신 상태입니다’를 표시합니다.
+- 업데이트 엔진의 시작 실패를 표시하고 다시 누르면 재시도합니다. 조회 실패나 호환 불가를 최신 상태로 표시하지 않습니다.
 
-검증: 표시 검사158개, 한국어·영어31개 항목 조합, 반복갱신10,000회, native 샘플 렌더링 확인. 실제 맥북에어 메뉴바 및 설치 재시작은 미검증. 기존 계정·측정기·설정 선택은 보존합니다.
+검증: 요청 대기·중복·우선순위14개 및 delegate15개 검사 통과. 격리된 native 앱에서 실제 서명 피드를 조회해 최신 상태 표시와 버튼 활성 복구를 확인했습니다. 계정·쿠폰·설치·재시작은 실행하지 않았으며 맥북에어 실물 업데이트 과정은 미검증입니다.
 
 ### English
 
-CPU and RAM now have a divider between them. All measurement-group dividers use equal padding on both sides. Visible text widths replace unused sizing reservations, preventing inconsistent gaps. The menu width adjusts to actual readings. DISK and capacity use one space, matching AI labels and values.
+The update button stays actionable. Requests made during an ongoing check are retained and run when SDK availability recovers. Manual actions use the standard update/progress UI directly; passive status checks wait for an idle session. Relaunching probes the signed feed and shows “Up to date” when confirmed. Startup failure is reported and can be retried; errors are never shown as current.
 
-158 presentation checks passed, including 31 combinations in both languages, 10,000 unchanged updates and native sample rendering. Actual MacBook Air menu display and installation restart remain unverified.
+14 request-queue checks and 15 delegate checks passed. An isolated native app queried the actual signed feed and confirmed up-to-date status and recovered availability. No accounts, credits, installation or restart were exercised; actual MacBook Air installation remains unverified.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.014.001/Quotly-V1.014.001.zip" length="5179440" type="application/octet-stream" sparkle:edSignature="LstI8gc0jb1kNtmnCZy0tHcyPI6zbL36j5M9lwAuL2bDsvuGm6KSMTd3qMOBbDPbD/JWZ/R5xqMrdJQEWFgRDw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.014.002/Quotly-V1.014.002.zip" length="5180054" type="application/octet-stream" sparkle:edSignature="OhlIPGTz5XN0gjBRCz/8z3zrBFj7wqPxKshiwJ4OzpZPGrlTcXcfy1FbhzPTNg5JA7yVn+S6IbNYfleW4pO/Cg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: H/Ch3XaJIEihCPtz8wYMxljFVS96i1l5zYeTFqkvPV6ItH9MhE5mczTTrqwwsxoWq6Hd64BxgW3FtOBMKQqNCw==
-length: 2536
+edSignature: okPF+hV2dnj4fx7ydTHQa/3jp6LFL9ncZfAvMxhVHKnMugayfY7FVzOu1eyXDiH9j2iMTiGhj7xUzvEgA9PBDw==
+length: 2980
 -->
