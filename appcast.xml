@@ -4,30 +4,30 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.013.003</title>
-            <pubDate>Sun, 04 Oct 2026 18:01:34 +0900</pubDate>
-            <sparkle:version>259</sparkle:version>
-            <sparkle:shortVersionString>1.013.003</sparkle:shortVersionString>
+            <title>1.013.004</title>
+            <pubDate>Sun, 04 Oct 2026 18:07:08 +0900</pubDate>
+            <sparkle:version>260</sparkle:version>
+            <sparkle:shortVersionString>1.013.004</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.013.003
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.013.004
 
-- 모니터링 윈도우의 글래스 효과를 제거했습니다. 제목 표시줄·창 배경·카드를 불투명하게 되돌려 제목과 드래그 영역을 명확히 합니다.
-- 메모리 압박 상태를 ‘메모리’ 제목 바로 옆으로 옮기고, 윈도우 카드에서 스왑 표시를 제거했습니다. 사용/전체 용량 한 줄을 유지해 CPU와 메모리 카드·그래프 높이를 맞췄습니다.
-- 기존 윈도우 열기 아이콘, 저장공간 표시, 창 위치·크기·핀 설정, 측정 주기는 유지합니다.
+- 모니터링 윈도우의 원형 차트에서 100%가 ‘100…’으로 잘리는 문제를 수정했습니다.
+- ChatGPT Codex·Claude 퍼센트는 한 줄로 표시하며, 원 안의 공간이 부족하면 글자 크기를 줄여 %까지 전부 보여줍니다. 잔여량/사용량 라벨도 한 줄을 유지합니다.
+- 기존 카드 정렬, 불투명 배경, 측정 및 계정 설정은 유지합니다.
 
-검증: 관련 검사 80개 통과. 한국어·영어에서 280/360/650pt 폭의 CPU·메모리 카드 높이가 같음을 확인하고, 라이트·다크 예시 렌더링을 점검했습니다. 실제 NSWindow의 불투명·일반 제목 표시줄 설정과 닫기/재열기 동작도 검사했습니다. 예시 미리보기는 설치 화면의 스크린샷이 아닙니다. MacBook Air 실물 화면은 직접 확인하지 못했습니다. Apple Silicon/macOS 13 이상, Developer ID 공증 없음.
+검증: 관련 디자인 검사 34개 통과. 실제 차트 컴포넌트로 0·1·9·10·99·100%를 한국어·영어, 잔여량·사용량 모드에서 렌더링하고 %가 포함된 표시를 확인했습니다. 미리보기는 예시 데이터이며 설치 화면 캡처가 아닙니다. Apple Silicon/macOS 13 이상, Developer ID 공증 없음.
 
 ### English
 
-Removed glass effects from the Monitoring window. The window and card backgrounds are opaque, with a standard visible title bar. Memory pressure appears beside the Memory heading; the swap line is removed from this window. The used/total memory line stays, and CPU/Memory card and chart heights now align. Existing storage capacity, launcher, saved geometry, pin preference and sampling intervals are retained.
+Fixed quota ring text truncating 100% as “100…”. ChatGPT Codex and Claude percentages stay on one line and scale down when needed to preserve the % sign. Used/remaining labels also stay on one line. Existing opaque surfaces, card alignment, collectors and account settings remain.
 
-80 scoped checks passed, including actual component height equality at 280/360/650pt in Korean and English, light/dark sample previews and NSWindow opacity/title-bar/lifecycle checks. Sample previews are not installed-screen captures. The affected MacBook Air screen remains unverified. Apple Silicon/macOS 13+, ad-hoc signed without Developer ID notarization.
+34 scoped design checks passed. Actual ring components were rendered at 0, 1, 9, 10, 99 and 100 percent in Korean/English and used/remaining modes. These are sample-data renders, not installed-screen captures. Apple Silicon/macOS 13+, ad-hoc signed without Developer ID notarization.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.013.003/Quotly-V1.013.003.zip" length="5145367" type="application/octet-stream" sparkle:edSignature="1nPryRnTQ2sgkOQ1v3O0CHIAHJWMSeGajOvd/bk1I5cYUDe/dyxg4q6659XYJ9dA3J2jjmkqHKfjaO5T0G4zDw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.013.004/Quotly-V1.013.004.zip" length="5147026" type="application/octet-stream" sparkle:edSignature="8SQohdVTL4IMHexd510J+KVkRwLLCMWeP/u1r9Zf7/6qTxjw/0Z4q+vSFMcUdjK0LKgaMHQx6IKdjfpPouPhDw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: qDJ22C20iTykv5cV3fMBOEa4mYSNJja4/ivY7WQUoW9V/nxKmTqd4k8lko7agMnz1geBUkoLFSJ4nBme6jn1DQ==
-length: 3094
+edSignature: 9bBnMDArgQ+wiJ+AYH/ioBruVSS1ApbC+655y1X4bh+bSZ3Ao6X9xIYHlNwIDNkDkrJgPop8SXTOPhALEPfaBA==
+length: 2602
 -->
