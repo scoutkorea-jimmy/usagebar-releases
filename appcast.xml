@@ -4,33 +4,38 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.011.003</title>
-            <pubDate>Sun, 04 Oct 2026 05:41:31 +0900</pubDate>
-            <sparkle:version>253</sparkle:version>
-            <sparkle:shortVersionString>1.011.003</sparkle:shortVersionString>
+            <title>1.013.000</title>
+            <pubDate>Sun, 04 Oct 2026 17:08:24 +0900</pubDate>
+            <sparkle:version>256</sparkle:version>
+            <sparkle:shortVersionString>1.013.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.011.003
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.013.000
 
-- 작업 시간을 추가했습니다. 하단 현황·모니터링 옆에서 바로 열거나 ⌘3을 사용할 수 있습니다. 프로젝트·작업별 시작·일시정지·재개·종료, 일별 합계와 전체 CSV 내보내기를 제공합니다.
-- ⌘3 단축키가 열리지 않던 문제를 수정하고 도움말·접근성 안내를 맞췄습니다.
-- ChatGPT Codex 로그인·연결 안내와 화면 구성 명칭을 정리했습니다. 기록 표시 범위도 실제 동작에 맞췄습니다.
-- 잘못된 작업 수정이 실행 중인 다른 작업까지 멈추는 문제, 종료 저장 실패 감지, 겹치는 수동 시간 수정, 0초 CSV 기록 누락과 수정 실패 시 입력창 닫힘을 수정했습니다.
+- 모니터링 화면을 내 Mac의 부하와 여유 상태를 중심으로 개편했습니다. 모델 식별자·칩·CPU 코어·메모리 정보를 자동으로 읽고 CPU·메모리·디스크·네트워크 상태를 함께 보여줍니다.
+- CPU 전체 사용률·여유율과 최근 1·5·10분 그래프를 추가했습니다. CPU는 모든 코어를 합친 0–100% 기준이며 소수점 한 자리로 표시합니다. 설정 → 갱신에서 1·2·5·10초를 선택할 수 있습니다. 기본은 2초입니다.
+- 메모리 추정 사용 용량 / 전체 용량, 메모리 압박, 스왑과 최근 추이를 추가했습니다. 메모리·열 상태는 10초마다 확인합니다. 회수 가능한 파일 캐시를 제외한 추정치로, 활동 모니터와 계산 기준이 다를 수 있습니다.
+- macOS가 제공하는 열 상태를 표시합니다. 실제 온도나 성능 제한 원인을 직접 측정한 값은 아닙니다.
+- 항목별 마지막 측정 시각과 대기·지연 상태를 표시합니다. 디스크·네트워크 속도를 임의의 최대 성능 퍼센트로 환산하지 않습니다. 잠자기·측정 실패·관측 공백은 그래프로 연결하지 않습니다.
+- 작은 모니터링 창은 기존 ChatGPT Codex·Claude 원형 차트를 유지하면서 CPU·메모리 정보를 추가했습니다. 설정 → 작은 창에서 표시 항목을 각각 선택할 수 있습니다. 모든 화면은 하나의 수집 데이터를 사용합니다.
+- 설정 → 메뉴바에서 CPU 사용률을 선택할 수 있습니다. 메뉴바의 고정 폭을 유지하며, 값이 같은데도 반복해서 다시 그리던 동작을 줄였습니다.
 
-작업 시간은 앱이 깨어 있는 동안 관측한 시간만 기록합니다. 잠자기·재시작 후에는 직접 재개해야 하며, 강제 종료 또는 느린 저장에서는 마지막 미저장 시간이 일부 유실될 수 있습니다. 기존 버전에서 중간 버전 설치 없이 바로 업데이트할 수 있습니다. 현재 개인용 기능에는 체험·결제 제한이 없습니다.
+기존 계정·설정과 작업 시간 기록을 보존합니다. 이전 지원 버전에서 중간 버전 설치 없이 바로 업데이트할 수 있습니다.
 
-검증: 전체 회귀 검사 1,364개 통과, 모니터 설정 변경 12,000회와 창·저장·로그인 보조 프로세스 극한 검사를 격리 환경에서 수행했습니다. 현재 코드 독립 리뷰 완료. 설치 앱 전체 UI 직접 조작과 다른 Mac 실계정 로그인 검증은 미완료입니다. Apple Silicon/macOS 13 이상. Developer ID 서명·공증은 적용되지 않았습니다.
+검증: 관련 격리 검사 305개 통과, 한국어·영어 280/320/440pt 화면 구성 검사, 실제 Mac mini의 시스템 정보·메모리·CPU 읽기, Apple Silicon 최적화 빌드와 패키지 검증. MacBook Air의 실제 화면·멈춤 원인·열로 인한 성능 저하는 확인하지 못했으며 해결을 보장하는 업데이트는 아닙니다. Apple Silicon/macOS 13 이상. Developer ID 서명·공증은 적용되지 않았습니다.
 
 ### English
 
-Work-time tracking is now available beside Overview and Monitoring, or with Cmd3. Track projects/tasks, pause/resume/finish, view daily totals and export all records to CSV. Fixed native Cmd3 routing, failed-edit isolation, quit-save failure detection, overlapping manual corrections, missing zero-time CSV records and failed edits closing the form. Clarified ChatGPT Codex and screen-layout terminology.
+Monitoring now summarizes this Mac's hardware, CPU load/headroom, estimated memory use, memory pressure, swap, disk I/O and network traffic, with recent charts and last-sample timestamps. CPU is normalized across all cores to 0–100%, shown to one decimal place, and sampled every 1/2/5/10 seconds (default 2). Memory and macOS thermal state are sampled every 10 seconds. Memory use is an estimate excluding reclaimable file cache and may differ from Activity Monitor. Thermal state is not a temperature measurement or a throttling diagnosis.
 
-Only observed awake time is counted; sleep/restart requires manual resume. Crash or slow storage can lose the latest checkpoint. Existing versions can update directly. 1,364 regression checks passed, isolated stress tests completed and current-code independent review assessed. Full native UI interaction and another Mac's real-account login remain unverified. Apple Silicon/macOS 13+; ad-hoc signed, not Developer ID signed or notarized.
+The mini monitor retains the side-by-side ChatGPT Codex/Claude quota rings and adds independently selectable CPU/memory charts. All views share one collector per resource. CPU can be enabled in menu-bar settings; stable widths are retained and redundant repainting has been reduced. Missing observations and sleep gaps are not connected.
+
+305 related isolated checks passed, including bilingual layouts at 280/320/440pt and actual local system reads on Mac mini. The affected MacBook Air's UI and freeze/thermal cause remain unverified. Apple Silicon, macOS 13+. Ad-hoc signed; no Developer ID notarization. Existing accounts/settings are retained and older supported versions can update directly.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.011.003/Quotly-V1.011.003.zip" length="5003529" type="application/octet-stream" sparkle:edSignature="Op+PwIqdUaloWpoSyl7QEP4ef8chHlvSJoXPLix8PO3T2vTWZzBO5KOE9piNz1Oj4K0s+zrqIkx8F/Iid6lhAg=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.013.000/Quotly-V1.013.000.zip" length="5076414" type="application/octet-stream" sparkle:edSignature="wrOmw+oN9zM41amHr84Ilwo1pp3ssMNSCnaHwykKzgFV1rE0yhKctdP5hDGiO5U+uCywlLdgX2QgDy+GYcRJDg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8YbMXS62ke/bVtMogdjeuCwVgSEbAZpADJsrfPHdZnmFM9Xr8WzD3rcsBvPv0QJxZQdLfgvYFQ+S6tJ+19k3Dg==
-length: 3664
+edSignature: d06gXwn+44nOG33ZqvFqMPuvZujG+30dAjBE/jTEdvUMgL5KHUqqaN2p1L0DFTWgihpJ+jqMxMr0m3+PL6XaBQ==
+length: 4810
 -->

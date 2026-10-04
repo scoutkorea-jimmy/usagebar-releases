@@ -2,7 +2,7 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.011.003 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.013.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
@@ -13,7 +13,10 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 - **작업 시간:** 하단 작업 시간 또는 ⌘3에서 프로젝트·작업을 시작하고 일시정지·재개·종료합니다. 일별 합계와 전체 CSV 내보내기를 지원합니다. 앱이 깨어 있는 동안 관측한 시간만 기록하고 잠자기·재시작 후에는 직접 재개합니다. 강제 종료·느린 저장에서는 마지막 미저장 시간이 일부 유실될 수 있습니다.
 - **화면 구성:** 간단 확인·AI 작업·영상 작업 구성을 선택하거나 현재 화면을 저장합니다. 항목 표시·순서·상세도를 편집하고 메뉴바 구성을 함께 저장할 수 있습니다. 로그인 계정·갱신 주기·알림은 바뀌지 않습니다.
 - **예약 사용량 요약:** 설정 → 알림에서 요일·시각·서비스·세션/주간 한도를 선택합니다. 놓친 예약은 생략하거나 최신 한 건만 요약합니다. 앱 실행 중에 동작하고, 알림 권한이 없거나 방해금지 시간이어도 앱 안에 요약을 저장합니다. 관측 시각·이전 값·오류 상태를 함께 보여줍니다.
-- **메모리 압박:** macOS가 보고한 정상·주의·높음 상태를 10초마다 확인합니다. 값을 얻지 못했거나 오래된 결과는 확인 불가로 표시합니다.
+- **내 Mac 상태:** 모델 식별자·칩·CPU 코어·메모리 정보를 자동으로 읽고 CPU·메모리·디스크·네트워크 상태와 마지막 측정 시각을 요약합니다. 대기·지연 상태를 구분합니다.
+- **CPU:** 모든 코어를 합친 0–100% 사용률과 여유율, 최근 1·5·10분 그래프를 표시합니다. 소수점 한 자리, 1·2·5·10초 측정(기본 2초)을 지원합니다. 설정 → 메뉴바에서 CPU 표시를 선택합니다.
+- **메모리·열 상태:** 추정 사용 용량 / 전체 용량, macOS 메모리 압박, 스왑, 최근 추이와 시스템 열 상태를 10초마다 확인합니다. 회수 가능한 파일 캐시를 제외한 추정치로 활동 모니터와 계산 기준이 다를 수 있습니다. 열 상태는 실제 온도나 성능 제한 원인을 직접 측정한 값이 아닙니다.
+- **작은 모니터링 창:** 기존 ChatGPT Codex·Claude 원형 차트와 CPU·메모리·네트워크·디스크 그래프를 제공합니다. 설정 → 작은 창에서 각 항목을 선택합니다. 모든 화면은 같은 수집 데이터를 사용합니다.
 
 
 - **AI 사용량:** ChatGPT 구독의 Codex 한도와 Claude 한도를 사용률 또는 잔여량으로 표시합니다. 초기화까지 남은 시간, 갱신 시각, 서버에서 제공하는 크레딧·추가 한도를 확인할 수 있습니다.
@@ -43,7 +46,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.011.003.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.013.000.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
 
@@ -55,7 +58,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.011.003**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.013.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 이번 버전의 확인 범위
 
@@ -81,6 +84,9 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 ## English
 
+- Monitor local model/chip/core/RAM information, normalized CPU load and headroom, estimated memory usage, memory pressure, swap and macOS thermal state. Memory is estimated excluding reclaimable file cache and may differ from Activity Monitor. Thermal state is not a temperature reading or a throttling diagnosis.
+- CPU samples every 1/2/5/10 seconds (default 2); memory and thermal state every 10 seconds. View recent charts and per-resource timestamps. Select CPU in menu-bar settings and CPU/memory in mini-monitor settings. Views share existing collectors, and unchanged menu values no longer trigger repeated repaint requests.
+
 **Quotly puts AI usage and Mac activity in your menu bar.** Requires Apple Silicon and macOS 13 or later. Korean and English interfaces are available.
 
 - Track work time from the bottom tab or Cmd3: start, pause, resume, finish, daily totals and complete CSV export. Only observed time is counted; sleep/restart pauses and requires manual resume. Crash or slow storage may lose the latest checkpoint.
@@ -96,7 +102,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.011.003.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.013.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
