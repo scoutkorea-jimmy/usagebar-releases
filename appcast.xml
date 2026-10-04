@@ -4,34 +4,34 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.013.001</title>
-            <pubDate>Sun, 04 Oct 2026 17:35:24 +0900</pubDate>
-            <sparkle:version>257</sparkle:version>
-            <sparkle:shortVersionString>1.013.001</sparkle:shortVersionString>
+            <title>1.013.002</title>
+            <pubDate>Sun, 04 Oct 2026 17:53:34 +0900</pubDate>
+            <sparkle:version>258</sparkle:version>
+            <sparkle:shortVersionString>1.013.002</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.013.001
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.013.002
 
-- 작은 모니터링 창을 새롭게 정리했습니다. 기존 ChatGPT Codex·Claude 원형 차트 아래에 CPU·메모리·네트워크·디스크를 2열 카드로 표시합니다.
-- 각 카드에 아이콘, 큰 현재 수치, 단위, 최근 10분 미니 그래프, 측정 상태와 마지막 측정 시각을 함께 배치했습니다. 네트워크는 Mbps, 디스크는 MB/s로 구분합니다.
-- 메모리 용량·압박·스왑과 드라이브 이름을 유지하고, 위쪽에서 칩·메모리 용량과 열 상태를 확인할 수 있습니다. 표시 항목은 기존 설정 → 작은 창에서 선택합니다.
-- 라이트·다크 모드와 앱 강조색을 일관되게 적용하고, 숫자와 카드 정렬을 다듬었습니다. 측정 실패·지연 값은 0으로 표시하지 않습니다.
-- 그래프는 관측 공백을 연결하지 않으며, 피크를 보존하면서 그릴 점 수를 제한합니다. 기존 수집기를 공유하므로 작은 창을 열어도 측정 작업이 늘어나지 않습니다.
+- 명칭을 ‘모니터링 윈도우’로 정리하고, 앱 상단 설정 톱니바퀴 왼쪽에 윈도우 열기 아이콘을 추가했습니다.
+- 수치 영역의 강제 최소 높이를 제거해 숫자·설명과 그래프 사이의 과도한 상하 여백을 줄였습니다. 기존 창 크기·위치와 표시 설정을 유지합니다.
+- 디스크 속도 아래에 내장·외장 드라이브의 저장공간을 함께 표시합니다. 드라이브 이름, 사용률 막대, 사용량/전체 용량, 잔여 용량을 확인할 수 있습니다. 기존 ‘디스크’ 표시 설정을 따릅니다.
+- 모니터링 윈도우 배경을 macOS 네이티브 반투명 소재로 바꾸고, 카드에는 읽기 쉬운 대비를 유지했습니다.
+- 용량은 기존 1분 간격 수집기를 공유합니다. 창을 열어도 별도 수집기·타이머를 추가하지 않으며, 지연되거나 유효하지 않은 용량은 최신 값으로 표시하지 않습니다.
 
-검증: 관련 검사 57개 통과. 한국어·영어와 라이트·다크 모드에서 실제 UI 컴포넌트를 예시 데이터로 렌더링하고 280/360pt 폭을 확인했습니다. 미리보기는 실제 계정이나 설치 화면의 스크린샷이 아닙니다. MacBook Air의 실제 설치 화면 확인은 미완료입니다. 기존 계정·설정과 창 위치를 보존합니다. Apple Silicon/macOS 13 이상, Developer ID 서명·공증은 적용되지 않았습니다.
+검증: 관련 검사 72개 통과(레이아웃·렌더링 24, 창 수명주기 7, 상태 28, 설정 13). 한국어·영어, 라이트·다크, 280/360/650pt 폭을 확인했습니다. 이미지 미리보기는 예시 데이터를 사용하며 네이티브 반투명 배경은 정적 렌더링 대상에서 제외됩니다. MacBook Air의 실제 설치 화면과 배경 합성은 직접 확인하지 못했습니다. Apple Silicon/macOS 13 이상. Developer ID 서명·공증 없음.
 
 ### English
 
-Redesigned the mini monitor with the existing ChatGPT Codex/Claude quota rings and a two-column grid for CPU, memory, network and disk. Each resource card groups an icon, prominent current values, units, a ten-minute sparkline and sample status/time. Network uses Mbps; disk uses MB/s. Memory capacity/pressure/swap and drive names remain visible, with chip/RAM and thermal state above.
+Renamed the panel to Monitoring window and added a window launcher immediately left of Settings in the app header. Removed forced metric heights to bring charts closer to their values. The Disk setting now also shows mounted internal/external storage volumes with names, used percentages, used/total capacity and free space. Delayed or invalid capacity readings are not presented as current.
 
-The mini monitor follows the app accent and light/dark appearance, keeps stale values distinct from zero, preserves observation gaps and spikes, limits plotted samples and reuses existing collectors. Existing accounts/settings/window position are retained.
+The window uses a native macOS translucent backdrop with readable card surfaces. Existing collectors, saved geometry and settings remain; no additional sampling timers were added. Storage uses the existing one-minute collector.
 
-57 related checks passed, including bilingual 280/360pt layouts and light/dark component previews rendered with sample data. These are not actual-account or installed-screen screenshots; the affected MacBook Air UI remains unverified. Apple Silicon/macOS 13+. Ad-hoc signed, no Developer ID notarization.
+72 scoped checks passed, including bilingual light/dark layouts at 280/360/650pt. Static previews use sample data and omit the native backdrop. The affected MacBook Air installation and desktop backdrop composition remain unverified. Apple Silicon/macOS 13+. Ad-hoc signed; no Developer ID notarization.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.013.001/Quotly-V1.013.001.zip" length="5128658" type="application/octet-stream" sparkle:edSignature="FDvkYV9g1ykPnWAVwdmQzXRNeree7M5ilkjFMI+z9L+8RfNaq/vdb59T4flS7jjiJodAgzINYiP/oPKVOsBmBQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.013.002/Quotly-V1.013.002.zip" length="5143815" type="application/octet-stream" sparkle:edSignature="tdCAs3BjF6JyVKRM9botGfAgyVWQrehXugQ8GoWQphxAcPXl7DQqnjxVwphM/0ibOCw8+xJR6EO9zXTwjbTjBg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 0WhIzMZkjoz7/rdYFWBUeenp4fW9owtM22/uTibmOaxiIsQmCGM4BzKp7M+5yveeii3Te6722Y/h/r/w4W+hBQ==
-length: 3735
+edSignature: qt9mg/glN2uRkVTCYWHskZrC8aKxiL0HKfifNavfUzV3WooDpqPE4asxf+7Z8NFFpczDp/2xTU+85RgCkpdcBQ==
+length: 3652
 -->

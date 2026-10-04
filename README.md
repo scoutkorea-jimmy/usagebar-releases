@@ -2,7 +2,7 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.013.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.013.002 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
@@ -16,7 +16,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 - **내 Mac 상태:** 모델 식별자·칩·CPU 코어·메모리 정보를 자동으로 읽고 CPU·메모리·디스크·네트워크 상태와 마지막 측정 시각을 요약합니다. 대기·지연 상태를 구분합니다.
 - **CPU:** 모든 코어를 합친 0–100% 사용률과 여유율, 최근 1·5·10분 그래프를 표시합니다. 소수점 한 자리, 1·2·5·10초 측정(기본 2초)을 지원합니다. 설정 → 메뉴바에서 CPU 표시를 선택합니다.
 - **메모리·열 상태:** 추정 사용 용량 / 전체 용량, macOS 메모리 압박, 스왑, 최근 추이와 시스템 열 상태를 10초마다 확인합니다. 회수 가능한 파일 캐시를 제외한 추정치로 활동 모니터와 계산 기준이 다를 수 있습니다. 열 상태는 실제 온도나 성능 제한 원인을 직접 측정한 값이 아닙니다.
-- **작은 모니터링 창:** 기존 ChatGPT Codex·Claude 원형 차트 아래에 CPU·메모리·네트워크·디스크를 2열 카드로 표시합니다. 아이콘·큰 수치·단위·최근 10분 미니 그래프·마지막 측정 시각을 함께 보여줍니다. 설정 → 작은 창에서 각 항목을 선택하며, 앱 강조색과 라이트·다크 모드를 따릅니다. 모든 화면은 같은 수집 데이터를 사용합니다.
+- **모니터링 윈도우:** 기존 ChatGPT Codex·Claude 원형 차트 아래에 CPU·메모리·네트워크·디스크를 2열 카드로 표시합니다. 아이콘·큰 수치·단위·최근 10분 미니 그래프·마지막 측정 시각을 함께 보여줍니다. 설정 → 윈도우에서 각 항목을 선택하며, 앱 강조색과 라이트·다크 모드를 따릅니다. 모든 화면은 같은 수집 데이터를 사용합니다.
 
 
 - **AI 사용량:** ChatGPT 구독의 Codex 한도와 Claude 한도를 사용률 또는 잔여량으로 표시합니다. 초기화까지 남은 시간, 갱신 시각, 서버에서 제공하는 크레딧·추가 한도를 확인할 수 있습니다.
@@ -46,7 +46,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.013.001.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.013.002.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
 
@@ -58,7 +58,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.013.001**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.013.002**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 이번 버전의 확인 범위
 
@@ -102,7 +102,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.013.001.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.013.002.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
@@ -125,22 +125,26 @@ This repository distributes app binaries, documentation and the signed update fe
 
 Open Settings → App or More → Report an issue to preview and copy diagnostics or compose an email. Reports are never sent automatically.
 
-### 작은 모니터링 창 / Mini monitor
-하단 더 보기 → 작은 모니터링 창 또는 설정 → 작은 창에서 열 수 있습니다. 메뉴바와 같은 데이터를 사용하고 표시 항목은 별도로 선택하며 핀 버튼으로 항상 위 표시를 전환합니다. 위치·크기를 기억하고 창을 닫아도 기존 모니터링은 계속됩니다.
+### 모니터링 윈도우 / Monitoring window
+앱 상단 톱니바퀴 왼쪽의 윈도우 아이콘으로 바로 열 수 있습니다. 하단 더 보기 또는 설정 → 윈도우에서도 열 수 있습니다. 메뉴바와 같은 데이터를 사용하고 표시 항목은 별도로 선택하며 핀 버튼으로 항상 위 표시를 전환합니다. 위치·크기를 기억하고 창을 닫아도 기존 모니터링은 계속됩니다.
 
-Open Mini monitor from More or Settings → Mini window. It shares menu-bar data without extra polling; pin it above regular windows and reopen it at its saved position and size.
+Open the Monitoring window with the window icon immediately left of Settings, or from More or Settings → Window. It shares menu-bar data without extra polling; pin it above regular windows and reopen it at its saved position and size.
+
+V1.013.002에서는 수치 영역의 강제 높이를 제거해 상하 여백을 줄였습니다. 디스크 속도 아래에 내장·외장 드라이브의 사용률·사용/전체 용량·잔여 용량을 표시하며, 배경에는 macOS 네이티브 반투명 소재를 적용합니다. 디스크 표시 설정에 함께 적용되며 용량은 기존 1분 수집기를 공유합니다.
+
+Metrics now use natural heights. Mounted internal and external storage capacity appears below disk activity, controlled by the existing Disk preference. A native translucent background follows the app appearance; storage reuses the existing one-minute collector.
 
 작은 창은 AI 사용량 원형 차트와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
 
 The mini window shows AI usage rings and the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
 
-설정 → 작은 창에서 ChatGPT Codex와 Claude의 차트 한도를 각각 선택합니다. 서버가 제공하지 않는 세션·주간 한도는 표시하지 않습니다.
+설정 → 윈도우에서 ChatGPT Codex와 Claude의 차트 한도를 각각 선택합니다. 서버가 제공하지 않는 세션·주간 한도는 표시하지 않습니다.
 
 ### 앱 색상 / Appearance
-설정 → 앱 → 앱 색상에서 시스템·라이트·다크 화면 모드와 강조색을 선택할 수 있습니다. 작은 모니터링 창도 같은 색상을 사용합니다.
+설정 → 앱 → 앱 색상에서 시스템·라이트·다크 화면 모드와 강조색을 선택할 수 있습니다. 모니터링 윈도우도 같은 색상을 사용합니다.
 Choose system, light or dark appearance and an accent color in Settings → App. The mini monitor shares the same appearance.
 
-작은 창은 설정 → 작은 창에서 표시 항목과 원형 차트의 한도를 고릅니다. 강조색은 10가지 견본 또는 사용자 지정 색상을 지원합니다.
-Mini window contents and ring quotas have their own settings. Ten accent swatches and a custom color picker are available.
+작은 창은 설정 → 윈도우에서 표시 항목과 원형 차트의 한도를 고릅니다. 강조색은 10가지 견본 또는 사용자 지정 색상을 지원합니다.
+Monitoring window contents and ring quotas have their own settings. Ten accent swatches and a custom color picker are available.
 
 Disk capacity: show used or free space / total volume capacity and the matching percentage for the menu bar drive. Configure numbers, total capacity, percentage and separate used/free modes in Settings → Menu bar. Refreshes every minute in the background.
