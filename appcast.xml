@@ -4,34 +4,30 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.013.002</title>
-            <pubDate>Sun, 04 Oct 2026 17:53:34 +0900</pubDate>
-            <sparkle:version>258</sparkle:version>
-            <sparkle:shortVersionString>1.013.002</sparkle:shortVersionString>
+            <title>1.013.003</title>
+            <pubDate>Sun, 04 Oct 2026 18:01:34 +0900</pubDate>
+            <sparkle:version>259</sparkle:version>
+            <sparkle:shortVersionString>1.013.003</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.013.002
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.013.003
 
-- 명칭을 ‘모니터링 윈도우’로 정리하고, 앱 상단 설정 톱니바퀴 왼쪽에 윈도우 열기 아이콘을 추가했습니다.
-- 수치 영역의 강제 최소 높이를 제거해 숫자·설명과 그래프 사이의 과도한 상하 여백을 줄였습니다. 기존 창 크기·위치와 표시 설정을 유지합니다.
-- 디스크 속도 아래에 내장·외장 드라이브의 저장공간을 함께 표시합니다. 드라이브 이름, 사용률 막대, 사용량/전체 용량, 잔여 용량을 확인할 수 있습니다. 기존 ‘디스크’ 표시 설정을 따릅니다.
-- 모니터링 윈도우 배경을 macOS 네이티브 반투명 소재로 바꾸고, 카드에는 읽기 쉬운 대비를 유지했습니다.
-- 용량은 기존 1분 간격 수집기를 공유합니다. 창을 열어도 별도 수집기·타이머를 추가하지 않으며, 지연되거나 유효하지 않은 용량은 최신 값으로 표시하지 않습니다.
+- 모니터링 윈도우의 글래스 효과를 제거했습니다. 제목 표시줄·창 배경·카드를 불투명하게 되돌려 제목과 드래그 영역을 명확히 합니다.
+- 메모리 압박 상태를 ‘메모리’ 제목 바로 옆으로 옮기고, 윈도우 카드에서 스왑 표시를 제거했습니다. 사용/전체 용량 한 줄을 유지해 CPU와 메모리 카드·그래프 높이를 맞췄습니다.
+- 기존 윈도우 열기 아이콘, 저장공간 표시, 창 위치·크기·핀 설정, 측정 주기는 유지합니다.
 
-검증: 관련 검사 72개 통과(레이아웃·렌더링 24, 창 수명주기 7, 상태 28, 설정 13). 한국어·영어, 라이트·다크, 280/360/650pt 폭을 확인했습니다. 이미지 미리보기는 예시 데이터를 사용하며 네이티브 반투명 배경은 정적 렌더링 대상에서 제외됩니다. MacBook Air의 실제 설치 화면과 배경 합성은 직접 확인하지 못했습니다. Apple Silicon/macOS 13 이상. Developer ID 서명·공증 없음.
+검증: 관련 검사 80개 통과. 한국어·영어에서 280/360/650pt 폭의 CPU·메모리 카드 높이가 같음을 확인하고, 라이트·다크 예시 렌더링을 점검했습니다. 실제 NSWindow의 불투명·일반 제목 표시줄 설정과 닫기/재열기 동작도 검사했습니다. 예시 미리보기는 설치 화면의 스크린샷이 아닙니다. MacBook Air 실물 화면은 직접 확인하지 못했습니다. Apple Silicon/macOS 13 이상, Developer ID 공증 없음.
 
 ### English
 
-Renamed the panel to Monitoring window and added a window launcher immediately left of Settings in the app header. Removed forced metric heights to bring charts closer to their values. The Disk setting now also shows mounted internal/external storage volumes with names, used percentages, used/total capacity and free space. Delayed or invalid capacity readings are not presented as current.
+Removed glass effects from the Monitoring window. The window and card backgrounds are opaque, with a standard visible title bar. Memory pressure appears beside the Memory heading; the swap line is removed from this window. The used/total memory line stays, and CPU/Memory card and chart heights now align. Existing storage capacity, launcher, saved geometry, pin preference and sampling intervals are retained.
 
-The window uses a native macOS translucent backdrop with readable card surfaces. Existing collectors, saved geometry and settings remain; no additional sampling timers were added. Storage uses the existing one-minute collector.
-
-72 scoped checks passed, including bilingual light/dark layouts at 280/360/650pt. Static previews use sample data and omit the native backdrop. The affected MacBook Air installation and desktop backdrop composition remain unverified. Apple Silicon/macOS 13+. Ad-hoc signed; no Developer ID notarization.
+80 scoped checks passed, including actual component height equality at 280/360/650pt in Korean and English, light/dark sample previews and NSWindow opacity/title-bar/lifecycle checks. Sample previews are not installed-screen captures. The affected MacBook Air screen remains unverified. Apple Silicon/macOS 13+, ad-hoc signed without Developer ID notarization.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.013.002/Quotly-V1.013.002.zip" length="5143815" type="application/octet-stream" sparkle:edSignature="tdCAs3BjF6JyVKRM9botGfAgyVWQrehXugQ8GoWQphxAcPXl7DQqnjxVwphM/0ibOCw8+xJR6EO9zXTwjbTjBg=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.013.003/Quotly-V1.013.003.zip" length="5145367" type="application/octet-stream" sparkle:edSignature="1nPryRnTQ2sgkOQ1v3O0CHIAHJWMSeGajOvd/bk1I5cYUDe/dyxg4q6659XYJ9dA3J2jjmkqHKfjaO5T0G4zDw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: qt9mg/glN2uRkVTCYWHskZrC8aKxiL0HKfifNavfUzV3WooDpqPE4asxf+7Z8NFFpczDp/2xTU+85RgCkpdcBQ==
-length: 3652
+edSignature: qDJ22C20iTykv5cV3fMBOEa4mYSNJja4/ivY7WQUoW9V/nxKmTqd4k8lko7agMnz1geBUkoLFSJ4nBme6jn1DQ==
+length: 3094
 -->
