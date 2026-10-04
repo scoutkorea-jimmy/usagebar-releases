@@ -4,34 +4,37 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.013.005</title>
-            <pubDate>Sun, 04 Oct 2026 18:17:52 +0900</pubDate>
-            <sparkle:version>261</sparkle:version>
-            <sparkle:shortVersionString>1.013.005</sparkle:shortVersionString>
+            <title>1.014.000</title>
+            <pubDate>Sun, 04 Oct 2026 19:21:00 +0900</pubDate>
+            <sparkle:version>262</sparkle:version>
+            <sparkle:shortVersionString>1.014.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.013.005
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.014.000
 
-- 좁은 모니터링 윈도우에서 시스템 카드가 잘리고 줄바꿈되는 문제를 수정했습니다. 내용 폭 320pt 미만은 1열, 충분한 폭에서는 2열로 표시합니다.
-- ChatGPT Codex 제목이 두 줄이 되어도 Claude와 원형 차트의 높이를 같게 유지합니다. 100%도 말줄임 없이 표시합니다.
-- 카드 제목, 업·다운/읽기·쓰기 라벨, 측정 시각을 한 줄로 정리했습니다.
-- 모니터링 윈도우의 스크롤바는 넓은 트랙 대신 1pt 두께의 오버레이 선으로 표시합니다. AppKit의 기본 휠·트랙패드·드래그 처리는 유지합니다.
-- 기존 계정, 표시 설정, 저장공간, 창 위치·핀·측정 주기를 유지하며 추가 타이머는 없습니다.
+- 메뉴바에 RAM 사용률을 추가했습니다. 설정 → 메뉴바 → CPU · RAM에서 CPU와 RAM을 각각 선택합니다. RAM은 기존 10초 수집기를 공유하며, 오래되거나 유효하지 않은 값은 0%로 표시하지 않습니다. 새 RAM 설정이 없는 경우 기본으로 표시하며 기존 선택은 기억합니다.
+- CPU·RAM·네트워크·디스크 측정 그룹의 정렬과 간격을 공통 규칙으로 통일했습니다. 값 변경 시 고정 폭을 유지하고, 구분선은 표시 영역 사이의 중앙에 둡니다. 접근성/툴팁 항목 순서도 실제 메뉴바 순서를 따릅니다.
+- 용량 숫자도 공통 포맷을 사용해 소수점 한 자리까지 표시합니다. 메뉴바 RAM은 %이며 툴팁에는 사용/전체 용량도 표시합니다.
+- 업데이트 화면에 최신 상태·새 버전·확인 실패·호환 불가를 구분해 표시합니다. 확인한 최신 버전과 배포 기록이 일치하면 현재 버전 이후의 업데이트 수를 표시합니다. 빌드 번호 차이를 횟수로 추정하지 않습니다.
+- 사용자 업데이트는 최신 정보를 먼저 확인하고 최신 전체 ZIP을 받는 표준 서명 검증 경로로 진행합니다. 피드는 최신 버전 한 개만 제공하며 delta/중간 설치를 요구하지 않습니다. 캐시된 선택이 확인한 최신 빌드보다 오래되면 진행을 차단합니다.
+- 이후 관련 수정에서도 같은 규칙을 적용하도록 로컬 공통 표시 규칙과 회귀 검사 기준을 추가했습니다.
 
-검증: 관련 검사 57개 통과. 한국어·영어, 라이트·다크, 248/280/320/348/360/650pt 폭을 검사하고 최소 폭과 넓은 폭의 실제 컴포넌트 예시 렌더링을 확인했습니다. 실제 SwiftUI 호스팅 창 내부에 얇은 네이티브 스크롤러가 설치되는 경로와 스크롤 위치 이동도 검사했습니다. 예시 이미지는 설치 화면 스크린샷이 아니며, 맥북에어 실물 화면·입력 장치 동작은 직접 확인하지 못했습니다. Apple Silicon/macOS 13 이상, Developer ID 공증 없음.
+검증: 관련 검사 348개 통과(메뉴바 153, 시스템 34, CPU 19, 시스템 레이아웃 6, 설정 백업 99, 버전 기록 22, 업데이트 delegate 15). 메뉴바 31개 표시 조합을 양 언어에서 검사하고 반복 갱신 10,000회도 확인했습니다. 실제 계정·쿠폰·자동 설치를 실행하지 않은 격리 검사입니다. 맥북에어 실제 화면, 이미 준비된 설치 파일의 재시작/교체까지의 실물 검증은 미완료입니다. 공개 ZIP·피드의 Ed25519 서명 및 최신 직접 다운로드를 별도로 검증합니다. Apple Silicon/macOS 13 이상, Developer ID 공증 없음.
 
 ### English
 
-System cards now switch to one column below 320pt of available content width and use two columns when space permits. Equal title slots keep ChatGPT Codex and Claude quota rings aligned even when a service title wraps. Card headings, paired metric labels and sample times stay on one line.
+Added menu-bar RAM percentage using the existing ten-second collector. CPU and RAM can be selected independently under Settings → Menu bar → CPU · RAM. New RAM preferences default to on; existing choices persist. Stale/invalid readings never appear as zero. Capacity formatting uses at most one decimal place.
 
-The monitoring window draws a 1pt overlay scrollbar without a wide track, while retaining AppKit scrolling and drag handling. Existing quota/collector/account/settings/geometry/pin behavior stays unchanged.
+Measurement groups share alignment, spacing, stable widths and centered divider rules; accessibility/tooltips follow visible item order. Update settings distinguish up-to-date, available, failed and incompatible states. Version counts use release records matched against the signed feed's confirmed latest build/version, rather than build-number subtraction. Release-history metadata is informational and cannot select or authorize installers.
 
-57 scoped checks passed across Korean/English, light/dark and 248/280/320/348/360/650pt widths. Actual component previews were visually inspected at narrow/wide widths. The thin native scroller's installation inside the actual SwiftUI hosting window and scroll-position movement were checked. Previews are sample renders, not installed-screen captures; the affected MacBook Air display and input devices remain unverified. Apple Silicon/macOS 13+, ad-hoc signed without Developer ID notarization.
+Manual updating probes current information before standard Sparkle updating. The signed feed offers one latest full ZIP with no intermediate/delta requirement. Chosen builds older than the confirmed latest build are rejected. Local presentation rules and regression requirements document consistent handling across related elements.
+
+348 scoped checks passed, including 31 menu combinations in both languages, 10,000 repeated menu updates, RAM/CPU lifecycle and stale-state checks, settings compatibility, history validation and SDK delegate wiring. Isolated checks did not use real accounts, coupons or actual automatic installation. The affected MacBook Air display and cached-installer restart/replacement flow remain unverified. Apple Silicon/macOS 13+, ad-hoc signed without Developer ID notarization.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.013.005/Quotly-V1.013.005.zip" length="5154705" type="application/octet-stream" sparkle:edSignature="xesIKnNEVKCP1XGqylBXkG7Cbc0VCyPclR9NI5EzqRceP6qpbJe8tRf5UaqngbxLR4oqswuWqVlt+mTQPgXBDg=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.014.000/Quotly-V1.014.000.zip" length="5179741" type="application/octet-stream" sparkle:edSignature="RFIkTu5kvRrLcPqkBLc7S7gRY17Yv6VMYAsmmOWPfFtgrOnkYmsy6ciZrx/3DOn8dEtu+781q4tqd0her46sDQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: zD6uEQkZ0Ybs3W3+3KzAT/nkupn6Jf2dOJUuOngL2O3AMgD8172YtAIsVB9/fgPmvJqastFQUh0ulE7sm3QZCA==
-length: 3588
+edSignature: AVflfwmVOziw5JoklYQawPfV4lvHF5I9/pmQ+O0FTbnObDjd1l3dRmlPpnUR17XYU5wnrb2hJhCKLyP5/3/+BA==
+length: 5037
 -->

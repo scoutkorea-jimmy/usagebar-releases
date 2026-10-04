@@ -2,7 +2,7 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.013.005 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.014.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
@@ -46,7 +46,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.013.005.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.014.000.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
 
@@ -58,7 +58,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.013.005**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.014.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 이번 버전의 확인 범위
 
@@ -102,7 +102,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.013.005.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.014.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
@@ -141,6 +141,16 @@ Quota ring percentages scale down when needed, keeping `100%` visible without tr
 좁은 창에서는 시스템 카드가 1열로 전환되고 넓은 창에서는 2열로 표시됩니다. 두 AI 원형 차트는 제목 줄 수와 관계없이 같은 높이를 유지합니다. 스크롤바는 1pt 두께의 얇은 오버레이로 표시합니다.
 
 System cards switch between one column in narrow windows and two columns in wider windows. Both AI quota rings remain aligned when headings wrap. The scrollbar uses a thin 1pt overlay thumb.
+
+### RAM 및 업데이트 상태 / RAM and update status
+
+설정 → 메뉴바 → CPU · RAM에서 RAM 사용률 표시를 선택합니다. `RAM 70.1%`처럼 표시하며, 사용/전체 용량은 툴팁과 모니터링에서 확인합니다. 기존 10초 수집기를 공유하고 오래되거나 유효하지 않은 값은 0%로 표시하지 않습니다. CPU·RAM·네트워크·디스크는 공통 간격·정렬 규칙을 따릅니다.
+
+설정 → 앱에서 최신 상태, 새 버전, 확인 실패, 호환 불가를 구분합니다. 업데이트 수는 서명된 피드가 확인한 최신 버전과 일치하는 배포 기록을 현재 버전과 비교해 표시합니다. 기록 JSON은 안내용이며 설치를 승인하거나 파일 URL을 지정하지 않습니다. 업데이트는 최신 전체 ZIP 한 개를 제공하고 중간 버전을 요구하지 않습니다. 최신보다 오래된 선택을 차단하지만 실제 캐시 설치·재시작 교체까지의 실물 검증은 아직 완료되지 않았습니다.
+
+Select RAM percentage under Settings → Menu bar → CPU · RAM. It reuses the existing ten-second collector; stale or invalid data does not become zero. Capacity is available in tooltips and monitoring. CPU/RAM/network/disk share spacing and alignment rules.
+
+Update settings show up-to-date, available, failed or incompatible states. Version counts use release-history records matched to the signed feed's confirmed latest version/build. That JSON is informational, and cannot authorize installers or supply download URLs. One latest full ZIP avoids intermediate releases; older selected builds are blocked. Actual cached-installer restart/replacement testing remains pending.
 
 작은 창은 AI 사용량 원형 차트와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
 
