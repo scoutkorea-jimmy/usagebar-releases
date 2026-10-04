@@ -4,37 +4,30 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.014.000</title>
-            <pubDate>Sun, 04 Oct 2026 19:21:00 +0900</pubDate>
-            <sparkle:version>262</sparkle:version>
-            <sparkle:shortVersionString>1.014.000</sparkle:shortVersionString>
+            <title>1.014.001</title>
+            <pubDate>Sun, 04 Oct 2026 19:42:32 +0900</pubDate>
+            <sparkle:version>263</sparkle:version>
+            <sparkle:shortVersionString>1.014.001</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.014.000
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.014.001
 
-- 메뉴바에 RAM 사용률을 추가했습니다. 설정 → 메뉴바 → CPU · RAM에서 CPU와 RAM을 각각 선택합니다. RAM은 기존 10초 수집기를 공유하며, 오래되거나 유효하지 않은 값은 0%로 표시하지 않습니다. 새 RAM 설정이 없는 경우 기본으로 표시하며 기존 선택은 기억합니다.
-- CPU·RAM·네트워크·디스크 측정 그룹의 정렬과 간격을 공통 규칙으로 통일했습니다. 값 변경 시 고정 폭을 유지하고, 구분선은 표시 영역 사이의 중앙에 둡니다. 접근성/툴팁 항목 순서도 실제 메뉴바 순서를 따릅니다.
-- 용량 숫자도 공통 포맷을 사용해 소수점 한 자리까지 표시합니다. 메뉴바 RAM은 %이며 툴팁에는 사용/전체 용량도 표시합니다.
-- 업데이트 화면에 최신 상태·새 버전·확인 실패·호환 불가를 구분해 표시합니다. 확인한 최신 버전과 배포 기록이 일치하면 현재 버전 이후의 업데이트 수를 표시합니다. 빌드 번호 차이를 횟수로 추정하지 않습니다.
-- 사용자 업데이트는 최신 정보를 먼저 확인하고 최신 전체 ZIP을 받는 표준 서명 검증 경로로 진행합니다. 피드는 최신 버전 한 개만 제공하며 delta/중간 설치를 요구하지 않습니다. 캐시된 선택이 확인한 최신 빌드보다 오래되면 진행을 차단합니다.
-- 이후 관련 수정에서도 같은 규칙을 적용하도록 로컬 공통 표시 규칙과 회귀 검사 기준을 추가했습니다.
+- 메뉴바 CPU와 RAM 사이에도 구분선을 표시합니다. AI·CPU·RAM·네트워크·디스크의 모든 그룹 구분선은 같은 좌우 간격을 사용합니다.
+- 최대 숫자 폭을 미리 확보하던 방식 대신 실제 표시 문자열 폭을 사용해 항목마다 남는 여백이 달라지던 문제를 수정했습니다. 숫자가 바뀌면 메뉴바 전체 폭도 내용에 맞춰 조정됩니다.
+- DISK와 용량 숫자는 G/C와 퍼센트 사이처럼 한 칸으로 연결합니다.
 
-검증: 관련 검사 348개 통과(메뉴바 153, 시스템 34, CPU 19, 시스템 레이아웃 6, 설정 백업 99, 버전 기록 22, 업데이트 delegate 15). 메뉴바 31개 표시 조합을 양 언어에서 검사하고 반복 갱신 10,000회도 확인했습니다. 실제 계정·쿠폰·자동 설치를 실행하지 않은 격리 검사입니다. 맥북에어 실제 화면, 이미 준비된 설치 파일의 재시작/교체까지의 실물 검증은 미완료입니다. 공개 ZIP·피드의 Ed25519 서명 및 최신 직접 다운로드를 별도로 검증합니다. Apple Silicon/macOS 13 이상, Developer ID 공증 없음.
+검증: 표시 검사158개, 한국어·영어31개 항목 조합, 반복갱신10,000회, native 샘플 렌더링 확인. 실제 맥북에어 메뉴바 및 설치 재시작은 미검증. 기존 계정·측정기·설정 선택은 보존합니다.
 
 ### English
 
-Added menu-bar RAM percentage using the existing ten-second collector. CPU and RAM can be selected independently under Settings → Menu bar → CPU · RAM. New RAM preferences default to on; existing choices persist. Stale/invalid readings never appear as zero. Capacity formatting uses at most one decimal place.
+CPU and RAM now have a divider between them. All measurement-group dividers use equal padding on both sides. Visible text widths replace unused sizing reservations, preventing inconsistent gaps. The menu width adjusts to actual readings. DISK and capacity use one space, matching AI labels and values.
 
-Measurement groups share alignment, spacing, stable widths and centered divider rules; accessibility/tooltips follow visible item order. Update settings distinguish up-to-date, available, failed and incompatible states. Version counts use release records matched against the signed feed's confirmed latest build/version, rather than build-number subtraction. Release-history metadata is informational and cannot select or authorize installers.
-
-Manual updating probes current information before standard Sparkle updating. The signed feed offers one latest full ZIP with no intermediate/delta requirement. Chosen builds older than the confirmed latest build are rejected. Local presentation rules and regression requirements document consistent handling across related elements.
-
-348 scoped checks passed, including 31 menu combinations in both languages, 10,000 repeated menu updates, RAM/CPU lifecycle and stale-state checks, settings compatibility, history validation and SDK delegate wiring. Isolated checks did not use real accounts, coupons or actual automatic installation. The affected MacBook Air display and cached-installer restart/replacement flow remain unverified. Apple Silicon/macOS 13+, ad-hoc signed without Developer ID notarization.
+158 presentation checks passed, including 31 combinations in both languages, 10,000 unchanged updates and native sample rendering. Actual MacBook Air menu display and installation restart remain unverified.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.014.000/Quotly-V1.014.000.zip" length="5179741" type="application/octet-stream" sparkle:edSignature="RFIkTu5kvRrLcPqkBLc7S7gRY17Yv6VMYAsmmOWPfFtgrOnkYmsy6ciZrx/3DOn8dEtu+781q4tqd0her46sDQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.014.001/Quotly-V1.014.001.zip" length="5179440" type="application/octet-stream" sparkle:edSignature="LstI8gc0jb1kNtmnCZy0tHcyPI6zbL36j5M9lwAuL2bDsvuGm6KSMTd3qMOBbDPbD/JWZ/R5xqMrdJQEWFgRDw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: AVflfwmVOziw5JoklYQawPfV4lvHF5I9/pmQ+O0FTbnObDjd1l3dRmlPpnUR17XYU5wnrb2hJhCKLyP5/3/+BA==
-length: 5037
+edSignature: H/Ch3XaJIEihCPtz8wYMxljFVS96i1l5zYeTFqkvPV6ItH9MhE5mczTTrqwwsxoWq6Hd64BxgW3FtOBMKQqNCw==
+length: 2536
 -->
