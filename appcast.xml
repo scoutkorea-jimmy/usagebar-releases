@@ -1,33 +1,39 @@
-<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+<?xml version="1.0" standalone="yes"?>
+<!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
---><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+-->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.014.002</title>
-            <pubDate>Sun, 04 Oct 2026 19:52:49 +0900</pubDate>
-            <sparkle:version>264</sparkle:version>
-            <sparkle:shortVersionString>1.014.002</sparkle:shortVersionString>
+            <title>1.015.000</title>
+            <pubDate>Mon, 05 Oct 2026 12:13:18 +0900</pubDate>
+            <sparkle:version>265</sparkle:version>
+            <sparkle:shortVersionString>1.015.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.014.002
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.015.000/Quotly-V1.015.000.zip" length="5183283" type="application/octet-stream" sparkle:edSignature="eHGEMw7NqsgZDGKoIVGFwhd85rHPLdHyzt7qVr/vX7fuh9tTp6ZsgGtywE21+bixZl1zvnLB+F1qNMcNT1xlDw=="/>
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.015.000
 
-- 업데이트 확인 버튼을 계속 비활성화하던 흐름을 수정했습니다. 진행 중 누른 요청은 버리지 않고 작업 완료 후 실행하며, 표준 업데이트 창과 진행 상태를 바로 표시합니다.
-- 상태 조회는 실제 조회를 시작할 수 있을 때만 실행합니다. 실행되지 않은 조회를 ‘확인 중’으로 남겨 두지 않습니다. 설치 후 재실행 시에도 서명된 최신 피드를 확인해 최신이면 ‘최신 상태입니다’를 표시합니다.
-- 업데이트 엔진의 시작 실패를 표시하고 다시 누르면 재시도합니다. 조회 실패나 호환 불가를 최신 상태로 표시하지 않습니다.
+- 자동 업데이트를 켜면 앱 시작 시와 6시간마다 새 버전을 확인하고, 다운로드가 준비되면 Quotly를 자동 재시작해 적용합니다. 계속 켜 두는 메뉴바 앱에서 종료할 때까지 설치를 기다리던 동작을 개선했습니다.
+- 로그인·로그아웃·쿠폰 처리·미확정 쿠폰 요청·설정 가져오기/내보내기·입력 편집·모달 창·잠자기 중에는 재시작을 기다립니다. 설치 준비 상태에서만 15초마다 안전한 시점을 확인합니다.
+- 기존에 자동 확인/다운로드를 꺼 둔 선택은 유지합니다. 새 설치는 기본 자동 업데이트 설정을 사용합니다. 기존 고객은 이 버전으로 한 번 업데이트한 뒤 다음 배포부터 새 자동 적용 동작을 사용할 수 있습니다.
+- 서명 검증과 이전 빌드 차단은 유지하며 재실행 뒤 최신 상태를 확인합니다.
 
-검증: 요청 대기·중복·우선순위14개 및 delegate15개 검사 통과. 격리된 native 앱에서 실제 서명 피드를 조회해 최신 상태 표시와 버튼 활성 복구를 확인했습니다. 계정·쿠폰·설치·재시작은 실행하지 않았으며 맥북에어 실물 업데이트 과정은 미검증입니다.
+검증: 요청/자동재시작 정책30개, 실제 SDK delegate 연결16개 통과. 격리된 native 앱에서 서명 피드 조회, 최신 상태/버튼 복구, 자동 업데이트 꺼짐·작업 중 지연·설치 함수1회 호출 검사를 통과했습니다. 설치 함수는 시험용 대체 함수로 검증했으며 실제 자동 다운로드 후 앱 파일 교체·재시작 및 맥북에어 설치는 미검증입니다. 계정·쿠폰 실사용 없음. Developer ID 공증 없음.
 
 ### English
 
-The update button stays actionable. Requests made during an ongoing check are retained and run when SDK availability recovers. Manual actions use the standard update/progress UI directly; passive status checks wait for an idle session. Relaunching probes the signed feed and shows “Up to date” when confirmed. Startup failure is reported and can be retried; errors are never shown as current.
+Automatic updates check at launch and every six hours, download new releases, then restart Quotly to apply a ready update. Always-running menu-bar apps no longer need to wait for an eventual quit. Restart waits for sign-in/out, reset-credit operations or unresolved requests, settings transfers, text editing, modal dialogs and sleep. A 15-second retry exists only while installation is ready.
 
-14 request-queue checks and 15 delegate checks passed. An isolated native app queried the actual signed feed and confirmed up-to-date status and recovered availability. No accounts, credits, installation or restart were exercised; actual MacBook Air installation remains unverified.
+Existing opt-out preferences are retained; new installs use the default automatic settings. Existing customers must update to this version once to enable this behavior for future releases. Signed updates and older-build rejection remain enabled.
+
+30 queue/policy checks and16 SDK delegate checks passed. An isolated native probe verified signed-feed status, availability recovery, opt-out, busy deferral and once-only dummy installer invocation. Actual automatic payload replacement/restart and MacBook Air installation remain unverified. No real accounts or credits were used; no Developer ID notarization.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.014.002/Quotly-V1.014.002.zip" length="5180054" type="application/octet-stream" sparkle:edSignature="OhlIPGTz5XN0gjBRCz/8z3zrBFj7wqPxKshiwJ4OzpZPGrlTcXcfy1FbhzPTNg5JA7yVn+S6IbNYfleW4pO/Cg=="></enclosure>
         </item>
     </channel>
-</rss><!-- sparkle-signatures:
-edSignature: okPF+hV2dnj4fx7ydTHQa/3jp6LFL9ncZfAvMxhVHKnMugayfY7FVzOu1eyXDiH9j2iMTiGhj7xUzvEgA9PBDw==
-length: 2980
+</rss>
+<!-- sparkle-signatures:
+edSignature: dZ2sEE87bhAlpvsw/dXbHBGLqKWzsjIjsfiiYPwr5pmQCDsfWr+3QKvA01zzoJz+Rsreu2iX1xJFMs8XPc7ZAQ==
+length: 3677
 -->
