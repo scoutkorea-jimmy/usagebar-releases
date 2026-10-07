@@ -1,39 +1,27 @@
-<?xml version="1.0" standalone="yes"?>
-<!-- sparkle-sign-warning:
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
--->
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.015.000</title>
-            <pubDate>Mon, 05 Oct 2026 12:13:18 +0900</pubDate>
-            <sparkle:version>265</sparkle:version>
-            <sparkle:shortVersionString>1.015.000</sparkle:shortVersionString>
+            <title>1.015.001</title>
+            <pubDate>Wed, 07 Oct 2026 16:08:14 +0900</pubDate>
+            <sparkle:version>266</sparkle:version>
+            <sparkle:shortVersionString>1.015.001</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.015.000/Quotly-V1.015.000.zip" length="5183283" type="application/octet-stream" sparkle:edSignature="eHGEMw7NqsgZDGKoIVGFwhd85rHPLdHyzt7qVr/vX7fuh9tTp6ZsgGtywE21+bixZl1zvnLB+F1qNMcNT1xlDw=="/>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.015.000
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.015.001
 
-- 자동 업데이트를 켜면 앱 시작 시와 6시간마다 새 버전을 확인하고, 다운로드가 준비되면 Quotly를 자동 재시작해 적용합니다. 계속 켜 두는 메뉴바 앱에서 종료할 때까지 설치를 기다리던 동작을 개선했습니다.
-- 로그인·로그아웃·쿠폰 처리·미확정 쿠폰 요청·설정 가져오기/내보내기·입력 편집·모달 창·잠자기 중에는 재시작을 기다립니다. 설치 준비 상태에서만 15초마다 안전한 시점을 확인합니다.
-- 기존에 자동 확인/다운로드를 꺼 둔 선택은 유지합니다. 새 설치는 기본 자동 업데이트 설정을 사용합니다. 기존 고객은 이 버전으로 한 번 업데이트한 뒤 다음 배포부터 새 자동 적용 동작을 사용할 수 있습니다.
-- 서명 검증과 이전 빌드 차단은 유지하며 재실행 뒤 최신 상태를 확인합니다.
+- 영어 설정 탭 Notifications를 Alerts로 줄이고 전체 의미는 도움말과 접근성 이름에 유지했습니다.
+- 공통 탭에 한 줄 표시·실제 글꼴 최소 너비·너비 부족 시 여러 행 배치를 적용했습니다. 기록 분석, 용량 숫자/비율 및 한도 선택도 동일 규칙을 따릅니다.
+- 좁은 창의 제목·하단 탐색·갱신 상태를 간결하게 표시하고 로그인 버튼 행은 세로로 전환합니다. 한국어·영어, 일반/큰 글자, 밝은/어두운 모드의 240–420pt 폭을 검사합니다.
+- 촬영용 창이 닫힌 뒤 화면 변경 시 잘못된 창 참조로 충돌할 수 있던 창 수명 처리를 수정했습니다.
 
-검증: 요청/자동재시작 정책30개, 실제 SDK delegate 연결16개 통과. 격리된 native 앱에서 서명 피드 조회, 최신 상태/버튼 복구, 자동 업데이트 꺼짐·작업 중 지연·설치 함수1회 호출 검사를 통과했습니다. 설치 함수는 시험용 대체 함수로 검증했으며 실제 자동 다운로드 후 앱 파일 교체·재시작 및 맥북에어 설치는 미검증입니다. 계정·쿠폰 실사용 없음. Developer ID 공증 없음.
-
-### English
-
-Automatic updates check at launch and every six hours, download new releases, then restart Quotly to apply a ready update. Always-running menu-bar apps no longer need to wait for an eventual quit. Restart waits for sign-in/out, reset-credit operations or unresolved requests, settings transfers, text editing, modal dialogs and sleep. A 15-second retry exists only while installation is ready.
-
-Existing opt-out preferences are retained; new installs use the default automatic settings. Existing customers must update to this version once to enable this behavior for future releases. Signed updates and older-build rejection remain enabled.
-
-30 queue/policy checks and16 SDK delegate checks passed. An isolated native probe verified signed-feed status, availability recovery, opt-out, busy deferral and once-only dummy installer invocation. Actual automatic payload replacement/restart and MacBook Air installation remain unverified. No real accounts or credits were used; no Developer ID notarization.
 ]]></description>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.015.001/Quotly-V1.015.001.zip" length="5196023" type="application/octet-stream" sparkle:edSignature="wiH957fdVZcg/nV5odEC7ux9AeiOQEiW+G+Ujk+vObK2cp5ahz0SJopT4CSbmrpk+sgpcCMUqPDfO3W/VGUcCg=="></enclosure>
         </item>
     </channel>
-</rss>
-<!-- sparkle-signatures:
-edSignature: dZ2sEE87bhAlpvsw/dXbHBGLqKWzsjIjsfiiYPwr5pmQCDsfWr+3QKvA01zzoJz+Rsreu2iX1xJFMs8XPc7ZAQ==
-length: 3677
+</rss><!-- sparkle-signatures:
+edSignature: +FnvAekeH8YDMxi4NxVNnq/hazkHS2ZrKfyeY8EzfcSgLZUAZv9uIc1ovN2L9YlsDjQIJshDKQ67vdkTBK2ZBA==
+length: 1956
 -->
