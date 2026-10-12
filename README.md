@@ -1,5 +1,7 @@
 # Quotly · 쿼틀리
 
+V1.015.002: Claude 개발자 콘솔·API만의 공식 이슈가 정상 조회된 Claude 사용량을 숨기지 않도록 수정했습니다. 실제 사용 서비스 장애와 조회 오류는 계속 표시하며, 공식 전체 상태와 알림도 유지합니다. 서비스 상태·요약·알림 설정 순서는 ChatGPT(OpenAI) → Claude로 통일했습니다.
+
 V1.015.001: 영어 선택 항목을 간결하게 표시하고, 좁은 창에서는 탭을 여러 행으로 배치합니다. 제목·하단 메뉴·로그인 버튼에도 같은 폭 대응을 적용했습니다. 촬영용 창을 닫은 뒤 화면이 바뀔 때 발생할 수 있던 충돌도 수정했습니다.
 
 V1.015.000에서는 자동 확인·다운로드가 켜져 있으면 앱 시작 시와 6시간마다 확인하고, 다운로드가 준비되면 Quotly를 자동 재시작해 적용합니다. 로그인·쿠폰 처리·미확정 요청·설정 전송·입력 편집·모달·잠자기 중에는 기다립니다. 기존에 꺼 둔 설정은 유지합니다. 기존 고객은 이번 버전으로 한 번 업데이트한 뒤 다음 배포부터 이 동작을 사용할 수 있습니다.
@@ -8,7 +10,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.015.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.015.002 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 

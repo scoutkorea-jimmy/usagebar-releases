@@ -4,24 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.015.001</title>
-            <pubDate>Wed, 07 Oct 2026 16:08:14 +0900</pubDate>
-            <sparkle:version>266</sparkle:version>
-            <sparkle:shortVersionString>1.015.001</sparkle:shortVersionString>
+            <title>1.015.002</title>
+            <pubDate>Tue, 13 Oct 2026 04:11:25 +0900</pubDate>
+            <sparkle:version>267</sparkle:version>
+            <sparkle:shortVersionString>1.015.002</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.015.001
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.015.002
 
-- 영어 설정 탭 Notifications를 Alerts로 줄이고 전체 의미는 도움말과 접근성 이름에 유지했습니다.
-- 공통 탭에 한 줄 표시·실제 글꼴 최소 너비·너비 부족 시 여러 행 배치를 적용했습니다. 기록 분석, 용량 숫자/비율 및 한도 선택도 동일 규칙을 따릅니다.
-- 좁은 창의 제목·하단 탐색·갱신 상태를 간결하게 표시하고 로그인 버튼 행은 세로로 전환합니다. 한국어·영어, 일반/큰 글자, 밝은/어두운 모드의 240–420pt 폭을 검사합니다.
-- 촬영용 창이 닫힌 뒤 화면 변경 시 잘못된 창 참조로 충돌할 수 있던 창 수명 처리를 수정했습니다.
+- Claude Console·API만 영향을 받는 공식 이슈가 정상 조회된 Claude 사용량을 숨기지 않도록 수정했습니다. 실제 Claude 사용 서비스 장애와 조회 오류는 계속 구분합니다.
+- 공식 전체 상태와 장애·복구 알림은 유지하고, 콘솔만 문제가 있을 때 요약에 일부 이슈로 표시합니다.
+- 서비스 상태·요약·알림 설정 순서를 ChatGPT(OpenAI), Claude로 통일했습니다.
 
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.015.001/Quotly-V1.015.001.zip" length="5196023" type="application/octet-stream" sparkle:edSignature="wiH957fdVZcg/nV5odEC7ux9AeiOQEiW+G+Ujk+vObK2cp5ahz0SJopT4CSbmrpk+sgpcCMUqPDfO3W/VGUcCg=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.015.002/Quotly-V1.015.002.zip" length="5197779" type="application/octet-stream" sparkle:edSignature="0weyFKQFXiz/HoicIgltxQ2R8uvy3AqmNvLlHPIOjcJRUWR9UwVz48J45+1nGgAWYtHnGzG/vVqM0VKZUYN8Bg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: +FnvAekeH8YDMxi4NxVNnq/hazkHS2ZrKfyeY8EzfcSgLZUAZv9uIc1ovN2L9YlsDjQIJshDKQ67vdkTBK2ZBA==
-length: 1956
+edSignature: AUzwVRklD+95vXmYnZkS928rPXtUcEXpvLFNLc8IXamLWbBhO3A88ZGlw+aFWMSqZ2VraDfj3dkBGsf60rtbBg==
+length: 1710
 -->
