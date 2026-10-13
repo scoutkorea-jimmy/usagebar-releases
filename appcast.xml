@@ -4,25 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.017.001</title>
-            <pubDate>Wed, 14 Oct 2026 00:49:09 +0900</pubDate>
-            <sparkle:version>274</sparkle:version>
-            <sparkle:shortVersionString>1.017.001</sparkle:shortVersionString>
+            <title>1.018.000</title>
+            <pubDate>Wed, 14 Oct 2026 01:09:56 +0900</pubDate>
+            <sparkle:version>275</sparkle:version>
+            <sparkle:shortVersionString>1.018.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.017.001
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.018.000
 
-- 예정 외 한도 변화 알림에서 최소 사용량 조건을 제거했습니다. 적은 사용량의 감소도 이전 기준과 연속 정상 조회로 확인하며, 일시적인 0%·값 복귀·쿠폰 사용·중복 알림은 계속 제외합니다.
-- 사용량이 이미 0%인 경우에는 확인된 서버 초기화 시각 변화가 있어야 알립니다. 변화가 없는 상태를 초기화로 추측하지 않습니다.
-- 해결된 서비스 공지는 회색과 제목 취소선, 해결됨 표시로 구분합니다. 본문은 계속 읽을 수 있습니다.
-- 영어 모드에서 비공식 번역 안내와 번역 대조 링크를 숨겼습니다.
-- 라이트·다크 선택을 팝오버·일반 창·화면 팔레트에도 즉시 적용하도록 수정했습니다.
-- 번역 서버의 맥미니가 꺼지거나 네트워크 연결이 끊겨도 서명을 검증한 번역 캐시를 유지합니다. 앱 재실행 뒤에도 기존 번역을 보여주며, 아직 번역이 없는 새 원문만 원문으로 표시합니다.
+- Google Drive 번역 편집 정본의 교정문을 클라우드에서 직접 배포합니다. 맥미니가 꺼져 있어도 고객 앱의 다음 번역 조회에 반영됩니다.
+- 자동 번역과 교정문을 별도의 서명키로 검증하며, 공개 소식의 원문 ID·숫자 검사를 통과한 교정문만 적용합니다.
+- E열을 비우면 해당 소식의 자동 번역으로 돌아갑니다. 비공식 번역 안내와 기존 오프라인 캐시는 유지합니다.
+- 새 자동 번역 생성은 기존처럼 맥미니가 켜져 있을 때 진행됩니다. 고객 앱 실행 중 번역 조회 주기는 약 2분이며 클라우드 전파 지연을 포함해 보통 2~3분 안에 반영됩니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.017.001/Quotly-V1.017.001.zip" length="5231785" type="application/octet-stream" sparkle:edSignature="/R9JvNclhGlGwB3CkVfOmrNUKd2BoE9pZ0I0jvab/LPRC1FouyUMSkxjUc1CLz9MjlPHQhh44FKjxby4usWLDQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.018.000/Quotly-V1.018.000.zip" length="5237445" type="application/octet-stream" sparkle:edSignature="z+c7RuSZ+cHhZy7CVwbFr2rP/c11qlj6/ezes2YZxs8S9nBpSTWwBAsaRyz7XvbQvYiT/F7AKqy86bZ7FgUSBQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8dbIh1IChfo3FfLRSO1qE4536H8nsVuQ+FfWzaql4HC0Uj7fH44e9aFpUvcuEXDXjcaY4icGQZyRNuVEYz1cDg==
-length: 2288
+edSignature: XrtpAE7OVOjHOtkAFqIo/Ca4Lp6QwCwLadTA8KvIEofZGqohsk5qTPJt893OcvaiK2D7B1K2PQyTNYrlw41CDw==
+length: 1964
 -->
