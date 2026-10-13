@@ -4,23 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.017.000</title>
-            <pubDate>Tue, 13 Oct 2026 23:57:15 +0900</pubDate>
-            <sparkle:version>273</sparkle:version>
-            <sparkle:shortVersionString>1.017.000</sparkle:shortVersionString>
+            <title>1.017.001</title>
+            <pubDate>Wed, 14 Oct 2026 00:49:09 +0900</pubDate>
+            <sparkle:version>274</sparkle:version>
+            <sparkle:shortVersionString>1.017.001</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.017.000
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.017.001
 
-- 공개 알림·소식의 한국어 번역 범위를 초기화 기록·점검 예정·최근 복구 공지까지 넓혔습니다.
-- Tibo SNS 소식은 사실·조건·숫자를 유지하면서 가벼운 밈과 친근한 말투로 번역합니다. 공식 장애·복구 공지는 정확한 문체를 유지합니다.
-- ChatGPT Codex 사용량이 예정 시각 전에 크게 줄어든 상태를 연속 조회로 확인하면 초기화 알림 설정에 따라 알립니다. 최근 Tibo 공지가 있으면 함께 안내하되 계정의 초기화 사유로 단정하지 않습니다.
-- 앱에서 사용한 쿠폰·장시간 미관측·일시적인 0%·중복 알림을 제외합니다.
+- 예정 외 한도 변화 알림에서 최소 사용량 조건을 제거했습니다. 적은 사용량의 감소도 이전 기준과 연속 정상 조회로 확인하며, 일시적인 0%·값 복귀·쿠폰 사용·중복 알림은 계속 제외합니다.
+- 사용량이 이미 0%인 경우에는 확인된 서버 초기화 시각 변화가 있어야 알립니다. 변화가 없는 상태를 초기화로 추측하지 않습니다.
+- 해결된 서비스 공지는 회색과 제목 취소선, 해결됨 표시로 구분합니다. 본문은 계속 읽을 수 있습니다.
+- 영어 모드에서 비공식 번역 안내와 번역 대조 링크를 숨겼습니다.
+- 라이트·다크 선택을 팝오버·일반 창·화면 팔레트에도 즉시 적용하도록 수정했습니다.
+- 번역 서버의 맥미니가 꺼지거나 네트워크 연결이 끊겨도 서명을 검증한 번역 캐시를 유지합니다. 앱 재실행 뒤에도 기존 번역을 보여주며, 아직 번역이 없는 새 원문만 원문으로 표시합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.017.000/Quotly-V1.017.000.zip" length="5230132" type="application/octet-stream" sparkle:edSignature="lxKrnSI39YbxptPz4aQSC1e612t5EHTp4YNqQS4pSV4RKxy+MykTPfXTY6iEhM4cL4nHb1yXQaUp6DnNft1IBA=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.017.001/Quotly-V1.017.001.zip" length="5231785" type="application/octet-stream" sparkle:edSignature="/R9JvNclhGlGwB3CkVfOmrNUKd2BoE9pZ0I0jvab/LPRC1FouyUMSkxjUc1CLz9MjlPHQhh44FKjxby4usWLDQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: vR3+lhnd45WBPzOzHAtYfCJxiSSNoSFmJRBpjkDrk7cPNmbZEWBfJ6K4MptLlZw7I9AjcRjyq8KaFcKYpkPGDA==
-length: 1935
+edSignature: 8dbIh1IChfo3FfLRSO1qE4536H8nsVuQ+FfWzaql4HC0Uj7fH44e9aFpUvcuEXDXjcaY4icGQZyRNuVEYz1cDg==
+length: 2288
 -->

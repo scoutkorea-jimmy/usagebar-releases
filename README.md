@@ -1,6 +1,6 @@
 # Quotly · 쿼틀리
 
-V1.017.000: 공개 소식 번역 범위를 확대하고 SNS 소식에 가벼운 밈과 친근한 문체를 적용했습니다. ChatGPT Codex의 예정 외 큰 사용량 감소는 연속 조회로 확인해 알리고, 최근 Tibo 공지를 함께 안내합니다. 계정의 초기화 원인을 단정하지 않으며, 앱에서 사용한 쿠폰과 일시적인 0% 등은 제외합니다. 기존 초기화 알림 설정과 방해금지 설정을 따릅니다.
+V1.017.001: 맥미니가 꺼져도 고객 Mac에 저장된 서명 검증 번역을 유지하고 앱 재실행 뒤에도 표시합니다. 새 원문은 번역이 있을 때 갱신합니다. 최소 사용량 조건 없이 예정 외 한도 변화를 연속 조회로 확인하며, 해결된 공지는 회색과 취소선으로 표시합니다. 영어의 번역 안내를 숨기고 라이트·다크 적용을 수정했습니다.
 
 V1.016.001: 한국어 번역 범위를 초기화 소식 기록·예정 점검·최근 복구 공지·영향을 받는 서비스 이름까지 확장했습니다. 한국어 모드의 상태 알림은 번역 대기 중에도 한국어로 상태와 앱 확인 안내를 제공합니다.
 
@@ -22,7 +22,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.017.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.017.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
