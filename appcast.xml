@@ -4,22 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.015.003</title>
-            <pubDate>Tue, 13 Oct 2026 14:36:14 +0900</pubDate>
-            <sparkle:version>268</sparkle:version>
-            <sparkle:shortVersionString>1.015.003</sparkle:shortVersionString>
+            <title>1.015.004</title>
+            <pubDate>Tue, 13 Oct 2026 22:26:34 +0900</pubDate>
+            <sparkle:version>269</sparkle:version>
+            <sparkle:shortVersionString>1.015.004</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.015.003
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.015.004
 
-- 조회 실패·오프라인·갱신 지연·사용 서비스 장애 시 현황과 상세 화면의 이전 퍼센트·진행 막대·초기화 예상 시간을 숨기고 상태 문구를 표시합니다.
-- 현황·상세·메뉴바·모니터링 윈도우가 같은 사용량 상태 판정을 사용하도록 통일했습니다.
-- 조회 오류 표기를 조회 실패 / Request failed로 명확히 했습니다. 마지막 성공 시각은 과거 조회 시각으로 유지합니다.
+- 모니터링 윈도우의 ChatGPT Codex·Claude 원형 차트 아래에 공식 서비스 상태를 표시합니다.
+- 공식 이슈가 있으면 주황색 경고와 안내 문구를 초기화 시간 아래에 표시합니다. Claude 콘솔·API만의 이슈는 사용량과 별개임을 명시합니다.
+- 오래되거나 확인하지 못한 서비스 상태는 정상으로 표시하지 않고 확인 대기로 구분합니다. 계정 사용량 조회 실패 문구도 주황색으로 강조합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.015.003/Quotly-V1.015.003.zip" length="5196626" type="application/octet-stream" sparkle:edSignature="b9Eqd5gRAC8adXGvaYoArts7JHqKQcbQdN4I8gdlTyJ+rqKmn4UNIWfpvv1rYYZ2/BiyDz5X6lA8POA5i6xvCA=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.015.004/Quotly-V1.015.004.zip" length="5200542" type="application/octet-stream" sparkle:edSignature="TeYZzPNvZix0hh8ynZoSOxv4kKiPLGbRs9hZK9bOnE1TsCCj7kTZOTb+NjO+11GDPXXm91CAppLz/WvVv5uIDw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: hILrKCYDixb5EGMqwDAUx6Iso32ufXwEEJ1+ZSayd122pdTawXnz4MSmWT8hSwo5QNRaDcy9jYb8954DBw58CA==
-length: 1737
+edSignature: YOWo6B8cKS1GIrm2DoC6HFwKCBBbaJSgYW5C9ai9dHpkHsgnY94BwMxwKKdC32ajaup2QUTrVgRNPAfDbCeyAw==
+length: 1757
 -->
