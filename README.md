@@ -1,5 +1,7 @@
 # Quotly · 쿼틀리
 
+V1.016.000: 공개 서비스 공지·초기화 소식에 비공식 한국어 AI 번역과 원문 보기를 추가했습니다. 번역 제공이 멈추거나 검증되지 않으면 원문을 표시합니다. 운영자 교정문은 검증 후 반영하며, 번역 상태·원문 대조 페이지에서 확인할 수 있습니다. 모니터링 윈도우는 시스템·라이트·다크 모드를 별도로 선택할 수 있습니다.
+
 V1.015.005: 모니터링 윈도우의 이슈·상태 확인 대기·조회 실패를 원형 차트와 숫자의 차분한 주황색으로 표시합니다. 복구되면 기존 강조색으로 돌아오며, 조회 실패 시 퍼센트와 채워진 호는 표시하지 않습니다.
 
 V1.015.004: 모니터링 윈도우에서 ChatGPT Codex·Claude의 공식 서비스 상태를 초기화 시간 아래에 표시합니다. 이슈는 주황색 경고와 안내로, 최신 상태 확인 실패는 확인 대기로 구분하며 Claude 콘솔·API 이슈는 사용량과 별개임을 명시합니다.
@@ -16,7 +18,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.015.005 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.016.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 

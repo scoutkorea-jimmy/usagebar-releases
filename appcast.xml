@@ -4,22 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.015.005</title>
-            <pubDate>Tue, 13 Oct 2026 22:31:25 +0900</pubDate>
-            <sparkle:version>270</sparkle:version>
-            <sparkle:shortVersionString>1.015.005</sparkle:shortVersionString>
+            <title>1.016.000</title>
+            <pubDate>Tue, 13 Oct 2026 23:32:48 +0900</pubDate>
+            <sparkle:version>271</sparkle:version>
+            <sparkle:shortVersionString>1.016.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.015.005
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.016.000
 
-- 모니터링 윈도우의 공식 서비스 이슈·상태 확인 대기·사용량 조회 실패를 원형 차트와 숫자의 차분한 주황색으로 표시합니다.
-- 정상 상태로 복구되면 기존 강조색으로 돌아옵니다. 서비스 상태 변경은 창을 다시 열지 않아도 반영됩니다.
-- 조회 실패 시 퍼센트와 채워진 진행 호는 계속 숨기고 상태 문구를 유지합니다.
+- 공개 서비스 공지와 초기화 소식에 맥미니가 제공하는 비공식 한국어 AI 번역을 연결했습니다. 원문과 번역을 함께 확인할 수 있습니다.
+- 번역 제공 신호가 약10분 이상 끊기거나 원문·번역 서명 검증이 실패하면 원문 아래에 작은 안내를 표시합니다: ‘쿼틀리가 잠시 한국어를 까먹었어요. 조금만 기다려 주세요.’
+- 번역 제공 상태·원문 대조 페이지를 소식 화면에서 열 수 있습니다. 번역은 자동 생성되며 정확성을 보장하지 않습니다.
+- 모니터링 윈도우 설정에 시스템/라이트/다크 화면 모드를 추가했습니다. 메인 앱 모드와 별도로 저장·복원하며 시스템 모드는 macOS를 따릅니다.
+
+- 한국어 공개 소식은 운영자의 비공개 편집 시트에서 교정할 수 있으며, 원문 확인·서명 검증 후 제공됩니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.015.005/Quotly-V1.015.005.zip" length="5201101" type="application/octet-stream" sparkle:edSignature="x06AVCnUd/HoU/7EPFZP67FAGfh8omiAvaY+O9d9lJ7V6+1poO46TlXKrXgwJ37JjodlEPHiy6/NOEH1YlU4AQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.016.000/Quotly-V1.016.000.zip" length="5221252" type="application/octet-stream" sparkle:edSignature="0rF5neXCyN+QZBs23s3uJZtP8Gvn35vGDNrb/wpS9JWNBm08vbT8Op0V9zqomdl/PXoCNusXptkEzdmzU7SdAQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: IWhkMCau128aaXvE1C+ZGapcWSqDBNMdhXLdTsyZkmD2mkQ8wbklZPMkngm7ViT1b0ZLRGsNRWcDsiq1jJu7DA==
-length: 1679
+edSignature: EL+Nhy6jgGn2Pb2kJijXnDSofznMT8xQ16124bflf6eLAZTztV4uJGUcoG2fLL8MOsnkiIMdWor8r02ZuUKIBQ==
+length: 2178
 -->
