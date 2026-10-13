@@ -4,22 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.016.001</title>
-            <pubDate>Tue, 13 Oct 2026 23:43:16 +0900</pubDate>
-            <sparkle:version>272</sparkle:version>
-            <sparkle:shortVersionString>1.016.001</sparkle:shortVersionString>
+            <title>1.017.000</title>
+            <pubDate>Tue, 13 Oct 2026 23:57:15 +0900</pubDate>
+            <sparkle:version>273</sparkle:version>
+            <sparkle:shortVersionString>1.017.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.016.001
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.017.000
 
-- 한국어 번역 범위를 초기화 소식 기록·예정 점검·최근 복구 공지와 영향을 받는 서비스 이름까지 확장했습니다.
-- 한국어 모드의 서비스 상태 알림은 번역이 준비되지 않았을 때도 한국어 상태와 앱 확인 안내를 표시합니다.
-- 비공개 편집 시트의 교정문 우선 적용과 원문 확인·서명 검증은 유지합니다.
+- 공개 알림·소식의 한국어 번역 범위를 초기화 기록·점검 예정·최근 복구 공지까지 넓혔습니다.
+- Tibo SNS 소식은 사실·조건·숫자를 유지하면서 가벼운 밈과 친근한 말투로 번역합니다. 공식 장애·복구 공지는 정확한 문체를 유지합니다.
+- ChatGPT Codex 사용량이 예정 시각 전에 크게 줄어든 상태를 연속 조회로 확인하면 초기화 알림 설정에 따라 알립니다. 최근 Tibo 공지가 있으면 함께 안내하되 계정의 초기화 사유로 단정하지 않습니다.
+- 앱에서 사용한 쿠폰·장시간 미관측·일시적인 0%·중복 알림을 제외합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.016.001/Quotly-V1.016.001.zip" length="5222748" type="application/octet-stream" sparkle:edSignature="N7QBVpVV7nIXsDCAiS1hhS4VCtrOdwmEGPci+PWdU0qK+kEr3p2JZq3I+VmRvtsb9YPLOrZjaffifCtYWDeIDQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.017.000/Quotly-V1.017.000.zip" length="5230132" type="application/octet-stream" sparkle:edSignature="lxKrnSI39YbxptPz4aQSC1e612t5EHTp4YNqQS4pSV4RKxy+MykTPfXTY6iEhM4cL4nHb1yXQaUp6DnNft1IBA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: XmYaU9q87J++rV/S69uEznbibR6UQtz0YQeBK6ccb1KvuIoBYnMSkUTqrn5O/6B04aGL7awEJxBh/CMnn8PrBQ==
-length: 1657
+edSignature: vR3+lhnd45WBPzOzHAtYfCJxiSSNoSFmJRBpjkDrk7cPNmbZEWBfJ6K4MptLlZw7I9AjcRjyq8KaFcKYpkPGDA==
+length: 1935
 -->
