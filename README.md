@@ -1,6 +1,6 @@
 # Quotly · 쿼틀리
 
-V1.018.000: Google Drive의 번역 교정문을 맥미니 없이 클라우드에서 직접 배포합니다. 고객 앱은 자동 번역과 교정문의 별도 Ed25519 서명을 검증해 적용하며, 기존 오프라인 번역 캐시는 유지합니다. 원문 ID·숫자 검사를 통과한 공개 소식 교정문만 제공하고 E열을 비우면 자동 번역으로 돌아갑니다. 새 자동 번역 생성은 맥미니에서 계속 진행합니다.
+V1.018.001: 서비스 상태의 복구 모니터링을 ‘해결 후 확인 중’으로 바꾸고 복구 조치 후 정상 작동을 확인하는 단계라는 설명을 추가했습니다. 한국어·영어 공지와 알림에 같이 적용하며, Codex 한도 변경 알림도 쉽게 풀어 썼습니다. 기존 Drive 교정문 직접 배포와 오프라인 번역 캐시는 유지합니다.
 
 V1.016.001: 한국어 번역 범위를 초기화 소식 기록·예정 점검·최근 복구 공지·영향을 받는 서비스 이름까지 확장했습니다. 한국어 모드의 상태 알림은 번역 대기 중에도 한국어로 상태와 앱 확인 안내를 제공합니다.
 
@@ -22,7 +22,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.018.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.018.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
