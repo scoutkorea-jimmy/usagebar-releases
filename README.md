@@ -1,6 +1,6 @@
 # Quotly · 쿼틀리
 
-V1.021.000: 초기화 소식에서 Tibo가 인용한 원글과 앞선 답글 맥락을 함께 볼 수 있습니다. 작성자·발표 시각·한국어 비공식 번역·글별 원문 링크를 구분하며, 자세히 보기에서는 전체 본문을 제공합니다. 맥미니에서 공개 맥락을 최대 3개까지 수집해 서명하여 배포하고 고객 앱은 캐시합니다. 수집처 지연·삭제·누락은 있을 수 있습니다.
+V1.021.001: 원문 보기·설정·연결 관리·기록 등의 접기 항목을 행 전체로 누를 수 있게 개선했습니다. 제목과 여백을 포함한 최소 48pt 클릭 영역, 펼침 방향, 마우스 올림·누름 피드백과 접근성 상태 안내를 공통 적용하며, 중첩된 접기 항목에도 동일하게 적용합니다.
 
 V1.016.001: 한국어 번역 범위를 초기화 소식 기록·예정 점검·최근 복구 공지·영향을 받는 서비스 이름까지 확장했습니다. 한국어 모드의 상태 알림은 번역 대기 중에도 한국어로 상태와 앱 확인 안내를 제공합니다.
 
@@ -22,7 +22,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.021.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.021.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 

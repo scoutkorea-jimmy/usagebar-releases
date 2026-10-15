@@ -4,23 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.021.000</title>
-            <pubDate>Thu, 15 Oct 2026 16:29:41 +0900</pubDate>
-            <sparkle:version>279</sparkle:version>
-            <sparkle:shortVersionString>1.021.000</sparkle:shortVersionString>
+            <title>1.021.001</title>
+            <pubDate>Thu, 15 Oct 2026 16:51:21 +0900</pubDate>
+            <sparkle:version>280</sparkle:version>
+            <sparkle:shortVersionString>1.021.001</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.021.000
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.021.001
 
-- 초기화 소식에 인용한 원글과 앞선 답글 맥락을 함께 표시합니다. 작성자·발표 시각·각 원문 링크를 구분합니다.
-- 연결된 글 최대 3개를 수집하고 같은 한국어 비공식 번역·원문 대조 경로로 제공합니다. 최신 소식 미리보기와 자세히 보기 모두 적용합니다.
-- 맥미니에서 공개 맥락을 수집해 서명하여 배포합니다. 고객 앱은 해당 수집 서비스에 직접 접속하지 않으며, 마지막 검증 데이터를 캐시합니다.
-- 비공개·삭제·수집 실패한 글의 내용은 추정하지 않습니다. 공개 수집처의 반영 지연이나 누락은 있을 수 있습니다.
+- 원문 보기·설정·연결 관리·기록 등의 접기 항목을 행 전체로 누를 수 있게 개선했습니다. 제목과 여백을 포함해 최소 48pt 높이의 클릭 영역을 제공합니다.
+- 펼침 방향, 마우스 올림·누름 피드백, 접근성 펼침/접힘 안내를 공통으로 적용했습니다. 중첩된 접기 항목에도 동일하게 적용합니다.
+- 펼친 내용의 버튼·링크·텍스트 선택 영역은 헤더 클릭과 분리하고, 기존 설정과 연결 정보는 유지합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.021.000/Quotly-V1.021.000.zip" length="5264646" type="application/octet-stream" sparkle:edSignature="lqPs7WfO0O4SgzpL896/hDUGPmc+dJibEpo908sk9XXpaLPSuaQN0YHOXcx2kh1VbR3/kk9iB9EVcCMeImboAw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.021.001/Quotly-V1.021.001.zip" length="5281311" type="application/octet-stream" sparkle:edSignature="bb6eEjeYLIo9xHQAkebSF6RjLkcyyNiSBlJw+WVtNizten5ZjZ3ARGr87csZWYuTC4xzGeXqB0MbLXcWIcVzAg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: HcS3ZxDD3jzcfwV1TTsuL5OIxC/FkEXavpr/dKV9nIHFrM836NYiXqdFUP1loBqyRoI/0cHnl5ZMHkn0ri2rAg==
-length: 1948
+edSignature: AD4pru3PyAmEvmN9cCGRVGFEqQFVyl/QV0mMD7Jz3hjfLporDNijgY+C8OJSn9o+uj5nqsjKTQTkDfdbCWmDAQ==
+length: 1785
 -->
