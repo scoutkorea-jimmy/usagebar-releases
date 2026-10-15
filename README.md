@@ -198,3 +198,11 @@ CPU/RAM now have a divider. All group boundaries share equal padding; visible te
 진행 중 누른 업데이트 요청은 완료 후 실행합니다. 버튼은 계속 사용할 수 있으며, 조회 실패는 최신 상태와 구분합니다. 앱 시작 후 서명된 피드를 확인하고 최신이면 최신 상태를 표시합니다.
 
 Update requests made while busy are retained. The button stays actionable; failed checks differ from up-to-date status. Startup probes the signed feed and shows current status when confirmed.
+
+## 외부 구성요소 라이선스 / Third-party licenses
+
+Quotly 자체 소스는 비공개입니다. 전체 앱이 MIT 오픈소스라는 의미가 아닙니다. Sparkle2.9.6은 MIT 및 포함된 BSD·Zlib 고지를 유지하고, 엘리스 디지털 배움체는 원본 폰트와 제작사 조건을 유지합니다. Apple 프레임워크는 macOS가 제공합니다. 외부 API·SNS 콘텐츠는 해당 서비스와 콘텐츠의 조건을 따릅니다.
+
+[외부 구성요소 전체 고지](THIRD_PARTY_NOTICES.txt) · [엘리스 폰트 원문 라이선스](Licenses/EliceDigitalBaeum_License.pdf)
+
+Quotly source remains private. Third-party components retain their own licenses: Sparkle includes MIT/BSD/Zlib notices; Elice fonts retain their original vendor terms. Apple system frameworks and external services/content are not relabeled MIT. This documentation fix does not change the app version or the published update archive.
