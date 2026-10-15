@@ -4,23 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.020.000</title>
-            <pubDate>Thu, 15 Oct 2026 15:49:53 +0900</pubDate>
-            <sparkle:version>278</sparkle:version>
-            <sparkle:shortVersionString>1.020.000</sparkle:shortVersionString>
+            <title>1.021.000</title>
+            <pubDate>Thu, 15 Oct 2026 16:29:41 +0900</pubDate>
+            <sparkle:version>279</sparkle:version>
+            <sparkle:shortVersionString>1.021.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.020.000
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.021.000
 
-- ChatGPT Codex 상세 화면에서 최신 초기화 소식 2개를 바로 볼 수 있습니다. ‘자세히 보기’에서는 최근 수집된 이전 소식과 전체 본문을 확인할 수 있습니다.
-- 현재 소식과 수집 이력을 합쳐 중복을 제거하고 실제 발표 시각순으로 표시합니다. 짧은 완료 글·답글·인용 형태도 수집 API에 들어오면 같은 목록에 표시합니다.
-- 공개 소식 조회를 15분에서 1분 주기로 줄였습니다. 새로고침 버튼도 소식을 다시 확인하며, 수집처 지연과 요청 제한은 계속 존중합니다.
-- 발표 날짜·요약·비공식 번역·원문 확인과 기존 읽음/캐시는 유지합니다. 소식 수집 실패 시 이전 소식을 지우지 않습니다.
+- 초기화 소식에 인용한 원글과 앞선 답글 맥락을 함께 표시합니다. 작성자·발표 시각·각 원문 링크를 구분합니다.
+- 연결된 글 최대 3개를 수집하고 같은 한국어 비공식 번역·원문 대조 경로로 제공합니다. 최신 소식 미리보기와 자세히 보기 모두 적용합니다.
+- 맥미니에서 공개 맥락을 수집해 서명하여 배포합니다. 고객 앱은 해당 수집 서비스에 직접 접속하지 않으며, 마지막 검증 데이터를 캐시합니다.
+- 비공개·삭제·수집 실패한 글의 내용은 추정하지 않습니다. 공개 수집처의 반영 지연이나 누락은 있을 수 있습니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.020.000/Quotly-V1.020.000.zip" length="5251732" type="application/octet-stream" sparkle:edSignature="LpWw5dk7c1qrZIkuYPzOKQ2xvQP8EWB89vjKu1hFFknv9LVY6uYPoClzCbFgOAZr631VxOb2ZrkG69rnH3esBQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.021.000/Quotly-V1.021.000.zip" length="5264646" type="application/octet-stream" sparkle:edSignature="lqPs7WfO0O4SgzpL896/hDUGPmc+dJibEpo908sk9XXpaLPSuaQN0YHOXcx2kh1VbR3/kk9iB9EVcCMeImboAw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: eGw3tCt4Ug854rhRysPxGUQD6q+muxWxCyY69WIJMHn9ya3OezMfjrvEulhIKfNWg//6Jpi7ZTKWZrVzwgjiBg==
-length: 2030
+edSignature: HcS3ZxDD3jzcfwV1TTsuL5OIxC/FkEXavpr/dKV9nIHFrM836NYiXqdFUP1loBqyRoI/0cHnl5ZMHkn0ri2rAg==
+length: 1948
 -->

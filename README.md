@@ -1,6 +1,6 @@
 # Quotly · 쿼틀리
 
-V1.020.000: ChatGPT Codex 상세 화면에서 최신 초기화 소식 2개를 바로 표시하고, 자세히 보기에서 이전 소식과 전체 본문을 확인할 수 있습니다. 현재 소식과 최근 이력을 합쳐 중복을 제거합니다. 조회 주기를 1분으로 줄이고 수동 새로고침도 연결했으며, 수집처 지연과 요청 제한을 안내합니다. 기존 날짜·요약·번역·캐시는 유지합니다.
+V1.021.000: 초기화 소식에서 Tibo가 인용한 원글과 앞선 답글 맥락을 함께 볼 수 있습니다. 작성자·발표 시각·한국어 비공식 번역·글별 원문 링크를 구분하며, 자세히 보기에서는 전체 본문을 제공합니다. 맥미니에서 공개 맥락을 최대 3개까지 수집해 서명하여 배포하고 고객 앱은 캐시합니다. 수집처 지연·삭제·누락은 있을 수 있습니다.
 
 V1.016.001: 한국어 번역 범위를 초기화 소식 기록·예정 점검·최근 복구 공지·영향을 받는 서비스 이름까지 확장했습니다. 한국어 모드의 상태 알림은 번역 대기 중에도 한국어로 상태와 앱 확인 안내를 제공합니다.
 
@@ -22,7 +22,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.020.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.021.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
