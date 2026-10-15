@@ -1,5 +1,7 @@
 # Quotly · 쿼틀리
 
+V1.021.002: 초기화 소식에서 인용·답글의 배경·글씨·버튼을 차분한 회색으로 낮춰 최종 게시글이 먼저 보이게 했습니다. 미리보기와 상세 보기에 동일하게 적용하고, 외부 구성요소 고지와 빌드 검증을 포함했습니다.
+
 V1.021.001: 원문 보기·설정·연결 관리·기록 등의 접기 항목을 행 전체로 누를 수 있게 개선했습니다. 제목과 여백을 포함한 최소 48pt 클릭 영역, 펼침 방향, 마우스 올림·누름 피드백과 접근성 상태 안내를 공통 적용하며, 중첩된 접기 항목에도 동일하게 적용합니다.
 
 V1.016.001: 한국어 번역 범위를 초기화 소식 기록·예정 점검·최근 복구 공지·영향을 받는 서비스 이름까지 확장했습니다. 한국어 모드의 상태 알림은 번역 대기 중에도 한국어로 상태와 앱 확인 안내를 제공합니다.
@@ -22,7 +24,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.021.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.021.002 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
@@ -205,4 +207,4 @@ Quotly 자체 소스는 비공개입니다. 전체 앱이 MIT 오픈소스라는
 
 [외부 구성요소 전체 고지](THIRD_PARTY_NOTICES.txt) · [엘리스 폰트 원문 라이선스](Licenses/EliceDigitalBaeum_License.pdf)
 
-Quotly source remains private. Third-party components retain their own licenses: Sparkle includes MIT/BSD/Zlib notices; Elice fonts retain their original vendor terms. Apple system frameworks and external services/content are not relabeled MIT. This documentation fix does not change the app version or the published update archive.
+Quotly source remains private. Third-party components retain their own licenses: Sparkle includes MIT/BSD/Zlib notices; Elice fonts retain their original vendor terms. Apple system frameworks and external services/content are not relabeled MIT. The V1.021.002 app includes the reviewed third-party notices and build-time license checks.

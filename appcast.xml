@@ -4,22 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.021.001</title>
-            <pubDate>Thu, 15 Oct 2026 16:51:21 +0900</pubDate>
-            <sparkle:version>280</sparkle:version>
-            <sparkle:shortVersionString>1.021.001</sparkle:shortVersionString>
+            <title>1.021.002</title>
+            <pubDate>Fri, 16 Oct 2026 00:03:57 +0900</pubDate>
+            <sparkle:version>281</sparkle:version>
+            <sparkle:shortVersionString>1.021.002</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.021.001
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.021.002
 
-- 원문 보기·설정·연결 관리·기록 등의 접기 항목을 행 전체로 누를 수 있게 개선했습니다. 제목과 여백을 포함해 최소 48pt 높이의 클릭 영역을 제공합니다.
-- 펼침 방향, 마우스 올림·누름 피드백, 접근성 펼침/접힘 안내를 공통으로 적용했습니다. 중첩된 접기 항목에도 동일하게 적용합니다.
-- 펼친 내용의 버튼·링크·텍스트 선택 영역은 헤더 클릭과 분리하고, 기존 설정과 연결 정보는 유지합니다.
+- 초기화 소식의 인용 원글과 앞선 답글을 회색 배경·글씨로 조정해 최종 게시글이 먼저 보이도록 개선했습니다. 미리보기와 상세 보기에 동일하게 적용됩니다.
+- 인용 영역의 제목·원문 보기 버튼·접기 항목도 차분한 회색으로 맞췄으며, 읽기 쉬운 대비와 클릭 영역은 유지했습니다.
+- 외부 구성요소의 라이선스 고지·목록을 앱에 포함하고, 빌드 전후 자동 검증을 추가했습니다. 소스 비공개와 기존 계정·설정은 유지합니다.
+- 현황 화면의 ‘화면 구성 · 전체 보기’ 바로가기를 제거했습니다. 화면 구성 관리는 설정에서 계속 사용할 수 있습니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.021.001/Quotly-V1.021.001.zip" length="5281311" type="application/octet-stream" sparkle:edSignature="bb6eEjeYLIo9xHQAkebSF6RjLkcyyNiSBlJw+WVtNizten5ZjZ3ARGr87csZWYuTC4xzGeXqB0MbLXcWIcVzAg=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.021.002/Quotly-V1.021.002.zip" length="5296572" type="application/octet-stream" sparkle:edSignature="uD8vXhjRlZFEf/2+WlGQkECiv2UyG2wSyLNOW1S66BnKgtf6JapqdRTbfxU2X4/aAFiwIsJXw0B2nrTQ5TDXDw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: AD4pru3PyAmEvmN9cCGRVGFEqQFVyl/QV0mMD7Jz3hjfLporDNijgY+C8OJSn9o+uj5nqsjKTQTkDfdbCWmDAQ==
-length: 1785
+edSignature: wW2rZNF6rULhzwqyLCgR1PS6RuGywOJ1cxWPCBkEzJPaZ9nz63pSINgsigao9wtydHOy+OKxX7/OG1ba/DEaCw==
+length: 1984
 -->
