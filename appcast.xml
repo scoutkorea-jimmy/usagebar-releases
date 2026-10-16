@@ -4,23 +4,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.021.002</title>
-            <pubDate>Fri, 16 Oct 2026 00:03:57 +0900</pubDate>
-            <sparkle:version>281</sparkle:version>
-            <sparkle:shortVersionString>1.021.002</sparkle:shortVersionString>
+            <title>1.021.003</title>
+            <pubDate>Fri, 16 Oct 2026 11:08:03 +0900</pubDate>
+            <sparkle:version>282</sparkle:version>
+            <sparkle:shortVersionString>1.021.003</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.021.002
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.021.003
 
-- 초기화 소식의 인용 원글과 앞선 답글을 회색 배경·글씨로 조정해 최종 게시글이 먼저 보이도록 개선했습니다. 미리보기와 상세 보기에 동일하게 적용됩니다.
-- 인용 영역의 제목·원문 보기 버튼·접기 항목도 차분한 회색으로 맞췄으며, 읽기 쉬운 대비와 클릭 영역은 유지했습니다.
-- 외부 구성요소의 라이선스 고지·목록을 앱에 포함하고, 빌드 전후 자동 검증을 추가했습니다. 소스 비공개와 기존 계정·설정은 유지합니다.
-- 현황 화면의 ‘화면 구성 · 전체 보기’ 바로가기를 제거했습니다. 화면 구성 관리는 설정에서 계속 사용할 수 있습니다.
+- 초기화 소식에서 인용 원글과 앞선 답글의 글씨를 최종 게시글보다 한 단계 작게 조정했습니다. 제목·본문·원문 버튼에 같은 위계를 적용했습니다.
+- 인용 영역은 기본 11pt, ‘글자 크게 보기’에서는 13pt로 표시합니다. 최종 게시글의 글씨 크기와 기존 회색 톤은 유지합니다.
+- 미리보기와 상세 보기에 동일하게 적용하며, 접기 항목의 클릭 영역과 기존 계정·설정은 유지합니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.021.002/Quotly-V1.021.002.zip" length="5296572" type="application/octet-stream" sparkle:edSignature="uD8vXhjRlZFEf/2+WlGQkECiv2UyG2wSyLNOW1S66BnKgtf6JapqdRTbfxU2X4/aAFiwIsJXw0B2nrTQ5TDXDw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.021.003/Quotly-V1.021.003.zip" length="5297172" type="application/octet-stream" sparkle:edSignature="tOw37x6nWZYoaNtY3l7e7MKSF8ghozeqEcIM/6qbxkfVb974yU3fbKlywu7Mu69/uqjs3d6QMQtSu4k7hHa3Aw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: wW2rZNF6rULhzwqyLCgR1PS6RuGywOJ1cxWPCBkEzJPaZ9nz63pSINgsigao9wtydHOy+OKxX7/OG1ba/DEaCw==
-length: 1984
+edSignature: OLdKMazCXs0z3Yl0A9vYI3JGErYlucUC/oE/ox9eUPoT4Qys58youtdce/eca34cW4qKxJHILp0Zq7UelyhDCQ==
+length: 1758
 -->

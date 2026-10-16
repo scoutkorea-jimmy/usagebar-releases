@@ -1,5 +1,7 @@
 # Quotly · 쿼틀리
 
+V1.021.003: 초기화 소식의 인용 원글·앞선 답글 글씨를 한 단계 작게 조정해 최종 게시글과의 위계를 명확하게 했습니다. 기본 11pt, 큰 글자 모드에서는 13pt로 표시하며 미리보기와 상세 보기에 동일하게 적용합니다.
+
 V1.021.002: 초기화 소식에서 인용·답글의 배경·글씨·버튼을 차분한 회색으로 낮춰 최종 게시글이 먼저 보이게 했습니다. 미리보기와 상세 보기에 동일하게 적용하고, 외부 구성요소 고지와 빌드 검증을 포함했습니다.
 
 V1.021.001: 원문 보기·설정·연결 관리·기록 등의 접기 항목을 행 전체로 누를 수 있게 개선했습니다. 제목과 여백을 포함한 최소 48pt 클릭 영역, 펼침 방향, 마우스 올림·누름 피드백과 접근성 상태 안내를 공통 적용하며, 중첩된 접기 항목에도 동일하게 적용합니다.
@@ -24,7 +26,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.021.002 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.021.003 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
