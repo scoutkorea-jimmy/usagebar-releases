@@ -4,22 +4,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.021.003</title>
-            <pubDate>Fri, 16 Oct 2026 11:08:03 +0900</pubDate>
-            <sparkle:version>282</sparkle:version>
-            <sparkle:shortVersionString>1.021.003</sparkle:shortVersionString>
+            <title>1.022.000</title>
+            <pubDate>Sun, 18 Oct 2026 22:32:19 +0900</pubDate>
+            <sparkle:version>283</sparkle:version>
+            <sparkle:shortVersionString>1.022.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Quotly V1.021.003
+            <description sparkle:format="markdown"><![CDATA[## Quotly V1.022.000
 
-- 초기화 소식에서 인용 원글과 앞선 답글의 글씨를 최종 게시글보다 한 단계 작게 조정했습니다. 제목·본문·원문 버튼에 같은 위계를 적용했습니다.
-- 인용 영역은 기본 11pt, ‘글자 크게 보기’에서는 13pt로 표시합니다. 최종 게시글의 글씨 크기와 기존 회색 톤은 유지합니다.
-- 미리보기와 상세 보기에 동일하게 적용하며, 접기 항목의 클릭 영역과 기존 계정·설정은 유지합니다.
+- 티보의 최근 공개 게시글을 직접 수집하고, 관련 소식과 수집된 전체 글을 나누어 볼 수 있게 했습니다. 키워드·직접 연결 관계로 분류하며 최근 수집분을 최대40개 보관합니다.
+- 초기화 공지와 중복되는 글은 원문 주소를 기준으로 한 번만 표시합니다. 인용·답글은 작은 회색 글씨로 유지하며, 짧은 글의 연결된 원글이 확인되지 않으면 안내합니다.
+- 실제 티보 글 수집 시각과 조회 지연을 표시하고, 수집 실패 때는 저장된 글을 유지합니다. 빈 원글 맥락도 간격을 두고 재조회합니다.
+- 번역 대기 중에도 소식 수집을 계속합니다. 기존 비공식 번역·Drive 교정·원문 해시·서명 검증과 계정·설정은 유지합니다.
+- 타임라인 분류를 개인 한도 초기화의 증거로 사용하거나 일반 게시글 알림을 자동으로 추가하지 않습니다. 전체 X 이력을 보장하지 않습니다.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.021.003/Quotly-V1.021.003.zip" length="5297172" type="application/octet-stream" sparkle:edSignature="tOw37x6nWZYoaNtY3l7e7MKSF8ghozeqEcIM/6qbxkfVb974yU3fbKlywu7Mu69/uqjs3d6QMQtSu4k7hHa3Aw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.022.000/Quotly-V1.022.000.zip" length="5306631" type="application/octet-stream" sparkle:edSignature="iqPz6NTzYaroUpCfI6czUoUq69Z4uq/nMMQuPh1w/++9Do00klKrT5OYw9JYoi8YvEg7fJyDjvw3MtNMecySCw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: OLdKMazCXs0z3Yl0A9vYI3JGErYlucUC/oE/ox9eUPoT4Qys58youtdce/eca34cW4qKxJHILp0Zq7UelyhDCQ==
-length: 1758
+edSignature: zTiAmSqiVmZbR01h9pYv/SZ0a4K7rmcLF+lvIlVA7YJbklnZy+FfK57KBU5kyuMyTJOg+N/MImleUhuMVSNtCA==
+length: 2257
 -->

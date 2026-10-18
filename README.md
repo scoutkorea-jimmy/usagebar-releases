@@ -1,5 +1,7 @@
 # Quotly · 쿼틀리
 
+V1.022.000: 티보의 최근 공개 게시글을 직접 수집하고 관련 소식/수집된 전체 글을 선택할 수 있습니다. 인용·답글 맥락, 짧은 글의 원글 확인 안내, 실제 수집 시각과 조회 지연 표시를 추가했습니다. 번역 대기 중에도 수집하며 전체 X 이력이나 개인 한도의 초기화 사유를 보장하지 않습니다.
+
 V1.021.003: 초기화 소식의 인용 원글·앞선 답글 글씨를 한 단계 작게 조정해 최종 게시글과의 위계를 명확하게 했습니다. 기본 11pt, 큰 글자 모드에서는 13pt로 표시하며 미리보기와 상세 보기에 동일하게 적용합니다.
 
 V1.021.002: 초기화 소식에서 인용·답글의 배경·글씨·버튼을 차분한 회색으로 낮춰 최종 게시글이 먼저 보이게 했습니다. 미리보기와 상세 보기에 동일하게 적용하고, 외부 구성요소 고지와 빌드 검증을 포함했습니다.
@@ -26,7 +28,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.021.003 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.022.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
