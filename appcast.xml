@@ -4,24 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.023.001</title>
-            <pubDate>Mon, 26 Oct 2026 07:27:37 +0900</pubDate>
-            <sparkle:version>285</sparkle:version>
-            <sparkle:shortVersionString>1.023.001</sparkle:shortVersionString>
+            <title>1.023.002</title>
+            <pubDate>Mon, 26 Oct 2026 07:30:36 +0900</pubDate>
+            <sparkle:version>286</sparkle:version>
+            <sparkle:shortVersionString>1.023.002</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.023.001
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.023.002
 
-- 메뉴바의 디스크 읽기·쓰기 속도와 저장 용량 사이에 일정한 여백과 구분점을 넣어 값을 쉽게 구별하도록 개선했습니다.
-- 네트워크 다운로드·업로드에도 같은 구분 규칙을 적용했습니다. 그룹 이름과 첫 수치의 한 칸 간격, 기존 그룹 사이 구분선은 유지합니다.
-- 수치·단위는 생략하거나 축소하지 않으며, 표시하지 않는 항목은 구분점도 함께 제외합니다.
+- 메뉴바의 ChatGPT Codex와 Claude 사이에도 다른 수치와 같은 여백·가운데 점을 적용했습니다.
+- 두 서비스를 모두 표시할 때만 점을 넣고, 하나만 표시할 때는 앞뒤에 점이 남지 않습니다.
 
-Menu-bar disk read/write rates, capacity and network download/upload now have consistent middle-dot separators and spacing. Values, units and existing display preferences are preserved.
+ChatGPT Codex and Claude now share the same menu-bar separator as other readings. A single visible provider has no separator.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.023.001/Quotly-V1.023.001.zip" length="5345685" type="application/octet-stream" sparkle:edSignature="8VMmETfkIQmH4n2JVwsIpE6BwOXkeHhU5vH8CYdBVH2XWpufsdFl5XlZEOZ2Ue7gpcjjM+4T9zgr0VeWi4M8BA=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.023.002/Quotly-V1.023.002.zip" length="5345758" type="application/octet-stream" sparkle:edSignature="Tbn6ba1NKPzYoEbeaEMaBiCSBRwWFICFooRKBQRagumOpf+m6mvCp4fF9jCM3pqNZEoH4qF81e4JO/O51LBPDA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: Bb7l4sNyQWEb3uAjL8O+ue52svgGM+DJ2y+7YwC6xOep8y9MnmVtkwUzR2tpXmWlxQvkv2zJhLETLBxFbmdWBQ==
-length: 1916
+edSignature: NtrweF1ZBqb7FFlknPmBqlZTc2mie48qVQX8/PLO00bLwMNjw718t27r1Pzje8WTGa/DCS97OU2W65KR3Lj5Aw==
+length: 1622
 -->

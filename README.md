@@ -1,5 +1,7 @@
 # Quotly · 쿼틀리
 
+V1.023.002: ChatGPT Codex와 Claude 사이에도 같은 가운데 점·여백을 적용했습니다. 하나만 표시하면 구분점 없이 해당 서비스만 표시합니다.
+
 V1.023.001: 메뉴바의 디스크 읽기·쓰기 속도, 저장 용량과 네트워크 다운로드·업로드를 일정한 간격과 구분점으로 구분해 가독성을 개선했습니다. 숫자·단위와 기존 표시 설정은 유지합니다.
 
 V1.023.000: 현황 메모리에 사용량 / 전체 용량을 표시하고, 상세 보기에서 프로그램별 RAM 상주량을 확인·검색할 수 있습니다. 앱 도우미를 합산해 사용량 순으로 보여주며, 상세 화면이 열려 있을 때만 갱신하고 외부로 전송하지 않습니다. 공유 페이지가 중복 집계되므로 목록은 전체 RAM 사용량의 합산용 수치가 아닙니다.
@@ -32,7 +34,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.023.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.023.002 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
