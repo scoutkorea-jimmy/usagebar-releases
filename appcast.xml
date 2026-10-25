@@ -4,23 +4,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.023.002</title>
-            <pubDate>Mon, 26 Oct 2026 07:30:36 +0900</pubDate>
-            <sparkle:version>286</sparkle:version>
-            <sparkle:shortVersionString>1.023.002</sparkle:shortVersionString>
+            <title>1.023.003</title>
+            <pubDate>Mon, 26 Oct 2026 07:52:53 +0900</pubDate>
+            <sparkle:version>287</sparkle:version>
+            <sparkle:shortVersionString>1.023.003</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.023.002
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.023.003
 
-- 메뉴바의 ChatGPT Codex와 Claude 사이에도 다른 수치와 같은 여백·가운데 점을 적용했습니다.
-- 두 서비스를 모두 표시할 때만 점을 넣고, 하나만 표시할 때는 앞뒤에 점이 남지 않습니다.
+- 메뉴바 설정 미리보기의 글꼴을 실제 메뉴바와 동일하게 맞췄습니다. 미리보기에서 확인한 간격과 실제 표시 폭이 달라지는 불일치를 수정했습니다.
+- AI·CPU·RAM·네트워크·디스크의 언어/글자 크기/간격/표시 조합을 확대 검증했습니다. 기존 수치 구분점과 그룹 구분선 규칙은 유지합니다.
 
-ChatGPT Codex and Claude now share the same menu-bar separator as other readings. A single visible provider has no separator.
+The menu-bar preview now uses the same font as the live menu bar. Expanded layout checks cover language, font size, spacing and visibility combinations.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.023.002/Quotly-V1.023.002.zip" length="5345758" type="application/octet-stream" sparkle:edSignature="Tbn6ba1NKPzYoEbeaEMaBiCSBRwWFICFooRKBQRagumOpf+m6mvCp4fF9jCM3pqNZEoH4qF81e4JO/O51LBPDA=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.023.003/Quotly-V1.023.003.zip" length="5345801" type="application/octet-stream" sparkle:edSignature="WwWFJ2SLFx59B3minlL9gD2h4NgZ+45bgnMUXGPjZJDWrliPJgIJZZGr2sDUwi5j/rh/Ftj+7JKAdz3gw7fbAA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: NtrweF1ZBqb7FFlknPmBqlZTc2mie48qVQX8/PLO00bLwMNjw718t27r1Pzje8WTGa/DCS97OU2W65KR3Lj5Aw==
-length: 1622
+edSignature: OScR1vKvmQbU4q6o1q3ZAlYWH39VxsIP8ojQ4g2os9wtg3rSN+oFELtDNm3MBUdn7QidU6Jf/aeN5ZSCvD7yAQ==
+length: 1792
 -->
