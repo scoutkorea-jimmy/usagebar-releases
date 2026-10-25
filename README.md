@@ -1,5 +1,7 @@
 # Quotly · 쿼틀리
 
+V1.023.001: 메뉴바의 디스크 읽기·쓰기 속도, 저장 용량과 네트워크 다운로드·업로드를 일정한 간격과 구분점으로 구분해 가독성을 개선했습니다. 숫자·단위와 기존 표시 설정은 유지합니다.
+
 V1.023.000: 현황 메모리에 사용량 / 전체 용량을 표시하고, 상세 보기에서 프로그램별 RAM 상주량을 확인·검색할 수 있습니다. 앱 도우미를 합산해 사용량 순으로 보여주며, 상세 화면이 열려 있을 때만 갱신하고 외부로 전송하지 않습니다. 공유 페이지가 중복 집계되므로 목록은 전체 RAM 사용량의 합산용 수치가 아닙니다.
 
 V1.022.000: 티보의 최근 공개 게시글을 직접 수집하고 관련 소식/수집된 전체 글을 선택할 수 있습니다. 인용·답글 맥락, 짧은 글의 원글 확인 안내, 실제 수집 시각과 조회 지연 표시를 추가했습니다. 번역 대기 중에도 수집하며 전체 X 이력이나 개인 한도의 초기화 사유를 보장하지 않습니다.
@@ -30,7 +32,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.023.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.023.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
