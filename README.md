@@ -1,5 +1,7 @@
 # Quotly · 쿼틀리
 
+V1.023.006: Codex 읽기 전용 조회의 일시적 서버·네트워크 오류를 같은 CLI에서1회만 재시도하고, 안전한 오류 유형을 세분화했습니다. 요청 제한·인증·쿠폰 요청은 즉시 재시도하지 않습니다.
+
 V1.023.005: 메뉴 조작 중에도 갱신 타이머가 동작하도록 개선하고, Claude 사용량을 부가 조회 전에 저장합니다. 선택적인 잔액 조회 실패는5분간 기억하며 로컬 오류 기록에는 개인정보 없는 오류 유형을 남깁니다.
 
 V1.023.004: 사용량 기록의 조회 공백을 회색 점선, 사용률·초기화 기준 변화를 주황색 세로선으로 구분합니다. 양 끝의 실제 관측값과 안내를 표시하며 저장 기록·CSV·소진 예상은 변경하지 않습니다.
@@ -40,7 +42,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.023.005 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.023.006 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 

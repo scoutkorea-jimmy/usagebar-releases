@@ -4,26 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.023.005</title>
-            <pubDate>Fri, 30 Oct 2026 15:43:52 +0900</pubDate>
-            <sparkle:version>289</sparkle:version>
-            <sparkle:shortVersionString>1.023.005</sparkle:shortVersionString>
+            <title>1.023.006</title>
+            <pubDate>Fri, 30 Oct 2026 17:15:31 +0900</pubDate>
+            <sparkle:version>290</sparkle:version>
+            <sparkle:shortVersionString>1.023.006</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.023.005
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.023.006
 
-- 메뉴를 조작하는 동안 자동 갱신·화면 시각 타이머가 지연될 수 있는 문제를 수정했습니다.
-- Claude 사용량 응답을 받으면 부가 정보 조회를 기다리지 않고 먼저 화면·기록에 반영합니다.
-- 선택적인 잔액 조회는 실패도5분간 기억해 자동 갱신마다 반복 요청하지 않습니다. 수동 새로고침은 다시 확인할 수 있습니다.
-- 로컬 상태 기록에 시간 초과·HTTP상태·인증·RPC 등 개인정보 없는 오류 코드를 추가하고 반복 로그를 제한했습니다.
-- 기존 조회 실패·계정 변경·요청 제한 처리와 기록을 보존합니다. 서버 장애·오프라인·잠자기 중의 값을 만들어 채우지 않습니다.
+- 연속 수집 검사에서 확인한 Codex 일시 조회 실패에 대응해, 읽기 전용 사용량 요청의 일시적 서버·네트워크 오류를 같은 CLI에서2초 뒤1회만 재시도합니다.
+- 429요청 제한·인증·잘못된 응답에는 즉시 재시도하지 않습니다. 로그인·로그아웃·쿠폰 요청의 재시도 동작은 바꾸지 않습니다.
+- RPC단계·숫자 오류 코드·서버 상태·통신 종료 유형을 구분해 로컬 진단을 개선했습니다. 원문 오류·URL·토큰·계정 정보는 기록하지 않습니다.
+- 유효한 응답의 null 오류 필드와 읽기 중 시스템 인터럽트를 처리하고, 마감 시각에 종료된 연결을 시간 초과로 구분합니다.
 
-Refresh timers now run during menu tracking. Successful Claude usage is saved before optional metadata requests. Optional prepaid lookups cache failures for five minutes, with manual refresh available. Local diagnostic transitions include safe error classes without credentials or account data.
+Transient read-only Codex quota errors receive one bounded retry on the existing helper. Rate limits, authentication and invalid replies are not immediately retried. Sanitized diagnostics distinguish RPC stages, server codes and transport failures without recording sensitive response content.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.023.005/Quotly-V1.023.005.zip" length="5364452" type="application/octet-stream" sparkle:edSignature="B8CxCm7fuIT0lQn5iFF9QhNEsqpoJjtJxvyEMyiny3nVgqwiG8mGx9k8FeM+9Cd48mrdvia8qnBrtZFe/bixDQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.023.006/Quotly-V1.023.006.zip" length="5368477" type="application/octet-stream" sparkle:edSignature="Gq6tNgPiS5IlPHBoY4JHeKMgwGBRDmj+pO6i2c2MssraNPiVV5Z3u2rgVm7X/EwsS0m/LcBZHJwEWkjVxLRpDA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: CjiQwwX29vjDTMShmIhg8v/vt/6FoexOZEsnjtzO3oMdX3jXXDDqrwGbqcMggGxPbe2FUKP5EUfXQr4lPv86Cw==
-length: 2301
+edSignature: o5hMasXH84+ELTPAmhGe5Mmv7xHEueuqM2zMsJt3yAQxSz0W9+jHUfAh0d2gHw/zFlJoXfVY7LT9RoFtOsfADQ==
+length: 2286
 -->
