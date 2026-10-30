@@ -4,25 +4,26 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.023.004</title>
-            <pubDate>Fri, 30 Oct 2026 12:17:57 +0900</pubDate>
-            <sparkle:version>288</sparkle:version>
-            <sparkle:shortVersionString>1.023.004</sparkle:shortVersionString>
+            <title>1.023.005</title>
+            <pubDate>Fri, 30 Oct 2026 15:43:52 +0900</pubDate>
+            <sparkle:version>289</sparkle:version>
+            <sparkle:shortVersionString>1.023.005</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.023.004
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.023.005
 
-- 사용량 기록 그래프에서 조회 공백을 회색 점선으로 구분하고, 공백 전후의 확인값을 연결해 추이를 따라보기 쉽게 개선했습니다.
-- 사용률 감소·초기화 기준 변화는 주황색 세로선으로 구분하고, 관측 구간의 양 끝점을 표시합니다.
-- 그래프 아래에 실선·점선·한도 변화의 의미를 한국어와 영어로 안내합니다. ChatGPT Codex·Claude의24시간/7일 기록에 공통 적용합니다.
-- 기존 기록·CSV·소진 예상은 보존하며, 확인하지 못한 중간 수치를 추가하지 않습니다.
+- 메뉴를 조작하는 동안 자동 갱신·화면 시각 타이머가 지연될 수 있는 문제를 수정했습니다.
+- Claude 사용량 응답을 받으면 부가 정보 조회를 기다리지 않고 먼저 화면·기록에 반영합니다.
+- 선택적인 잔액 조회는 실패도5분간 기억해 자동 갱신마다 반복 요청하지 않습니다. 수동 새로고침은 다시 확인할 수 있습니다.
+- 로컬 상태 기록에 시간 초과·HTTP상태·인증·RPC 등 개인정보 없는 오류 코드를 추가하고 반복 로그를 제한했습니다.
+- 기존 조회 실패·계정 변경·요청 제한 처리와 기록을 보존합니다. 서버 장애·오프라인·잠자기 중의 값을 만들어 채우지 않습니다.
 
-Usage history now distinguishes observation gaps with dashed connectors and usage/reset-reference changes with orange markers. Endpoint dots and localized explanations clarify interruptions. Stored observations, CSV exports and forecast evidence remain unchanged.
+Refresh timers now run during menu tracking. Successful Claude usage is saved before optional metadata requests. Optional prepaid lookups cache failures for five minutes, with manual refresh available. Local diagnostic transitions include safe error classes without credentials or account data.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.023.004/Quotly-V1.023.004.zip" length="5357820" type="application/octet-stream" sparkle:edSignature="HdtIUqWz2dM/0gpfWKpRzAogUVukEf/fM45QEr14PjIHstgZx8z4H7TQPmQfjjARUQh3cVJuAPZv16b+SUtcBw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.023.005/Quotly-V1.023.005.zip" length="5364452" type="application/octet-stream" sparkle:edSignature="B8CxCm7fuIT0lQn5iFF9QhNEsqpoJjtJxvyEMyiny3nVgqwiG8mGx9k8FeM+9Cd48mrdvia8qnBrtZFe/bixDQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: tka88BhPxHCFh6yYUWMlgEzUjayMv888n8orzyXi+cQzMrYf3vEfQG/Nu+EpQazeey/P+HEFoV20b6DiW6ImAg==
-length: 2121
+edSignature: CjiQwwX29vjDTMShmIhg8v/vt/6FoexOZEsnjtzO3oMdX3jXXDDqrwGbqcMggGxPbe2FUKP5EUfXQr4lPv86Cw==
+length: 2301
 -->
