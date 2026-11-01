@@ -2,13 +2,13 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.025.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.026.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
-**V1.025.000 — Antigravity 공식 화면 바로가기:** 설정 → 계정에서 **Antigravity 바로가기**를 켜면 메뉴바와 모니터링 윈도우에서 공식 화면으로 이동할 수 있습니다. Antigravity 사용량은 공식 앱이나 공식 안내에서 직접 확인하며, Quotly가 자동으로 조회하거나 로그인 정보를 읽지 않습니다.
+**V1.026.000 — 공식 statusline 사용량 수신:** Antigravity CLI가 공식 `statusLine` 기능으로 전달한 사용량을 Quotly에 표시합니다. 사용자 동작으로만 공식 CLI를 실행하며, 갱신 클릭 한 번에 전용 세션 하나를 만듭니다. 백그라운드 반복 조회나 인증 정보 읽기는 하지 않습니다. CLI가 닫히거나 전달이 멈추면 마지막 수신값과 시각, **(0H03M 전)** 형태의 수신 경과시간을 유지하고 기다리는 상태를 표시합니다. 메인·상세·모니터링의 **갱신하기**를 누르면 새 CLI 수신을 기다리고, 유효한 수신 뒤에는 이번 갱신용으로 만든 화면과 프로세스를 닫도록 구성합니다. 기존 CLI 세션은 그대로 둡니다. Quotly는 이번 클릭으로 만든 CLI의 시작 이후 수신만 완료로 인정하며, 시작 시 전달되는 캐시일 수 있으므로 서버의 즉시 재조회 완료를 의미하지는 않습니다.
 
-**V1.025.000 — Official Antigravity shortcuts:** Enable **Antigravity shortcut** under Settings → Accounts to access its official app or guide from Quotly. Check Antigravity usage in the official product; Quotly does not collect its usage or read authentication data.
+**V1.026.000 — Official statusline usage reception:** Quotly displays quota data delivered by the official Antigravity CLI’s `statusLine` feature. Quotly launches the official CLI only in response to a user action, with one dedicated session per refresh click. It does not poll in the background or read authentication data. If the CLI closes or stops delivering, the last received value, receipt time and elapsed age remain visible with a waiting state. Choose **Refresh** in Overview, details or Monitoring to wait for a new CLI delivery and close the screen and process created for that refresh afterward. Existing CLI sessions stay untouched. Only a receipt delivered after startup by the CLI created for that click completes the operation; startup data may be cached, so this is not proof of a new backend fetch.
 
 상단 **톱니바퀴 설정 버튼**에서 메뉴바 표시 항목·갱신·알림·계정을 관리합니다. 하단 탐색은 **현황·모니터링·작업 시간** 세 화면으로 구성됩니다. 작업 시간은 ⌘3으로도 열 수 있습니다.
 
@@ -20,11 +20,11 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 - **내 Mac 상태:** 모델 식별자·칩·CPU 코어·메모리 정보를 자동으로 읽고 CPU·메모리·디스크·네트워크 상태와 마지막 측정 시각을 요약합니다. 대기·지연 상태를 구분합니다.
 - **CPU:** 모든 코어를 합친 0–100% 사용률과 여유율, 최근 1·5·10분 그래프를 표시합니다. 소수점 한 자리, 1·2·5·10초 측정(기본 2초)을 지원합니다. 설정 → 메뉴바에서 CPU 표시를 선택합니다.
 - **메모리·열 상태:** 추정 사용 용량 / 전체 용량, macOS 메모리 압박, 스왑, 최근 추이와 시스템 열 상태를 10초마다 확인합니다. 회수 가능한 파일 캐시를 제외한 추정치로 활동 모니터와 계산 기준이 다를 수 있습니다. 열 상태는 실제 온도나 성능 제한 원인을 직접 측정한 값이 아닙니다.
-- **모니터링 윈도우:** ChatGPT Codex·Claude 차트와 선택적으로 표시한 Antigravity 공식 바로가기 아래에 CPU·메모리·네트워크·디스크를 창 폭에 따라 1열 또는 2열 카드로 표시합니다. 아이콘·큰 수치·단위·최근 10분 미니 그래프·마지막 측정 시각을 함께 보여줍니다. 설정 → 윈도우에서 각 항목을 선택하며, 앱 강조색을 공유하고, 윈도우의 화면 모드는 별도로 선택합니다. 모든 화면은 같은 수집 데이터를 사용합니다. 각 시스템 카드 제목에서 상세 화면으로 바로 이동할 수 있으며, 큰 글씨 설정은 열린 창에도 반영됩니다.
+- **모니터링 윈도우:** ChatGPT Codex·Claude와 선택적으로 연결한 Antigravity 사용량 차트 아래에 CPU·메모리·네트워크·디스크를 창 폭에 따라 1열 또는 2열 카드로 표시합니다. 아이콘·큰 수치·단위·최근 10분 미니 그래프·마지막 측정 시각을 함께 보여줍니다. 설정 → 윈도우에서 각 항목을 선택하며, 앱 강조색을 공유하고, 윈도우의 화면 모드는 별도로 선택합니다. 모든 화면은 같은 수집 데이터를 사용합니다. 각 시스템 카드 제목에서 상세 화면으로 바로 이동할 수 있으며, 큰 글씨 설정은 열린 창에도 반영됩니다.
 
 
 - **AI 사용량:** ChatGPT 구독의 Codex 한도와 Claude 한도를 사용률 또는 잔여량으로 표시합니다. 초기화까지 남은 시간, 갱신 시각, 서버에서 제공하는 크레딧·추가 한도를 확인할 수 있습니다.
-- **Antigravity 공식 바로가기:** 현황·상세 안내·메뉴바의 `AGY ↗` 항목·모니터링 윈도우에서 공식 화면에 접근합니다. 공식 앱이 없으면 고정된 Google 공식 사용량 안내를 엽니다. 사용량·잔여량·한도·초기화 시각을 가져오거나 추정하지 않으며, 숫자·퍼센트·진행 막대·정상 상태를 표시하지 않습니다.
+- **Antigravity 사용량 수신:** 공식 CLI가 statusline으로 전달한 한도만 현황·상세·메뉴바·모니터링 윈도우에 표시합니다. **마지막 CLI 수신** 시각과 **CLI 수신 / 업데이트 대기 / 수신 대기** 상태를 함께 보여주며, 아직 값이 없거나 초기화 시간이 지났다는 이유로 0% 또는 100%를 만들어 표시하지 않습니다. 최근 수신은 CLI에서 전달받았다는 뜻이며 서버에 방금 조회했다는 보장은 아닙니다.
 - **이용 플랜:** 상세·계정에서 서버가 제공하는 플랜명을 표시합니다. Claude는 확인된 다음 결제일을 표시하고, 날짜가 없으면 월간·연간 결제 주기만 표시합니다. 결제 정보를 받지 못하면 생략하며, 현재 ChatGPT 연동에는 결제 정보가 없습니다.
 - **Codex·Claude 사용량 알림:** 설정한 잔여량 기준을 한도 주기에서 처음 넘을 때 알립니다. 초기화 완료 알림과 방해금지 시간을 지원합니다.
 - **공식 서비스 상태:** [Claude Status](https://status.claude.com/)와 [OpenAI Status](https://status.openai.com/)를 1분마다 확인합니다. 새 장애, 진행 상황 변경, 복구를 알려주고 같은 업데이트를 반복해서 알리지 않습니다.
@@ -51,7 +51,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.025.000.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.026.000.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 계정**에서 본인의 계정을 연결합니다.
 
@@ -59,29 +59,33 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 **ChatGPT · Codex:** 최신 ChatGPT 데스크톱 앱에 포함된 Codex와 OpenAI 서명이 확인되는 기존 Codex 실행 파일을 자동으로 찾습니다. 서명이 없거나 변조된 CLI·실행 파일은 실행하지 않습니다. 연결 화면에 찾은 도구가 표시됩니다. 로그인 완료 후에는 사용량과 연결됨 상태를 표시하고 연결 관리는 접어둡니다. 로그아웃은 연결 관리를 펼쳐 실행할 수 있습니다. 브라우저·터미널 로그인 결과가 반영되지 않으면 ‘로그인 결과 다시 확인’을 누르세요. 실행 파일이 없으면 **ChatGPT 데스크톱 설치하기 → 응용 프로그램 폴더로 이동 → 설치 확인 → ChatGPT Codex 로그인** 순서로 연결하세요. Codex가 포함된 앱이 있으면 CLI를 따로 설치할 필요가 없습니다. 이전 대화 전용 ChatGPT 앱이나 웹 로그인만으로는 연결되지 않습니다.
 
-**Antigravity:** **설정 → 계정 → Antigravity 바로가기**에서 표시 여부를 고릅니다. **공식 앱 열기**는 확인된 Google 공식 앱을 열며, 앱이 없으면 [공식 사용량 안내](https://antigravity.google/docs/cli/commands/usage/)를 엽니다. CLI 설치나 Quotly 안의 Google 로그인이 필요하지 않습니다. 로그인과 사용량 확인은 공식 제품에서 직접 진행합니다.
+**Antigravity:** 공식 CLI를 설치하고 공식 절차로 로그인한 뒤, 설정 → 계정에서 **Antigravity 사용량 표시**를 켜고 **자동 수신 설정**을 선택합니다. 표시를 켜는 것만으로 CLI 설정을 변경하지는 않습니다. 사용자가 실행한 공식 CLI가 수신 도우미를 호출해 최소한의 사용량을 전달합니다. Quotly는 백그라운드 반복 조회를 위해 CLI를 실행하거나 Google 비밀번호·토큰을 읽지 않습니다. 
 
-Antigravity 바로가기는 자동 수집을 시작하지 않습니다. 이전 후보에서 활성화한 설정이 남아 있어도 공식 바로가기 표시로만 처리하며, 기존 계정이나 CLI 로그인 상태를 변경하지 않습니다. Codex·Claude의 수집과 기록은 기존 방식으로 유지합니다.
+구성 후에는 **갱신하기**를 누르면 됩니다. 한 번의 클릭으로 공식 CLI를 인자 없이 실행하며 `/usage`·프롬프트·로그인 입력을 전송하지 않습니다. 최대 45초 안에 수신되지 않거나 취소하면 이번 갱신용 프로세스만 정리하고 마지막 값을 유지합니다. 로그인·작업공간 확인 안내가 있어도 아무 입력이나 승인을 보내지 않고 수신을 기다리며, 새 수신이 없을 때만 별도 사용자 조치가 필요하다고 알립니다. 작업공간 신뢰 설정을 임의로 바꾸지 않습니다. **갱신 중…** 상태에서 유효한 새 수신을 기다리고, 갱신용으로 만든 화면과 프로세스는 정리합니다. 
+
+로그인이나 초기 설정이 필요하면 수신 설정 안의 **공식 CLI 열기**로 공식 터미널을 열어 직접 진행합니다. 그 수동 화면에서는 필요할 때 `/usage`로 사용량을 확인할 수 있습니다. 공식 앱과 [공식 사용량 안내](https://antigravity.google/docs/cli/commands/usage/)도 계속 열 수 있습니다.
+
+기존 사용자 지정 statusline이 있으면 **기존 상태줄 설정을 대체할까요?** 안내에서 **백업 후 대체**를 선택해야 변경합니다. 기존 설정은 보존합니다. 연결 해제 시 Quotly가 설정한 명령이 그대로 있을 때만 이전 statusline을 복원하고, 사용자가 이후 바꾼 명령이나 다른 설정을 덮어쓰지 않습니다. **마지막 CLI 수신** 시각 옆에는 **(0H03M 전)**처럼 경과시간을 표시합니다. 아직 수신값이 없으면 경과시간을 만들지 않고, 미래 수신 시각을 방금 받은 정상값처럼 표시하지 않습니다. CLI 종료 후에는 마지막 수신값을 대기 상태로 표시하며, 기존 Google 로그인은 변경하지 않습니다. Codex·Claude의 조회와 기록은 기존 방식으로 유지합니다.
 
 ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시지 잔여 횟수는 지원하지 않습니다. Codex 연결에는 지원되는 로컬 Codex 설치와 로그인 환경이 필요합니다. 공식 상태 조회에는 계정 로그인이 필요하지 않습니다.
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.025.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.026.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 이번 버전의 확인 범위
 
-최종 공식 바로가기 방식에서 backend 회귀 127개, 네이티브 화면 검사 120개와 최종 상세 화면 검사 14개를 통과했습니다. 화면 검사는 총 52개 이미지를 렌더링했으며 한국어·영어, 일반·큰 글씨, 밝은·어두운 화면과 좁은 폭을 포함합니다. 배포 도구 단위검사 12개와 관측기 회귀검사 36개도 격리된 시험에서 통과했습니다. 이는 실제 8시간 관측 완료를 의미하지 않습니다.
+맥미니의 최종 설치본에서 현황·상세·모니터링 화면, 공식 CLI의 새 수신값 표시, 갱신 진행 창과 자동 닫힘, 취소 후 마지막 값 유지, 수신 설정 해제·복원을 확인했습니다. 기존 CLI 세션과 다른 설정은 보존됐으며, 언어·큰 글씨 등 확인을 위해 변경한 화면 설정도 복원했습니다. 441pt 모니터링 창에서 한국어 기본 글씨의 세 원형 차트, 한국어·영어 큰 글씨의 세 가로 막대가 한 줄에 표시되는 모습을 실제로 확인했습니다. 배포 ZIP을 다시 풀어 최종 설치본의 파일·권한·서명을 대조했습니다.
 
-최종 빌드의 서명, ZIP 추출 결과와 설치본의 전체 파일·링크·권한 일치를 확인했습니다. 설치된 맥미니 앱에서 한국어 현황, 실제 Antigravity 바로가기 스위치, `/usage` 상세 안내와 441pt 모니터링의 한 줄 배치를 확인했고, 안내 버튼이 Aside에서 Google 공식 사용량 안내를 실제로 여는 것도 확인했습니다. 이 Mac에는 Antigravity 공식 앱이 없어 공식 앱 실행 자체는 확인하지 않았습니다.
+240pt·520pt 배치, 영어 진행 창의 문구·배치, 시간 초과·중복 클릭·미래 시각·잘못된 전달값은 격리된 시험으로 확인한 범위입니다. 원클릭 엔진의 격리 프로세스 시험 46개가 통과했으며, 실제 CLI 수신 시험에서도 작업공간 안내에 입력이나 승인을 보내지 않고 설정·신뢰 상태를 보존했습니다. 새 수신은 CLI가 데이터를 전달했다는 뜻이며, 서버에서 즉시 다시 조회했다는 보장은 아닙니다.
 
-설치본을 영어·큰 글씨로 바꾼 실제 441pt 모니터링에서도 Codex·Claude 가로 막대 두 개와 Antigravity 안내가 한 줄로 표시되고, 퍼센트가 말줄임 없이 보이는 것을 확인했습니다. 영어 창 제목, 현황·설정·메뉴바의 별도 `AGY ↗` 항목, 한 줄 `/usage` 상세 안내와 조회 버튼 부재도 확인했습니다. 검증 후 한국어·기본 글씨로 복원했습니다. 240pt 최소 폭은 네이티브 시험 화면으로 검증했으며 실제 설치 창의 240pt 조절을 검증한 것은 아닙니다. Codex·Claude의 8시간 실수집·원본 기록 대조와 맥북에어 실물 확인은 아직 완료되지 않았습니다. Antigravity는 공식 바로가기만 제공하므로 자동 수집 검증은 해당하지 않습니다. 공개 피드·ZIP의 독립 검증은 배포 단계에서 별도로 수행합니다.
+8시간 후속 관측은 진행 중이며 아직 완료되지 않았습니다. Codex·Claude의 실제 수집을 원본 기록과 대조하고, Antigravity에는 CLI 상시 실행 조건을 두지 않습니다. Antigravity의 실제 수신·종료·대기 동작은 위의 별도 검증으로 확인했습니다. 맥북에어 실물 확인은 별도 대상입니다.
 
 ## 로그인 보안
 
 - Claude 로그인 창은 Claude·Google·Apple의 지정된 HTTPS 로그인 주소만 허용합니다. 실제 접속 중인 호스트를 창 제목에 표시하며, 알 수 없는 기업 SSO 주소는 현재 지원하지 않습니다.
 - ChatGPT Codex는 OpenAI 서명이 확인되는 실행 파일만 사용합니다. Quotly에서 실행하는 사용량 조회는 공식 ChatGPT 주소로 고정하며, 사용자의 Codex 설정 파일은 변경하지 않습니다.
-- Antigravity는 공식 앱이나 고정된 HTTPS 안내 주소를 여는 기능만 제공합니다. CLI 실행·자동 조회·인증 정보 추출·사용량 저장을 하지 않으며, 기존 Google 로그인 상태를 변경하지 않습니다.
+- Antigravity 수신 도우미는 전달값에서 허용된 사용량·수신 및 프로세스 식별 메타데이터만 골라 로컬에 저장합니다. 계정·세션 구분에 필요한 값은 이 Mac의 키를 사용하는 식별 태그로 처리하며 원문 식별값·대화·프롬프트·원본 payload·인증 정보를 저장하지 않습니다. 수신 저장소는 사용자 전용 권한을 적용하고 원격 서버로 전송하지 않습니다.
 - 사용 기록·상태 기록은 사용자 전용 접근 권한으로 저장합니다. 진단 보고에는 비밀번호·인증 토큰·이메일·대화·원본 오류 응답을 넣지 않습니다.
 - Quotly가 비밀번호를 직접 수집하거나 저장하지는 않지만, Claude 로그인 세션은 이 Mac의 WebKit 저장소에 유지되고 Codex 인증은 공식 Codex가 관리합니다. 감염된 Mac 또는 같은 사용자 권한의 악성 프로그램에 대한 완전한 보호를 보장하지 않습니다.
 - 현재 Apple Developer ID 서명·공증은 없습니다. 업데이트 피드·배포 패키지의 Ed25519 서명 검증은 유지합니다.
@@ -107,7 +111,7 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 - Save and switch screen layouts without changing account, refresh or notification settings.
 - View recognized server-reported plan names in Overview, details and account settings. Claude shows an explicit next payment date, falling back to a confirmed monthly/annual cycle. Missing billing details are omitted; the current ChatGPT integration supplies none.
 - View used or remaining **Codex subscription limits** and Claude usage, reset countdowns, server-reported credits and additional limits.
-- Optionally show official Antigravity shortcuts in Overview, details, the `AGY ↗` menu-bar item and the Monitoring window. Open the verified official app, or the fixed Google usage guide when it is unavailable. Quotly does not show Antigravity quotas, percentages, progress bars or a fabricated service-health state.
+- Receive Antigravity quota updates through the official CLI’s statusLine feature and show them in Overview, details, the menu bar and Monitoring window. The latest receipt time distinguishes received data from waiting/last-value states. No value, stale data or an elapsed reset time is converted into an invented zero or full quota. Count-only limits remain remaining counts without fabricated percentages or charts. A missing previously selected limit does not silently switch to another limit.
 - Receive Codex/Claude first-crossing quota alerts, reset alerts, and official **OpenAI / Claude incident updates** checked every minute.
 - Open the status row on Overview for active incidents and recent official updates. Configure each provider under **Settings → Notifications → Official service status**. Enable the app's main notifications switch and macOS notification permission for banners.
 - Existing active incidents are announced on first check; historical resolved incidents are not. Identical updates are deduplicated across restarts. Quiet-hour events are not replayed later.
@@ -117,21 +121,25 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.025.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.026.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
-For Antigravity, enable **Settings → Accounts → Antigravity shortcut**. **Open official app** opens a verified Google app; if it is unavailable, Quotly opens the [official usage guide](https://antigravity.google/docs/cli/commands/usage/). No CLI installation or Google sign-in inside Quotly is required. Authentication and usage checking remain in the official product.
+For Antigravity, install and sign in through the official CLI, then enable **Antigravity usage display** under Settings → Accounts and choose the automatic-reception setup action. The display toggle alone does not change CLI settings. The CLI started by the user invokes the receiver and delivers a minimal quota payload. Quotly does not run the CLI for background polling or extract Google credentials. 
 
-The shortcut does not start automatic collection. An enabled preference from an earlier candidate now controls shortcut visibility only; it does not change existing accounts or CLI sign-in state. Codex and Claude collection and history retain their existing behavior.
+After setup, choose **Refresh**. A click launches the official CLI without arguments; no `/usage`, prompt or login input is sent. A timeout of up to 45 seconds or cancellation cleans up only that refresh process and preserves the last value. Login/workspace prompts do not receive input or approval; the app continues waiting for a valid receipt and requests separate user action only if none arrives. Workspace trust settings are not changed. The app shows **Refreshing…**, waits for a valid new delivery, and cleans up the screen and process created for that refresh. 
+
+For sign-in or initial setup, use the separate **Open official CLI** action in reception settings. In that manual terminal, use `/usage` when needed. Official app/guide links remain available.
+
+An existing custom statusline requires an explicit backup-and-replace confirmation; it is not silently overwritten. Disconnect restores the prior block only when Quotly’s own command is still present; later user changes and unrelated settings are preserved. The last CLI receipt includes an elapsed-age label, such as **(0H03M ago)**. No age is invented before a first receipt, and a future receipt timestamp is not presented as freshly received. Closing the CLI keeps the last received value with a waiting state. Existing Google authentication and Codex/Claude collection are unchanged. A recent receipt means the CLI delivered data, not necessarily a new server fetch.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
-Claude sign-in windows accept only designated HTTPS Claude, Google and Apple hosts and show the current host in the native title. Unknown enterprise SSO providers are currently blocked. Codex helpers require a valid OpenAI signature; usage requests pin the official ChatGPT base URL without changing your Codex config. History and status files use owner-only permissions. Quotly does not collect passwords directly; Claude sessions persist in this Mac's WebKit store and Codex manages its own credentials. Antigravity support only opens its official app or a fixed HTTPS guide. Quotly does not execute its CLI, query quotas, extract authentication data or store usage. Existing Google sign-in state is unchanged. This does not guarantee protection against malware running as your OS user or a compromised Mac.
+Claude sign-in windows accept only designated HTTPS Claude, Google and Apple hosts and show the current host in the native title. Unknown enterprise SSO providers are currently blocked. Codex helpers require a valid OpenAI signature; usage requests pin the official ChatGPT base URL without changing your Codex config. History and status files use owner-only permissions. Quotly does not collect passwords directly; Claude sessions persist in this Mac's WebKit store and Codex manages its own credentials. The Antigravity receiver allowlists quota and minimal receipt/process metadata into an owner-only local store. Local keyed account/session tags replace original identifiers. It does not retain raw payloads, conversations, prompts or credentials and does not transmit received data to a remote server. Quotly never launches the CLI for background polling. Existing Google sign-in state is unchanged. This does not guarantee protection against malware running as your OS user or a compromised Mac.
 
-The final official-shortcut backend passed 127 regression checks. Native UI fixtures passed 120 checks plus 14 final-detail checks and rendered 52 images, covering Korean/English, normal/larger text, light/dark appearance and narrow widths. Twelve release-tool unit tests and 36 observer regression tests passed in isolated fixtures; these results do not establish a completed eight-hour observation.
+The final installed app was checked on a Mac mini: Overview, details and Monitoring, real official-CLI quota delivery, the refresh progress window and automatic closing, cancellation with last-value retention, and reception setup/disconnect/restore. Existing CLI sessions and unrelated settings were preserved, and temporary language/text-size changes were restored. At a 441pt monitoring-window width, Korean normal text displayed three rings in one row; Korean and English larger text displayed three horizontal bars in one row. The release ZIP was extracted and its files, permissions and signatures matched against the installed app.
 
-The final app signature and the ZIP round trip were verified against every installed file, link and permission. On the installed Mac mini app, Korean Overview, the native Antigravity shortcut switch, the `/usage` details and a single-row 441pt Monitoring window were checked. The guide button actually opened the fixed Google usage-guide URL in Aside. The official Antigravity app is not installed on this Mac, so launching that app was not verified.
+The 240pt/520pt layouts, English progress-window text/layout, timeout, duplicate clicks, future timestamps and invalid payloads were checked in isolated fixtures. The refresh engine passed 46 isolated process checks. A real CLI test also received data without submitting workspace approval or changing settings/trust. A new receipt confirms a delivery by the CLI, not a new server fetch.
 
-Installed English/larger-text checks passed at 441pt: two Codex/Claude horizontal bars and the Antigravity guide remain in one row with complete percentages. English native window titles, Overview/settings, the separate `AGY ↗` menu item, a single-line `/usage` instruction and the absence of query controls were checked. Korean and normal text were restored afterward. The 240pt minimum width was checked in native fixtures only; resizing the actual installed window to 240pt was not verified. Actual eight-hour Codex/Claude collection and source-history comparison, and physical MacBook Air testing, remain incomplete. Antigravity automatic collection is not applicable because only official shortcuts are provided. Public feed and downloaded-ZIP verification will be performed separately during publication.
+Eight-hour follow-up is running and is not yet complete. It compares actual Codex/Claude collection against original history. Antigravity does not require a continuously running CLI; actual delivery, exit and waiting behavior were checked separately as described above. Physical MacBook Air testing remains separate.
 
 Feedback: **scoutkorea@kakao.com**. App management settings include a prominent PayPal support button and an email-composer button. Support is optional; feedback is never sent automatically.
 
@@ -161,9 +169,9 @@ The Monitoring window uses a standard title bar and opaque backgrounds. Memory p
 
 Quota ring percentages scale down when needed, keeping `100%` visible without truncation.
 
-좁은 창에서는 시스템 카드가 1열로, 넓은 창에서는 2열로 표시됩니다. 상단 AI 항목은 항상 한 줄을 유지합니다. 넓은 창에서는 Codex·Claude 원형 차트 두 개와 Antigravity 공식 바로가기를, 좁은 창에서는 Codex·Claude 가로 막대 두 개와 같은 바로가기를 나란히 표시합니다. Antigravity에는 사용량 차트를 만들지 않습니다. 스크롤바는 1pt 두께의 얇은 오버레이로 표시합니다.
+좁은 창에서는 시스템 카드가 1열로, 넓은 창에서는 2열로 표시됩니다. 세 AI 항목은 항상 한 줄을 유지하며 넓은 창에서는 원형 차트, 좁은 창에서는 가로 막대 차트로 표시합니다. Antigravity는 실제 수신값이 있을 때만 사용량을 표시하고 마지막 수신값과 대기 상태를 구분합니다. 스크롤바는 1pt 두께의 얇은 오버레이입니다.
 
-System cards use one column in narrow windows and two in wider windows. The AI items remain in one row: two Codex/Claude rings and an Antigravity official shortcut in wide windows, or two Codex/Claude horizontal bars and the same shortcut in narrow windows. Antigravity has no quota chart. The scrollbar uses a thin 1pt overlay thumb.
+System cards use one column in narrow windows and two in wider windows. Three AI items remain in one row, using rings in wide windows and horizontal bars in narrow windows. Antigravity displays actual received values and distinguishes the last receipt from waiting states. The scrollbar uses a thin 1pt overlay thumb.
 
 ### RAM 및 업데이트 상태 / RAM and update status
 
@@ -179,7 +187,7 @@ Update settings show up-to-date, available, failed or incompatible states. Versi
 
 The Monitoring window shows AI usage as rings or horizontal bars depending on its width, alongside the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
 
-설정 → 윈도우에서 ChatGPT Codex와 Claude의 차트 한도를 각각 선택합니다. Antigravity는 공식 바로가기 표시 여부만 선택하며 한도 선택이나 자동 조회 기능을 제공하지 않습니다.
+설정 → 윈도우에서 각 서비스의 표시 항목과 한도를 선택합니다. Antigravity는 공식 statusline이 실제로 전달한 한도만 선택 대상으로 사용하며, 없는 한도나 새 초기화 값을 추정하지 않습니다. 수량만 제공된 한도는 잔여 수량으로 표시하고 퍼센트·원형·막대를 만들지 않습니다. 이전에 선택한 한도가 사라져도 다른 한도로 조용히 바꾸지 않습니다.
 
 ### 앱 색상 / Appearance
 설정 → 앱 → 앱 색상에서 시스템·라이트·다크 화면 모드와 강조색을 선택할 수 있습니다. 모니터링 윈도우는 같은 강조색을 사용하며, 설정 → 윈도우에서 시스템·라이트·다크 모드를 별도로 고를 수 있습니다.
@@ -212,6 +220,8 @@ Quotly source remains private. Third-party components retain their own licenses:
 
 <details>
 <summary>이전 주요 업데이트 / Earlier release highlights</summary>
+
+V1.025.000: Antigravity 공식 화면 바로가기와 좁은 모니터링 창의 한 줄 배치를 추가했습니다. V1.026.000은 공식 statusline이 전달한 사용량을 수신하는 방식으로 확장합니다.
 
 V1.024.001: 메뉴바 패널의 상단 버튼·표시 기준 선택·서비스 상태 줄·하단 탐색에서 과도한 여백을 줄였습니다. 글씨 크기는 유지하면서 같은 창에 더 많은 정보를 표시하고, 좁은 영문 화면에서 긴 항목명이 잘리지 않도록 개선했습니다. 설정과 모니터링 윈도우의 공통 버튼·접기 항목에도 같은 간격 규칙을 적용했습니다.
 
