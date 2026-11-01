@@ -1,5 +1,9 @@
 # Quotly · 쿼틀리
 
+V1.024.000: ChatGPT Codex·Claude의 독립 수집 일정, 요청 제한 대기, 사용량 기록의 백업·복구와 업데이트 재시작 보호를 보강했습니다. 큰 글씨·좁은 창 배치·공통 여백과 클릭 영역을 다듬고, 모니터링 윈도우의 상세 바로가기와 작업 기록 시작 날짜를 추가했습니다. 화면마다 달랐던 디스크 용량 계산 기준도 통일했습니다.
+
+V1.024.000 improves independent quota collection, retry-delay handling, history recovery and update restart protection. Larger text and narrow-window layouts are more consistent, with direct monitoring details and dated work records. Disk capacity now uses a consistent unit calculation across views.
+
 V1.023.006: Codex 읽기 전용 조회의 일시적 서버·네트워크 오류를 같은 CLI에서1회만 재시도하고, 안전한 오류 유형을 세분화했습니다. 요청 제한·인증·쿠폰 요청은 즉시 재시도하지 않습니다.
 
 V1.023.005: 메뉴 조작 중에도 갱신 타이머가 동작하도록 개선하고, Claude 사용량을 부가 조회 전에 저장합니다. 선택적인 잔액 조회 실패는5분간 기억하며 로컬 오류 기록에는 개인정보 없는 오류 유형을 남깁니다.
@@ -36,13 +40,13 @@ V1.015.002: Claude 개발자 콘솔·API만의 공식 이슈가 정상 조회된
 
 V1.015.001: 영어 선택 항목을 간결하게 표시하고, 좁은 창에서는 탭을 여러 행으로 배치합니다. 제목·하단 메뉴·로그인 버튼에도 같은 폭 대응을 적용했습니다. 촬영용 창을 닫은 뒤 화면이 바뀔 때 발생할 수 있던 충돌도 수정했습니다.
 
-V1.015.000에서는 자동 확인·다운로드가 켜져 있으면 앱 시작 시와 6시간마다 확인하고, 다운로드가 준비되면 Quotly를 자동 재시작해 적용합니다. 로그인·쿠폰 처리·미확정 요청·설정 전송·입력 편집·모달·잠자기 중에는 기다립니다. 기존에 꺼 둔 설정은 유지합니다. 기존 고객은 이번 버전으로 한 번 업데이트한 뒤 다음 배포부터 이 동작을 사용할 수 있습니다.
+V1.015.000에서는 자동 확인·다운로드가 켜져 있으면 앱 시작 시와 6시간마다 확인하고, 다운로드가 준비되면 Quotly를 자동 재시작해 적용합니다. 로그인·쿠폰 처리·미확정 요청·설정 전송·입력 편집·모달·잠자기 중에는 기다립니다. V1.024.000에서는 로그인 결과 확인·사용량 수집·작업 기록 저장 중의 재시작 보호도 보강했습니다. 기존에 꺼 둔 설정은 유지합니다. 기존 고객은 이번 버전으로 한 번 업데이트한 뒤 다음 배포부터 이 동작을 사용할 수 있습니다.
 
-Automatic checks and downloads now apply a ready update by restarting Quotly, with checks at launch and every six hours. Sensitive operations, text editing, modal dialogs and sleep defer restart. Opt-out choices are preserved. Update to this release once to use this behavior for future releases. Actual automatic payload replacement/restart remains unverified; the installer handoff was tested using a dummy function.
+Automatic checks and downloads now apply a ready update by restarting Quotly, with checks at launch and every six hours. Sensitive operations, text editing, modal dialogs and sleep defer restart. Opt-out choices are preserved. Update to this release once to use this behavior for future releases. An isolated Sparkle test completed a signed update, relaunch and preference-preservation check, and rejected a tampered archive. This does not establish update delivery on every customer Mac.
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.023.006 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.024.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
@@ -50,20 +54,20 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 주요 기능
 
-- **작업 시간:** 하단 작업 시간 또는 ⌘3에서 프로젝트·작업을 시작하고 일시정지·재개·종료합니다. 일별 합계와 전체 CSV 내보내기를 지원합니다. 앱이 깨어 있는 동안 관측한 시간만 기록하고 잠자기·재시작 후에는 직접 재개합니다. 강제 종료·느린 저장에서는 마지막 미저장 시간이 일부 유실될 수 있습니다.
+- **작업 시간:** 하단 작업 시간 또는 ⌘3에서 프로젝트·작업을 시작하고 일시정지·재개·종료합니다. 일별 합계와 전체 CSV 내보내기를 지원하고, 기록마다 실제 시작 날짜·시각을 표시합니다. 앱이 깨어 있는 동안 관측한 시간만 기록하고 잠자기·재시작 후에는 직접 재개합니다. 강제 종료·느린 저장에서는 마지막 미저장 시간이 일부 유실될 수 있습니다.
 - **화면 구성:** 간단 확인·AI 작업·영상 작업 구성을 선택하거나 현재 화면을 저장합니다. 항목 표시·순서·상세도를 편집하고 메뉴바 구성을 함께 저장할 수 있습니다. 로그인 계정·갱신 주기·알림은 바뀌지 않습니다.
 - **예약 사용량 요약:** 설정 → 알림에서 요일·시각·서비스·세션/주간 한도를 선택합니다. 놓친 예약은 생략하거나 최신 한 건만 요약합니다. 앱 실행 중에 동작하고, 알림 권한이 없거나 방해금지 시간이어도 앱 안에 요약을 저장합니다. 관측 시각·이전 값·오류 상태를 함께 보여줍니다.
 - **내 Mac 상태:** 모델 식별자·칩·CPU 코어·메모리 정보를 자동으로 읽고 CPU·메모리·디스크·네트워크 상태와 마지막 측정 시각을 요약합니다. 대기·지연 상태를 구분합니다.
 - **CPU:** 모든 코어를 합친 0–100% 사용률과 여유율, 최근 1·5·10분 그래프를 표시합니다. 소수점 한 자리, 1·2·5·10초 측정(기본 2초)을 지원합니다. 설정 → 메뉴바에서 CPU 표시를 선택합니다.
 - **메모리·열 상태:** 추정 사용 용량 / 전체 용량, macOS 메모리 압박, 스왑, 최근 추이와 시스템 열 상태를 10초마다 확인합니다. 회수 가능한 파일 캐시를 제외한 추정치로 활동 모니터와 계산 기준이 다를 수 있습니다. 열 상태는 실제 온도나 성능 제한 원인을 직접 측정한 값이 아닙니다.
-- **모니터링 윈도우:** 기존 ChatGPT Codex·Claude 원형 차트 아래에 CPU·메모리·네트워크·디스크를 창 폭에 따라 1열 또는 2열 카드로 표시합니다. 아이콘·큰 수치·단위·최근 10분 미니 그래프·마지막 측정 시각을 함께 보여줍니다. 설정 → 윈도우에서 각 항목을 선택하며, 앱 강조색과 라이트·다크 모드를 따릅니다. 모든 화면은 같은 수집 데이터를 사용합니다.
+- **모니터링 윈도우:** 기존 ChatGPT Codex·Claude 원형 차트 아래에 CPU·메모리·네트워크·디스크를 창 폭에 따라 1열 또는 2열 카드로 표시합니다. 아이콘·큰 수치·단위·최근 10분 미니 그래프·마지막 측정 시각을 함께 보여줍니다. 설정 → 윈도우에서 각 항목을 선택하며, 앱 강조색을 공유하고, 윈도우의 화면 모드는 별도로 선택합니다. 모든 화면은 같은 수집 데이터를 사용합니다. 각 시스템 카드 제목에서 상세 화면으로 바로 이동할 수 있으며, 큰 글씨 설정은 열린 창에도 반영됩니다.
 
 
 - **AI 사용량:** ChatGPT 구독의 Codex 한도와 Claude 한도를 사용률 또는 잔여량으로 표시합니다. 초기화까지 남은 시간, 갱신 시각, 서버에서 제공하는 크레딧·추가 한도를 확인할 수 있습니다.
 - **이용 플랜:** 상세·계정에서 서버가 제공하는 플랜명을 표시합니다. Claude는 확인된 다음 결제일을 표시하고, 날짜가 없으면 월간·연간 결제 주기만 표시합니다. 결제 정보를 받지 못하면 생략하며, 현재 ChatGPT 연동에는 결제 정보가 없습니다.
 - **사용량 알림:** 설정한 잔여량 기준을 한도 주기에서 처음 넘을 때 알립니다. 초기화 완료 알림과 방해금지 시간을 지원합니다.
 - **공식 서비스 상태:** [Claude Status](https://status.claude.com/)와 [OpenAI Status](https://status.openai.com/)를 1분마다 확인합니다. 새 장애, 진행 상황 변경, 복구를 알려주고 같은 업데이트를 반복해서 알리지 않습니다.
-- **기록·분석:** 연속 기록은 계단형 선 그래프로, 단독 관측과 최신 값은 점으로 표시합니다. 조회 공백·초기화·재실행 구간은 연결하지 않습니다. 충분한 관측이 있을 때 소진 예상과 주간 요약을 제공합니다.
+- **기록·분석:** 연속 기록은 계단형 선 그래프로, 단독 관측과 최신 값은 점으로 표시합니다. 같은 한도의 조회 공백은 양 끝의 실제 관측값 사이에 회색 점선으로 표시하고, 사용률 감소·초기화 기준 변화는 주황색 세로선으로 구분합니다. 점선은 그 사이를 실제로 측정했다는 의미가 아니며 저장 기록은 바꾸지 않습니다. 충분한 관측이 있을 때 소진 예상과 주간 요약을 제공합니다.
 - **초기화 소식·쿠폰:** 공개 초기화 소식과 내 계정에서 확인되는 Codex 쿠폰 현황·이력을 보여줍니다. 쿠폰은 사용자가 직접 승인한 경우에만 요청합니다. 95% 미만에서도 사용할 수 있으며, 남은 한도와 쿠폰 소모에 관한 추가 확인이 필요합니다.
 - **Mac 모니터링:** 네트워크 업로드·다운로드(Mbps), 선택한 드라이브의 읽기·쓰기(MB/s), 최근 10분 그래프를 확인합니다.
 - **디스크 용량:** 메뉴바에서 선택한 드라이브의 사용 용량 또는 잔여 용량 / 전체 용량과 해당 비율을 표시합니다. 볼륨 기준으로 1분마다 갱신하며, 설정 → 메뉴바에서 용량 숫자·전체 용량(분모)·퍼센트를 각각 선택합니다. 메뉴바에는 사용량/잔여량 배지가 붙습니다. 자주 쓰는 숫자+비율/숫자만/비율만 선택을 먼저 보여주고, 숫자·분모·퍼센트 개별 옵션과 독립 기준은 ‘세부 표시 조정’에 접어 둡니다.
@@ -72,13 +76,13 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 서비스 장애 알림 사용법
 
-현황 상단의 **Claude / OpenAI 상태 줄**을 누르면 공식 서비스 상태와 최근 발표를 볼 수 있습니다. **설정 → 알림 → 공식 서비스 상태**에서 서비스별 알림을 켜거나 끌 수 있습니다. 전체 **알림 받기**와 macOS의 Quotly 알림 권한도 켜져 있어야 배너가 표시됩니다.
+현황 상단의 **ChatGPT(OpenAI) / Claude 상태 줄**을 누르면 공식 서비스 상태와 최근 발표를 볼 수 있습니다. **설정 → 알림 → 공식 서비스 상태**에서 서비스별 알림을 켜거나 끌 수 있습니다. 전체 **알림 받기**와 macOS의 Quotly 알림 권한도 켜져 있어야 배너가 표시됩니다.
 
 - 처음 확인할 때 진행 중인 장애는 알리고, 이미 해결된 과거 사건은 알리지 않습니다.
 - 같은 업데이트는 앱을 다시 실행해도 반복하지 않습니다. 방해금지 중에 지나간 알림을 나중에 몰아서 보내지 않습니다.
 - 앱 실행 중 확인하며, 잠자기·오프라인·일시정지 중에는 조회를 멈춥니다. 조회 실패 시 이전 결과와 확인 지연을 표시하고 재시도 간격을 늘립니다.
 - Claude 조회 오류 또는 공식 장애 중에는 메뉴바에 마지막 퍼센트를 표시하지 않고 `C 장애` 또는 `C 조회 오류`로 표시합니다. 복구 후 새 사용량을 받아오면 다시 표시합니다.
-- 공식 발표 제목·본문은 원문으로 표시합니다. 서비스 전체 상태이므로 내 계정의 접속 가능 여부나 사용 한도를 보장하지 않습니다.
+- 한국어 모드에서는 제공 가능한 비공식 번역과 원문 보기를 지원하며, 번역이 없으면 원문을 표시합니다. 서비스 전체 상태이므로 내 계정의 접속 가능 여부나 사용 한도를 보장하지 않습니다.
 
 ## 웹 사용량과 비교할 때
 
@@ -86,7 +90,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.015.000.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.024.000.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
 
@@ -98,11 +102,13 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.015.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.024.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 이번 버전의 확인 범위
 
-전체 회귀 검사 1,364개를 통과하고 현재 코드에 대한 독립 리뷰를 완료했습니다. 모니터 설정 변경 12,000회, 창 반복 동작, 로그인 보조 프로세스 고장·취소 등을 격리 환경에서 검사했습니다. 실제 설치 앱의 전체 창 직접 조작과 다른 Mac의 실계정 로그인 검증은 완료하지 못했습니다. 현재 개인용 기능에는 기간·결제 제한이 없습니다. 선택 로그 분석·새 자료 이전은 아직 제공하지 않습니다.
+최종 설치본에서 메인·모니터링 윈도우, 다섯 종류의 상세 이동, 검색, 큰 글씨, 영문 표시와 메뉴를 실제로 확인했고 배포 패키지가 설치본과 일치하는지도 검증했습니다. 배포 시점에는 8시간 연속 수집 검증이 진행 중이며, 해당 검증의 완료 결과는 이번 배포의 확인 범위에 포함되지 않습니다.
+
+이번 변경에서는 수집 일정·로그인 확인·서버 대기시간, 오래된 측정값, 큰 글씨·좁은 창·공통 조작 영역을 관련 회귀 검사와 합성 화면으로 확인했습니다. 기존 격리 스트레스 검사에는 모니터 설정 변경 12,000회, 창 반복 동작, 보조 프로세스 고장·취소가 포함됩니다. 별도 Sparkle 시험 앱에서 서명된 업데이트의 설치·재실행·설정 보존과 변조된 파일의 차단을 확인했습니다. 격리 시험과 합성 화면은 모든 고객 기기의 실제 동작을 보장하지 않으며, 맥북에어 실물 검증은 별도 진행 대상입니다. 현재 개인용 기능에는 기간·결제 제한이 없습니다. 선택 로그 분석·새 자료 이전은 아직 제공하지 않습니다.
 
 ## 로그인 보안
 
@@ -125,30 +131,32 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 ## English
 
 - Monitor local model/chip/core/RAM information, normalized CPU load and headroom, estimated memory usage, memory pressure, swap and macOS thermal state. Memory is estimated excluding reclaimable file cache and may differ from Activity Monitor. Thermal state is not a temperature reading or a throttling diagnosis.
-- CPU samples every 1/2/5/10 seconds (default 2); memory and thermal state every 10 seconds. View recent charts and per-resource timestamps. Select CPU in menu-bar settings and CPU/memory in mini-monitor settings. Views share existing collectors, and unchanged menu values no longer trigger repeated repaint requests.
+- CPU samples every 1/2/5/10 seconds (default 2); memory and thermal state every 10 seconds. View recent charts and per-resource timestamps. Select CPU in menu-bar settings and CPU/memory in Monitoring window settings. Views share existing collectors, and unchanged menu values no longer trigger repeated repaint requests.
 
 **Quotly puts AI usage and Mac activity in your menu bar.** Requires Apple Silicon and macOS 13 or later. Korean and English interfaces are available.
 
-- Track work time from the bottom tab or Cmd3: start, pause, resume, finish, daily totals and complete CSV export. Only observed time is counted; sleep/restart pauses and requires manual resume. Crash or slow storage may lose the latest checkpoint.
+- Track work time from the bottom tab or Cmd3: start, pause, resume, finish, daily totals, dated records and complete CSV export. Only observed time is counted; sleep/restart pauses and requires manual resume. Crash or slow storage may lose the latest checkpoint.
 - Save and switch screen layouts without changing account, refresh or notification settings.
 - View recognized server-reported plan names in Overview, details and account settings. Claude shows an explicit next payment date, falling back to a confirmed monthly/annual cycle. Missing billing details are omitted; the current ChatGPT integration supplies none.
 - View used or remaining **Codex subscription limits** and Claude usage, reset countdowns, server-reported credits and additional limits.
-- Receive first-crossing quota alerts, reset alerts, and official **Claude / OpenAI incident updates** checked every minute.
+- Receive first-crossing quota alerts, reset alerts, and official **OpenAI / Claude incident updates** checked every minute.
 - Open the status row on Overview for active incidents and recent official updates. Configure each provider under **Settings → Notifications → Official service status**. Enable the app's main notifications switch and macOS notification permission for banners.
 - Existing active incidents are announced on first check; historical resolved incidents are not. Identical updates are deduplicated across restarts. Quiet-hour events are not replayed later.
 - Polling stops during sleep, offline periods and app pause. Failed checks retain the last result with a stale indication and use retry backoff. Incident text remains in its original language.
-- Explore usage history as continuous stepped lines, with dots only for isolated observations and the latest value. Observation gaps remain disconnected. View forecasts when sufficient observations exist, reset news, and eligible Codex reset coupons. Coupon redemption always requires confirmation.
+- Explore usage history as continuous stepped lines, with dots only for isolated observations and the latest value. Gray dashed bridges mark same-limit observation gaps; orange rules distinguish usage drops or reset-reference changes. Bridges do not represent measurements and do not change stored records. View forecasts when sufficient observations exist, reset news, and eligible Codex reset coupons. Coupon redemption always requires confirmation.
 - Monitor network throughput in Mbps, selected-drive I/O in MB/s and recent graphs. Customize visible menu-bar items and sizing.
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.015.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.024.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
 Claude sign-in windows accept only designated HTTPS Claude, Google and Apple hosts and show the current host in the native title. Unknown enterprise SSO providers are currently blocked. Codex helpers require a valid OpenAI signature; usage requests pin the official ChatGPT base URL without changing your Codex config. History and status files use owner-only permissions. Quotly does not collect passwords directly; Claude sessions persist in this Mac's WebKit store and Codex manages its own credentials. This does not guarantee protection against malware running as your OS user or a compromised Mac.
 
-Validation: 1,364 regression checks passed and a current-code independent review was completed. Isolated stress tests covered 12,000 monitor configurations, repeated window lifecycles and helper failures/cancellations. Full installed-window interaction and real-account login on another Mac remain unverified.
+The final installed app was checked in its actual UI: Overview, the Monitoring window, all five detail destinations, search, larger text, English and menus. Package integrity and its match to the installed app were also verified. The eight-hour continuous collection test is still running at publication; its completed result is not part of this release's validation evidence.
+
+Validation covered collection scheduling, saved-login checks, server retry delays, stale readings, larger text and narrow layouts through targeted regression checks and synthetic views. Existing isolated stress tests covered 12,000 monitor configurations, repeated window lifecycles and helper failures/cancellations. A separate Sparkle fixture installed and relaunched a signed update with preferences preserved, and rejected a tampered archive. These isolated tests and synthetic views do not establish behavior on every customer Mac; physical MacBook Air validation remains a separate task.
 
 Feedback: **scoutkorea@kakao.com**. App management settings include a prominent PayPal support button and an email-composer button. Support is optional; feedback is never sent automatically.
 
@@ -170,9 +178,9 @@ Open Settings → App or More → Report an issue to preview and copy diagnostic
 
 Open the Monitoring window with the window icon immediately left of Settings, or from More or Settings → Window. It shares menu-bar data without extra polling; pin it above regular windows and reopen it at its saved position and size.
 
-모니터링 윈도우는 일반 제목 표시줄과 불투명한 배경을 사용합니다. 메모리 압박 상태는 제목 옆에 표시하고 스왑 줄은 제외해 CPU·메모리 카드 높이를 맞췄습니다. 디스크 속도 아래에는 내장·외장 드라이브의 사용률·사용/전체 용량·잔여 용량을 표시합니다. 디스크 표시 설정에 함께 적용되며 용량은 기존 1분 수집기를 공유합니다.
+모니터링 윈도우는 일반 제목 표시줄과 불투명한 배경을 사용합니다. 메모리 압박 상태는 제목 옆에 표시하고 스왑 줄은 제외해 CPU·메모리 카드 높이를 맞췄습니다. 디스크 속도 아래에는 내장·외장 드라이브의 사용률·사용/전체 용량·잔여 용량을 표시합니다. 디스크 표시 설정에 함께 적용되며 용량은 기존 1분 수집기를 공유합니다. 디스크 용량은 메뉴바·모니터링·상세 화면과 동일한 10진수 GB/TB 기준으로 표시합니다.
 
-The Monitoring window uses a standard title bar and opaque backgrounds. Memory pressure sits beside the heading; the swap row is omitted so CPU and Memory cards align. Mounted internal and external storage capacity appears below disk activity, controlled by the existing Disk preference. Storage reuses the existing one-minute collector.
+The Monitoring window uses a standard title bar and opaque backgrounds. Memory pressure sits beside the heading; the swap row is omitted so CPU and Memory cards align. Mounted internal and external storage capacity appears below disk activity, controlled by the existing Disk preference. Storage reuses the existing one-minute collector. Disk capacity uses the same decimal GB/TB convention as the menu bar, monitoring views and detail pages.
 
 원형 차트의 퍼센트는 공간이 부족하면 글자 크기를 줄여 `100%`도 말줄임 없이 표시합니다.
 
@@ -186,23 +194,23 @@ System cards switch between one column in narrow windows and two columns in wide
 
 설정 → 메뉴바 → CPU · RAM에서 RAM 사용률 표시를 선택합니다. `RAM 70.1%`처럼 표시하며, 사용/전체 용량은 툴팁과 모니터링에서 확인합니다. 기존 10초 수집기를 공유하고 오래되거나 유효하지 않은 값은 0%로 표시하지 않습니다. CPU·RAM·네트워크·디스크는 공통 간격·정렬 규칙을 따릅니다.
 
-설정 → 앱에서 최신 상태, 새 버전, 확인 실패, 호환 불가를 구분합니다. 업데이트 수는 서명된 피드가 확인한 최신 버전과 일치하는 배포 기록을 현재 버전과 비교해 표시합니다. 기록 JSON은 안내용이며 설치를 승인하거나 파일 URL을 지정하지 않습니다. 업데이트는 최신 전체 ZIP 한 개를 제공하고 중간 버전을 요구하지 않습니다. 최신보다 오래된 선택을 차단하지만 실제 캐시 설치·재시작 교체까지의 실물 검증은 아직 완료되지 않았습니다.
+설정 → 앱에서 최신 상태, 새 버전, 확인 실패, 호환 불가를 구분합니다. 업데이트 수는 서명된 피드가 확인한 최신 버전과 일치하는 배포 기록을 현재 버전과 비교해 표시합니다. 기록 JSON은 안내용이며 설치를 승인하거나 파일 URL을 지정하지 않습니다. 업데이트는 최신 전체 ZIP 한 개를 제공하고 중간 버전을 요구하지 않습니다. 확인한 최신 빌드보다 오래된 선택을 차단합니다. 격리된 Sparkle 시험 앱에서 실제 설치·재실행·설정 보존과 변조 파일 차단을 확인했으며, 고객 기기의 업데이트 수신 여부와는 구분합니다.
 
 Select RAM percentage under Settings → Menu bar → CPU · RAM. It reuses the existing ten-second collector; stale or invalid data does not become zero. Capacity is available in tooltips and monitoring. CPU/RAM/network/disk share spacing and alignment rules.
 
-Update settings show up-to-date, available, failed or incompatible states. Version counts use release-history records matched to the signed feed's confirmed latest version/build. That JSON is informational, and cannot authorize installers or supply download URLs. One latest full ZIP avoids intermediate releases; older selected builds are blocked. Actual cached-installer restart/replacement testing remains pending.
+Update settings show up-to-date, available, failed or incompatible states. Version counts use release-history records matched to the signed feed's confirmed latest version/build. That JSON is informational, and cannot authorize installers or supply download URLs. One latest full ZIP avoids intermediate releases; older selected builds are blocked. Signed installation, relaunch, preference preservation and tampered-archive rejection passed in an isolated Sparkle fixture; customer-device update delivery is a separate verification scope.
 
-작은 창은 AI 사용량 원형 차트와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
+모니터링 윈도우는 AI 사용량 원형 차트와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
 
-The mini window shows AI usage rings and the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
+The Monitoring window shows AI usage rings and the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
 
 설정 → 윈도우에서 ChatGPT Codex와 Claude의 차트 한도를 각각 선택합니다. 서버가 제공하지 않는 세션·주간 한도는 표시하지 않습니다.
 
 ### 앱 색상 / Appearance
-설정 → 앱 → 앱 색상에서 시스템·라이트·다크 화면 모드와 강조색을 선택할 수 있습니다. 모니터링 윈도우도 같은 색상을 사용합니다.
-Choose system, light or dark appearance and an accent color in Settings → App. The mini monitor shares the same appearance.
+설정 → 앱 → 앱 색상에서 시스템·라이트·다크 화면 모드와 강조색을 선택할 수 있습니다. 모니터링 윈도우는 같은 강조색을 사용하며, 설정 → 윈도우에서 시스템·라이트·다크 모드를 별도로 고를 수 있습니다.
+Choose system, light or dark appearance and an accent color in Settings → App. The Monitoring window shares the accent color and offers a separate system, light or dark choice under Settings → Window.
 
-작은 창은 설정 → 윈도우에서 표시 항목과 원형 차트의 한도를 고릅니다. 강조색은 10가지 견본 또는 사용자 지정 색상을 지원합니다.
+모니터링 윈도우는 설정 → 윈도우에서 표시 항목과 원형 차트의 한도를 고릅니다. 강조색은 10가지 견본 또는 사용자 지정 색상을 지원합니다.
 Monitoring window contents and ring quotas have their own settings. Ten accent swatches and a custom color picker are available.
 
 Disk capacity: show used or free space / total volume capacity and the matching percentage for the menu bar drive. Configure numbers, total capacity, percentage and separate used/free modes in Settings → Menu bar. Refreshes every minute in the background.

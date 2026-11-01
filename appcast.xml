@@ -4,25 +4,52 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.023.006</title>
-            <pubDate>Fri, 30 Oct 2026 17:15:31 +0900</pubDate>
-            <sparkle:version>290</sparkle:version>
-            <sparkle:shortVersionString>1.023.006</sparkle:shortVersionString>
+            <title>1.024.000</title>
+            <pubDate>Sun, 01 Nov 2026 18:45:14 +0900</pubDate>
+            <sparkle:version>291</sparkle:version>
+            <sparkle:shortVersionString>1.024.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.023.006
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.024.000
 
-- 연속 수집 검사에서 확인한 Codex 일시 조회 실패에 대응해, 읽기 전용 사용량 요청의 일시적 서버·네트워크 오류를 같은 CLI에서2초 뒤1회만 재시도합니다.
-- 429요청 제한·인증·잘못된 응답에는 즉시 재시도하지 않습니다. 로그인·로그아웃·쿠폰 요청의 재시도 동작은 바꾸지 않습니다.
-- RPC단계·숫자 오류 코드·서버 상태·통신 종료 유형을 구분해 로컬 진단을 개선했습니다. 원문 오류·URL·토큰·계정 정보는 기록하지 않습니다.
-- 유효한 응답의 null 오류 필드와 읽기 중 시스템 인터럽트를 처리하고, 마감 시각에 종료된 연결을 시간 초과로 구분합니다.
+사용량 수집과 기록 보존을 보강하고, 큰 글씨와 좁은 창에서도 주요 정보를 읽기 쉽도록 화면 구성을 다듬었습니다.
 
-Transient read-only Codex quota errors receive one bounded retry on the existing helper. Rate limits, authentication and invalid replies are not immediately retried. Sanitized diagnostics distinguish RPC stages, server codes and transport failures without recording sensitive response content.
+- **안정적인 사용량 수집:** ChatGPT Codex와 Claude의 조회 일정을 각각 관리합니다. 한쪽의 응답 지연이 다른 서비스의 수집을 미루지 않도록 개선하고, 중복 조회 방지와 누락된 수집 일정의 복구를 보강했습니다.
+- **요청 제한 준수:** 정기 조회와 로그인 결과 확인이 같은 실행 상태와 서버의 재시도 대기시간을 따릅니다. 설치 확인·링크 복사 안내도 실제 사용량 조회 오류와 구분합니다.
+- **기록 보존과 업데이트 보호:** 사용량 기록의 저장·백업·복구 처리를 보강했습니다. 로그인 확인·사용량 수집·작업 시간 기록 저장 등 진행 중인 작업이 있으면 자동 업데이트 재시작을 미룹니다.
+- **큰 글씨·좁은 창 대응:** 큰 글씨 설정을 열린 화면에도 적용하고, 창 너비에 맞춰 제목·버튼·탭 배치를 조정했습니다. 여백과 버튼 클릭 영역도 일관되게 정리했습니다.
+- **모니터링 상세 바로가기:** 모니터링 윈도우에서 CPU·메모리·네트워크·디스크·저장 공간의 상세 화면으로 바로 이동할 수 있습니다. 오래되거나 유효하지 않은 측정값을 현재 값처럼 표시하지 않도록 보강했습니다.
+- **상세 화면 초점 이동:** 모니터링 윈도우에서 상세 보기나 설정을 열면 해당 화면으로 초점이 이동합니다. 상세 내용은 추가 스크롤 없이 확인할 수 있도록 위치를 맞춥니다.
+- **저장 용량 표시 통일:** 메뉴바·모니터링·상세 화면·모니터링 윈도우의 디스크 용량을 같은 GB/TB 계산 기준으로 표시합니다. 같은 드라이브가 화면마다 다른 용량으로 보이던 차이를 줄였습니다.
+- **언어 변경 반영:** 열린 모니터링 윈도우의 제목도 선택한 언어를 따릅니다. 영문 화면의 사용량·메모리·디스크 접근성 문구에 한국어가 섞이던 부분을 정리했습니다.
+- **정보 구분 개선:** 작업 기록의 시작 날짜·시각, 소식이 없는 상태의 안내, 서비스 표시 순서와 경고색을 다듬었습니다.
+
+기존 로그인 정보, 사용량 기록과 설정은 유지됩니다. 업데이트는 중간 버전을 거치지 않고 최신 버전으로 바로 적용됩니다.
+
+**검증 범위:** 최종 설치본의 실제 화면·주요 메뉴·상세 이동과 배포 패키지 일치 여부를 확인했습니다. 배포 시점에는 8시간 연속 수집 검증이 진행 중이며, 해당 검증의 완료 결과는 이번 배포의 확인 범위에 포함되지 않습니다.
+
+## English
+
+This release strengthens quota collection and history storage, and improves readability in narrow windows and with larger text.
+
+- Codex and Claude use independent collection schedules, with duplicate-request protection and recovery for missed idle collection timers.
+- Scheduled reads and saved-login checks respect the same in-flight state and server retry delay. Installation and link-copy messages are kept separate from quota errors.
+- History storage, backup and recovery are more robust. Automatic-update restarts wait for active sign-in checks, collection and work-record saves.
+- Larger text updates open views, while headings, controls and navigation adapt to available width. Shared spacing and click targets are more consistent.
+- The Monitoring window opens CPU, memory, network, disk and storage details directly. Stale or invalid measurements are not presented as current readings.
+- Opening details or settings from the Monitoring window brings the destination into focus. Detail links also scroll the selected section into view.
+- Disk capacity uses the same GB/TB calculation across the menu bar, monitoring views, detail pages and the Monitoring window, removing differences caused by mixed unit conventions.
+- An open Monitoring window updates its title when the language changes. Quota, memory and disk accessibility labels consistently use English in English mode.
+- Work-record start dates, empty news states, provider order and warning colors are clearer.
+
+Existing accounts, usage history and preferences are preserved. Updates go directly to the latest version without intermediate installations.
+
+**Validation scope:** The final installed app's actual screens, main menus and detail navigation were checked, along with package integrity and its match to the installed app. The eight-hour continuous collection test is still running at publication; its completed result is not part of this release's validation evidence.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.023.006/Quotly-V1.023.006.zip" length="5368477" type="application/octet-stream" sparkle:edSignature="Gq6tNgPiS5IlPHBoY4JHeKMgwGBRDmj+pO6i2c2MssraNPiVV5Z3u2rgVm7X/EwsS0m/LcBZHJwEWkjVxLRpDA=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.024.000/Quotly-V1.024.000.zip" length="5525516" type="application/octet-stream" sparkle:edSignature="xhTM2e5+vYQf9h7aPl+Nd5yR7ZuG99OYsUhqOiBq7ztq9cPLucvxU5Gjh8vuupVeTfQ/4z/ByEyLgezScwZQCQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: o5hMasXH84+ELTPAmhGe5Mmv7xHEueuqM2zMsJt3yAQxSz0W9+jHUfAh0d2gHw/zFlJoXfVY7LT9RoFtOsfADQ==
-length: 2286
+edSignature: ifrLE6lxhtC2rnna93gxHVNOL9BSo0M2H3iXkNUJJmfYZJjvNMPrapifJZVYpdo2GUJh3KF1lgBkybuFBVIsDQ==
+length: 6029
 -->
