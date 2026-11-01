@@ -1,5 +1,9 @@
 # Quotly · 쿼틀리
 
+V1.024.001: 메뉴바 패널의 상단 버튼·표시 기준 선택·서비스 상태 줄·하단 탐색에서 과도한 여백을 줄였습니다. 글씨 크기는 유지하면서 같은 창에 더 많은 정보를 표시하고, 좁은 영문 화면에서 긴 항목명이 잘리지 않도록 개선했습니다. 설정과 모니터링 윈도우의 공통 버튼·접기 항목에도 같은 간격 규칙을 적용했습니다.
+
+V1.024.001 reduces excess padding in the menu panel toolbar, display selector, service status and bottom navigation. The same window shows more information without shrinking its text. Long labels wrap in narrow English layouts, and shared controls use consistent spacing across settings and the Monitoring window.
+
 V1.024.000: ChatGPT Codex·Claude의 독립 수집 일정, 요청 제한 대기, 사용량 기록의 백업·복구와 업데이트 재시작 보호를 보강했습니다. 큰 글씨·좁은 창 배치·공통 여백과 클릭 영역을 다듬고, 모니터링 윈도우의 상세 바로가기와 작업 기록 시작 날짜를 추가했습니다. 화면마다 달랐던 디스크 용량 계산 기준도 통일했습니다.
 
 V1.024.000 improves independent quota collection, retry-delay handling, history recovery and update restart protection. Larger text and narrow-window layouts are more consistent, with direct monitoring details and dated work records. Disk capacity now uses a consistent unit calculation across views.
@@ -24,7 +28,7 @@ V1.021.003: 초기화 소식의 인용 원글·앞선 답글 글씨를 한 단�
 
 V1.021.002: 초기화 소식에서 인용·답글의 배경·글씨·버튼을 차분한 회색으로 낮춰 최종 게시글이 먼저 보이게 했습니다. 미리보기와 상세 보기에 동일하게 적용하고, 외부 구성요소 고지와 빌드 검증을 포함했습니다.
 
-V1.021.001: 원문 보기·설정·연결 관리·기록 등의 접기 항목을 행 전체로 누를 수 있게 개선했습니다. 제목과 여백을 포함한 최소 48pt 클릭 영역, 펼침 방향, 마우스 올림·누름 피드백과 접근성 상태 안내를 공통 적용하며, 중첩된 접기 항목에도 동일하게 적용합니다.
+V1.021.001: 원문 보기·설정·연결 관리·기록 등의 접기 항목을 행 전체로 누를 수 있게 개선했습니다. 당시 제목과 여백을 포함한 최소 48pt 클릭 영역, 펼침 방향, 마우스 올림·누름 피드백과 접근성 상태 안내를 공통 적용했습니다. V1.024.001에서는 행 전체 클릭을 유지하면서 데스크톱 화면에 맞게 기본 높이를 줄였습니다.
 
 V1.016.001: 한국어 번역 범위를 초기화 소식 기록·예정 점검·최근 복구 공지·영향을 받는 서비스 이름까지 확장했습니다. 한국어 모드의 상태 알림은 번역 대기 중에도 한국어로 상태와 앱 확인 안내를 제공합니다.
 
@@ -46,7 +50,7 @@ Automatic checks and downloads now apply a ready update by restarting Quotly, wi
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.024.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.024.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
@@ -90,7 +94,7 @@ Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.024.000.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.024.001.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
 
@@ -102,13 +106,13 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.024.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.024.001**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 이번 버전의 확인 범위
 
-최종 설치본에서 메인·모니터링 윈도우, 다섯 종류의 상세 이동, 검색, 큰 글씨, 영문 표시와 메뉴를 실제로 확인했고 배포 패키지가 설치본과 일치하는지도 검증했습니다. 배포 시점에는 8시간 연속 수집 검증이 진행 중이며, 해당 검증의 완료 결과는 이번 배포의 확인 범위에 포함되지 않습니다.
+설치된 V1.024.001의 화면 검토 모드에서 실제 수집값을 사용하는 공통 화면을 직접 조작했습니다. 한국어 일반 글씨, 영어 큰 글씨의 현황·설정·모니터링 페이지, 상세 보기, 연결 관리의 펼치기·접기와 더 보기 메뉴·정상 종료를 확인했습니다. 설치본과 배포 패키지의 파일·권한·서명이 일치하며, 기존 화면 설정도 복원했습니다. 일반 실행으로 돌아간 뒤의 메뉴바 팝업과 별도 모니터링 윈도우는 도구로 다시 열어 확인하지 못했습니다. 좁은 화면 조합은 격리된 화면 시험으로 확인했으며 맥북에어 실물 확인과는 구분합니다. 8시간 연속 수집 검증은 아직 완료되지 않았습니다.
 
-이번 변경에서는 수집 일정·로그인 확인·서버 대기시간, 오래된 측정값, 큰 글씨·좁은 창·공통 조작 영역을 관련 회귀 검사와 합성 화면으로 확인했습니다. 기존 격리 스트레스 검사에는 모니터 설정 변경 12,000회, 창 반복 동작, 보조 프로세스 고장·취소가 포함됩니다. 별도 Sparkle 시험 앱에서 서명된 업데이트의 설치·재실행·설정 보존과 변조된 파일의 차단을 확인했습니다. 격리 시험과 합성 화면은 모든 고객 기기의 실제 동작을 보장하지 않으며, 맥북에어 실물 검증은 별도 진행 대상입니다. 현재 개인용 기능에는 기간·결제 제한이 없습니다. 선택 로그 분석·새 자료 이전은 아직 제공하지 않습니다.
+V1.024.000의 변경에서는 수집 일정·로그인 확인·서버 대기시간, 오래된 측정값, 큰 글씨·좁은 창·공통 조작 영역을 관련 회귀 검사와 합성 화면으로 확인했습니다. 기존 격리 스트레스 검사에는 모니터 설정 변경 12,000회, 창 반복 동작, 보조 프로세스 고장·취소가 포함됩니다. 별도 Sparkle 시험 앱에서 서명된 업데이트의 설치·재실행·설정 보존과 변조된 파일의 차단을 확인했습니다. 격리 시험과 합성 화면은 모든 고객 기기의 실제 동작을 보장하지 않으며, 맥북에어 실물 검증은 별도 진행 대상입니다. 현재 개인용 기능에는 기간·결제 제한이 없습니다. 선택 로그 분석·새 자료 이전은 아직 제공하지 않습니다.
 
 ## 로그인 보안
 
@@ -148,15 +152,15 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.024.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.024.001.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
 The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
 Claude sign-in windows accept only designated HTTPS Claude, Google and Apple hosts and show the current host in the native title. Unknown enterprise SSO providers are currently blocked. Codex helpers require a valid OpenAI signature; usage requests pin the official ChatGPT base URL without changing your Codex config. History and status files use owner-only permissions. Quotly does not collect passwords directly; Claude sessions persist in this Mac's WebKit store and Codex manages its own credentials. This does not guarantee protection against malware running as your OS user or a compromised Mac.
 
-The final installed app was checked in its actual UI: Overview, the Monitoring window, all five detail destinations, search, larger text, English and menus. Package integrity and its match to the installed app were also verified. The eight-hour continuous collection test is still running at publication; its completed result is not part of this release's validation evidence.
+The installed V1.024.001 app was exercised in its supported UI review mode, using shared screens with real collected values. Checks covered Korean with normal text, English with larger text in Overview, Settings and the Monitoring page, detail navigation, expanding and collapsing connection controls, the More menu and normal quit. Installed files, permissions and signatures matched the release package, and the original presentation preferences were restored. After normal relaunch, the transient menu-bar popup and separate Monitoring window could not be reopened through the UI tool. Narrow layouts were checked in isolated UI fixtures, separately from physical MacBook Air testing. The eight-hour continuous collection test is not complete.
 
-Validation covered collection scheduling, saved-login checks, server retry delays, stale readings, larger text and narrow layouts through targeted regression checks and synthetic views. Existing isolated stress tests covered 12,000 monitor configurations, repeated window lifecycles and helper failures/cancellations. A separate Sparkle fixture installed and relaunched a signed update with preferences preserved, and rejected a tampered archive. These isolated tests and synthetic views do not establish behavior on every customer Mac; physical MacBook Air validation remains a separate task.
+For V1.024.000, validation covered collection scheduling, saved-login checks, server retry delays, stale readings, larger text and narrow layouts through targeted regression checks and synthetic views. Existing isolated stress tests covered 12,000 monitor configurations, repeated window lifecycles and helper failures/cancellations. A separate Sparkle fixture installed and relaunched a signed update with preferences preserved, and rejected a tampered archive. These isolated tests and synthetic views do not establish behavior on every customer Mac; physical MacBook Air validation remains a separate task.
 
 Feedback: **scoutkorea@kakao.com**. App management settings include a prominent PayPal support button and an email-composer button. Support is optional; feedback is never sent automatically.
 
