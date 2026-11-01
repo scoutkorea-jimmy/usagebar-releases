@@ -1,5 +1,218 @@
 # Quotly · 쿼틀리
 
+**AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
+
+[Quotly V1.025.000 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+
+Apple Silicon Mac · macOS 13 이상 · 한국어 / English
+
+**V1.025.000 — Antigravity 공식 화면 바로가기:** 설정 → 계정에서 **Antigravity 바로가기**를 켜면 메뉴바와 모니터링 윈도우에서 공식 화면으로 이동할 수 있습니다. Antigravity 사용량은 공식 앱이나 공식 안내에서 직접 확인하며, Quotly가 자동으로 조회하거나 로그인 정보를 읽지 않습니다.
+
+**V1.025.000 — Official Antigravity shortcuts:** Enable **Antigravity shortcut** under Settings → Accounts to access its official app or guide from Quotly. Check Antigravity usage in the official product; Quotly does not collect its usage or read authentication data.
+
+상단 **톱니바퀴 설정 버튼**에서 메뉴바 표시 항목·갱신·알림·계정을 관리합니다. 하단 탐색은 **현황·모니터링·작업 시간** 세 화면으로 구성됩니다. 작업 시간은 ⌘3으로도 열 수 있습니다.
+
+## 주요 기능
+
+- **작업 시간:** 하단 작업 시간 또는 ⌘3에서 프로젝트·작업을 시작하고 일시정지·재개·종료합니다. 일별 합계와 전체 CSV 내보내기를 지원하고, 기록마다 실제 시작 날짜·시각을 표시합니다. 앱이 깨어 있는 동안 관측한 시간만 기록하고 잠자기·재시작 후에는 직접 재개합니다. 강제 종료·느린 저장에서는 마지막 미저장 시간이 일부 유실될 수 있습니다.
+- **화면 구성:** 간단 확인·AI 작업·영상 작업 구성을 선택하거나 현재 화면을 저장합니다. 항목 표시·순서·상세도를 편집하고 메뉴바 구성을 함께 저장할 수 있습니다. 로그인 계정·갱신 주기·알림은 바뀌지 않습니다.
+- **예약 사용량 요약:** 설정 → 알림에서 요일·시각·서비스·세션/주간 한도를 선택합니다. 놓친 예약은 생략하거나 최신 한 건만 요약합니다. 앱 실행 중에 동작하고, 알림 권한이 없거나 방해금지 시간이어도 앱 안에 요약을 저장합니다. 관측 시각·이전 값·오류 상태를 함께 보여줍니다.
+- **내 Mac 상태:** 모델 식별자·칩·CPU 코어·메모리 정보를 자동으로 읽고 CPU·메모리·디스크·네트워크 상태와 마지막 측정 시각을 요약합니다. 대기·지연 상태를 구분합니다.
+- **CPU:** 모든 코어를 합친 0–100% 사용률과 여유율, 최근 1·5·10분 그래프를 표시합니다. 소수점 한 자리, 1·2·5·10초 측정(기본 2초)을 지원합니다. 설정 → 메뉴바에서 CPU 표시를 선택합니다.
+- **메모리·열 상태:** 추정 사용 용량 / 전체 용량, macOS 메모리 압박, 스왑, 최근 추이와 시스템 열 상태를 10초마다 확인합니다. 회수 가능한 파일 캐시를 제외한 추정치로 활동 모니터와 계산 기준이 다를 수 있습니다. 열 상태는 실제 온도나 성능 제한 원인을 직접 측정한 값이 아닙니다.
+- **모니터링 윈도우:** ChatGPT Codex·Claude 차트와 선택적으로 표시한 Antigravity 공식 바로가기 아래에 CPU·메모리·네트워크·디스크를 창 폭에 따라 1열 또는 2열 카드로 표시합니다. 아이콘·큰 수치·단위·최근 10분 미니 그래프·마지막 측정 시각을 함께 보여줍니다. 설정 → 윈도우에서 각 항목을 선택하며, 앱 강조색을 공유하고, 윈도우의 화면 모드는 별도로 선택합니다. 모든 화면은 같은 수집 데이터를 사용합니다. 각 시스템 카드 제목에서 상세 화면으로 바로 이동할 수 있으며, 큰 글씨 설정은 열린 창에도 반영됩니다.
+
+
+- **AI 사용량:** ChatGPT 구독의 Codex 한도와 Claude 한도를 사용률 또는 잔여량으로 표시합니다. 초기화까지 남은 시간, 갱신 시각, 서버에서 제공하는 크레딧·추가 한도를 확인할 수 있습니다.
+- **Antigravity 공식 바로가기:** 현황·상세 안내·메뉴바의 `AGY ↗` 항목·모니터링 윈도우에서 공식 화면에 접근합니다. 공식 앱이 없으면 고정된 Google 공식 사용량 안내를 엽니다. 사용량·잔여량·한도·초기화 시각을 가져오거나 추정하지 않으며, 숫자·퍼센트·진행 막대·정상 상태를 표시하지 않습니다.
+- **이용 플랜:** 상세·계정에서 서버가 제공하는 플랜명을 표시합니다. Claude는 확인된 다음 결제일을 표시하고, 날짜가 없으면 월간·연간 결제 주기만 표시합니다. 결제 정보를 받지 못하면 생략하며, 현재 ChatGPT 연동에는 결제 정보가 없습니다.
+- **Codex·Claude 사용량 알림:** 설정한 잔여량 기준을 한도 주기에서 처음 넘을 때 알립니다. 초기화 완료 알림과 방해금지 시간을 지원합니다.
+- **공식 서비스 상태:** [Claude Status](https://status.claude.com/)와 [OpenAI Status](https://status.openai.com/)를 1분마다 확인합니다. 새 장애, 진행 상황 변경, 복구를 알려주고 같은 업데이트를 반복해서 알리지 않습니다.
+- **Codex·Claude 기록·분석:** 연속 기록은 계단형 선 그래프로, 단독 관측과 최신 값은 점으로 표시합니다. 같은 한도의 조회 공백은 양 끝의 실제 관측값 사이에 회색 점선으로 표시하고, 사용률 감소·초기화 기준 변화는 주황색 세로선으로 구분합니다. 점선은 그 사이를 실제로 측정했다는 의미가 아니며 저장 기록은 바꾸지 않습니다. 충분한 관측이 있을 때 소진 예상과 주간 요약을 제공합니다.
+- **초기화 소식·쿠폰:** 공개 초기화 소식과 내 계정에서 확인되는 Codex 쿠폰 현황·이력을 보여줍니다. 쿠폰은 사용자가 직접 승인한 경우에만 요청합니다. 95% 미만에서도 사용할 수 있으며, 남은 한도와 쿠폰 소모에 관한 추가 확인이 필요합니다.
+- **Mac 모니터링:** 네트워크 업로드·다운로드(Mbps), 선택한 드라이브의 읽기·쓰기(MB/s), 최근 10분 그래프를 확인합니다.
+- **디스크 용량:** 메뉴바에서 선택한 드라이브의 사용 용량 또는 잔여 용량 / 전체 용량과 해당 비율을 표시합니다. 볼륨 기준으로 1분마다 갱신하며, 설정 → 메뉴바에서 용량 숫자·전체 용량(분모)·퍼센트를 각각 선택합니다. 메뉴바에는 사용량/잔여량 배지가 붙습니다. 자주 쓰는 숫자+비율/숫자만/비율만 선택을 먼저 보여주고, 숫자·분모·퍼센트 개별 옵션과 독립 기준은 ‘세부 표시 조정’에 접어 둡니다.
+- **메뉴바 맞춤 설정:** 필요한 항목, 글자 크기, 간격, 드라이브를 선택할 수 있습니다.
+- **앱 내 업데이트:** 서명된 업데이트 피드와 패키지를 확인하는 Sparkle 자동 업데이트를 지원합니다.
+
+## 서비스 장애 알림 사용법
+
+현황 상단의 **ChatGPT(OpenAI) / Claude 상태 줄**을 누르면 공식 서비스 상태와 최근 발표를 볼 수 있습니다. **설정 → 알림 → 공식 서비스 상태**에서 서비스별 알림을 켜거나 끌 수 있습니다. 전체 **알림 받기**와 macOS의 Quotly 알림 권한도 켜져 있어야 배너가 표시됩니다.
+
+- 처음 확인할 때 진행 중인 장애는 알리고, 이미 해결된 과거 사건은 알리지 않습니다.
+- 같은 업데이트는 앱을 다시 실행해도 반복하지 않습니다. 방해금지 중에 지나간 알림을 나중에 몰아서 보내지 않습니다.
+- 앱 실행 중 확인하며, 잠자기·오프라인·일시정지 중에는 조회를 멈춥니다. 조회 실패 시 이전 결과와 확인 지연을 표시하고 재시도 간격을 늘립니다.
+- Claude 조회 오류 또는 공식 장애 중에는 메뉴바에 마지막 퍼센트를 표시하지 않고 `C 장애` 또는 `C 조회 오류`로 표시합니다. 복구 후 새 사용량을 받아오면 다시 표시합니다.
+- 한국어 모드에서는 제공 가능한 비공식 번역과 원문 보기를 지원하며, 번역이 없으면 원문을 표시합니다. 서비스 전체 상태이므로 내 계정의 접속 가능 여부나 사용 한도를 보장하지 않습니다.
+
+## 웹 사용량과 비교할 때
+
+같은 계정·한도·표시 기준으로 양쪽을 새로고침해서 비교하세요. 예를 들어 웹의 **잔여 5%**는 앱의 **사용 95%**와 같습니다. 세션 한도와 주간 한도는 서로 다른 값이며, 메뉴바는 선택한 한도를 표시합니다. 서비스 웹페이지와 앱의 갱신 시각 차이로 잠시 다른 수치가 보일 수 있습니다.
+
+## 설치와 계정 연결
+
+1. 위 다운로드 링크에서 **Quotly-V1.025.000.zip**을 받습니다.
+2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
+3. 앱의 **설정 → 계정**에서 본인의 계정을 연결합니다.
+
+**Claude:** CLI나 Claude 앱을 설치할 필요가 없습니다. Quotly의 **Claude 로그인** 창에서 본인 계정으로 로그인한 뒤 앱에서 새로고침하세요.
+
+**ChatGPT · Codex:** 최신 ChatGPT 데스크톱 앱에 포함된 Codex와 OpenAI 서명이 확인되는 기존 Codex 실행 파일을 자동으로 찾습니다. 서명이 없거나 변조된 CLI·실행 파일은 실행하지 않습니다. 연결 화면에 찾은 도구가 표시됩니다. 로그인 완료 후에는 사용량과 연결됨 상태를 표시하고 연결 관리는 접어둡니다. 로그아웃은 연결 관리를 펼쳐 실행할 수 있습니다. 브라우저·터미널 로그인 결과가 반영되지 않으면 ‘로그인 결과 다시 확인’을 누르세요. 실행 파일이 없으면 **ChatGPT 데스크톱 설치하기 → 응용 프로그램 폴더로 이동 → 설치 확인 → ChatGPT Codex 로그인** 순서로 연결하세요. Codex가 포함된 앱이 있으면 CLI를 따로 설치할 필요가 없습니다. 이전 대화 전용 ChatGPT 앱이나 웹 로그인만으로는 연결되지 않습니다.
+
+**Antigravity:** **설정 → 계정 → Antigravity 바로가기**에서 표시 여부를 고릅니다. **공식 앱 열기**는 확인된 Google 공식 앱을 열며, 앱이 없으면 [공식 사용량 안내](https://antigravity.google/docs/cli/commands/usage/)를 엽니다. CLI 설치나 Quotly 안의 Google 로그인이 필요하지 않습니다. 로그인과 사용량 확인은 공식 제품에서 직접 진행합니다.
+
+Antigravity 바로가기는 자동 수집을 시작하지 않습니다. 이전 후보에서 활성화한 설정이 남아 있어도 공식 바로가기 표시로만 처리하며, 기존 계정이나 CLI 로그인 상태를 변경하지 않습니다. Codex·Claude의 수집과 기록은 기존 방식으로 유지합니다.
+
+ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시지 잔여 횟수는 지원하지 않습니다. Codex 연결에는 지원되는 로컬 Codex 설치와 로그인 환경이 필요합니다. 공식 상태 조회에는 계정 로그인이 필요하지 않습니다.
+
+이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
+
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.025.000**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+
+## 이번 버전의 확인 범위
+
+최종 공식 바로가기 방식에서 backend 회귀 127개, 네이티브 화면 검사 120개와 최종 상세 화면 검사 14개를 통과했습니다. 화면 검사는 총 52개 이미지를 렌더링했으며 한국어·영어, 일반·큰 글씨, 밝은·어두운 화면과 좁은 폭을 포함합니다. 배포 도구 단위검사 12개와 관측기 회귀검사 36개도 격리된 시험에서 통과했습니다. 이는 실제 8시간 관측 완료를 의미하지 않습니다.
+
+최종 빌드의 서명, ZIP 추출 결과와 설치본의 전체 파일·링크·권한 일치를 확인했습니다. 설치된 맥미니 앱에서 한국어 현황, 실제 Antigravity 바로가기 스위치, `/usage` 상세 안내와 441pt 모니터링의 한 줄 배치를 확인했고, 안내 버튼이 Aside에서 Google 공식 사용량 안내를 실제로 여는 것도 확인했습니다. 이 Mac에는 Antigravity 공식 앱이 없어 공식 앱 실행 자체는 확인하지 않았습니다.
+
+설치본을 영어·큰 글씨로 바꾼 실제 441pt 모니터링에서도 Codex·Claude 가로 막대 두 개와 Antigravity 안내가 한 줄로 표시되고, 퍼센트가 말줄임 없이 보이는 것을 확인했습니다. 영어 창 제목, 현황·설정·메뉴바의 별도 `AGY ↗` 항목, 한 줄 `/usage` 상세 안내와 조회 버튼 부재도 확인했습니다. 검증 후 한국어·기본 글씨로 복원했습니다. 240pt 최소 폭은 네이티브 시험 화면으로 검증했으며 실제 설치 창의 240pt 조절을 검증한 것은 아닙니다. Codex·Claude의 8시간 실수집·원본 기록 대조와 맥북에어 실물 확인은 아직 완료되지 않았습니다. Antigravity는 공식 바로가기만 제공하므로 자동 수집 검증은 해당하지 않습니다. 공개 피드·ZIP의 독립 검증은 배포 단계에서 별도로 수행합니다.
+
+## 로그인 보안
+
+- Claude 로그인 창은 Claude·Google·Apple의 지정된 HTTPS 로그인 주소만 허용합니다. 실제 접속 중인 호스트를 창 제목에 표시하며, 알 수 없는 기업 SSO 주소는 현재 지원하지 않습니다.
+- ChatGPT Codex는 OpenAI 서명이 확인되는 실행 파일만 사용합니다. Quotly에서 실행하는 사용량 조회는 공식 ChatGPT 주소로 고정하며, 사용자의 Codex 설정 파일은 변경하지 않습니다.
+- Antigravity는 공식 앱이나 고정된 HTTPS 안내 주소를 여는 기능만 제공합니다. CLI 실행·자동 조회·인증 정보 추출·사용량 저장을 하지 않으며, 기존 Google 로그인 상태를 변경하지 않습니다.
+- 사용 기록·상태 기록은 사용자 전용 접근 권한으로 저장합니다. 진단 보고에는 비밀번호·인증 토큰·이메일·대화·원본 오류 응답을 넣지 않습니다.
+- Quotly가 비밀번호를 직접 수집하거나 저장하지는 않지만, Claude 로그인 세션은 이 Mac의 WebKit 저장소에 유지되고 Codex 인증은 공식 Codex가 관리합니다. 감염된 Mac 또는 같은 사용자 권한의 악성 프로그램에 대한 완전한 보호를 보장하지 않습니다.
+- 현재 Apple Developer ID 서명·공증은 없습니다. 업데이트 피드·배포 패키지의 Ed25519 서명 검증은 유지합니다.
+
+## 글꼴
+
+앱 화면과 메뉴바는 엘리스 디지털 배움체 Regular·Bold를 사용합니다. 원본 폰트와 [제작사 라이선스](https://cdn-front-door.elice.io/font/static/downloads/EliceDigitalBaeum_License.pdf)를 앱에 포함하며, 별도 폰트 설치는 필요하지 않습니다. macOS 시스템 대화상자와 서비스 로그인 웹페이지는 해당 환경의 글꼴을 유지합니다.
+
+## 개발 후원 · 불편 접수
+
+설정의 앱 관리 화면 상단에서 [PayPal로 개발 후원](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)을 할 수 있습니다. 후원은 선택이며 모든 기능을 그대로 사용할 수 있습니다.
+
+오류나 개선 의견은 **scoutkorea@kakao.com**으로 보내주세요. 앱의 **불편 접수 메일 쓰기** 버튼은 메일 작성 창만 열며 자동 전송하거나 진단 정보를 첨부하지 않습니다.
+
+## English
+
+- Monitor local model/chip/core/RAM information, normalized CPU load and headroom, estimated memory usage, memory pressure, swap and macOS thermal state. Memory is estimated excluding reclaimable file cache and may differ from Activity Monitor. Thermal state is not a temperature reading or a throttling diagnosis.
+- CPU samples every 1/2/5/10 seconds (default 2); memory and thermal state every 10 seconds. View recent charts and per-resource timestamps. Select CPU in menu-bar settings and CPU/memory in Monitoring window settings. Views share existing collectors, and unchanged menu values no longer trigger repeated repaint requests.
+
+**Quotly puts AI usage and Mac activity in your menu bar.** Requires Apple Silicon and macOS 13 or later. Korean and English interfaces are available.
+
+- Track work time from the bottom tab or Cmd3: start, pause, resume, finish, daily totals, dated records and complete CSV export. Only observed time is counted; sleep/restart pauses and requires manual resume. Crash or slow storage may lose the latest checkpoint.
+- Save and switch screen layouts without changing account, refresh or notification settings.
+- View recognized server-reported plan names in Overview, details and account settings. Claude shows an explicit next payment date, falling back to a confirmed monthly/annual cycle. Missing billing details are omitted; the current ChatGPT integration supplies none.
+- View used or remaining **Codex subscription limits** and Claude usage, reset countdowns, server-reported credits and additional limits.
+- Optionally show official Antigravity shortcuts in Overview, details, the `AGY ↗` menu-bar item and the Monitoring window. Open the verified official app, or the fixed Google usage guide when it is unavailable. Quotly does not show Antigravity quotas, percentages, progress bars or a fabricated service-health state.
+- Receive Codex/Claude first-crossing quota alerts, reset alerts, and official **OpenAI / Claude incident updates** checked every minute.
+- Open the status row on Overview for active incidents and recent official updates. Configure each provider under **Settings → Notifications → Official service status**. Enable the app's main notifications switch and macOS notification permission for banners.
+- Existing active incidents are announced on first check; historical resolved incidents are not. Identical updates are deduplicated across restarts. Quiet-hour events are not replayed later.
+- Polling stops during sleep, offline periods and app pause. Failed checks retain the last result with a stale indication and use retry backoff. Incident text remains in its original language.
+- Explore Codex/Claude usage history as continuous stepped lines, with dots only for isolated observations and the latest value. Gray dashed bridges mark same-limit observation gaps; orange rules distinguish usage drops or reset-reference changes. Bridges do not represent measurements and do not change stored records. View forecasts when sufficient observations exist, reset news, and eligible Codex reset coupons. Coupon redemption always requires confirmation.
+- Monitor network throughput in Mbps, selected-drive I/O in MB/s and recent graphs. Customize visible menu-bar items and sizing.
+
+When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
+
+Download **Quotly-V1.025.000.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+
+For Antigravity, enable **Settings → Accounts → Antigravity shortcut**. **Open official app** opens a verified Google app; if it is unavailable, Quotly opens the [official usage guide](https://antigravity.google/docs/cli/commands/usage/). No CLI installation or Google sign-in inside Quotly is required. Authentication and usage checking remain in the official product.
+
+The shortcut does not start automatic collection. An enabled preference from an earlier candidate now controls shortcut visibility only; it does not change existing accounts or CLI sign-in state. Codex and Claude collection and history retain their existing behavior.
+
+The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
+
+Claude sign-in windows accept only designated HTTPS Claude, Google and Apple hosts and show the current host in the native title. Unknown enterprise SSO providers are currently blocked. Codex helpers require a valid OpenAI signature; usage requests pin the official ChatGPT base URL without changing your Codex config. History and status files use owner-only permissions. Quotly does not collect passwords directly; Claude sessions persist in this Mac's WebKit store and Codex manages its own credentials. Antigravity support only opens its official app or a fixed HTTPS guide. Quotly does not execute its CLI, query quotas, extract authentication data or store usage. Existing Google sign-in state is unchanged. This does not guarantee protection against malware running as your OS user or a compromised Mac.
+
+The final official-shortcut backend passed 127 regression checks. Native UI fixtures passed 120 checks plus 14 final-detail checks and rendered 52 images, covering Korean/English, normal/larger text, light/dark appearance and narrow widths. Twelve release-tool unit tests and 36 observer regression tests passed in isolated fixtures; these results do not establish a completed eight-hour observation.
+
+The final app signature and the ZIP round trip were verified against every installed file, link and permission. On the installed Mac mini app, Korean Overview, the native Antigravity shortcut switch, the `/usage` details and a single-row 441pt Monitoring window were checked. The guide button actually opened the fixed Google usage-guide URL in Aside. The official Antigravity app is not installed on this Mac, so launching that app was not verified.
+
+Installed English/larger-text checks passed at 441pt: two Codex/Claude horizontal bars and the Antigravity guide remain in one row with complete percentages. English native window titles, Overview/settings, the separate `AGY ↗` menu item, a single-line `/usage` instruction and the absence of query controls were checked. Korean and normal text were restored afterward. The 240pt minimum width was checked in native fixtures only; resizing the actual installed window to 240pt was not verified. Actual eight-hour Codex/Claude collection and source-history comparison, and physical MacBook Air testing, remain incomplete. Antigravity automatic collection is not applicable because only official shortcuts are provided. Public feed and downloaded-ZIP verification will be performed separately during publication.
+
+Feedback: **scoutkorea@kakao.com**. App management settings include a prominent PayPal support button and an email-composer button. Support is optional; feedback is never sent automatically.
+
+App-owned UI and menu-bar text use bundled Elice Digital Baeum Regular/Bold. Original font files and license are included; system dialogs and service login pages keep their native typography.
+
+## 배포 저장소 / Distribution repository
+
+이 저장소는 앱 배포 파일, 안내 문서와 서명된 업데이트 피드만 제공합니다. **앱 소스 코드, 로그인 정보, 사용자 설정, 서명 개인키는 포함하지 않습니다.** GitHub가 자동으로 표시하는 `Source code` 압축 파일은 이 배포 저장소의 문서·피드 사본이며 앱 소스가 아닙니다.
+
+This repository distributes app binaries, documentation and the signed update feed. It contains no application source code, account sessions, user preferences or signing private keys. GitHub's automatically generated source archives contain only this distribution repository's documents and feed.
+
+### 오류 보고 / Report an issue
+설정 → 앱 또는 하단 더 보기 → 오류 보고에서 진단 내용을 미리 보고 메일 작성·복사할 수 있습니다. 자동 전송하지 않습니다. 계정·토큰·대화·경로·원본 오류 응답은 제외됩니다.
+
+Open Settings → App or More → Report an issue to preview and copy diagnostics or compose an email. Reports are never sent automatically.
+
+### 모니터링 윈도우 / Monitoring window
+앱 상단 톱니바퀴 왼쪽의 윈도우 아이콘으로 바로 열 수 있습니다. 하단 더 보기 또는 설정 → 윈도우에서도 열 수 있습니다. 메뉴바와 같은 데이터를 사용하고 표시 항목은 별도로 선택하며 핀 버튼으로 항상 위 표시를 전환합니다. 위치·크기를 기억하고 창을 닫아도 기존 모니터링은 계속됩니다.
+
+Open the Monitoring window with the window icon immediately left of Settings, or from More or Settings → Window. It shares menu-bar data without extra polling; pin it above regular windows and reopen it at its saved position and size.
+
+모니터링 윈도우는 일반 제목 표시줄과 불투명한 배경을 사용합니다. 메모리 압박 상태는 제목 옆에 표시하고 스왑 줄은 제외해 CPU·메모리 카드 높이를 맞췄습니다. 디스크 속도 아래에는 내장·외장 드라이브의 사용률·사용/전체 용량·잔여 용량을 표시합니다. 디스크 표시 설정에 함께 적용되며 용량은 기존 1분 수집기를 공유합니다. 디스크 용량은 메뉴바·모니터링·상세 화면과 동일한 10진수 GB/TB 기준으로 표시합니다.
+
+The Monitoring window uses a standard title bar and opaque backgrounds. Memory pressure sits beside the heading; the swap row is omitted so CPU and Memory cards align. Mounted internal and external storage capacity appears below disk activity, controlled by the existing Disk preference. Storage reuses the existing one-minute collector. Disk capacity uses the same decimal GB/TB convention as the menu bar, monitoring views and detail pages.
+
+원형 차트의 퍼센트는 공간이 부족하면 글자 크기를 줄여 `100%`도 말줄임 없이 표시합니다.
+
+Quota ring percentages scale down when needed, keeping `100%` visible without truncation.
+
+좁은 창에서는 시스템 카드가 1열로, 넓은 창에서는 2열로 표시됩니다. 상단 AI 항목은 항상 한 줄을 유지합니다. 넓은 창에서는 Codex·Claude 원형 차트 두 개와 Antigravity 공식 바로가기를, 좁은 창에서는 Codex·Claude 가로 막대 두 개와 같은 바로가기를 나란히 표시합니다. Antigravity에는 사용량 차트를 만들지 않습니다. 스크롤바는 1pt 두께의 얇은 오버레이로 표시합니다.
+
+System cards use one column in narrow windows and two in wider windows. The AI items remain in one row: two Codex/Claude rings and an Antigravity official shortcut in wide windows, or two Codex/Claude horizontal bars and the same shortcut in narrow windows. Antigravity has no quota chart. The scrollbar uses a thin 1pt overlay thumb.
+
+### RAM 및 업데이트 상태 / RAM and update status
+
+설정 → 메뉴바 → CPU · RAM에서 RAM 사용률 표시를 선택합니다. `RAM 70.1%`처럼 표시하며, 사용/전체 용량은 툴팁과 모니터링에서 확인합니다. 기존 10초 수집기를 공유하고 오래되거나 유효하지 않은 값은 0%로 표시하지 않습니다. CPU·RAM·네트워크·디스크는 공통 간격·정렬 규칙을 따릅니다.
+
+설정 → 앱에서 최신 상태, 새 버전, 확인 실패, 호환 불가를 구분합니다. 업데이트 수는 서명된 피드가 확인한 최신 버전과 일치하는 배포 기록을 현재 버전과 비교해 표시합니다. 기록 JSON은 안내용이며 설치를 승인하거나 파일 URL을 지정하지 않습니다. 업데이트는 최신 전체 ZIP 한 개를 제공하고 중간 버전을 요구하지 않습니다. 확인한 최신 빌드보다 오래된 선택을 차단합니다. 격리된 Sparkle 시험 앱에서 실제 설치·재실행·설정 보존과 변조 파일 차단을 확인했으며, 고객 기기의 업데이트 수신 여부와는 구분합니다.
+
+Select RAM percentage under Settings → Menu bar → CPU · RAM. It reuses the existing ten-second collector; stale or invalid data does not become zero. Capacity is available in tooltips and monitoring. CPU/RAM/network/disk share spacing and alignment rules.
+
+Update settings show up-to-date, available, failed or incompatible states. Version counts use release-history records matched to the signed feed's confirmed latest version/build. That JSON is informational, and cannot authorize installers or supply download URLs. One latest full ZIP avoids intermediate releases; older selected builds are blocked. Signed installation, relaunch, preference preservation and tampered-archive rejection passed in an isolated Sparkle fixture; customer-device update delivery is a separate verification scope.
+
+모니터링 윈도우는 창 폭에 따라 AI 사용량 원형 차트 또는 가로 막대 차트와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
+
+The Monitoring window shows AI usage as rings or horizontal bars depending on its width, alongside the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
+
+설정 → 윈도우에서 ChatGPT Codex와 Claude의 차트 한도를 각각 선택합니다. Antigravity는 공식 바로가기 표시 여부만 선택하며 한도 선택이나 자동 조회 기능을 제공하지 않습니다.
+
+### 앱 색상 / Appearance
+설정 → 앱 → 앱 색상에서 시스템·라이트·다크 화면 모드와 강조색을 선택할 수 있습니다. 모니터링 윈도우는 같은 강조색을 사용하며, 설정 → 윈도우에서 시스템·라이트·다크 모드를 별도로 고를 수 있습니다.
+Choose system, light or dark appearance and an accent color in Settings → App. The Monitoring window shares the accent color and offers a separate system, light or dark choice under Settings → Window.
+
+모니터링 윈도우는 설정 → 윈도우에서 표시 항목과 사용량 차트의 한도를 고릅니다. 강조색은 10가지 견본 또는 사용자 지정 색상을 지원합니다.
+Monitoring window contents and chart quotas have their own settings. Ten accent swatches and a custom color picker are available.
+
+Disk capacity: show used or free space / total volume capacity and the matching percentage for the menu bar drive. Configure numbers, total capacity, percentage and separate used/free modes in Settings → Menu bar. Refreshes every minute in the background.
+
+### V1.015.000 메뉴바 간격 수정
+
+CPU와 RAM 사이에도 구분선을 표시하며, 모든 그룹 구분선의 좌우 여백을 동일하게 적용합니다. 실제 표시 폭을 사용해 남는 여백을 없애고 DISK와 용량은 한 칸으로 연결합니다. 숫자 변화에 따라 전체 폭이 조정됩니다.
+
+CPU/RAM now have a divider. All group boundaries share equal padding; visible text widths remove unused reservations. DISK and capacity use one space. The menu width adjusts to actual readings.
+
+### 업데이트 버튼 및 최신 상태
+
+진행 중 누른 업데이트 요청은 완료 후 실행합니다. 버튼은 계속 사용할 수 있으며, 조회 실패는 최신 상태와 구분합니다. 앱 시작 후 서명된 피드를 확인하고 최신이면 최신 상태를 표시합니다.
+
+Update requests made while busy are retained. The button stays actionable; failed checks differ from up-to-date status. Startup probes the signed feed and shows current status when confirmed.
+
+## 외부 구성요소 라이선스 / Third-party licenses
+
+Quotly 자체 소스는 비공개입니다. 전체 앱이 MIT 오픈소스라는 의미가 아닙니다. Sparkle2.9.6은 MIT 및 포함된 BSD·Zlib 고지를 유지하고, 엘리스 디지털 배움체는 원본 폰트와 제작사 조건을 유지합니다. Apple 프레임워크는 macOS가 제공합니다. Antigravity 공식 제품은 Quotly에 포함되지 않으며 해당 Google 이용 조건을 따릅니다. 외부 API·SNS 콘텐츠는 해당 서비스와 콘텐츠의 조건을 따릅니다.
+
+[외부 구성요소 전체 고지](THIRD_PARTY_NOTICES.txt) · [엘리스 폰트 원문 라이선스](Licenses/EliceDigitalBaeum_License.pdf)
+
+Quotly source remains private. Third-party components retain their own licenses: Sparkle includes MIT/BSD/Zlib notices; Elice fonts retain their original vendor terms. The official Antigravity product is not bundled with Quotly and remains subject to its own Google terms. Apple system frameworks and external services/content are not relabeled MIT. The V1.021.002 app includes the reviewed third-party notices and build-time license checks.
+
+<details>
+<summary>이전 주요 업데이트 / Earlier release highlights</summary>
+
 V1.024.001: 메뉴바 패널의 상단 버튼·표시 기준 선택·서비스 상태 줄·하단 탐색에서 과도한 여백을 줄였습니다. 글씨 크기는 유지하면서 같은 창에 더 많은 정보를 표시하고, 좁은 영문 화면에서 긴 항목명이 잘리지 않도록 개선했습니다. 설정과 모니터링 윈도우의 공통 버튼·접기 항목에도 같은 간격 규칙을 적용했습니다.
 
 V1.024.001 reduces excess padding in the menu panel toolbar, display selector, service status and bottom navigation. The same window shows more information without shrinking its text. Long labels wrap in narrow English layouts, and shared controls use consistent spacing across settings and the Monitoring window.
@@ -48,193 +261,4 @@ V1.015.000에서는 자동 확인·다운로드가 켜져 있으면 앱 시작 �
 
 Automatic checks and downloads now apply a ready update by restarting Quotly, with checks at launch and every six hours. Sensitive operations, text editing, modal dialogs and sleep defer restart. Opt-out choices are preserved. Update to this release once to use this behavior for future releases. An isolated Sparkle test completed a signed update, relaunch and preference-preservation check, and rejected a tampered archive. This does not establish update delivery on every customer Mac.
 
-**AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
-
-[Quotly V1.024.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
-
-Apple Silicon Mac · macOS 13 이상 · 한국어 / English
-
-상단 **톱니바퀴 설정 버튼**에서 메뉴바 표시 항목·갱신·알림·계정을 관리합니다. 하단 탐색은 **현황·모니터링·작업 시간** 세 화면으로 구성됩니다. 작업 시간은 ⌘3으로도 열 수 있습니다.
-
-## 주요 기능
-
-- **작업 시간:** 하단 작업 시간 또는 ⌘3에서 프로젝트·작업을 시작하고 일시정지·재개·종료합니다. 일별 합계와 전체 CSV 내보내기를 지원하고, 기록마다 실제 시작 날짜·시각을 표시합니다. 앱이 깨어 있는 동안 관측한 시간만 기록하고 잠자기·재시작 후에는 직접 재개합니다. 강제 종료·느린 저장에서는 마지막 미저장 시간이 일부 유실될 수 있습니다.
-- **화면 구성:** 간단 확인·AI 작업·영상 작업 구성을 선택하거나 현재 화면을 저장합니다. 항목 표시·순서·상세도를 편집하고 메뉴바 구성을 함께 저장할 수 있습니다. 로그인 계정·갱신 주기·알림은 바뀌지 않습니다.
-- **예약 사용량 요약:** 설정 → 알림에서 요일·시각·서비스·세션/주간 한도를 선택합니다. 놓친 예약은 생략하거나 최신 한 건만 요약합니다. 앱 실행 중에 동작하고, 알림 권한이 없거나 방해금지 시간이어도 앱 안에 요약을 저장합니다. 관측 시각·이전 값·오류 상태를 함께 보여줍니다.
-- **내 Mac 상태:** 모델 식별자·칩·CPU 코어·메모리 정보를 자동으로 읽고 CPU·메모리·디스크·네트워크 상태와 마지막 측정 시각을 요약합니다. 대기·지연 상태를 구분합니다.
-- **CPU:** 모든 코어를 합친 0–100% 사용률과 여유율, 최근 1·5·10분 그래프를 표시합니다. 소수점 한 자리, 1·2·5·10초 측정(기본 2초)을 지원합니다. 설정 → 메뉴바에서 CPU 표시를 선택합니다.
-- **메모리·열 상태:** 추정 사용 용량 / 전체 용량, macOS 메모리 압박, 스왑, 최근 추이와 시스템 열 상태를 10초마다 확인합니다. 회수 가능한 파일 캐시를 제외한 추정치로 활동 모니터와 계산 기준이 다를 수 있습니다. 열 상태는 실제 온도나 성능 제한 원인을 직접 측정한 값이 아닙니다.
-- **모니터링 윈도우:** 기존 ChatGPT Codex·Claude 원형 차트 아래에 CPU·메모리·네트워크·디스크를 창 폭에 따라 1열 또는 2열 카드로 표시합니다. 아이콘·큰 수치·단위·최근 10분 미니 그래프·마지막 측정 시각을 함께 보여줍니다. 설정 → 윈도우에서 각 항목을 선택하며, 앱 강조색을 공유하고, 윈도우의 화면 모드는 별도로 선택합니다. 모든 화면은 같은 수집 데이터를 사용합니다. 각 시스템 카드 제목에서 상세 화면으로 바로 이동할 수 있으며, 큰 글씨 설정은 열린 창에도 반영됩니다.
-
-
-- **AI 사용량:** ChatGPT 구독의 Codex 한도와 Claude 한도를 사용률 또는 잔여량으로 표시합니다. 초기화까지 남은 시간, 갱신 시각, 서버에서 제공하는 크레딧·추가 한도를 확인할 수 있습니다.
-- **이용 플랜:** 상세·계정에서 서버가 제공하는 플랜명을 표시합니다. Claude는 확인된 다음 결제일을 표시하고, 날짜가 없으면 월간·연간 결제 주기만 표시합니다. 결제 정보를 받지 못하면 생략하며, 현재 ChatGPT 연동에는 결제 정보가 없습니다.
-- **사용량 알림:** 설정한 잔여량 기준을 한도 주기에서 처음 넘을 때 알립니다. 초기화 완료 알림과 방해금지 시간을 지원합니다.
-- **공식 서비스 상태:** [Claude Status](https://status.claude.com/)와 [OpenAI Status](https://status.openai.com/)를 1분마다 확인합니다. 새 장애, 진행 상황 변경, 복구를 알려주고 같은 업데이트를 반복해서 알리지 않습니다.
-- **기록·분석:** 연속 기록은 계단형 선 그래프로, 단독 관측과 최신 값은 점으로 표시합니다. 같은 한도의 조회 공백은 양 끝의 실제 관측값 사이에 회색 점선으로 표시하고, 사용률 감소·초기화 기준 변화는 주황색 세로선으로 구분합니다. 점선은 그 사이를 실제로 측정했다는 의미가 아니며 저장 기록은 바꾸지 않습니다. 충분한 관측이 있을 때 소진 예상과 주간 요약을 제공합니다.
-- **초기화 소식·쿠폰:** 공개 초기화 소식과 내 계정에서 확인되는 Codex 쿠폰 현황·이력을 보여줍니다. 쿠폰은 사용자가 직접 승인한 경우에만 요청합니다. 95% 미만에서도 사용할 수 있으며, 남은 한도와 쿠폰 소모에 관한 추가 확인이 필요합니다.
-- **Mac 모니터링:** 네트워크 업로드·다운로드(Mbps), 선택한 드라이브의 읽기·쓰기(MB/s), 최근 10분 그래프를 확인합니다.
-- **디스크 용량:** 메뉴바에서 선택한 드라이브의 사용 용량 또는 잔여 용량 / 전체 용량과 해당 비율을 표시합니다. 볼륨 기준으로 1분마다 갱신하며, 설정 → 메뉴바에서 용량 숫자·전체 용량(분모)·퍼센트를 각각 선택합니다. 메뉴바에는 사용량/잔여량 배지가 붙습니다. 자주 쓰는 숫자+비율/숫자만/비율만 선택을 먼저 보여주고, 숫자·분모·퍼센트 개별 옵션과 독립 기준은 ‘세부 표시 조정’에 접어 둡니다.
-- **메뉴바 맞춤 설정:** 필요한 항목, 글자 크기, 간격, 드라이브를 선택할 수 있습니다.
-- **앱 내 업데이트:** 서명된 업데이트 피드와 패키지를 확인하는 Sparkle 자동 업데이트를 지원합니다.
-
-## 서비스 장애 알림 사용법
-
-현황 상단의 **ChatGPT(OpenAI) / Claude 상태 줄**을 누르면 공식 서비스 상태와 최근 발표를 볼 수 있습니다. **설정 → 알림 → 공식 서비스 상태**에서 서비스별 알림을 켜거나 끌 수 있습니다. 전체 **알림 받기**와 macOS의 Quotly 알림 권한도 켜져 있어야 배너가 표시됩니다.
-
-- 처음 확인할 때 진행 중인 장애는 알리고, 이미 해결된 과거 사건은 알리지 않습니다.
-- 같은 업데이트는 앱을 다시 실행해도 반복하지 않습니다. 방해금지 중에 지나간 알림을 나중에 몰아서 보내지 않습니다.
-- 앱 실행 중 확인하며, 잠자기·오프라인·일시정지 중에는 조회를 멈춥니다. 조회 실패 시 이전 결과와 확인 지연을 표시하고 재시도 간격을 늘립니다.
-- Claude 조회 오류 또는 공식 장애 중에는 메뉴바에 마지막 퍼센트를 표시하지 않고 `C 장애` 또는 `C 조회 오류`로 표시합니다. 복구 후 새 사용량을 받아오면 다시 표시합니다.
-- 한국어 모드에서는 제공 가능한 비공식 번역과 원문 보기를 지원하며, 번역이 없으면 원문을 표시합니다. 서비스 전체 상태이므로 내 계정의 접속 가능 여부나 사용 한도를 보장하지 않습니다.
-
-## 웹 사용량과 비교할 때
-
-같은 계정·한도·표시 기준으로 양쪽을 새로고침해서 비교하세요. 예를 들어 웹의 **잔여 5%**는 앱의 **사용 95%**와 같습니다. 세션 한도와 주간 한도는 서로 다른 값이며, 메뉴바는 선택한 한도를 표시합니다. 서비스 웹페이지와 앱의 갱신 시각 차이로 잠시 다른 수치가 보일 수 있습니다.
-
-## 설치와 계정 연결
-
-1. 위 다운로드 링크에서 **Quotly-V1.024.001.zip**을 받습니다.
-2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
-3. 앱의 **설정 → 연결 → 관리**에서 본인의 계정을 연결합니다.
-
-**Claude:** CLI나 Claude 앱을 설치할 필요가 없습니다. Quotly의 **Claude 로그인** 창에서 본인 계정으로 로그인한 뒤 앱에서 새로고침하세요.
-
-**ChatGPT · Codex:** 최신 ChatGPT 데스크톱 앱에 포함된 Codex와 OpenAI 서명이 확인되는 기존 Codex 실행 파일을 자동으로 찾습니다. 서명이 없거나 변조된 CLI·실행 파일은 실행하지 않습니다. 연결 화면에 찾은 도구가 표시됩니다. 로그인 완료 후에는 사용량과 연결됨 상태를 표시하고 연결 관리는 접어둡니다. 로그아웃은 연결 관리를 펼쳐 실행할 수 있습니다. 브라우저·터미널 로그인 결과가 반영되지 않으면 ‘로그인 결과 다시 확인’을 누르세요. 실행 파일이 없으면 **ChatGPT 데스크톱 설치하기 → 응용 프로그램 폴더로 이동 → 설치 확인 → ChatGPT Codex 로그인** 순서로 연결하세요. Codex가 포함된 앱이 있으면 CLI를 따로 설치할 필요가 없습니다. 이전 대화 전용 ChatGPT 앱이나 웹 로그인만으로는 연결되지 않습니다.
-
-ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시지 잔여 횟수는 지원하지 않습니다. Codex 연결에는 지원되는 로컬 Codex 설치와 로그인 환경이 필요합니다. 공식 상태 조회에는 계정 로그인이 필요하지 않습니다.
-
-이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
-
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.024.001**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
-
-## 이번 버전의 확인 범위
-
-설치된 V1.024.001의 화면 검토 모드에서 실제 수집값을 사용하는 공통 화면을 직접 조작했습니다. 한국어 일반 글씨, 영어 큰 글씨의 현황·설정·모니터링 페이지, 상세 보기, 연결 관리의 펼치기·접기와 더 보기 메뉴·정상 종료를 확인했습니다. 설치본과 배포 패키지의 파일·권한·서명이 일치하며, 기존 화면 설정도 복원했습니다. 일반 실행으로 돌아간 뒤의 메뉴바 팝업과 별도 모니터링 윈도우는 도구로 다시 열어 확인하지 못했습니다. 좁은 화면 조합은 격리된 화면 시험으로 확인했으며 맥북에어 실물 확인과는 구분합니다. 8시간 연속 수집 검증은 아직 완료되지 않았습니다.
-
-V1.024.000의 변경에서는 수집 일정·로그인 확인·서버 대기시간, 오래된 측정값, 큰 글씨·좁은 창·공통 조작 영역을 관련 회귀 검사와 합성 화면으로 확인했습니다. 기존 격리 스트레스 검사에는 모니터 설정 변경 12,000회, 창 반복 동작, 보조 프로세스 고장·취소가 포함됩니다. 별도 Sparkle 시험 앱에서 서명된 업데이트의 설치·재실행·설정 보존과 변조된 파일의 차단을 확인했습니다. 격리 시험과 합성 화면은 모든 고객 기기의 실제 동작을 보장하지 않으며, 맥북에어 실물 검증은 별도 진행 대상입니다. 현재 개인용 기능에는 기간·결제 제한이 없습니다. 선택 로그 분석·새 자료 이전은 아직 제공하지 않습니다.
-
-## 로그인 보안
-
-- Claude 로그인 창은 Claude·Google·Apple의 지정된 HTTPS 로그인 주소만 허용합니다. 실제 접속 중인 호스트를 창 제목에 표시하며, 알 수 없는 기업 SSO 주소는 현재 지원하지 않습니다.
-- ChatGPT Codex는 OpenAI 서명이 확인되는 실행 파일만 사용합니다. Quotly에서 실행하는 사용량 조회는 공식 ChatGPT 주소로 고정하며, 사용자의 Codex 설정 파일은 변경하지 않습니다.
-- 사용 기록·상태 기록은 사용자 전용 접근 권한으로 저장합니다. 진단 보고에는 비밀번호·인증 토큰·이메일·대화·원본 오류 응답을 넣지 않습니다.
-- Quotly가 비밀번호를 직접 수집하거나 저장하지는 않지만, Claude 로그인 세션은 이 Mac의 WebKit 저장소에 유지되고 Codex 인증은 공식 Codex가 관리합니다. 감염된 Mac 또는 같은 사용자 권한의 악성 프로그램에 대한 완전한 보호를 보장하지 않습니다.
-- 현재 Apple Developer ID 서명·공증은 없습니다. 업데이트 피드·배포 패키지의 Ed25519 서명 검증은 유지합니다.
-
-## 글꼴
-
-앱 화면과 메뉴바는 엘리스 디지털 배움체 Regular·Bold를 사용합니다. 원본 폰트와 [제작사 라이선스](https://cdn-front-door.elice.io/font/static/downloads/EliceDigitalBaeum_License.pdf)를 앱에 포함하며, 별도 폰트 설치는 필요하지 않습니다. macOS 시스템 대화상자와 서비스 로그인 웹페이지는 해당 환경의 글꼴을 유지합니다.
-
-## 개발 후원 · 불편 접수
-
-설정의 앱 관리 화면 상단에서 [PayPal로 개발 후원](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)을 할 수 있습니다. 후원은 선택이며 모든 기능을 그대로 사용할 수 있습니다.
-
-오류나 개선 의견은 **scoutkorea@kakao.com**으로 보내주세요. 앱의 **불편 접수 메일 쓰기** 버튼은 메일 작성 창만 열며 자동 전송하거나 진단 정보를 첨부하지 않습니다.
-
-## English
-
-- Monitor local model/chip/core/RAM information, normalized CPU load and headroom, estimated memory usage, memory pressure, swap and macOS thermal state. Memory is estimated excluding reclaimable file cache and may differ from Activity Monitor. Thermal state is not a temperature reading or a throttling diagnosis.
-- CPU samples every 1/2/5/10 seconds (default 2); memory and thermal state every 10 seconds. View recent charts and per-resource timestamps. Select CPU in menu-bar settings and CPU/memory in Monitoring window settings. Views share existing collectors, and unchanged menu values no longer trigger repeated repaint requests.
-
-**Quotly puts AI usage and Mac activity in your menu bar.** Requires Apple Silicon and macOS 13 or later. Korean and English interfaces are available.
-
-- Track work time from the bottom tab or Cmd3: start, pause, resume, finish, daily totals, dated records and complete CSV export. Only observed time is counted; sleep/restart pauses and requires manual resume. Crash or slow storage may lose the latest checkpoint.
-- Save and switch screen layouts without changing account, refresh or notification settings.
-- View recognized server-reported plan names in Overview, details and account settings. Claude shows an explicit next payment date, falling back to a confirmed monthly/annual cycle. Missing billing details are omitted; the current ChatGPT integration supplies none.
-- View used or remaining **Codex subscription limits** and Claude usage, reset countdowns, server-reported credits and additional limits.
-- Receive first-crossing quota alerts, reset alerts, and official **OpenAI / Claude incident updates** checked every minute.
-- Open the status row on Overview for active incidents and recent official updates. Configure each provider under **Settings → Notifications → Official service status**. Enable the app's main notifications switch and macOS notification permission for banners.
-- Existing active incidents are announced on first check; historical resolved incidents are not. Identical updates are deduplicated across restarts. Quiet-hour events are not replayed later.
-- Polling stops during sleep, offline periods and app pause. Failed checks retain the last result with a stale indication and use retry backoff. Incident text remains in its original language.
-- Explore usage history as continuous stepped lines, with dots only for isolated observations and the latest value. Gray dashed bridges mark same-limit observation gaps; orange rules distinguish usage drops or reset-reference changes. Bridges do not represent measurements and do not change stored records. View forecasts when sufficient observations exist, reset news, and eligible Codex reset coupons. Coupon redemption always requires confirmation.
-- Monitor network throughput in Mbps, selected-drive I/O in MB/s and recent graphs. Customize visible menu-bar items and sizing.
-
-When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
-
-Download **Quotly-V1.024.001.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
-
-The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version; intermediate versions are not required. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
-
-Claude sign-in windows accept only designated HTTPS Claude, Google and Apple hosts and show the current host in the native title. Unknown enterprise SSO providers are currently blocked. Codex helpers require a valid OpenAI signature; usage requests pin the official ChatGPT base URL without changing your Codex config. History and status files use owner-only permissions. Quotly does not collect passwords directly; Claude sessions persist in this Mac's WebKit store and Codex manages its own credentials. This does not guarantee protection against malware running as your OS user or a compromised Mac.
-
-The installed V1.024.001 app was exercised in its supported UI review mode, using shared screens with real collected values. Checks covered Korean with normal text, English with larger text in Overview, Settings and the Monitoring page, detail navigation, expanding and collapsing connection controls, the More menu and normal quit. Installed files, permissions and signatures matched the release package, and the original presentation preferences were restored. After normal relaunch, the transient menu-bar popup and separate Monitoring window could not be reopened through the UI tool. Narrow layouts were checked in isolated UI fixtures, separately from physical MacBook Air testing. The eight-hour continuous collection test is not complete.
-
-For V1.024.000, validation covered collection scheduling, saved-login checks, server retry delays, stale readings, larger text and narrow layouts through targeted regression checks and synthetic views. Existing isolated stress tests covered 12,000 monitor configurations, repeated window lifecycles and helper failures/cancellations. A separate Sparkle fixture installed and relaunched a signed update with preferences preserved, and rejected a tampered archive. These isolated tests and synthetic views do not establish behavior on every customer Mac; physical MacBook Air validation remains a separate task.
-
-Feedback: **scoutkorea@kakao.com**. App management settings include a prominent PayPal support button and an email-composer button. Support is optional; feedback is never sent automatically.
-
-App-owned UI and menu-bar text use bundled Elice Digital Baeum Regular/Bold. Original font files and license are included; system dialogs and service login pages keep their native typography.
-
-## 배포 저장소 / Distribution repository
-
-이 저장소는 앱 배포 파일, 안내 문서와 서명된 업데이트 피드만 제공합니다. **앱 소스 코드, 로그인 정보, 사용자 설정, 서명 개인키는 포함하지 않습니다.** GitHub가 자동으로 표시하는 `Source code` 압축 파일은 이 배포 저장소의 문서·피드 사본이며 앱 소스가 아닙니다.
-
-This repository distributes app binaries, documentation and the signed update feed. It contains no application source code, account sessions, user preferences or signing private keys. GitHub's automatically generated source archives contain only this distribution repository's documents and feed.
-
-### 오류 보고 / Report an issue
-설정 → 앱 또는 하단 더 보기 → 오류 보고에서 진단 내용을 미리 보고 메일 작성·복사할 수 있습니다. 자동 전송하지 않습니다. 계정·토큰·대화·경로·원본 오류 응답은 제외됩니다.
-
-Open Settings → App or More → Report an issue to preview and copy diagnostics or compose an email. Reports are never sent automatically.
-
-### 모니터링 윈도우 / Monitoring window
-앱 상단 톱니바퀴 왼쪽의 윈도우 아이콘으로 바로 열 수 있습니다. 하단 더 보기 또는 설정 → 윈도우에서도 열 수 있습니다. 메뉴바와 같은 데이터를 사용하고 표시 항목은 별도로 선택하며 핀 버튼으로 항상 위 표시를 전환합니다. 위치·크기를 기억하고 창을 닫아도 기존 모니터링은 계속됩니다.
-
-Open the Monitoring window with the window icon immediately left of Settings, or from More or Settings → Window. It shares menu-bar data without extra polling; pin it above regular windows and reopen it at its saved position and size.
-
-모니터링 윈도우는 일반 제목 표시줄과 불투명한 배경을 사용합니다. 메모리 압박 상태는 제목 옆에 표시하고 스왑 줄은 제외해 CPU·메모리 카드 높이를 맞췄습니다. 디스크 속도 아래에는 내장·외장 드라이브의 사용률·사용/전체 용량·잔여 용량을 표시합니다. 디스크 표시 설정에 함께 적용되며 용량은 기존 1분 수집기를 공유합니다. 디스크 용량은 메뉴바·모니터링·상세 화면과 동일한 10진수 GB/TB 기준으로 표시합니다.
-
-The Monitoring window uses a standard title bar and opaque backgrounds. Memory pressure sits beside the heading; the swap row is omitted so CPU and Memory cards align. Mounted internal and external storage capacity appears below disk activity, controlled by the existing Disk preference. Storage reuses the existing one-minute collector. Disk capacity uses the same decimal GB/TB convention as the menu bar, monitoring views and detail pages.
-
-원형 차트의 퍼센트는 공간이 부족하면 글자 크기를 줄여 `100%`도 말줄임 없이 표시합니다.
-
-Quota ring percentages scale down when needed, keeping `100%` visible without truncation.
-
-좁은 창에서는 시스템 카드가 1열로 전환되고 넓은 창에서는 2열로 표시됩니다. 두 AI 원형 차트는 제목 줄 수와 관계없이 같은 높이를 유지합니다. 스크롤바는 1pt 두께의 얇은 오버레이로 표시합니다.
-
-System cards switch between one column in narrow windows and two columns in wider windows. Both AI quota rings remain aligned when headings wrap. The scrollbar uses a thin 1pt overlay thumb.
-
-### RAM 및 업데이트 상태 / RAM and update status
-
-설정 → 메뉴바 → CPU · RAM에서 RAM 사용률 표시를 선택합니다. `RAM 70.1%`처럼 표시하며, 사용/전체 용량은 툴팁과 모니터링에서 확인합니다. 기존 10초 수집기를 공유하고 오래되거나 유효하지 않은 값은 0%로 표시하지 않습니다. CPU·RAM·네트워크·디스크는 공통 간격·정렬 규칙을 따릅니다.
-
-설정 → 앱에서 최신 상태, 새 버전, 확인 실패, 호환 불가를 구분합니다. 업데이트 수는 서명된 피드가 확인한 최신 버전과 일치하는 배포 기록을 현재 버전과 비교해 표시합니다. 기록 JSON은 안내용이며 설치를 승인하거나 파일 URL을 지정하지 않습니다. 업데이트는 최신 전체 ZIP 한 개를 제공하고 중간 버전을 요구하지 않습니다. 확인한 최신 빌드보다 오래된 선택을 차단합니다. 격리된 Sparkle 시험 앱에서 실제 설치·재실행·설정 보존과 변조 파일 차단을 확인했으며, 고객 기기의 업데이트 수신 여부와는 구분합니다.
-
-Select RAM percentage under Settings → Menu bar → CPU · RAM. It reuses the existing ten-second collector; stale or invalid data does not become zero. Capacity is available in tooltips and monitoring. CPU/RAM/network/disk share spacing and alignment rules.
-
-Update settings show up-to-date, available, failed or incompatible states. Version counts use release-history records matched to the signed feed's confirmed latest version/build. That JSON is informational, and cannot authorize installers or supply download URLs. One latest full ZIP avoids intermediate releases; older selected builds are blocked. Signed installation, relaunch, preference preservation and tampered-archive rejection passed in an isolated Sparkle fixture; customer-device update delivery is a separate verification scope.
-
-모니터링 윈도우는 AI 사용량 원형 차트와 네트워크·디스크의 최근 10분 추이 그래프를 표시합니다. 기존 측정 기록을 재사용하며 측정이 끊긴 구간을 연결하지 않습니다.
-
-The Monitoring window shows AI usage rings and the last ten minutes of network/disk charts, reusing existing measurements and preserving gaps.
-
-설정 → 윈도우에서 ChatGPT Codex와 Claude의 차트 한도를 각각 선택합니다. 서버가 제공하지 않는 세션·주간 한도는 표시하지 않습니다.
-
-### 앱 색상 / Appearance
-설정 → 앱 → 앱 색상에서 시스템·라이트·다크 화면 모드와 강조색을 선택할 수 있습니다. 모니터링 윈도우는 같은 강조색을 사용하며, 설정 → 윈도우에서 시스템·라이트·다크 모드를 별도로 고를 수 있습니다.
-Choose system, light or dark appearance and an accent color in Settings → App. The Monitoring window shares the accent color and offers a separate system, light or dark choice under Settings → Window.
-
-모니터링 윈도우는 설정 → 윈도우에서 표시 항목과 원형 차트의 한도를 고릅니다. 강조색은 10가지 견본 또는 사용자 지정 색상을 지원합니다.
-Monitoring window contents and ring quotas have their own settings. Ten accent swatches and a custom color picker are available.
-
-Disk capacity: show used or free space / total volume capacity and the matching percentage for the menu bar drive. Configure numbers, total capacity, percentage and separate used/free modes in Settings → Menu bar. Refreshes every minute in the background.
-
-### V1.015.000 메뉴바 간격 수정
-
-CPU와 RAM 사이에도 구분선을 표시하며, 모든 그룹 구분선의 좌우 여백을 동일하게 적용합니다. 실제 표시 폭을 사용해 남는 여백을 없애고 DISK와 용량은 한 칸으로 연결합니다. 숫자 변화에 따라 전체 폭이 조정됩니다.
-
-CPU/RAM now have a divider. All group boundaries share equal padding; visible text widths remove unused reservations. DISK and capacity use one space. The menu width adjusts to actual readings.
-
-### 업데이트 버튼 및 최신 상태
-
-진행 중 누른 업데이트 요청은 완료 후 실행합니다. 버튼은 계속 사용할 수 있으며, 조회 실패는 최신 상태와 구분합니다. 앱 시작 후 서명된 피드를 확인하고 최신이면 최신 상태를 표시합니다.
-
-Update requests made while busy are retained. The button stays actionable; failed checks differ from up-to-date status. Startup probes the signed feed and shows current status when confirmed.
-
-## 외부 구성요소 라이선스 / Third-party licenses
-
-Quotly 자체 소스는 비공개입니다. 전체 앱이 MIT 오픈소스라는 의미가 아닙니다. Sparkle2.9.6은 MIT 및 포함된 BSD·Zlib 고지를 유지하고, 엘리스 디지털 배움체는 원본 폰트와 제작사 조건을 유지합니다. Apple 프레임워크는 macOS가 제공합니다. 외부 API·SNS 콘텐츠는 해당 서비스와 콘텐츠의 조건을 따릅니다.
-
-[외부 구성요소 전체 고지](THIRD_PARTY_NOTICES.txt) · [엘리스 폰트 원문 라이선스](Licenses/EliceDigitalBaeum_License.pdf)
-
-Quotly source remains private. Third-party components retain their own licenses: Sparkle includes MIT/BSD/Zlib notices; Elice fonts retain their original vendor terms. Apple system frameworks and external services/content are not relabeled MIT. The V1.021.002 app includes the reviewed third-party notices and build-time license checks.
+</details>

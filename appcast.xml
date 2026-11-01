@@ -4,42 +4,42 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.024.001</title>
-            <pubDate>Sun, 01 Nov 2026 19:39:48 +0900</pubDate>
-            <sparkle:version>292</sparkle:version>
-            <sparkle:shortVersionString>1.024.001</sparkle:shortVersionString>
+            <title>1.025.000</title>
+            <pubDate>Sun, 01 Nov 2026 22:19:22 +0900</pubDate>
+            <sparkle:version>293</sparkle:version>
+            <sparkle:shortVersionString>1.025.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.024.001
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.025.000
 
-메뉴바 패널의 과도한 여백을 줄여, 같은 크기의 창에서 사용량 정보를 더 편하게 확인할 수 있도록 다듬었습니다.
+Antigravity 공식 화면 바로가기와 모니터링 윈도우 배치를 개선했습니다.
 
-- **간결한 버튼과 탐색:** 상단 아이콘 버튼, 표시 기준 선택, 서비스 상태 줄, 상세 보기와 하단 탐색의 불필요한 높이·너비를 줄였습니다.
-- **일관된 간격:** 설정의 선택 항목·접기 영역과 모니터링 윈도우의 상세 진입부에도 같은 데스크톱 간격 규칙을 적용했습니다. 접기 항목은 행 전체를 눌러 조작할 수 있습니다.
-- **글씨 크기 유지:** 일반 글씨와 큰 글씨는 기존 크기를 유지하고, 큰 글씨에서는 버튼과 행이 함께 커지도록 했습니다.
-- **좁은 영문 화면 개선:** 표시 기준은 폭이 부족하면 두 행으로 배치하고, 긴 사용량 항목명은 줄바꿈해 잘리지 않도록 했습니다.
+- **공식 화면에서 사용량 확인:** 설정 → 계정 → **Antigravity 바로가기**에서 표시 여부를 고릅니다. 현황·상세 안내·메뉴바 `AGY ↗`·모니터링 윈도우에서 공식 화면에 접근합니다. 확인된 공식 앱이 없으면 [Google 공식 사용량 안내](https://antigravity.google/docs/cli/commands/usage/)를 엽니다.
+- **한 줄을 유지하는 모니터링:** 넓은 창에서는 Codex·Claude 원형 차트 두 개와 Antigravity 공식 바로가기를 나란히 표시합니다. 좁은 창에서는 두 차트를 가로 막대로 바꾸고 바로가기는 같은 줄에 유지합니다. Antigravity의 수치나 퍼센트를 만들어 표시하지 않습니다.
+- **자동 수집 없는 바로가기:** Antigravity CLI 실행·사용량 조회·인증 정보 추출·로그인·한도 선택 기능을 제공하지 않습니다. CLI 설치는 필요하지 않으며, 로그인과 사용량 확인은 공식 제품에서 직접 진행합니다. 이전 후보의 활성화 설정이 남아 있어도 자동 수집을 시작하지 않습니다.
+- **기존 수집 보존:** Codex·Claude의 독립적인 조회·오류 대기·사용량 기록과 표시 설정을 유지합니다. Antigravity 바로가기를 사용해도 기존 Google 계정이나 CLI 로그인 상태를 변경하지 않습니다.
 
-계정 연결, 사용량 수집과 기록 저장 방식은 이번 수정에서 변경하지 않았습니다.
+**요구 환경:** Apple Silicon Mac, macOS 13 이상. Antigravity 공식 제품은 배포 파일에 포함하지 않습니다. Quotly 자체의 Apple Developer ID 서명·공증은 아직 적용되지 않았으며, 업데이트 피드와 ZIP의 Ed25519 검증은 유지합니다.
 
-**검증 범위:** 설치된 V1.024.001의 화면 검토 모드에서 실제 수집값을 사용하는 공통 화면을 직접 조작했습니다. 한국어 일반 글씨, 영어 큰 글씨의 현황·설정·모니터링 페이지, 상세 보기, 연결 관리의 펼치기·접기와 더 보기 메뉴·정상 종료를 확인했습니다. 설치본과 배포 패키지의 파일·권한·서명이 일치하며, 기존 화면 설정도 복원했습니다. 일반 실행으로 돌아간 뒤의 메뉴바 팝업과 별도 모니터링 윈도우는 도구로 다시 열어 확인하지 못했습니다. 좁은 화면 조합은 격리된 화면 시험으로 확인했으며 맥북에어 실물 확인과는 구분합니다. 8시간 연속 수집 검증은 아직 완료되지 않았습니다.
+**검증 상태:** backend 회귀 127개, 네이티브 화면 검사 134개·렌더링 52개, 배포 도구 12개와 관측기 36개 격리 검사를 통과했습니다. 최종 서명·ZIP·설치본 일치를 확인했고, 맥미니 설치본에서 한국어 화면·실제 바로가기 스위치·상세 안내·441pt 한 줄 모니터링과 Google 공식 안내 열기를 확인했습니다. 설치본 영어·큰 글씨에서도 441pt 한 줄 막대 배치, 말줄임 없는 퍼센트, 영어 창 제목·메뉴·상세 안내를 확인하고 한국어·기본 글씨로 복원했습니다. 240pt 최소 폭은 네이티브 시험 화면으로만 확인했습니다. Codex·Claude의 8시간 실수집과 맥북에어 검증은 미완료이며, Antigravity 자동 수집은 지원하지 않아 관측 대상이 아닙니다. 공식 앱이 없는 Mac에서 안내를 여는 경로를 확인한 것으로, 공식 앱 실행 자체를 검증한 것은 아닙니다.
 
 ## English
 
-This update removes excess spacing from the menu panel so more quota information fits in the same window.
+Official Antigravity shortcuts and an improved Monitoring window layout.
 
-- Reduced unnecessary height and width around toolbar icons, the display selector, service status, detail buttons and bottom navigation.
-- Applied consistent desktop spacing to shared settings controls, disclosure rows and Monitoring window detail headers. Disclosure rows remain clickable across their full width.
-- Preserved the existing text sizes. Controls and rows grow with the larger-text setting.
-- Improved narrow English layouts: the display selector can move to a second row, and long quota labels wrap instead of being truncated.
+- **Check usage in the official product:** Enable **Settings → Accounts → Antigravity shortcut**. Access the official destination through Overview, details, the `AGY ↗` menu-bar item or the Monitoring window. If the verified official app is unavailable, Quotly opens the fixed [Google usage guide](https://antigravity.google/docs/cli/commands/usage/).
+- **Keep AI items in one row:** Wide windows show two Codex/Claude rings beside the Antigravity official shortcut. Narrow windows switch those two charts to horizontal bars while keeping the shortcut in the same row. Antigravity values and percentages are never invented.
+- **No automatic Antigravity collection:** Quotly does not run its CLI, query usage, extract authentication data, manage sign-in or select quotas. No CLI installation is required; sign-in and usage checking remain in the official product. An enabled setting from an earlier candidate does not start collection.
+- **Preserve existing collection:** Codex/Claude polling, retry delays, usage history and display settings continue as before. Using the shortcut does not change an existing Google account or CLI sign-in state.
 
-This patch does not change account connections, usage collection or history storage.
+**Requirements:** Apple Silicon and macOS 13 or later. The official Antigravity product is not bundled. Quotly remains ad-hoc signed without Apple Developer ID signing or notarization; Ed25519 verification of updates remains in place.
 
-**Validation scope:** The installed V1.024.001 app was exercised in its supported UI review mode, using shared screens with real collected values. Checks covered Korean with normal text, English with larger text in Overview, Settings and the Monitoring page, detail navigation, expanding and collapsing connection controls, the More menu and normal quit. Installed files, permissions and signatures matched the release package, and the original presentation preferences were restored. After normal relaunch, the transient menu-bar popup and separate Monitoring window could not be reopened through the UI tool. Narrow layouts were checked in isolated UI fixtures, separately from physical MacBook Air testing. The eight-hour continuous collection test is not complete.
+**Validation status:** Passed 127 backend regressions, 134 native UI checks with 52 rendered images, 12 release-tool tests and 36 observer tests in isolated fixtures. Final signature, ZIP and installed-bundle equivalence were verified. Installed Mac mini checks covered Korean UI, the native shortcut switch, details, the single-row 441pt monitor and opening the official Google guide. Installed English/larger-text checks passed for the 441pt single-row bars, complete percentages, English native window title, menu and details. Korean and normal text were restored afterward. The 240pt minimum width was checked in native fixtures only. Eight-hour Codex/Claude observation and physical MacBook Air checks remain incomplete; Antigravity collection is unsupported and not applicable. The verified fallback opens documentation on a Mac without the official app; actual official-app launch was not verified.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.024.001/Quotly-V1.024.001.zip" length="5533139" type="application/octet-stream" sparkle:edSignature="qqnKBxZVaAK4UuDwxxDefSCIfq0wktXa5h3c93f/c9HiC6TUmqWR82k8CHTwlkQlsMw90MwA4avXpnzZWyP0Cw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.025.000/Quotly-V1.025.000.zip" length="5631518" type="application/octet-stream" sparkle:edSignature="+5QE06R4gaA0vOLxX+5JsjxVqAe7LZ0Gs61oIfKF3Vd+tJKstqoxoPZY+3qzdjhpkh6Liosutlhm/KNcssK7Ag=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: J4i+1WvcQIlpFa6oje7UPVAlW5xtwviRTpdlMQv6E8Tv3/jrXLg2/SjfJkio9xveH0qB6X1JYAMZtrIRXfkSDA==
-length: 4584
+edSignature: sFGiW4V1yDOspVpoW0BO2M1kJi5DRq+wkrRHpmIG9/RS2pPFhM/AQPUsOOfuA4S/VZGyfdjDZu4KcdbOvfzLBA==
+length: 6334
 -->
