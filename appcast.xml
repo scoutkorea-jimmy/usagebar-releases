@@ -4,46 +4,40 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.026.000</title>
-            <pubDate>Mon, 02 Nov 2026 00:24:23 +0900</pubDate>
-            <sparkle:version>294</sparkle:version>
-            <sparkle:shortVersionString>1.026.000</sparkle:shortVersionString>
+            <title>1.027.000</title>
+            <pubDate>Thu, 19 Nov 2026 10:15:41 +0900</pubDate>
+            <sparkle:version>296</sparkle:version>
+            <sparkle:shortVersionString>1.027.000</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.026.000
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.027.000
 
-Antigravity 공식 CLI의 statusline이 전달한 사용량을 Quotly에서 확인합니다.
+**세 가지 AI의 사용량 추적과 표시 순서를 직접 정할 수 있습니다.**  
+**설정 → 갱신 → 사용량 추적 및 순서**에서 ChatGPT Codex, Claude, Antigravity를 각각 켜거나 끄고 ↑·↓로 순서를 바꾸세요. 현황, 메뉴바, 모니터링 윈도우에 같은 순서가 적용됩니다. 끈 서비스의 새 수집과 사용량 알림은 멈추며, 기존 연결과 기록은 보존됩니다.
 
-- **공식 전달값 수신:** 사용자가 실행한 공식 CLI가 Quotly 수신 도우미를 호출합니다. **설정 → 계정 → Antigravity 사용량 표시**와 **자동 수신 설정**으로 구성하며 표시 토글만으로 CLI 설정을 바꾸지 않습니다. Quotly는 사용자 동작으로만 공식 CLI를 실행하며, 갱신 클릭 한 번에 전용 세션 하나를 만듭니다. 백그라운드 반복 조회나 Google 인증 정보 읽기는 하지 않습니다.
-- **원클릭 갱신과 자동 정리:** 메인·상세·모니터링의 **갱신하기**를 누르면 **갱신 중…** 상태에서 새 수신을 기다립니다. 이번에 생성한 CLI에서 시작 이후 유효한 수신을 받으면 갱신용 화면과 프로세스를 닫고 기존 CLI 세션은 유지합니다. 45초 제한이나 취소 시에도 생성한 프로세스만 정리합니다. 로그인·작업공간 확인 안내가 있어도 입력·승인·신뢰 설정 변경 없이 수신을 기다립니다. `/usage`·프롬프트·로그인은 자동 입력하지 않으며, CLI 시작 캐시가 전달될 수 있어 서버 즉시 재조회를 보장하지 않습니다. 로그인·초기 설정용 **공식 CLI 열기**는 수신 설정 안에 별도로 제공합니다.
-- **수신 경과시간:** **마지막 CLI 수신** 옆에 **(0H03M 전)**처럼 경과시간을 표시하고, 미수신·미래 시각은 최신 수신처럼 표시하지 않습니다. 좁은 모니터링 카드에는 **(0H03M)**로 줄여 표시합니다.
-- **마지막 값과 대기 표시:** CLI를 닫거나 전달이 멈춰도 마지막 수신값과 **마지막 CLI 수신** 시각을 남기고 **업데이트 대기** 상태를 표시합니다. 아직 값이 없으면 **수신 대기**와 `—`를 표시합니다. 값이 없거나 초기화 시각이 지났다고 0%·100%를 추정하지 않습니다. 수신 시각은 CLI 전달 시각이며 서버의 즉시 갱신을 보장하지 않습니다.
-- **한 줄 사용량 화면:** 현황·상세·메뉴바·모니터링 윈도우에서 실제 수신된 한도를 확인합니다. 세 서비스는 넓은 창에서 원형 차트, 좁은 창에서 가로 막대로 한 줄을 유지합니다. 수량형 한도에는 임의의 퍼센트·차트를 만들지 않으며, 사라진 선택 한도를 다른 한도로 바꾸지 않습니다.
-- **설정과 개인정보 보존:** 사용자 지정 statusline이 있으면 명시적인 **백업 후 대체** 확인을 받고 기존 내용과 다른 설정을 보존하며, 해제 시 Quotly 명령이 그대로 있을 때만 이전 값을 복원합니다. 원본 payload·대화·인증 정보는 저장하지 않으며, 허용된 최소 정보만 이 Mac의 사용자 전용 저장소에 유지합니다.
+- **공식 서비스 상태와 내 사용량** — 서비스에 이슈가 있어도 내 계정 한도를 정상적으로 조회했다면 수치를 표시합니다. Antigravity가 새 값을 보내지 않을 때는 마지막 수신값·시각과 업데이트 대기 상태를 함께 표시합니다.
+- **한 줄 모니터링** — 넓은 창에서는 원형 차트, 좁은 창에서는 가로 막대를 사용합니다. 현황의 카드와 버튼 간격, 좁은 창의 영문 상태 줄도 정리했습니다.
+- **기록과 연결 진단** — **기록 범위**에서 서비스·한도·기간을 고릅니다. 조회 공백과 한도 초기화 경계를 구분합니다. **더 보기 → 연결 진단**을 열면 연결 상태, 진단 정보 복사·저장에 바로 접근할 수 있습니다.
+- **앱 업데이트** — 서명이 확인된 최신 버전으로 바로 업데이트합니다. 업데이트 개수를 확인할 수 있을 때 함께 표시하며, 자동 재시작을 기다리는 이유도 보여줍니다.
 
-**검증 범위:** 맥미니의 최종 설치본에서 실제 CLI 수신, 상세·모니터링의 갱신 버튼, 진행 창의 자동 닫힘, 취소 후 마지막 값 유지, 수신 설정 해제·복원과 다른 설정 보존을 확인했습니다. 441pt 창에서 한국어·영어 및 큰 글씨의 한 줄 배치를 확인했고, 배포 ZIP과 설치본의 파일·권한·서명을 대조했습니다. 240pt·520pt 배치, 영어 진행 창, 시간 초과·중복 클릭·미래 시각 등은 격리 시험 범위이며 원클릭 엔진의 프로세스 시험 46개가 통과했습니다. 8시간 후속 관측은 진행 중으로 아직 완료되지 않았고, Codex·Claude의 실제 기록을 대조합니다. Antigravity CLI 상시 실행은 요구하지 않으며 맥북에어 실물 확인은 별도입니다.
-
-Apple Silicon Mac·macOS 13 이상. 공식 Antigravity CLI는 별도로 설치하며 Quotly ZIP에 포함되지 않습니다. Quotly 수신 도우미는 함께 제공됩니다. Quotly의 Apple Developer ID 서명·공증은 아직 없으며 업데이트 피드와 ZIP의 Ed25519 검증을 유지합니다.
+Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## English
 
-View quota data delivered by the official Antigravity CLI’s statusline.
+**Choose which AI services to track and the order they appear in.**  
+Open **Settings → Refresh → Usage tracking and order** to turn tracking on or off for ChatGPT Codex, Claude, and Antigravity. Use the arrows to set the order in Overview, the menu bar, and the Monitoring window. Turning tracking off pauses new observations and quota alerts for that service and preserves the account connection and saved history.
 
-- The official CLI started by the user invokes Quotly’s receiver. Use the usage-display option and automatic-reception setup under Settings → Accounts; the display toggle alone does not alter CLI settings. Quotly launches the official CLI only in response to a user action, with one dedicated session per refresh click. It does not poll in the background or read Google credentials.
-- Choose **Refresh** in Overview, details or Monitoring. **Refreshing…** remains visible while waiting for a new valid delivery; only a new receipt from the CLI created for that click completes it. Its screen and process then close, leaving existing CLI sessions untouched. A 45-second timeout or cancellation also cleans up only the owned process. Login/workspace prompts remain unapproved while receipt waiting continues; workspace trust is unchanged. No `/usage`, prompts or login inputs are sent; startup cache may be delivered, so a new receipt is not proof of a new backend fetch. A separate **Open official CLI** action remains in reception settings for sign-in and initial setup.
-- Show elapsed time beside the last CLI receipt, such as **(0H03M ago)**, or **(0H03M)** on a narrow monitoring card. Absent or future receipt times never appear as fresh data.
-- When the CLI closes or delivery pauses, keep the last received value and timestamp with a waiting state. Missing values or an elapsed reset time never become invented zero/full quotas. Receipt time means delivery by the CLI, not necessarily a fresh server fetch.
-- View received quotas in Overview, details, the menu bar and Monitoring window. Three services remain in one row, using rings in wide windows and horizontal bars in narrow windows. Count-only limits have no invented percentages/charts, and a missing selected limit does not silently switch to another quota.
-- Preserve custom statuslines and unrelated settings. Restore the prior block on disconnect only if Quotly’s own command is still present. Store only allowlisted minimal data locally with owner-only permissions, never raw payloads, conversations or credentials.
+- **Official status and your quota** — Successful account quota readings remain visible during official incidents. Antigravity shows the last value and receipt time with a waiting status when updates stop.
+- **One-row Monitoring** — Wide windows show rings, while narrow windows show horizontal bars. Overview uses tighter cards and controls and a compact English status row at constrained widths.
+- **History and diagnostics** — Choose a service, quota window, and date range in **History scope**. Charts distinguish observation gaps from quota resets. Open **More → Connection diagnostics** to view connection status and copy or save a diagnostic report.
+- **In-app updates** — Update directly to the signed latest release. The app shows the release count when available and explains why an automatic restart is waiting.
 
-**Verification scope:** The final installed app on a Mac mini was checked for real CLI delivery, detail/Monitoring refresh actions, automatic progress-window closing, cancellation with last-value retention, setup/disconnect/restore and preservation of unrelated settings. Korean/English and larger-text layouts were checked at 441pt; release-ZIP files, permissions and signatures matched the installed app. The 240pt/520pt layouts, English progress window, timeout, duplicate clicks and future timestamps were covered by isolated fixtures, including 46 refresh-engine process checks. Eight-hour follow-up is running, not complete, and compares actual Codex/Claude history. Antigravity does not require a continuously running CLI. Physical MacBook Air checks remain separate.
-
-Apple Silicon and macOS 13 or later are required. The official Antigravity CLI is installed separately and is not redistributed; Quotly’s receiver helper is bundled. Quotly remains ad-hoc signed without Apple Developer ID notarization, while update feed/ZIP Ed25519 verification remains enabled.
+Requires Apple Silicon and macOS 13 or later.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.026.000/Quotly-V1.026.000.zip" length="5901358" type="application/octet-stream" sparkle:edSignature="hu8/DuCppuuSjrXkDuSAZ5gIxUPMLouQE9p0nNWFtyaZyxIseaovLf4Z49huxyc1X+HzgvQuM1Z6zvEHPd2QBQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.027.000/Quotly-V1.027.000.zip" length="5984309" type="application/octet-stream" sparkle:edSignature="OIQt5xOSgcf4tKGHF0PzYoilzzXeKTfY3pJaMan1QDITT+5rxKc5v3OKSf6gSn4YJN9xwCiCJQCbx6GjTGFDCQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: VNFWc91uvejvEqiLPhHlIOukKwYWzU9onXlr1sqKc7wEz8pTAewBuUVoXFn0GLQo4WWfBN2UZSrd4I2XBemADQ==
-length: 8507
+edSignature: 6AmJL8+7zcBh23tvuAvotUFDXlc/tA8N5K1bdztyhRHSzE2Ej9uapTwx+Fc2sClSq4fKhiG42schhIfK93nFCA==
+length: 4085
 -->
