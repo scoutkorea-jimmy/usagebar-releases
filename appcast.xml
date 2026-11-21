@@ -4,32 +4,34 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.027.001</title>
-            <pubDate>Sat, 21 Nov 2026 14:39:56 +0900</pubDate>
-            <sparkle:version>298</sparkle:version>
-            <sparkle:shortVersionString>1.027.001</sparkle:shortVersionString>
+            <title>1.027.002</title>
+            <pubDate>Sat, 21 Nov 2026 17:55:29 +0900</pubDate>
+            <sparkle:version>300</sparkle:version>
+            <sparkle:shortVersionString>1.027.002</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.027.001
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.027.002
 
-Quotly에서 Antigravity 사용량 연동을 제거했습니다. 현황·메뉴바·모니터링 윈도우와 관련 설정에서 해당 항목이 빠집니다. ChatGPT Codex와 Claude는 **설정 → 갱신 → 사용량 추적 및 순서**에서 각각 관리할 수 있습니다. 두 서비스의 기존 기록과 표시 순서는 유지됩니다.
+하단 **기록** 탭에서 ChatGPT Codex와 Claude의 사용량 이력을 바로 확인할 수 있습니다.
 
-업데이트할 때 CLI 상태줄이 여전히 Quotly가 등록한 명령을 가리키고 유효한 백업이 있으면 이전 상태줄 설정을 복원합니다. 그 외 CLI 설정은 보존합니다.
+- **추이 기간 선택** — 화면에 표시되는 **6시간 · 24시간 · 7일 · 30일** 버튼 중 하나를 고르면 차트에 해당 기간이 적용됩니다. **선택한 기록 CSV 저장…**은 같은 기간에 실제로 저장된 관측값을 내보냅니다.
+- **작업 시간 기능 종료** — 하단 **작업 시간** 대신 **기록**을 바로 열 수 있습니다. 이전 버전이 저장한 작업 기록 파일은 Mac에 남습니다.
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## English
 
-Antigravity usage integration has been removed from Quotly's Overview, menu bar, Monitoring window, and related settings. Manage ChatGPT Codex and Claude individually in **Settings → Refresh → Usage tracking and order**. Their existing history and display order carry over.
+Open **History** from the bottom navigation to view usage records for ChatGPT Codex and Claude.
 
-During the upgrade, Quotly restores the previous CLI status line when the current command still belongs to Quotly and a valid backup is available. Other CLI settings are preserved.
+- **Trend time range** — Choose **6 hours · 24 hours · 7 days · 30 days** from the visible controls. The chart uses the chosen range, and **Export selected history as CSV…** exports the observations saved within it.
+- **Work Time retired** — The bottom navigation opens **History** in its place. Existing work-log files stay on your Mac.
 
 Requires Apple Silicon and macOS 13 or later.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.027.001/Quotly-V1.027.001.zip" length="5652630" type="application/octet-stream" sparkle:edSignature="TC8SXpIogwNwvZ7bVe0ygGKcHmTSLAd4SblIUZWPZOslIthvHCMK53D3b1Hl5SDkHejfgD5m/y/ZWVZ2sEHvDw=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.027.002/Quotly-V1.027.002.zip" length="5549733" type="application/octet-stream" sparkle:edSignature="9ZCqQQKLMxQYDx/Sx4vgEDzTR1P9/+QMn3B13XmTIh6NizFpXlycUQPcNMrLuj8o259gHJBL8Vwd2j0ee5+5BA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 39MG4wjtli3fGvd+pR4huIM6sIaM+rE0C4/fT/H55qIzAW2tk7QFWoQb6xlj4937rbD3wD/GkKBjaMuHrCq5AQ==
+edSignature: EYGmcb6H1H+Lz649q8zNtfDKNV4dTHF6HGTdrSUXiUAQ+i67iGDKd/JAt3fkX9H4+AO72lfkvd0U1pshVBzbDw==
 length: 2387
 -->

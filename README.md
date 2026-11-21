@@ -2,21 +2,20 @@
 
 **AI 사용량과 Mac 상태를 메뉴바에서 한눈에.**
 
-[Quotly V1.027.001 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
+[Quotly V1.027.002 다운로드](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest) · [짧은 주소](https://jimmypark.net/quotly) · [후원하기](https://www.paypal.com/ncp/payment/55YEQS4N76GH6)
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
-**V1.027.001 — Antigravity 연동 제거**  
-Quotly에서 Antigravity 사용량 연동을 제거했습니다. **설정 → 갱신 → 사용량 추적 및 순서**에서 ChatGPT Codex와 Claude의 추적 여부와 표시 순서를 각각 정할 수 있습니다.
+**V1.027.002 — 하단 기록 탭과 조회 기간 선택**  
+하단 **기록 → 추이**에서 **6시간 · 24시간 · 7일 · 30일**을 바로 고릅니다. 차트와 CSV 내보내기에 같은 기간이 적용됩니다. 작업 시간 기능은 종료했으며, 기존 작업 기록 파일은 Mac에 보존됩니다.
 
-**V1.027.001 — Antigravity integration removed**  
-The Antigravity usage integration has been removed. In **Settings → Refresh → Usage tracking and order**, choose whether to track ChatGPT Codex and Claude and set their display order.
+**V1.027.002 — History tab and visible time ranges**  
+Open **History → Trend** from the bottom navigation to choose **6 hours · 24 hours · 7 days · 30 days**. The chart and CSV export use the same selected range. Work Time has been removed, and existing work-log files are kept on your Mac.
 
-상단 **톱니바퀴 설정 버튼**에서 메뉴바 표시 항목·갱신·알림·계정을 관리합니다. 하단 탐색은 **현황·모니터링·작업 시간** 세 화면으로 구성됩니다. 작업 시간은 ⌘3으로도 열 수 있습니다.
+상단 **톱니바퀴 설정 버튼**에서 메뉴바 표시 항목·갱신·알림·계정을 관리합니다. 하단에서 **현황·모니터링·기록**을 엽니다.
 
 ## 주요 기능
 
-- **작업 시간:** 하단 작업 시간 또는 ⌘3에서 프로젝트·작업을 시작하고 일시정지·재개·종료합니다. 일별 합계와 전체 CSV 내보내기를 지원하고, 기록마다 실제 시작 날짜·시각을 표시합니다. 앱이 깨어 있는 동안 관측한 시간만 기록하고 잠자기·재시작 후에는 직접 재개합니다. 강제 종료·느린 저장에서는 마지막 미저장 시간이 일부 유실될 수 있습니다.
 - **화면 구성:** 간단 확인·AI 작업·영상 작업 구성을 선택하거나 현재 화면을 저장합니다. 항목 표시·순서·상세도를 편집하고 메뉴바 구성을 함께 저장할 수 있습니다. 로그인 계정·갱신 주기·알림은 바뀌지 않습니다.
 - **예약 사용량 요약:** 설정 → 알림에서 요일·시각·서비스·세션/주간 한도를 선택합니다. 놓친 예약은 생략하거나 최신 한 건만 요약합니다. 앱 실행 중에 동작하고, 알림 권한이 없거나 방해금지 시간이어도 앱 안에 요약을 저장합니다. 관측 시각·이전 값·오류 상태를 함께 보여줍니다.
 - **내 Mac 상태:** 모델 식별자·칩·CPU 코어·메모리 정보를 자동으로 읽고 CPU·메모리·디스크·네트워크 상태와 마지막 측정 시각을 요약합니다. 대기·지연 상태를 구분합니다.
@@ -35,7 +34,7 @@ The Antigravity usage integration has been removed. In **Settings → Refresh �
 - **Mac 모니터링:** 네트워크 업로드·다운로드(Mbps), 선택한 드라이브의 읽기·쓰기(MB/s), 최근 10분 그래프를 확인합니다.
 - **디스크 용량:** 메뉴바에서 선택한 드라이브의 사용 용량 또는 잔여 용량 / 전체 용량과 해당 비율을 표시합니다. 볼륨 기준으로 1분마다 갱신하며, 설정 → 메뉴바에서 용량 숫자·전체 용량(분모)·퍼센트를 각각 선택합니다. 메뉴바에는 사용량/잔여량 배지가 붙습니다. 자주 쓰는 숫자+비율/숫자만/비율만 선택을 먼저 보여주고, 숫자·분모·퍼센트 개별 옵션과 독립 기준은 ‘세부 표시 조정’에 접어 둡니다.
 - **메뉴바 맞춤 설정:** 필요한 항목, 글자 크기, 간격, 드라이브를 선택할 수 있습니다.
-- **앱 내 업데이트:** Sparkle이 확인한 최신 버전으로 바로 업데이트할 수 있습니다. 업데이트 개수는 확인할 수 있을 때 함께 표시합니다. 작업 타이머나 계정 연결 등으로 재시작을 기다리면 앱 설정에서 이유를 볼 수 있습니다.
+- **앱 내 업데이트:** Sparkle이 확인한 최신 버전으로 바로 업데이트할 수 있습니다. 업데이트 개수는 확인할 수 있을 때 함께 표시합니다. 계정 연결이나 설정 저장 등으로 재시작을 기다리면 앱 설정에서 이유를 볼 수 있습니다.
 
 ## 서비스 장애 알림 사용법
 
@@ -49,13 +48,13 @@ The Antigravity usage integration has been removed. In **Settings → Refresh �
 
 ## 웹 사용량과 비교할 때
 
-**기록 범위**에서 서비스·한도·기간을 선택해 연결한 Codex·Claude 계정의 기록을 봅니다. 연결이 필요하면 **더 보기 → 연결 진단**에서 상태를 보고 진단 정보를 복사하거나 저장할 수 있습니다.
+하단 **기록**의 **기록 필터**에서 서비스·한도를 고릅니다. **추이**의 기간을 바꾸면 차트와 **선택한 기록 CSV 저장…**에 반영됩니다. 주간 요약과 소진 예상은 각 분석 기준을 따릅니다. 연결이 필요하면 **더 보기 → 연결 진단**에서 상태를 보고 진단 정보를 복사하거나 저장할 수 있습니다.
 
 같은 계정·한도·표시 기준으로 양쪽을 새로고침해서 비교하세요. 예를 들어 웹의 **잔여 5%**는 앱의 **사용 95%**와 같습니다. 세션 한도와 주간 한도는 서로 다른 값이며, 메뉴바는 선택한 한도를 표시합니다. 서비스 웹페이지와 앱의 갱신 시각 차이로 잠시 다른 수치가 보일 수 있습니다.
 
 ## 설치와 계정 연결
 
-1. 위 다운로드 링크에서 **Quotly-V1.027.001.zip**을 받습니다.
+1. 위 다운로드 링크에서 **Quotly-V1.027.002.zip**을 받습니다.
 2. 압축을 풀고 **Quotly.app**을 응용 프로그램 폴더로 옮깁니다.
 3. 앱의 **설정 → 계정**에서 본인의 계정을 연결합니다.
 
@@ -67,11 +66,11 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 이 앱은 현재 로컬 ad-hoc 서명을 사용하며 Apple Developer ID 서명·공증은 적용되지 않았습니다. macOS의 보안 정책에 따라 실행이 제한될 수 있습니다. Intel Mac은 현재 배포 대상이 아닙니다.
 
-이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.027.001**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
+이후 업데이트는 앱에서 확인하거나 자동으로 받을 수 있습니다. `.delta`는 기존 버전용 부분 업데이트 파일이므로 직접 설치할 필요가 없습니다. 버전은 **Va.bbb.ccc** 형식입니다. `a`는 제작자가 직접 결정하는 큰 버전, `bbb`는 주요 기능 추가, `ccc`는 버그 수정입니다. 이번 버전은 **V1.027.002**입니다. 업데이트는 중간 버전을 설치할 필요 없이 최신 버전으로 바로 이동합니다.
 
 ## 이번 버전의 확인 범위
 
-맥미니에 설치한 연동 제거 시험판에서 현황, 메뉴바·갱신 설정, 모니터링 윈도우와 Codex·Claude의 실제 갱신을 확인했습니다. 이전 CLI 상태줄의 복원은 격리 시험에서도 확인했습니다.
+격리 시험으로 한영 화면의 기간 선택, 차트와 CSV의 동일한 기간 적용, 기존 작업 기록 파일 보존을 확인했습니다.
 
 ## 로그인 보안
 
@@ -98,7 +97,6 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 
 **Quotly puts AI usage and Mac activity in your menu bar.** Requires Apple Silicon and macOS 13 or later. Korean and English interfaces are available.
 
-- Track work time from the bottom tab or Cmd3: start, pause, resume, finish, daily totals, dated records and complete CSV export. Only observed time is counted; sleep/restart pauses and requires manual resume. Crash or slow storage may lose the latest checkpoint.
 - Save and switch screen layouts without changing account, refresh or notification settings.
 - Turning off tracking pauses new usage observations and quota alerts for that service. Account connections and saved history remain available. Choose which items appear in the menu bar and Monitoring window under their own settings.
 - View recognized server-reported plan names in Overview, details and account settings. Claude shows an explicit next payment date, falling back to a confirmed monthly/annual cycle. Missing billing details are omitted; the current ChatGPT integration supplies none.
@@ -110,17 +108,17 @@ ChatGPT 항목은 **Codex 구독 한도**이며, 일반 ChatGPT 대화의 메시
 - Explore Codex/Claude usage history as continuous stepped lines, with dots only for isolated observations and the latest value. Gray dashed bridges mark same-limit observation gaps; orange rules distinguish usage drops or reset-reference changes. Bridges do not represent measurements and do not change stored records. View forecasts when sufficient observations exist, reset news, and eligible Codex reset coupons. Coupon redemption always requires confirmation.
 - Monitor network throughput in Mbps, selected-drive I/O in MB/s and recent graphs. Customize visible menu-bar items and sizing.
 
-Use **History scope** to choose the service, quota window, and date range for your connected Codex or Claude account. Open **More → Connection diagnostics** to view the connection status and copy or save a diagnostic report.
+Use **Filters** under **History** to choose the service and quota window. The time range selected in **Trend** controls both the chart and **Export selected history as CSV…**. Weekly Summary and Forecast keep their analysis windows. Open **More → Connection diagnostics** to view the connection status and copy or save a diagnostic report.
 
 When comparing with the service website, refresh both views and match the account, quota window and used/remaining mode. For example, 5% remaining equals 95% used. Refresh timing can temporarily differ.
 
-Download **Quotly-V1.027.001.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
+Download **Quotly-V1.027.002.zip** from [the latest release](https://github.com/scoutkorea-jimmy/usagebar-releases/releases/latest), move Quotly.app to Applications, then connect your own accounts. Regular ChatGPT conversation message counts are not supported. For Codex usage, Quotly accepts Codex bundled with the current ChatGPT desktop app or an existing native helper with a valid OpenAI signature. Unsigned wrappers and modified helpers are not executed. The connection screen shows the detected helper. If none is found, install the current ChatGPT desktop app in Applications, select Check installation, then sign in. A separate CLI is not required when the app bundles Codex; older chat-only apps and web sign-in alone are insufficient. Claude needs neither a CLI nor a separate app: sign in through Quotly’s Claude window. Public service-status checks need no account.
 
-The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version. The release count is shown when available. If installation is ready and restart is waiting for an activity such as a running timer or account connection, the app shows the reason. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
+The current build is ad-hoc signed, not Apple Developer ID signed or notarized. In-app updates use HTTPS and Ed25519 signatures for the feed and payloads. Updates jump directly to the latest version. The release count is shown when available. If installation is ready and restart is waiting for an activity such as account sign-in or a settings transfer, the app shows the reason. Version format: Va.bbb.ccc (owner-controlled major / feature / fix). Optional `.delta` files are for automatic updates, not manual installation.
 
 Claude sign-in windows accept only designated HTTPS Claude, Google and Apple hosts and show the current host in the native title. Unknown enterprise SSO providers are currently blocked. Codex helpers require a valid OpenAI signature; usage requests pin the official ChatGPT base URL without changing your Codex config. History and status files use owner-only permissions. Quotly does not collect passwords directly; Claude sessions persist in this Mac's WebKit store and Codex manages its own credentials. This does not guarantee protection against malware running as your OS user or a compromised Mac.
 
-The integration-removal test build was checked on a Mac mini for Overview, menu-bar and refresh settings, the Monitoring window, and live Codex and Claude updates. Isolated tests also covered restoration of the previous CLI status line.
+Isolated tests covered the time-range controls in Korean and English, matching chart and CSV ranges, and preservation of the existing work-log files.
 
 Feedback: **scoutkorea@kakao.com**. App management settings include a prominent PayPal support button and an email-composer button. Support is optional; feedback is never sent automatically.
 
@@ -201,6 +199,8 @@ Quotly source remains private. Third-party components retain their own licenses:
 
 <details>
 <summary>이전 주요 업데이트 / Earlier release highlights</summary>
+
+V1.027.001: Quotly에서 Antigravity 사용량 연동을 제거했습니다. / Removed the Antigravity usage integration from Quotly.
 
 V1.025.000: Antigravity 공식 화면 바로가기와 좁은 모니터링 창의 한 줄 배치를 추가했습니다. V1.026.000은 공식 statusline이 전달한 사용량을 수신하는 방식으로 확장합니다.
 
