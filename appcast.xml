@@ -4,40 +4,32 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Quotly</title>
         <item>
-            <title>1.027.000</title>
-            <pubDate>Thu, 19 Nov 2026 10:15:41 +0900</pubDate>
-            <sparkle:version>296</sparkle:version>
-            <sparkle:shortVersionString>1.027.000</sparkle:shortVersionString>
+            <title>1.027.001</title>
+            <pubDate>Sat, 21 Nov 2026 14:39:56 +0900</pubDate>
+            <sparkle:version>298</sparkle:version>
+            <sparkle:shortVersionString>1.027.001</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Quotly V1.027.000
+            <description sparkle:format="markdown"><![CDATA[# Quotly V1.027.001
 
-**세 가지 AI의 사용량 추적과 표시 순서를 직접 정할 수 있습니다.**  
-**설정 → 갱신 → 사용량 추적 및 순서**에서 ChatGPT Codex, Claude, Antigravity를 각각 켜거나 끄고 ↑·↓로 순서를 바꾸세요. 현황, 메뉴바, 모니터링 윈도우에 같은 순서가 적용됩니다. 끈 서비스의 새 수집과 사용량 알림은 멈추며, 기존 연결과 기록은 보존됩니다.
+Quotly에서 Antigravity 사용량 연동을 제거했습니다. 현황·메뉴바·모니터링 윈도우와 관련 설정에서 해당 항목이 빠집니다. ChatGPT Codex와 Claude는 **설정 → 갱신 → 사용량 추적 및 순서**에서 각각 관리할 수 있습니다. 두 서비스의 기존 기록과 표시 순서는 유지됩니다.
 
-- **공식 서비스 상태와 내 사용량** — 서비스에 이슈가 있어도 내 계정 한도를 정상적으로 조회했다면 수치를 표시합니다. Antigravity가 새 값을 보내지 않을 때는 마지막 수신값·시각과 업데이트 대기 상태를 함께 표시합니다.
-- **한 줄 모니터링** — 넓은 창에서는 원형 차트, 좁은 창에서는 가로 막대를 사용합니다. 현황의 카드와 버튼 간격, 좁은 창의 영문 상태 줄도 정리했습니다.
-- **기록과 연결 진단** — **기록 범위**에서 서비스·한도·기간을 고릅니다. 조회 공백과 한도 초기화 경계를 구분합니다. **더 보기 → 연결 진단**을 열면 연결 상태, 진단 정보 복사·저장에 바로 접근할 수 있습니다.
-- **앱 업데이트** — 서명이 확인된 최신 버전으로 바로 업데이트합니다. 업데이트 개수를 확인할 수 있을 때 함께 표시하며, 자동 재시작을 기다리는 이유도 보여줍니다.
+업데이트할 때 CLI 상태줄이 여전히 Quotly가 등록한 명령을 가리키고 유효한 백업이 있으면 이전 상태줄 설정을 복원합니다. 그 외 CLI 설정은 보존합니다.
 
 Apple Silicon Mac · macOS 13 이상 · 한국어 / English
 
 ## English
 
-**Choose which AI services to track and the order they appear in.**  
-Open **Settings → Refresh → Usage tracking and order** to turn tracking on or off for ChatGPT Codex, Claude, and Antigravity. Use the arrows to set the order in Overview, the menu bar, and the Monitoring window. Turning tracking off pauses new observations and quota alerts for that service and preserves the account connection and saved history.
+Antigravity usage integration has been removed from Quotly's Overview, menu bar, Monitoring window, and related settings. Manage ChatGPT Codex and Claude individually in **Settings → Refresh → Usage tracking and order**. Their existing history and display order carry over.
 
-- **Official status and your quota** — Successful account quota readings remain visible during official incidents. Antigravity shows the last value and receipt time with a waiting status when updates stop.
-- **One-row Monitoring** — Wide windows show rings, while narrow windows show horizontal bars. Overview uses tighter cards and controls and a compact English status row at constrained widths.
-- **History and diagnostics** — Choose a service, quota window, and date range in **History scope**. Charts distinguish observation gaps from quota resets. Open **More → Connection diagnostics** to view connection status and copy or save a diagnostic report.
-- **In-app updates** — Update directly to the signed latest release. The app shows the release count when available and explains why an automatic restart is waiting.
+During the upgrade, Quotly restores the previous CLI status line when the current command still belongs to Quotly and a valid backup is available. Other CLI settings are preserved.
 
 Requires Apple Silicon and macOS 13 or later.
 ]]></description>
-            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.027.000/Quotly-V1.027.000.zip" length="5984309" type="application/octet-stream" sparkle:edSignature="OIQt5xOSgcf4tKGHF0PzYoilzzXeKTfY3pJaMan1QDITT+5rxKc5v3OKSf6gSn4YJN9xwCiCJQCbx6GjTGFDCQ=="></enclosure>
+            <enclosure url="https://github.com/scoutkorea-jimmy/usagebar-releases/releases/download/v1.027.001/Quotly-V1.027.001.zip" length="5652630" type="application/octet-stream" sparkle:edSignature="TC8SXpIogwNwvZ7bVe0ygGKcHmTSLAd4SblIUZWPZOslIthvHCMK53D3b1Hl5SDkHejfgD5m/y/ZWVZ2sEHvDw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 6AmJL8+7zcBh23tvuAvotUFDXlc/tA8N5K1bdztyhRHSzE2Ej9uapTwx+Fc2sClSq4fKhiG42schhIfK93nFCA==
-length: 4085
+edSignature: 39MG4wjtli3fGvd+pR4huIM6sIaM+rE0C4/fT/H55qIzAW2tk7QFWoQb6xlj4937rbD3wD/GkKBjaMuHrCq5AQ==
+length: 2387
 -->
